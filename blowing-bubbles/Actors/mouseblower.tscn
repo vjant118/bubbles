@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bw26fn0vm8sks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yl28n"]
+size = Vector2(1.9499998, 2.3000002)
+
+[node name="mouseblower" type="CharacterBody2D" unique_id=1427746]
+scale = Vector2(50, 50)
+
+[node name="pointer" type="Polygon2D" parent="." unique_id=1732554050]
+polygon = PackedVector2Array(0, 0, 1, -2, 2, 0)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1452738908]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1409871104]
+position = Vector2(1, 1.1499999)
+shape = SubResource("RectangleShape2D_yl28n")
