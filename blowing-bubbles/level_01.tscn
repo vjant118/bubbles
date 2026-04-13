@@ -896,6 +896,7 @@ shape = SubResource("ConvexPolygonShape2D_yp1q4")
 debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
 
 [node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike30" unique_id=1828080670]
+position = Vector2(-46.06422, 0.030476958)
 scale = Vector2(0.05892471, 0.061935123)
 texture = ExtResource("4_5itje")
 region_rect = Rect2(0, 0, 640, 640)
@@ -915,7 +916,7 @@ texture = ExtResource("4_5itje")
 region_rect = Rect2(0, 0, 640, 640)
 
 [node name="Spike51" type="Area2D" parent="Obstacles" unique_id=441936080]
-position = Vector2(615.0606, -476.37906)
+position = Vector2(712.0594, -475.56842)
 rotation = 6.290322
 scale = Vector2(1.8026704, 1.7122501)
 
