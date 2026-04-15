@@ -1,16 +1,20 @@
 [gd_scene format=3 uid="uid://bw26fn0vm8sks"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yl28n"]
-size = Vector2(1.9499998, 2.3000002)
+[ext_resource type="Texture2D" uid="uid://et7jfeaqodgu" path="res://Assets/Placeholder Assets/circle.png" id="1_anm83"]
+[ext_resource type="Script" uid="uid://4oj88k60nl2y" path="res://Actors/mouseblower.gd" id="1_ggk7m"]
 
-[node name="mouseblower" type="CharacterBody2D" unique_id=1427746]
+[sub_resource type="CircleShape2D" id="CircleShape2D_ggk7m"]
+radius = 0.79999995
+
+[node name="mouseblower" type="Area2D" unique_id=124156406]
 scale = Vector2(50, 50)
+script = ExtResource("1_ggk7m")
 
-[node name="pointer" type="Polygon2D" parent="." unique_id=1732554050]
-polygon = PackedVector2Array(0, 0, 1, -2, 2, 0)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=319849725]
+visible = false
+scale = Vector2(0.004, 0.004)
+texture = ExtResource("1_anm83")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1452738908]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1409871104]
-position = Vector2(1, 1.1499999)
-shape = SubResource("RectangleShape2D_yl28n")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1409871104]
+shape = SubResource("CircleShape2D_ggk7m")
+disabled = true
