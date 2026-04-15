@@ -511,7 +511,7 @@ scale = Vector2(21.466667, 24.825924)
 texture = ExtResource("1_kdijb")
 
 [node name="bubble" parent="." unique_id=2022378048 instance=ExtResource("2_8q3i6")]
-position = Vector2(142.00002, -140)
+position = Vector2(142, -97)
 scale = Vector2(-4.4666214, 4.2586846)
 
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=342040863]
