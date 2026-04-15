@@ -2,8 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://finalfirstlevelbackground.webp" id="1_kdijb"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/bubble.tscn" id="2_8q3i6"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/mouseblower.tscn" id="3_kdijb"]
 [ext_resource type="Texture2D" uid="uid://ci6q2n6nfnt1x" path="res://final demolevelwall.webp" id="3_qrmce"]
-[ext_resource type="Texture2D" uid="uid://vwwtdgfn3aj1" path="res://finalfirstleveldemospikeobstacle-removebg-preview.png" id="4_8q3i6"]
+[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/spikeHazard.tscn" id="4_qrmce"]
 [ext_resource type="Texture2D" uid="uid://benaqerdl6ndl" path="res://Assets/portalfinishline-removebg-preview.png" id="6_e3hfu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
@@ -500,7 +501,59 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_pl2qr")
 
-[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_yp1q4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdijb"]
+size = Vector2(2434, 130)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlag8"]
+size = Vector2(63, 769)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qrmce"]
+size = Vector2(1853, 124.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8q3i6"]
+size = Vector2(127, 1364.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5itje"]
+size = Vector2(118, 3562)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sb6k4"]
+size = Vector2(899, 126.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e3hfu"]
+size = Vector2(935, 128.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pl2qr"]
+size = Vector2(4428.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlskx"]
+size = Vector2(957, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yp1q4"]
+size = Vector2(63, 1977.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3xv4"]
+size = Vector2(126.5, 1425)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygp6w"]
+size = Vector2(125.5, 2007.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xna0i"]
+size = Vector2(656, 190)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhow8"]
+size = Vector2(1493.5, 126)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o25yy"]
+size = Vector2(126, 409.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rskd8"]
+size = Vector2(1107, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxmm5"]
+size = Vector2(126.25, 1364)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmcru"]
+size = Vector2(402.25, 191.5)
 
 [node name="Level01" type="Node2D" unique_id=1931007585]
 position = Vector2(61, 981)
@@ -510,10 +563,6 @@ position = Vector2(2041.9998, -1846.5)
 scale = Vector2(21.466667, 24.825924)
 texture = ExtResource("1_kdijb")
 
-[node name="bubble" parent="." unique_id=2022378048 instance=ExtResource("2_8q3i6")]
-position = Vector2(142, -97)
-scale = Vector2(-4.4666214, 4.2586846)
-
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=342040863]
 position = Vector2(125, -87)
 
@@ -521,433 +570,6 @@ position = Vector2(125, -87)
 position = Vector2(92, 113)
 tile_map_data = PackedByteArray("AAAAAAAAAAADAAMAAAABAAAAAAADAAMAAAACAAAAAAADAAMAAAADAAAAAAADAAMAAAAEAAAAAAADAAMAAAAFAAAAAAADAAMAAAAGAAAAAAADAAMAAAAHAAAAAAADAAMAAAAIAAAAAAADAAMAAAD//wAAAAADAAMAAAD+/wAAAAADAAMAAAD9/wAAAAADAAMAAAD8/wAAAAADAAMAAAAJAAAAAAADAAMAAAAKAAAAAAADAAMAAAALAAAAAAADAAMAAAAMAAAAAAADAAMAAAANAAAAAAADAAMAAAAOAAAAAAADAAMAAAAPAAAAAAADAAMAAAAQAAAAAAADAAMAAAARAAAAAAADAAMAAAASAAAAAAADAAMAAAATAAAAAAADAAMAAAAUAAAAAAADAAMAAAAVAAAAAAADAAMAAAAWAAAAAAADAAMAAAAXAAAAAAADAAMAAAAYAAAAAAADAAMAAAD8//f/AAADAAMAAAD9//f/AAADAAMAAAD+//f/AAADAAMAAAD///f/AAADAAMAAAAAAPf/AAADAAMAAAABAPf/AAADAAMAAAACAPf/AAADAAMAAAADAPf/AAADAAMAAAAEAPf/AAADAAMAAAAFAPf/AAADAAMAAAAGAPf/AAADAAMAAAAHAPf/AAADAAMAAAAIAPf/AAADAAMAAAAJAPf/AAADAAMAAAAKAPf/AAADAAMAAAALAPf/AAADAAMAAAAMAPf/AAADAAMAAAANAPf/AAADAAMAAAAOAPf/AAADAAMAAAAPAPf/AAADAAMAAAAQAPf/AAADAAMAAAD8/wEAAAADAAMAAAD9/wEAAAADAAMAAAD+/wEAAAADAAMAAAD//wEAAAADAAMAAAAAAAEAAAADAAMAAAABAAEAAAADAAMAAAACAAEAAAADAAMAAAADAAEAAAADAAMAAAAEAAEAAAADAAMAAAAFAAEAAAADAAMAAAAGAAEAAAADAAMAAAAHAAEAAAADAAMAAAAIAAEAAAADAAMAAAAJAAEAAAADAAMAAAAKAAEAAAADAAMAAAALAAEAAAADAAMAAAAMAAEAAAADAAMAAAANAAEAAAADAAMAAAARAAEAAAADAAMAAAASAAEAAAADAAMAAAATAAEAAAADAAMAAAAUAAEAAAADAAMAAAAVAAEAAAADAAMAAAAWAAEAAAADAAMAAAAXAAEAAAADAAMAAAAYAAEAAAADAAMAAAAOAAEAAAADAAMAAAAPAAEAAAADAAMAAAAQAAEAAAADAAMAAAD8//b/AAADAAMAAAD9//b/AAADAAMAAAD+//b/AAADAAMAAAD///b/AAADAAMAAAAAAPb/AAADAAMAAAABAPb/AAADAAMAAAACAPb/AAADAAMAAAADAPb/AAADAAMAAAAEAPb/AAADAAMAAAAFAPb/AAADAAMAAAAGAPb/AAADAAMAAAAHAPb/AAADAAMAAAAIAPb/AAADAAMAAAAJAPb/AAADAAMAAAAKAPb/AAADAAMAAAALAPb/AAADAAMAAAAMAPb/AAADAAMAAAANAPb/AAADAAMAAAAOAPb/AAADAAMAAAAPAPb/AAADAAMAAAAQAPb/AAADAAMAAAD9//X/AAADAAMAAAD9//T/AAADAAMAAAD9//P/AAADAAMAAAD9//L/AAADAAMAAAD9//H/AAADAAMAAAD9//D/AAADAAMAAAD9/+//AAADAAMAAAD9/+7/AAADAAMAAAD9/+3/AAADAAMAAAD9/+z/AAADAAMAAAD9/+v/AAADAAMAAAD8/+v/AAADAAMAAAD8/+z/AAADAAMAAAD8/+3/AAADAAMAAAD8/+7/AAADAAMAAAD8/+//AAADAAMAAAD8//D/AAADAAMAAAD8//T/AAADAAMAAAD8//X/AAADAAMAAAD8//P/AAADAAMAAAD8//L/AAADAAMAAAD8//H/AAADAAMAAAAZAAAAAAADAAMAAAAaAAAAAAADAAMAAAAbAAAAAAADAAMAAAAcAAAAAAADAAMAAAAcAP//AAADAAMAAAAcAP7/AAADAAMAAAAcAP3/AAADAAMAAAAcAPz/AAADAAMAAAAcAPv/AAADAAMAAAAcAPr/AAADAAMAAAAcAPn/AAADAAMAAAAcAPj/AAADAAMAAAAcAPf/AAADAAMAAAAcAPb/AAADAAMAAAAbAPb/AAADAAMAAAAbAPf/AAADAAMAAAAbAPj/AAADAAMAAAAbAPn/AAADAAMAAAAbAPr/AAADAAMAAAAbAPv/AAADAAMAAAAbAPz/AAADAAMAAAAbAP3/AAADAAMAAAAbAP7/AAADAAMAAAAbAP//AAADAAMAAAAcAAEAAAADAAMAAAAbAAEAAAADAAMAAAAaAAEAAAADAAMAAAAZAAEAAAADAAMAAAAbAPX/AAADAAMAAAAbAPT/AAADAAMAAAAbAPP/AAADAAMAAAAbAPL/AAADAAMAAAAbAPH/AAADAAMAAAAbAPD/AAADAAMAAAAbAO//AAADAAMAAAAbAO7/AAADAAMAAAAbAO3/AAADAAMAAAAaAO3/AAADAAMAAAAZAO3/AAADAAMAAAAYAO3/AAADAAMAAAAXAO3/AAADAAMAAAAWAO3/AAADAAMAAAAVAO3/AAADAAMAAAAUAO3/AAADAAMAAAATAO3/AAADAAMAAAASAO3/AAADAAMAAAARAO3/AAADAAMAAAAQAO3/AAADAAMAAAAPAO3/AAADAAMAAAAcAPX/AAADAAMAAAAcAPT/AAADAAMAAAAcAPP/AAADAAMAAAAcAPL/AAADAAMAAAAcAPH/AAADAAMAAAAcAPD/AAADAAMAAAAcAO//AAADAAMAAAAcAO7/AAADAAMAAAAcAO3/AAADAAMAAAAcAOz/AAADAAMAAAAbAOz/AAADAAMAAAAaAOz/AAADAAMAAAAZAOz/AAADAAMAAAAYAOz/AAADAAMAAAAXAOz/AAADAAMAAAAWAOz/AAADAAMAAAAVAOz/AAADAAMAAAAUAOz/AAADAAMAAAATAOz/AAADAAMAAAASAOz/AAADAAMAAAARAOz/AAADAAMAAAAQAOz/AAADAAMAAAAPAOz/AAADAAMAAAARAPb/AAADAAMAAAASAPb/AAADAAMAAAATAPb/AAADAAMAAAARAPf/AAADAAMAAAASAPf/AAADAAMAAAATAPf/AAADAAMAAAAGAO//AAADAAMAAAAGAO7/AAADAAMAAAAGAO3/AAADAAMAAAAGAOz/AAADAAMAAAAGAOv/AAADAAMAAAAGAOr/AAADAAMAAAAGAOn/AAADAAMAAAAGAOj/AAADAAMAAAAGAOf/AAADAAMAAAAGAOb/AAADAAMAAAAGAOX/AAADAAMAAAAGAOT/AAADAAMAAAD9/+r/AAADAAMAAAD9/+n/AAADAAMAAAD9/+j/AAADAAMAAAD9/+f/AAADAAMAAAD9/+b/AAADAAMAAAD9/+X/AAADAAMAAAD9/+T/AAADAAMAAAD9/+P/AAADAAMAAAD9/+L/AAADAAMAAAD9/+H/AAADAAMAAAD9/+D/AAADAAMAAAD9/9//AAADAAMAAAD9/97/AAADAAMAAAD9/93/AAADAAMAAAD9/9z/AAADAAMAAAD9/9v/AAADAAMAAAD9/9r/AAADAAMAAAD9/9n/AAADAAMAAAD+/9n/AAADAAMAAAD//9n/AAADAAMAAAAAANn/AAADAAMAAAABANn/AAADAAMAAAACANn/AAADAAMAAAADANn/AAADAAMAAAAEANn/AAADAAMAAAAFANn/AAADAAMAAAAGANn/AAADAAMAAAAHANn/AAADAAMAAAAIANn/AAADAAMAAAAJANn/AAADAAMAAAAKANn/AAADAAMAAAAKANj/AAADAAMAAAAJANj/AAADAAMAAAAIANj/AAADAAMAAAAHANj/AAADAAMAAAAGANj/AAADAAMAAAAFANj/AAADAAMAAAAEANj/AAADAAMAAAADANj/AAADAAMAAAACANj/AAADAAMAAAABANj/AAADAAMAAAAAANj/AAADAAMAAAD//9j/AAADAAMAAAD+/9j/AAADAAMAAAD9/9j/AAADAAMAAAD8/9j/AAADAAMAAAD8/9n/AAADAAMAAAD8/9r/AAADAAMAAAD8/9v/AAADAAMAAAD8/9z/AAADAAMAAAD8/93/AAADAAMAAAD8/97/AAADAAMAAAD8/9//AAADAAMAAAD8/+D/AAADAAMAAAD8/+H/AAADAAMAAAD8/+L/AAADAAMAAAD8/+P/AAADAAMAAAD8/+T/AAADAAMAAAD8/+j/AAADAAMAAAD8/+n/AAADAAMAAAD8/+r/AAADAAMAAAD8/+f/AAADAAMAAAD8/+b/AAADAAMAAAD8/+X/AAADAAMAAAAXAOv/AAADAAMAAAAXAOr/AAADAAMAAAAXAOn/AAADAAMAAAAXAOj/AAADAAMAAAAXAOf/AAADAAMAAAAXAOb/AAADAAMAAAAXAOX/AAADAAMAAAAXAOT/AAADAAMAAAAXAOP/AAADAAMAAAAXAOL/AAADAAMAAAAXAOH/AAADAAMAAAAXAOD/AAADAAMAAAAXAN//AAADAAMAAAAXAN7/AAADAAMAAAAXAN3/AAADAAMAAAAXANz/AAADAAMAAAAXANv/AAADAAMAAAAXANr/AAADAAMAAAAXANn/AAADAAMAAAAXANj/AAADAAMAAAAXANf/AAADAAMAAAAXANb/AAADAAMAAAAXANX/AAADAAMAAAAXANT/AAADAAMAAAAXANP/AAADAAMAAAAXANL/AAADAAMAAAAXANH/AAADAAMAAAAXAND/AAADAAMAAAAXAM//AAADAAMAAAAXAM7/AAADAAMAAAAWAM7/AAADAAMAAAAVAM7/AAADAAMAAAAUAM7/AAADAAMAAAATAM7/AAADAAMAAAASAM7/AAADAAMAAAARAM7/AAADAAMAAAAQAM7/AAADAAMAAAAPAM7/AAADAAMAAAD9/9f/AAADAAMAAAD9/9b/AAADAAMAAAD9/9X/AAADAAMAAAD9/9T/AAADAAMAAAD9/9P/AAADAAMAAAD9/9L/AAADAAMAAAD9/9H/AAADAAMAAAD9/9D/AAADAAMAAAD9/8//AAADAAMAAAD9/87/AAADAAMAAAD9/83/AAADAAMAAAD9/8b/AAADAAMAAAD9/8f/AAADAAMAAAD9/8j/AAADAAMAAAD9/8n/AAADAAMAAAD9/8r/AAADAAMAAAD9/8v/AAADAAMAAAD9/8z/AAADAAMAAAD9/8X/AAADAAMAAAD9/8T/AAADAAMAAAD9/8P/AAADAAMAAAD9/8L/AAADAAMAAAD+/8L/AAADAAMAAAD//8L/AAADAAMAAAAAAML/AAADAAMAAAABAML/AAADAAMAAAACAML/AAADAAMAAAADAML/AAADAAMAAAAEAML/AAADAAMAAAAFAML/AAADAAMAAAAGAML/AAADAAMAAAAHAML/AAADAAMAAAAIAML/AAADAAMAAAAJAML/AAADAAMAAAAKAML/AAADAAMAAAALAML/AAADAAMAAAAMAML/AAADAAMAAAANAML/AAADAAMAAAAOAML/AAADAAMAAAAPAML/AAADAAMAAAAQAML/AAADAAMAAAARAML/AAADAAMAAAASAML/AAADAAMAAAATAML/AAADAAMAAAAUAML/AAADAAMAAAAVAML/AAADAAMAAAAWAML/AAADAAMAAAAXAML/AAADAAMAAAD8/9f/AAADAAMAAAD8/9b/AAADAAMAAAD8/9X/AAADAAMAAAD8/9T/AAADAAMAAAD8/9P/AAADAAMAAAD8/9L/AAADAAMAAAD8/9H/AAADAAMAAAD8/9D/AAADAAMAAAD8/8//AAADAAMAAAD8/87/AAADAAMAAAD8/83/AAADAAMAAAD8/8z/AAADAAMAAAD8/8v/AAADAAMAAAD8/8r/AAADAAMAAAD8/8n/AAADAAMAAAD8/8j/AAADAAMAAAD8/8f/AAADAAMAAAD8/8b/AAADAAMAAAD8/8X/AAADAAMAAAD8/8T/AAADAAMAAAD8/8P/AAADAAMAAAD8/8L/AAADAAMAAAD8/8H/AAADAAMAAAD9/8H/AAADAAMAAAD+/8H/AAADAAMAAAD//8H/AAADAAMAAAAAAMH/AAADAAMAAAABAMH/AAADAAMAAAACAMH/AAADAAMAAAADAMH/AAADAAMAAAAEAMH/AAADAAMAAAAFAMH/AAADAAMAAAAGAMH/AAADAAMAAAAHAMH/AAADAAMAAAAIAMH/AAADAAMAAAAJAMH/AAADAAMAAAAKAMH/AAADAAMAAAALAMH/AAADAAMAAAAMAMH/AAADAAMAAAANAMH/AAADAAMAAAAOAMH/AAADAAMAAAAPAMH/AAADAAMAAAAQAMH/AAADAAMAAAARAMH/AAADAAMAAAASAMH/AAADAAMAAAATAMH/AAADAAMAAAAUAMH/AAADAAMAAAAVAMH/AAADAAMAAAAWAMH/AAADAAMAAAAXAMH/AAADAAMAAAAgANP/AAADAAMAAAAgANL/AAADAAMAAAAgANH/AAADAAMAAAAgAND/AAADAAMAAAAgAM//AAADAAMAAAAgAM7/AAADAAMAAAAgAM3/AAADAAMAAAAgAMz/AAADAAMAAAAgAMv/AAADAAMAAAAgAMr/AAADAAMAAAAgAMn/AAADAAMAAAAgAMj/AAADAAMAAAAgAMf/AAADAAMAAAAgAMb/AAADAAMAAAAgAMX/AAADAAMAAAAgAMT/AAADAAMAAAAgAMP/AAADAAMAAAAYAML/AAADAAMAAAAZAML/AAADAAMAAAAaAML/AAADAAMAAAAbAMH/AAADAAMAAAAcAMH/AAADAAMAAAAdAML/AAADAAMAAAAeAML/AAADAAMAAAAfAML/AAADAAMAAAAgAML/AAADAAMAAAAcAML/AAADAAMAAAAbAML/AAADAAMAAAAYAMH/AAADAAMAAAAZAMH/AAADAAMAAAAaAMH/AAADAAMAAAAdAMH/AAADAAMAAAAeAMH/AAADAAMAAAAfAMH/AAADAAMAAAAgAMH/AAADAAMAAAAhANP/AAADAAMAAAAhANL/AAADAAMAAAAhANH/AAADAAMAAAAhAND/AAADAAMAAAAhAM//AAADAAMAAAAhAM7/AAADAAMAAAAhAM3/AAADAAMAAAAhAMz/AAADAAMAAAAhAMv/AAADAAMAAAAhAMr/AAADAAMAAAAhAMn/AAADAAMAAAAhAMj/AAADAAMAAAAhAMf/AAADAAMAAAAhAMb/AAADAAMAAAAhAMX/AAADAAMAAAAhAMT/AAADAAMAAAAhAMP/AAADAAMAAAAhAML/AAADAAMAAAAhAMH/AAADAAMAAAAhANT/AAADAAMAAAAhANX/AAADAAMAAAAgANT/AAADAAMAAAAgANX/AAADAAMAAAAtAOD/AAADAAMAAAAuAOD/AAADAAMAAAAvAOD/AAADAAMAAAAwAOD/AAADAAMAAAAxAN//AAADAAMAAAAyAN//AAADAAMAAAAzAN//AAADAAMAAAAzAOD/AAADAAMAAAA0AOD/AAADAAMAAAA/AOD/AAADAAMAAAA+AOD/AAADAAMAAAA9AOD/AAADAAMAAAA8AOD/AAADAAMAAAA7AOD/AAADAAMAAAA6AOD/AAADAAMAAAA5AOD/AAADAAMAAAA4AOD/AAADAAMAAAA3AOD/AAADAAMAAAA2AOD/AAADAAMAAAA1AOD/AAADAAMAAAAyAOD/AAADAAMAAAAxAOD/AAADAAMAAAA/AN//AAADAAMAAAA+AN//AAADAAMAAAA9AN//AAADAAMAAAA8AN//AAADAAMAAAA7AN//AAADAAMAAAA6AN//AAADAAMAAAA5AN//AAADAAMAAAA4AN//AAADAAMAAAA3AN//AAADAAMAAAA2AN//AAADAAMAAAA1AN//AAADAAMAAAA0AN//AAADAAMAAAAwAN//AAADAAMAAAAvAN//AAADAAMAAAAuAN//AAADAAMAAAAtAN//AAADAAMAAABAAN//AAADAAMAAABAAOD/AAADAAMAAABAAN7/AAADAAMAAABAAN3/AAADAAMAAABAANz/AAADAAMAAABAANv/AAADAAMAAABAANr/AAADAAMAAABAANn/AAADAAMAAABAANj/AAADAAMAAABAANf/AAADAAMAAABAANb/AAADAAMAAABAANX/AAADAAMAAABAANT/AAADAAMAAABAANP/AAADAAMAAABAANL/AAADAAMAAABAANH/AAADAAMAAABAAND/AAADAAMAAABAAM//AAADAAMAAABAAM7/AAADAAMAAABAAM3/AAADAAMAAABAAMz/AAADAAMAAAA/AMv/AAADAAMAAAA/AMr/AAADAAMAAAA/AMn/AAADAAMAAAA/AMj/AAADAAMAAABAAMv/AAADAAMAAABAAMr/AAADAAMAAABAAMn/AAADAAMAAABAAMj/AAADAAMAAABAAMf/AAADAAMAAABAAMb/AAADAAMAAABAAMX/AAADAAMAAABAAMT/AAADAAMAAABAAMP/AAADAAMAAAAiAMH/AAADAAMAAAAjAMH/AAADAAMAAAAkAMH/AAADAAMAAAAlAMH/AAADAAMAAAAmAMH/AAADAAMAAAAnAMH/AAADAAMAAAAoAMH/AAADAAMAAAApAMH/AAADAAMAAAAqAMH/AAADAAMAAAArAMH/AAADAAMAAAAsAMH/AAADAAMAAAAtAMH/AAADAAMAAAAuAMH/AAADAAMAAAAvAMH/AAADAAMAAAAwAMH/AAADAAMAAAAxAMH/AAADAAMAAAAyAMH/AAADAAMAAAAzAMH/AAADAAMAAAA0AMH/AAADAAMAAAA1AMH/AAADAAMAAAA2AMH/AAADAAMAAAA3AMH/AAADAAMAAAA4AMH/AAADAAMAAAA5AMH/AAADAAMAAAA6AMH/AAADAAMAAAA7AMH/AAADAAMAAAA8AMH/AAADAAMAAAA9AMH/AAADAAMAAAA+AMH/AAADAAMAAAA/AMH/AAADAAMAAABAAMH/AAADAAMAAABAAML/AAADAAMAAAAiAML/AAADAAMAAAAjAML/AAADAAMAAAAkAML/AAADAAMAAAAlAML/AAADAAMAAAAmAML/AAADAAMAAAAnAML/AAADAAMAAAAoAML/AAADAAMAAAApAML/AAADAAMAAAAqAML/AAADAAMAAAArAML/AAADAAMAAAAsAML/AAADAAMAAAAtAML/AAADAAMAAAAuAML/AAADAAMAAAAvAML/AAADAAMAAAAwAML/AAADAAMAAAAzAML/AAADAAMAAAAyAML/AAADAAMAAAAxAML/AAADAAMAAAA0AML/AAADAAMAAAA1AML/AAADAAMAAAA2AML/AAADAAMAAAA3AML/AAADAAMAAAA4AML/AAADAAMAAAA5AML/AAADAAMAAAA6AML/AAADAAMAAAA7AML/AAADAAMAAAA8AML/AAADAAMAAAA9AML/AAADAAMAAAA+AML/AAADAAMAAAA/AML/AAADAAMAAAA/AMP/AAADAAMAAAA/AMf/AAADAAMAAAA/AMb/AAADAAMAAAA/AMX/AAADAAMAAAA/AMT/AAADAAMAAAA/AMz/AAADAAMAAAA/AM3/AAADAAMAAAA/AM7/AAADAAMAAAA/AM//AAADAAMAAAA/AND/AAADAAMAAAA/ANH/AAADAAMAAAA/ANL/AAADAAMAAAA/ANP/AAADAAMAAAA/ANT/AAADAAMAAAA/ANX/AAADAAMAAAA/ANb/AAADAAMAAAA/ANf/AAADAAMAAAA/ANj/AAADAAMAAAA/ANn/AAADAAMAAAA/ANr/AAADAAMAAAA/ANv/AAADAAMAAAA/ANz/AAADAAMAAAA/AN3/AAADAAMAAAA/AN7/AAADAAMAAAA4AN7/AAADAAMAAAA4AN3/AAADAAMAAAA4ANz/AAADAAMAAAA4ANv/AAADAAMAAAA4ANr/AAADAAMAAAA4ANn/AAADAAMAAAA4ANj/AAADAAMAAAA4ANf/AAADAAMAAAA4ANb/AAADAAMAAAA4ANX/AAADAAMAAAA4ANT/AAADAAMAAAA4ANP/AAADAAMAAAA4ANL/AAADAAMAAAA4ANH/AAADAAMAAAA4AND/AAADAAMAAAA4AM//AAADAAMAAAA4AM7/AAADAAMAAAA4AM3/AAADAAMAAAA3AM3/AAADAAMAAAA3AMz/AAADAAMAAAA4AMz/AAADAAMAAAA3AM7/AAADAAMAAAA3AM//AAADAAMAAAA3AND/AAADAAMAAAA3ANH/AAADAAMAAAA3ANL/AAADAAMAAAA3ANP/AAADAAMAAAA3ANT/AAADAAMAAAA3ANX/AAADAAMAAAA3ANb/AAADAAMAAAA3ANf/AAADAAMAAAA3ANj/AAADAAMAAAA3ANn/AAADAAMAAAA3ANr/AAADAAMAAAA3ANv/AAADAAMAAAA3ANz/AAADAAMAAAA3AN3/AAADAAMAAAA3AN7/AAADAAMAAAA3AMv/AAADAAMAAAA3AMr/AAADAAMAAAA4AMr/AAADAAMAAAA4AMv/AAADAAMAAAAxAMv/AAADAAMAAAAyAMv/AAADAAMAAAAzAMv/AAADAAMAAAA0AMv/AAADAAMAAAA1AMv/AAADAAMAAAA2AMv/AAADAAMAAAA2AMz/AAADAAMAAAA1AMz/AAADAAMAAAA0AMz/AAADAAMAAAAzAMz/AAADAAMAAAAyAMz/AAADAAMAAAAxAMz/AAADAAMAAAA2AMr/AAADAAMAAAA1AMr/AAADAAMAAAA0AMr/AAADAAMAAAAzAMr/AAADAAMAAAAyAMr/AAADAAMAAAAxAMr/AAADAAMAAAD7//f/AAADAAMAAAD6//f/AAADAAMAAAD5//f/AAADAAMAAAD4//f/AAADAAMAAAD4//j/AAADAAMAAAD4//n/AAADAAMAAAD4//r/AAADAAMAAAD4//v/AAADAAMAAAD4//7/AAADAAMAAAD4////AAADAAMAAAD4/wAAAAADAAMAAAD5/wAAAAADAAMAAAD6/wAAAAADAAMAAAD7/wAAAAADAAMAAAD7//b/AAADAAMAAAD6//b/AAADAAMAAAD5//b/AAADAAMAAAD4//b/AAADAAMAAAD3//b/AAADAAMAAAD3//f/AAADAAMAAAD3//j/AAADAAMAAAD3//n/AAADAAMAAAD3//r/AAADAAMAAAD3//v/AAADAAMAAAD3//z/AAADAAMAAAD3//3/AAADAAMAAAD3//7/AAADAAMAAAD3////AAADAAMAAAD3/wAAAAADAAMAAAD4/wEAAAADAAMAAAD3/wEAAAADAAMAAAD5/wEAAAADAAMAAAD6/wEAAAADAAMAAAD7/wEAAAADAAMAAAD4//z/AAADAAMAAAD4//3/AAADAAMAAAALANj/AAADAAMAAAALANn/AAADAAMAAAAJAM7/AAADAAMAAAAKAM7/AAADAAMAAAALAM7/AAADAAMAAAANAM7/AAADAAMAAAAMAM7/AAADAAMAAAAOAM7/AAADAAMAAAAYAOT/AAADAAMAAAAZAOT/AAADAAMAAAAaAOT/AAADAAMAAAAbAOT/AAADAAMAAAAcAOT/AAADAAMAAAAdAOT/AAADAAMAAAAeAOT/AAADAAMAAAAfAOT/AAADAAMAAAAgAOT/AAADAAMAAAAhAOT/AAADAAMAAAAiAOT/AAADAAMAAAAjAOT/AAADAAMAAAAkAOT/AAADAAMAAAAlAOT/AAADAAMAAAAmAOT/AAADAAMAAAAnAOT/AAADAAMAAAAoAOT/AAADAAMAAAApAOT/AAADAAMAAAAqAOT/AAADAAMAAAArAOT/AAADAAMAAAAsAOT/AAADAAMAAAAtAOH/AAADAAMAAAAtAOL/AAADAAMAAAAtAOP/AAADAAMAAAAtAOT/AAADAAMAAAAuAOH/AAADAAMAAAAuAOL/AAADAAMAAAAuAOP/AAADAAMAAAAuAOT/AAADAAMAAAAYAOX/AAADAAMAAAAZAOX/AAADAAMAAAAaAOX/AAADAAMAAAAbAOX/AAADAAMAAAAcAOX/AAADAAMAAAAdAOX/AAADAAMAAAAeAOX/AAADAAMAAAAfAOX/AAADAAMAAAAgAOX/AAADAAMAAAAhAOX/AAADAAMAAAAiAOX/AAADAAMAAAAjAOX/AAADAAMAAAAkAOX/AAADAAMAAAAlAOX/AAADAAMAAAAmAOX/AAADAAMAAAAnAOX/AAADAAMAAAAoAOX/AAADAAMAAAApAOX/AAADAAMAAAAqAOX/AAADAAMAAAArAOX/AAADAAMAAAAsAOX/AAADAAMAAAAtAOX/AAADAAMAAAAuAOX/AAADAAMAAAAgANb/AAADAAMAAAAgANf/AAADAAMAAAAgANj/AAADAAMAAAAqANj/AAADAAMAAAAqANb/AAADAAMAAAAqANf/AAADAAMAAAApANj/AAADAAMAAAAoANj/AAADAAMAAAAnANj/AAADAAMAAAAmANj/AAADAAMAAAAlANj/AAADAAMAAAAkANj/AAADAAMAAAAjANj/AAADAAMAAAAiANj/AAADAAMAAAAhANj/AAADAAMAAAAhANf/AAADAAMAAAAhANb/AAADAAMAAAAiANb/AAADAAMAAAAiANf/AAADAAMAAAAjANf/AAADAAMAAAAjANb/AAADAAMAAAAkANb/AAADAAMAAAAlANb/AAADAAMAAAAlANf/AAADAAMAAAAmANf/AAADAAMAAAAnANf/AAADAAMAAAAoANf/AAADAAMAAAApANf/AAADAAMAAAApANb/AAADAAMAAAAoANb/AAADAAMAAAAnANb/AAADAAMAAAAmANb/AAADAAMAAAAkANf/AAADAAMAAAA=")
 tile_set = SubResource("TileSet_rlskx")
-
-[node name="Obstacles" type="Node2D" parent="." unique_id=800879464]
-position = Vector2(239, 0)
-scale = Vector2(2.721683, 3.700834)
-
-[node name="Spike1" type="Area2D" parent="Obstacles" unique_id=960367518]
-position = Vector2(125.000015, -270)
-rotation = 1.5731757
-scale = Vector2(1.0878983, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike1" unique_id=1826925669]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike1" unique_id=1195424885]
-position = Vector2(0, 3.0607457)
-scale = Vector2(0.05892471, 0.07893927)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike2" type="Area2D" parent="Obstacles" unique_id=607310156]
-position = Vector2(125, -304)
-rotation = 1.5731757
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike2" unique_id=54124799]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike2" unique_id=329887810]
-position = Vector2(0, 2.4249732)
-scale = Vector2(0.05892471, 0.0754072)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike3" type="Area2D" parent="Obstacles" unique_id=297939629]
-position = Vector2(125, -337)
-rotation = 1.5731757
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike3" unique_id=887942795]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike3" unique_id=193974369]
-position = Vector2(0, 2.4252076)
-scale = Vector2(0.05892471, 0.075408496)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike4" type="Area2D" parent="Obstacles" unique_id=1470097941]
-position = Vector2(125, -374)
-rotation = 1.5731757
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike4" unique_id=1657211505]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike4" unique_id=355792365]
-position = Vector2(0, 3.7489727)
-scale = Vector2(0.05892471, 0.08276275)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike5" type="Area2D" parent="Obstacles" unique_id=709466685]
-position = Vector2(125, -405.00006)
-rotation = 1.5731757
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike5" unique_id=843468820]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike5" unique_id=1624103866]
-position = Vector2(0, 3.9035306)
-scale = Vector2(0.05892471, 0.083621405)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike31" type="Area2D" parent="Obstacles" unique_id=938398749]
-position = Vector2(207.22473, -612.29443)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike31" unique_id=476934016]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike31" unique_id=1988049648]
-position = Vector2(0, 3.184669)
-scale = Vector2(0.05892471, 0.07962772)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike32" type="Area2D" parent="Obstacles" unique_id=1535321409]
-position = Vector2(157.25562, -612.0243)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike32" unique_id=1314725355]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike32" unique_id=1554634999]
-position = Vector2(0, 2.986661)
-scale = Vector2(0.05892471, 0.07852768)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike33" type="Area2D" parent="Obstacles" unique_id=1653871991]
-position = Vector2(108.756226, -613.1051)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike33" unique_id=852115653]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike33" unique_id=2030479641]
-position = Vector2(0, 3.3841436)
-scale = Vector2(0.05892471, 0.08073592)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike34" type="Area2D" parent="Obstacles" unique_id=1545261185]
-position = Vector2(60.256817, -613.10504)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike34" unique_id=748075821]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike34" unique_id=52771652]
-position = Vector2(0, 3.1837316)
-scale = Vector2(0.05892471, 0.07962252)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike35" type="Area2D" parent="Obstacles" unique_id=114283416]
-position = Vector2(13.961952, -613.9156)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike35" unique_id=475541269]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike35" unique_id=1011466960]
-position = Vector2(0, 2.3877985)
-scale = Vector2(0.05892471, 0.07520067)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike36" type="Area2D" parent="Obstacles" unique_id=346849620]
-position = Vector2(-30.495838, -613.37524)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike36" unique_id=2084642519]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike36" unique_id=548317951]
-position = Vector2(0, 2.188823)
-scale = Vector2(0.05892471, 0.07409525)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike37" type="Area2D" parent="Obstacles" unique_id=1436525933]
-position = Vector2(-77.15814, -612.0242)
-rotation = 3.143364
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike37" unique_id=1274688634]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike37" unique_id=1505051959]
-position = Vector2(0, 2.5867743)
-scale = Vector2(0.05892471, 0.0763061)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike38" type="Area2D" parent="Obstacles" unique_id=368224806]
-position = Vector2(471.7669, -793.8751)
-rotation = 4.7296276
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike38" unique_id=507217985]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike38" unique_id=250601468]
-position = Vector2(0, -4.061368)
-scale = Vector2(0.05892471, 0.108507216)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike39" type="Area2D" parent="Obstacles" unique_id=363483005]
-position = Vector2(472.13428, -747.6693)
-rotation = 4.7296276
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike39" unique_id=1619720941]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike39" unique_id=683639193]
-position = Vector2(0, -4.057903)
-scale = Vector2(0.05892471, 0.10552024)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike40" type="Area2D" parent="Obstacles" unique_id=1073215372]
-position = Vector2(471.76685, -700.38275)
-rotation = 4.7296276
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike40" unique_id=734508510]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike40" unique_id=2104872972]
-position = Vector2(0, -3.2498193)
-scale = Vector2(0.05892471, 0.10399827)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike41" type="Area2D" parent="Obstacles" unique_id=1884560728]
-position = Vector2(471.76694, -652.8258)
-rotation = 4.7296276
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike41" unique_id=923911739]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike41" unique_id=1699748732]
-position = Vector2(0, -4.0476046)
-scale = Vector2(0.05892471, 0.11748661)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike42" type="Area2D" parent="Obstacles" unique_id=1812037338]
-position = Vector2(472.86914, -604.9987)
-rotation = 4.7296276
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike42" unique_id=1952816645]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike42" unique_id=22706016]
-position = Vector2(0, 1.8833685)
-scale = Vector2(0.05892471, 0.10839266)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike43" type="Area2D" parent="Obstacles" unique_id=421429554]
-position = Vector2(177.09631, -847.6468)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike43" unique_id=802032736]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike43" unique_id=120681766]
-position = Vector2(0, -0.011620164)
-scale = Vector2(0.05892471, 0.07747237)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike44" type="Area2D" parent="Obstacles" unique_id=1194708381]
-position = Vector2(227.80022, -846.2957)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike44" unique_id=1924699017]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike44" unique_id=165556095]
-position = Vector2(-0.719605, -0.39785933)
-scale = Vector2(0.062922515, 0.07740781)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike45" type="Area2D" parent="Obstacles" unique_id=1809136875]
-position = Vector2(278.50412, -845.2148)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike45" unique_id=852795526]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike45" unique_id=1686662788]
-position = Vector2(0, 0.19896156)
-scale = Vector2(0.05892471, 0.06746114)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike46" type="Area2D" parent="Obstacles" unique_id=1609662663]
-position = Vector2(329.57547, -843.5935)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike46" unique_id=204427435]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike46" unique_id=1521877571]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike47" type="Area2D" parent="Obstacles" unique_id=1812102759]
-position = Vector2(381.38165, -843.86383)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike47" unique_id=916237463]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike47" unique_id=809019857]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike48" type="Area2D" parent="Obstacles" unique_id=214442404]
-position = Vector2(433.92273, -844.40424)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike48" unique_id=729698417]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike48" unique_id=750982705]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike49" type="Area2D" parent="Obstacles" unique_id=468781268]
-position = Vector2(488.66827, -846.02545)
-rotation = 6.30468
-scale = Vector2(1.6048689, 1.0673275)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike49" unique_id=1523888354]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike49" unique_id=1474750740]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike28" type="Area2D" parent="Obstacles" unique_id=1370175793]
-position = Vector2(1080.2139, -878.7208)
-rotation = 4.7247076
-scale = Vector2(1.8026704, 1.7122501)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike28" unique_id=664748654]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike28" unique_id=1321202915]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike29" type="Area2D" parent="Obstacles" unique_id=518323905]
-position = Vector2(974.02966, -672.28094)
-rotation = 1.5891619
-scale = Vector2(1.8026704, 1.7122501)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike29" unique_id=2048396074]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike29" unique_id=873695120]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike30" type="Area2D" parent="Obstacles" unique_id=1638475269]
-position = Vector2(828.16394, -470.43448)
-rotation = 6.290322
-scale = Vector2(1.8026704, 1.7122501)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike30" unique_id=257456077]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike30" unique_id=1828080670]
-position = Vector2(-0.81526184, 0.00612545)
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike50" type="Area2D" parent="Obstacles" unique_id=20717147]
-position = Vector2(772.3163, -471.2451)
-rotation = 6.290322
-scale = Vector2(1.8026704, 1.7122501)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike50" unique_id=331464025]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike50" unique_id=478698998]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
-
-[node name="Spike51" type="Area2D" parent="Obstacles" unique_id=441936080]
-position = Vector2(712.0594, -470.16428)
-rotation = 6.290322
-scale = Vector2(1.8026704, 1.7122501)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/Spike51" unique_id=31688671]
-shape = SubResource("ConvexPolygonShape2D_yp1q4")
-debug_color = Color(0.60804474, 0.5168588, 0.44139484, 0.41960785)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacles/Spike51" unique_id=456678817]
-scale = Vector2(0.05892471, 0.061935123)
-texture = ExtResource("4_8q3i6")
-region_rect = Rect2(0, 0, 640, 640)
 
 [node name="finishline" type="Area2D" parent="." unique_id=652315223]
 position = Vector2(3945, -2208.0002)
@@ -965,3 +587,467 @@ scale = Vector2(-1.3775746, 1.175251)
 
 [node name="Sprite2D" type="Sprite2D" parent="startlook" unique_id=1625975823]
 texture = ExtResource("6_e3hfu")
+
+[node name="Spikes" type="Node2D" parent="." unique_id=1110238835]
+
+[node name="SpikeHazard" parent="Spikes" unique_id=324206565 instance=ExtResource("4_qrmce")]
+position = Vector2(565, -972)
+rotation = 1.5707964
+
+[node name="SpikeHazard7" parent="Spikes" unique_id=674720286 instance=ExtResource("4_qrmce")]
+position = Vector2(558, -1539)
+rotation = 1.5707964
+
+[node name="SpikeHazard8" parent="Spikes" unique_id=2124240876 instance=ExtResource("4_qrmce")]
+position = Vector2(563, -1629)
+rotation = 1.5707964
+
+[node name="SpikeHazard66" parent="Spikes" unique_id=1385153280 instance=ExtResource("4_qrmce")]
+position = Vector2(2883, -2516)
+rotation = 1.5707964
+
+[node name="SpikeHazard97" parent="Spikes" unique_id=1025511320 instance=ExtResource("4_qrmce")]
+position = Vector2(2883, -2516)
+rotation = 1.5707964
+
+[node name="SpikeHazard80" parent="Spikes" unique_id=1634214079 instance=ExtResource("4_qrmce")]
+position = Vector2(2302, -2630)
+rotation = 1.5707964
+
+[node name="SpikeHazard81" parent="Spikes" unique_id=234223506 instance=ExtResource("4_qrmce")]
+position = Vector2(2302, -2727)
+rotation = 1.5707964
+
+[node name="SpikeHazard82" parent="Spikes" unique_id=575477605 instance=ExtResource("4_qrmce")]
+position = Vector2(2301, -2835)
+rotation = 1.5707964
+
+[node name="SpikeHazard83" parent="Spikes" unique_id=2002703434 instance=ExtResource("4_qrmce")]
+position = Vector2(2297, -2939)
+rotation = 1.5707964
+
+[node name="SpikeHazard84" parent="Spikes" unique_id=335948638 instance=ExtResource("4_qrmce")]
+position = Vector2(2305, -3064)
+rotation = 1.5707964
+
+[node name="SpikeHazard85" parent="Spikes" unique_id=1732882266 instance=ExtResource("4_qrmce")]
+position = Vector2(2301, -3180)
+rotation = 1.5707964
+
+[node name="SpikeHazard86" parent="Spikes" unique_id=1590283650 instance=ExtResource("4_qrmce")]
+position = Vector2(2301, -3279)
+rotation = 1.5707964
+
+[node name="SpikeHazard87" parent="Spikes" unique_id=860135640 instance=ExtResource("4_qrmce")]
+position = Vector2(2299, -3382)
+rotation = 1.5707964
+
+[node name="SpikeHazard88" parent="Spikes" unique_id=406651793 instance=ExtResource("4_qrmce")]
+position = Vector2(2304, -3480)
+rotation = 1.5707964
+
+[node name="SpikeHazard89" parent="Spikes" unique_id=86304167 instance=ExtResource("4_qrmce")]
+position = Vector2(2304, -3584)
+rotation = 1.5707964
+
+[node name="SpikeHazard90" parent="Spikes" unique_id=1469677204 instance=ExtResource("4_qrmce")]
+position = Vector2(2303, -3712)
+rotation = 1.5707964
+
+[node name="SpikeHazard67" parent="Spikes" unique_id=697246986 instance=ExtResource("4_qrmce")]
+position = Vector2(2881, -2433)
+rotation = 1.5707964
+
+[node name="SpikeHazard9" parent="Spikes" unique_id=1341879488 instance=ExtResource("4_qrmce")]
+position = Vector2(22, -2287)
+rotation = 3.1415927
+
+[node name="SpikeHazard10" parent="Spikes" unique_id=1666153675 instance=ExtResource("4_qrmce")]
+position = Vector2(119, -2291)
+rotation = 3.1415927
+
+[node name="SpikeHazard11" parent="Spikes" unique_id=697956414 instance=ExtResource("4_qrmce")]
+position = Vector2(219, -2291)
+rotation = 3.1415927
+
+[node name="SpikeHazard12" parent="Spikes" unique_id=434922820 instance=ExtResource("4_qrmce")]
+position = Vector2(315, -2292)
+rotation = 3.1415927
+
+[node name="SpikeHazard13" parent="Spikes" unique_id=1563496356 instance=ExtResource("4_qrmce")]
+position = Vector2(411, -2292)
+rotation = 3.1415927
+
+[node name="SpikeHazard14" parent="Spikes" unique_id=2136714881 instance=ExtResource("4_qrmce")]
+position = Vector2(505, -2291)
+rotation = 3.1415927
+
+[node name="SpikeHazard15" parent="Spikes" unique_id=1957601246 instance=ExtResource("4_qrmce")]
+position = Vector2(599, -2292)
+rotation = 3.1415927
+
+[node name="SpikeHazard16" parent="Spikes" unique_id=710693593 instance=ExtResource("4_qrmce")]
+position = Vector2(696, -2292)
+rotation = 3.1415927
+
+[node name="SpikeHazard17" parent="Spikes" unique_id=206049671 instance=ExtResource("4_qrmce")]
+position = Vector2(794, -2292)
+rotation = 3.1415927
+
+[node name="SpikeHazard36" parent="Spikes" unique_id=1783790375 instance=ExtResource("4_qrmce")]
+position = Vector2(717, -2988)
+rotation = 3.1415927
+
+[node name="SpikeHazard44" parent="Spikes" unique_id=1610659167 instance=ExtResource("4_qrmce")]
+position = Vector2(708, -3116)
+
+[node name="SpikeHazard53" parent="Spikes" unique_id=1072377099 instance=ExtResource("4_qrmce")]
+position = Vector2(1683, -1708)
+
+[node name="SpikeHazard54" parent="Spikes" unique_id=962418551 instance=ExtResource("4_qrmce")]
+position = Vector2(1783, -1708)
+
+[node name="SpikeHazard55" parent="Spikes" unique_id=1914545039 instance=ExtResource("4_qrmce")]
+position = Vector2(1888, -1707)
+
+[node name="SpikeHazard56" parent="Spikes" unique_id=122009965 instance=ExtResource("4_qrmce")]
+position = Vector2(1985, -1707)
+
+[node name="SpikeHazard57" parent="Spikes" unique_id=1246406050 instance=ExtResource("4_qrmce")]
+position = Vector2(2092, -1710)
+
+[node name="SpikeHazard58" parent="Spikes" unique_id=12493679 instance=ExtResource("4_qrmce")]
+position = Vector2(2197, -1710)
+
+[node name="SpikeHazard59" parent="Spikes" unique_id=2024339203 instance=ExtResource("4_qrmce")]
+position = Vector2(2304, -1711)
+
+[node name="SpikeHazard60" parent="Spikes" unique_id=925598876 instance=ExtResource("4_qrmce")]
+position = Vector2(2404, -1707)
+
+[node name="SpikeHazard61" parent="Spikes" unique_id=1513963433 instance=ExtResource("4_qrmce")]
+position = Vector2(2514, -1707)
+
+[node name="SpikeHazard62" parent="Spikes" unique_id=180354784 instance=ExtResource("4_qrmce")]
+position = Vector2(2613, -1711)
+
+[node name="SpikeHazard63" parent="Spikes" unique_id=1772682085 instance=ExtResource("4_qrmce")]
+position = Vector2(2716, -1711)
+
+[node name="SpikeHazard64" parent="Spikes" unique_id=973944720 instance=ExtResource("4_qrmce")]
+position = Vector2(2806, -1711)
+
+[node name="SpikeHazard65" parent="Spikes" unique_id=1602420169 instance=ExtResource("4_qrmce")]
+position = Vector2(2900, -1711)
+
+[node name="SpikeHazard91" parent="Spikes" unique_id=1033361871 instance=ExtResource("4_qrmce")]
+position = Vector2(3278, -3366)
+
+[node name="SpikeHazard92" parent="Spikes" unique_id=400691529 instance=ExtResource("4_qrmce")]
+position = Vector2(3369, -3370)
+
+[node name="SpikeHazard93" parent="Spikes" unique_id=518536929 instance=ExtResource("4_qrmce")]
+position = Vector2(3467, -3369)
+
+[node name="SpikeHazard94" parent="Spikes" unique_id=617726561 instance=ExtResource("4_qrmce")]
+position = Vector2(3467, -3369)
+
+[node name="SpikeHazard95" parent="Spikes" unique_id=1229170953 instance=ExtResource("4_qrmce")]
+position = Vector2(3572, -3368)
+
+[node name="SpikeHazard96" parent="Spikes" unique_id=957764842 instance=ExtResource("4_qrmce")]
+position = Vector2(3673, -3377)
+
+[node name="SpikeHazard45" parent="Spikes" unique_id=863883046 instance=ExtResource("4_qrmce")]
+position = Vector2(816, -3119)
+
+[node name="SpikeHazard46" parent="Spikes" unique_id=463406766 instance=ExtResource("4_qrmce")]
+position = Vector2(929, -3121)
+
+[node name="SpikeHazard47" parent="Spikes" unique_id=2070648148 instance=ExtResource("4_qrmce")]
+position = Vector2(1032, -3121)
+
+[node name="SpikeHazard48" parent="Spikes" unique_id=501130727 instance=ExtResource("4_qrmce")]
+position = Vector2(1142, -3123)
+
+[node name="SpikeHazard49" parent="Spikes" unique_id=327780045 instance=ExtResource("4_qrmce")]
+position = Vector2(1245, -3122)
+
+[node name="SpikeHazard50" parent="Spikes" unique_id=1995654524 instance=ExtResource("4_qrmce")]
+position = Vector2(1347, -3123)
+
+[node name="SpikeHazard51" parent="Spikes" unique_id=259007556 instance=ExtResource("4_qrmce")]
+position = Vector2(1444, -3119)
+
+[node name="SpikeHazard52" parent="Spikes" unique_id=247550579 instance=ExtResource("4_qrmce")]
+position = Vector2(1549, -3124)
+
+[node name="SpikeHazard37" parent="Spikes" unique_id=2130613131 instance=ExtResource("4_qrmce")]
+position = Vector2(817, -2991)
+rotation = 3.1415927
+
+[node name="SpikeHazard38" parent="Spikes" unique_id=1912823848 instance=ExtResource("4_qrmce")]
+position = Vector2(931, -2991)
+rotation = 3.1415927
+
+[node name="SpikeHazard39" parent="Spikes" unique_id=1184608923 instance=ExtResource("4_qrmce")]
+position = Vector2(1036, -2992)
+rotation = 3.1415927
+
+[node name="SpikeHazard40" parent="Spikes" unique_id=1360547595 instance=ExtResource("4_qrmce")]
+position = Vector2(1138, -2992)
+rotation = 3.1415927
+
+[node name="SpikeHazard41" parent="Spikes" unique_id=307157202 instance=ExtResource("4_qrmce")]
+position = Vector2(1244, -2993)
+rotation = 3.1415927
+
+[node name="SpikeHazard42" parent="Spikes" unique_id=1261759716 instance=ExtResource("4_qrmce")]
+position = Vector2(1348, -2993)
+rotation = 3.1415927
+
+[node name="SpikeHazard43" parent="Spikes" unique_id=293994240 instance=ExtResource("4_qrmce")]
+position = Vector2(1436, -2996)
+rotation = 3.1415927
+
+[node name="SpikeHazard18" parent="Spikes" unique_id=293886398 instance=ExtResource("4_qrmce")]
+position = Vector2(1528, -1221)
+rotation = 4.712389
+
+[node name="SpikeHazard19" parent="Spikes" unique_id=412380862 instance=ExtResource("4_qrmce")]
+position = Vector2(1530, -1318)
+rotation = 4.712389
+
+[node name="SpikeHazard20" parent="Spikes" unique_id=940753323 instance=ExtResource("4_qrmce")]
+position = Vector2(1528, -1412)
+rotation = 4.712389
+
+[node name="SpikeHazard21" parent="Spikes" unique_id=672183200 instance=ExtResource("4_qrmce")]
+position = Vector2(1529, -1512)
+rotation = 4.712389
+
+[node name="SpikeHazard22" parent="Spikes" unique_id=988412361 instance=ExtResource("4_qrmce")]
+position = Vector2(1529, -1608)
+rotation = 4.712389
+
+[node name="SpikeHazard23" parent="Spikes" unique_id=1019062531 instance=ExtResource("4_qrmce")]
+position = Vector2(1526, -1712)
+rotation = 4.712389
+
+[node name="SpikeHazard24" parent="Spikes" unique_id=706096002 instance=ExtResource("4_qrmce")]
+position = Vector2(1526, -1806)
+rotation = 4.712389
+
+[node name="SpikeHazard25" parent="Spikes" unique_id=1156385181 instance=ExtResource("4_qrmce")]
+position = Vector2(1527, -1906)
+rotation = 4.712389
+
+[node name="SpikeHazard26" parent="Spikes" unique_id=805036866 instance=ExtResource("4_qrmce")]
+position = Vector2(1525, -2010)
+rotation = 4.712389
+
+[node name="SpikeHazard27" parent="Spikes" unique_id=1376259641 instance=ExtResource("4_qrmce")]
+position = Vector2(1521, -2124)
+rotation = 4.712389
+
+[node name="SpikeHazard28" parent="Spikes" unique_id=503759009 instance=ExtResource("4_qrmce")]
+position = Vector2(1524, -2229)
+rotation = 4.712389
+
+[node name="SpikeHazard29" parent="Spikes" unique_id=403110824 instance=ExtResource("4_qrmce")]
+position = Vector2(1521, -2329)
+rotation = 4.712389
+
+[node name="SpikeHazard30" parent="Spikes" unique_id=1266617069 instance=ExtResource("4_qrmce")]
+position = Vector2(1525, -2433)
+rotation = 4.712389
+
+[node name="SpikeHazard31" parent="Spikes" unique_id=1290724726 instance=ExtResource("4_qrmce")]
+position = Vector2(1524, -2542)
+rotation = 4.712389
+
+[node name="SpikeHazard32" parent="Spikes" unique_id=2075129229 instance=ExtResource("4_qrmce")]
+position = Vector2(1521, -2652)
+rotation = 4.712389
+
+[node name="SpikeHazard33" parent="Spikes" unique_id=133013343 instance=ExtResource("4_qrmce")]
+position = Vector2(1524, -2764)
+rotation = 4.712389
+
+[node name="SpikeHazard34" parent="Spikes" unique_id=514396172 instance=ExtResource("4_qrmce")]
+position = Vector2(1520, -2866)
+rotation = 4.712389
+
+[node name="SpikeHazard35" parent="Spikes" unique_id=748407730 instance=ExtResource("4_qrmce")]
+position = Vector2(1528, -2957)
+rotation = 4.712389
+
+[node name="SpikeHazard68" parent="Spikes" unique_id=1991411104 instance=ExtResource("4_qrmce")]
+position = Vector2(3592, -3093)
+rotation = 4.712389
+
+[node name="SpikeHazard69" parent="Spikes" unique_id=961410766 instance=ExtResource("4_qrmce")]
+position = Vector2(3588, -2992)
+rotation = 4.712389
+
+[node name="SpikeHazard70" parent="Spikes" unique_id=1762216858 instance=ExtResource("4_qrmce")]
+position = Vector2(3595, -2882)
+rotation = 4.712389
+
+[node name="SpikeHazard71" parent="Spikes" unique_id=481193467 instance=ExtResource("4_qrmce")]
+position = Vector2(3591, -2772)
+rotation = 4.712389
+
+[node name="SpikeHazard72" parent="Spikes" unique_id=771497889 instance=ExtResource("4_qrmce")]
+position = Vector2(3591, -2667)
+rotation = 4.712389
+
+[node name="SpikeHazard73" parent="Spikes" unique_id=1552497383 instance=ExtResource("4_qrmce")]
+position = Vector2(3596, -2562)
+rotation = 4.712389
+
+[node name="SpikeHazard74" parent="Spikes" unique_id=1400555958 instance=ExtResource("4_qrmce")]
+position = Vector2(3591, -2445)
+rotation = 4.712389
+
+[node name="SpikeHazard75" parent="Spikes" unique_id=1585942030 instance=ExtResource("4_qrmce")]
+position = Vector2(3591, -2445)
+rotation = 4.712389
+
+[node name="SpikeHazard76" parent="Spikes" unique_id=951561494 instance=ExtResource("4_qrmce")]
+position = Vector2(3589, -2340)
+rotation = 4.712389
+
+[node name="SpikeHazard77" parent="Spikes" unique_id=1762303625 instance=ExtResource("4_qrmce")]
+position = Vector2(3598, -2230)
+rotation = 4.712389
+
+[node name="SpikeHazard78" parent="Spikes" unique_id=1063207184 instance=ExtResource("4_qrmce")]
+position = Vector2(3598, -2122)
+rotation = 4.712389
+
+[node name="SpikeHazard79" parent="Spikes" unique_id=1470350940 instance=ExtResource("4_qrmce")]
+position = Vector2(3598, -2039)
+rotation = 4.712389
+
+[node name="SpikeHazard2" parent="Spikes" unique_id=1687896042 instance=ExtResource("4_qrmce")]
+position = Vector2(564, -1063)
+rotation = 1.5707964
+
+[node name="SpikeHazard3" parent="Spikes" unique_id=829415868 instance=ExtResource("4_qrmce")]
+position = Vector2(563, -1158)
+rotation = 1.5707964
+
+[node name="SpikeHazard4" parent="Spikes" unique_id=317256832 instance=ExtResource("4_qrmce")]
+position = Vector2(563, -1255)
+rotation = 1.5707964
+
+[node name="SpikeHazard5" parent="Spikes" unique_id=1036523791 instance=ExtResource("4_qrmce")]
+position = Vector2(562, -1346)
+rotation = 1.5707964
+
+[node name="SpikeHazard6" parent="Spikes" unique_id=1712740338 instance=ExtResource("4_qrmce")]
+position = Vector2(561, -1441)
+rotation = 1.5707964
+
+[node name="Wall Collision" type="Node" parent="." unique_id=2061311489]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall Collision" unique_id=1622257166]
+position = Vector2(716, 1152)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D" unique_id=405126463]
+position = Vector2(79, 7)
+shape = SubResource("RectangleShape2D_kdijb")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall Collision/StaticBody2D" unique_id=1105906942]
+position = Vector2(-147.5, -1466.5)
+shape = SubResource("RectangleShape2D_qlag8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Wall Collision" unique_id=906040178]
+position = Vector2(61, 981)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D2" unique_id=1117513119]
+position = Vector2(443.5, -464.25)
+shape = SubResource("RectangleShape2D_qrmce")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Wall Collision" unique_id=1823759905]
+position = Vector2(61, 981)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D3" unique_id=1435663415]
+position = Vector2(1880, -557)
+shape = SubResource("RectangleShape2D_8q3i6")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Wall Collision" unique_id=1119543549]
+position = Vector2(61, 981)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D4" unique_id=1300348253]
+position = Vector2(-420, -125)
+shape = SubResource("RectangleShape2D_8q3i6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall Collision/StaticBody2D4" unique_id=1327616230]
+position = Vector2(-96, -2298)
+shape = SubResource("RectangleShape2D_5itje")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Wall Collision" unique_id=781127005]
+position = Vector2(2271, -1756)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=2008421164]
+position = Vector2(-706.5, 1634.75)
+shape = SubResource("RectangleShape2D_sb6k4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=877443310]
+position = Vector2(-1818.5, 352.75)
+shape = SubResource("RectangleShape2D_e3hfu")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=2013099671]
+position = Vector2(-79, -1064)
+shape = SubResource("RectangleShape2D_pl2qr")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=1986667025]
+position = Vector2(-1062.5, -318.5)
+shape = SubResource("RectangleShape2D_rlskx")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=1694728648]
+position = Vector2(-616.5, 637.25)
+shape = SubResource("RectangleShape2D_yp1q4")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=948739668]
+position = Vector2(-5.25, -357.5)
+shape = SubResource("RectangleShape2D_o3xv4")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=979929016]
+position = Vector2(1974.25, -135.75)
+shape = SubResource("RectangleShape2D_ygp6w")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=111237869]
+position = Vector2(306, 258)
+shape = SubResource("RectangleShape2D_xna0i")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=1288717167]
+position = Vector2(141.25, 1122)
+shape = SubResource("RectangleShape2D_rhow8")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=2060443071]
+position = Vector2(826, 942.25)
+shape = SubResource("RectangleShape2D_o25yy")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=1705530652]
+position = Vector2(1395.5, 747)
+shape = SubResource("RectangleShape2D_rskd8")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=858802636]
+position = Vector2(1465.125, 76)
+shape = SubResource("RectangleShape2D_fxmm5")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Wall Collision/StaticBody2D5" unique_id=704723435]
+position = Vector2(1217.875, -509.75)
+shape = SubResource("RectangleShape2D_mmcru")
+
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_8q3i6")]
+position = Vector2(137, -105)
+
+[node name="Camera2D" type="Camera2D" parent="bubble" unique_id=939403791]
+zoom = Vector2(0.5, 0.5)
+
+[node name="mouseblower" parent="bubble" unique_id=124156406 instance=ExtResource("3_kdijb")]
+position = Vector2(158, -77)

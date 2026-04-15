@@ -4,15 +4,17 @@
 [ext_resource type="Script" uid="uid://dt00uf5d5osqm" path="res://Actors/bubble.gd" id="1_3mgos"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d2ri8"]
-radius = 25.0
+radius = 64.0
 
 [node name="bubble" type="RigidBody2D" unique_id=406493826]
 gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 2
 script = ExtResource("1_3mgos")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=80668382]
 shape = SubResource("CircleShape2D_d2ri8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=707405218]
-scale = Vector2(0.07775122, 0.07775119)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_3f0hs")
