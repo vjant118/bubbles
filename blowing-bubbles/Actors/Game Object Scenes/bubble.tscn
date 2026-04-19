@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bqg43s3ikgk50"]
 
 [ext_resource type="Texture2D" uid="uid://dfogsk2bilc14" path="res://Assets/Placeholder Assets/Soap-Bubbles-PNG-Transparent-Picture-3034348104.png" id="1_3f0hs"]
-[ext_resource type="Script" uid="uid://dt00uf5d5osqm" path="res://Actors/Game Object Scenes/bubble.gd" id="1_3mgos"]
+[ext_resource type="Script" uid="uid://dt00uf5d5osqm" path="res://Actors/Game Object Scenes/Object Scripts/bubble.gd" id="1_3mgos"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d2ri8"]
 radius = 64.0
