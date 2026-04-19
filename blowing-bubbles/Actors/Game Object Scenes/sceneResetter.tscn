@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://db8oadtagw3ye"]
 
-[ext_resource type="Script" uid="uid://cfcig6x8ct7l" path="res://Actors/scene_resetter.gd" id="1_iw3x6"]
+[ext_resource type="Script" uid="uid://cfcig6x8ct7l" path="res://Actors/Game Object Scenes/scene_resetter.gd" id="1_iw3x6"]
 
 [node name="SceneResetter" type="Node2D" unique_id=396899554]
 script = ExtResource("1_iw3x6")

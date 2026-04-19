@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doo0trg815dhl"
-path="res://.godot/imported/finalfirstlevelbackground.webp-32d24408946305065d83d60f3873f34e.ctex"
+uid="uid://d2e5m22xjlcaq"
+path="res://.godot/imported/wall color placeholder.webp-097f25d4caebceb92398551358e959fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://finalfirstlevelbackground.webp"
-dest_files=["res://.godot/imported/finalfirstlevelbackground.webp-32d24408946305065d83d60f3873f34e.ctex"]
+source_file="res://Assets/Placeholder Assets/wall color placeholder.webp"
+dest_files=["res://.godot/imported/wall color placeholder.webp-097f25d4caebceb92398551358e959fa.ctex"]
 
 [params]
 

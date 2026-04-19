@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cakmvaxiqxcgf"
-path="res://.godot/imported/wallbackground.jpg-47ae4a76d90902a9f715c930ac8f2448.ctex"
+uid="uid://vwwtdgfn3aj1"
+path="res://.godot/imported/finalfirstleveldemospikeobstacle-removebg-preview.png-0659891e1dcb35cb7817627fc120f17b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://wallbackground.jpg"
-dest_files=["res://.godot/imported/wallbackground.jpg-47ae4a76d90902a9f715c930ac8f2448.ctex"]
+source_file="res://Assets/Placeholder Assets/finalfirstleveldemospikeobstacle-removebg-preview.png"
+dest_files=["res://.godot/imported/finalfirstleveldemospikeobstacle-removebg-preview.png-0659891e1dcb35cb7817627fc120f17b.ctex"]
 
 [params]
 

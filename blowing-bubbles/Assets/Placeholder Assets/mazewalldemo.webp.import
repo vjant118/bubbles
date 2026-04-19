@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://benaqerdl6ndl"
-path="res://.godot/imported/portalfinishline-removebg-preview.png-1486c711131cc6c5ad8c65de086f748d.ctex"
+uid="uid://bi2g3q1dqthcr"
+path="res://.godot/imported/mazewalldemo.webp-cdd08b085100d31f368df000e462d200.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/portalfinishline-removebg-preview.png"
-dest_files=["res://.godot/imported/portalfinishline-removebg-preview.png-1486c711131cc6c5ad8c65de086f748d.ctex"]
+source_file="res://Assets/Placeholder Assets/mazewalldemo.webp"
+dest_files=["res://.godot/imported/mazewalldemo.webp-cdd08b085100d31f368df000e462d200.ctex"]
 
 [params]
 

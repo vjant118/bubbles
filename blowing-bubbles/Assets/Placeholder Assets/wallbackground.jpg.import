@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfogsk2bilc14"
-path="res://.godot/imported/Soap-Bubbles-PNG-Transparent-Picture-3034348104.png-8e15a812aa1ac0f2b0698adce7cb51ed.ctex"
+uid="uid://cakmvaxiqxcgf"
+path="res://.godot/imported/wallbackground.jpg-c08da92d7780abb0b023190943e416e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Soap-Bubbles-PNG-Transparent-Picture-3034348104.png"
-dest_files=["res://.godot/imported/Soap-Bubbles-PNG-Transparent-Picture-3034348104.png-8e15a812aa1ac0f2b0698adce7cb51ed.ctex"]
+source_file="res://Assets/Placeholder Assets/wallbackground.jpg"
+dest_files=["res://.godot/imported/wallbackground.jpg-c08da92d7780abb0b023190943e416e8.ctex"]
 
 [params]
 

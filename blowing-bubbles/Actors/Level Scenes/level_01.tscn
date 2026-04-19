@@ -1,14 +1,14 @@
 [gd_scene format=4 uid="uid://cjhijdj08sle2"]
 
-[ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://finalfirstlevelbackground.webp" id="1_kdijb"]
-[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/bubble.tscn" id="2_8q3i6"]
-[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/mouseblower.tscn" id="3_kdijb"]
-[ext_resource type="Texture2D" uid="uid://ci6q2n6nfnt1x" path="res://final demolevelwall.webp" id="3_qrmce"]
-[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/spikeHazard.tscn" id="4_qrmce"]
-[ext_resource type="Texture2D" uid="uid://benaqerdl6ndl" path="res://Assets/portalfinishline-removebg-preview.png" id="6_e3hfu"]
+[ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://Assets/Placeholder Assets/finalfirstlevelbackground.webp" id="1_sfs6u"]
+[ext_resource type="Texture2D" uid="uid://ci6q2n6nfnt1x" path="res://Assets/Placeholder Assets/final demolevelwall.webp" id="2_y0gpl"]
+[ext_resource type="Texture2D" uid="uid://benaqerdl6ndl" path="res://Assets/Placeholder Assets/portalfinishline-removebg-preview.png" id="3_of5rc"]
+[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="4_6481s"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="5_v4fra"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="6_hp85b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
-texture = ExtResource("3_qrmce")
+texture = ExtResource("2_y0gpl")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -561,7 +561,7 @@ position = Vector2(61, 981)
 [node name="background" type="Sprite2D" parent="." unique_id=475294704]
 position = Vector2(2041.9998, -1846.5)
 scale = Vector2(21.466667, 24.825924)
-texture = ExtResource("1_kdijb")
+texture = ExtResource("1_sfs6u")
 
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=342040863]
 position = Vector2(125, -87)
@@ -579,374 +579,374 @@ scale = Vector2(1.5797962, 1.2702535)
 
 [node name="Sprite2D" type="Sprite2D" parent="finishline" unique_id=1120712767]
 scale = Vector2(1, 0.98698056)
-texture = ExtResource("6_e3hfu")
+texture = ExtResource("3_of5rc")
 
 [node name="startlook" type="Area2D" parent="." unique_id=1201781947]
 position = Vector2(-202, -104)
 scale = Vector2(-1.3775746, 1.175251)
 
 [node name="Sprite2D" type="Sprite2D" parent="startlook" unique_id=1625975823]
-texture = ExtResource("6_e3hfu")
+texture = ExtResource("3_of5rc")
 
 [node name="Spikes" type="Node2D" parent="." unique_id=1110238835]
 
-[node name="SpikeHazard" parent="Spikes" unique_id=324206565 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard" parent="Spikes" unique_id=324206565 instance=ExtResource("4_6481s")]
 position = Vector2(565, -972)
 rotation = 1.5707964
 
-[node name="SpikeHazard7" parent="Spikes" unique_id=674720286 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard7" parent="Spikes" unique_id=674720286 instance=ExtResource("4_6481s")]
 position = Vector2(558, -1539)
 rotation = 1.5707964
 
-[node name="SpikeHazard8" parent="Spikes" unique_id=2124240876 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard8" parent="Spikes" unique_id=2124240876 instance=ExtResource("4_6481s")]
 position = Vector2(563, -1629)
 rotation = 1.5707964
 
-[node name="SpikeHazard66" parent="Spikes" unique_id=1385153280 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard66" parent="Spikes" unique_id=1385153280 instance=ExtResource("4_6481s")]
 position = Vector2(2883, -2516)
 rotation = 1.5707964
 
-[node name="SpikeHazard97" parent="Spikes" unique_id=1025511320 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard97" parent="Spikes" unique_id=1025511320 instance=ExtResource("4_6481s")]
 position = Vector2(2883, -2516)
 rotation = 1.5707964
 
-[node name="SpikeHazard80" parent="Spikes" unique_id=1634214079 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard80" parent="Spikes" unique_id=1634214079 instance=ExtResource("4_6481s")]
 position = Vector2(2302, -2630)
 rotation = 1.5707964
 
-[node name="SpikeHazard81" parent="Spikes" unique_id=234223506 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard81" parent="Spikes" unique_id=234223506 instance=ExtResource("4_6481s")]
 position = Vector2(2302, -2727)
 rotation = 1.5707964
 
-[node name="SpikeHazard82" parent="Spikes" unique_id=575477605 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard82" parent="Spikes" unique_id=575477605 instance=ExtResource("4_6481s")]
 position = Vector2(2301, -2835)
 rotation = 1.5707964
 
-[node name="SpikeHazard83" parent="Spikes" unique_id=2002703434 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard83" parent="Spikes" unique_id=2002703434 instance=ExtResource("4_6481s")]
 position = Vector2(2297, -2939)
 rotation = 1.5707964
 
-[node name="SpikeHazard84" parent="Spikes" unique_id=335948638 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard84" parent="Spikes" unique_id=335948638 instance=ExtResource("4_6481s")]
 position = Vector2(2305, -3064)
 rotation = 1.5707964
 
-[node name="SpikeHazard85" parent="Spikes" unique_id=1732882266 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard85" parent="Spikes" unique_id=1732882266 instance=ExtResource("4_6481s")]
 position = Vector2(2301, -3180)
 rotation = 1.5707964
 
-[node name="SpikeHazard86" parent="Spikes" unique_id=1590283650 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard86" parent="Spikes" unique_id=1590283650 instance=ExtResource("4_6481s")]
 position = Vector2(2301, -3279)
 rotation = 1.5707964
 
-[node name="SpikeHazard87" parent="Spikes" unique_id=860135640 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard87" parent="Spikes" unique_id=860135640 instance=ExtResource("4_6481s")]
 position = Vector2(2299, -3382)
 rotation = 1.5707964
 
-[node name="SpikeHazard88" parent="Spikes" unique_id=406651793 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard88" parent="Spikes" unique_id=406651793 instance=ExtResource("4_6481s")]
 position = Vector2(2304, -3480)
 rotation = 1.5707964
 
-[node name="SpikeHazard89" parent="Spikes" unique_id=86304167 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard89" parent="Spikes" unique_id=86304167 instance=ExtResource("4_6481s")]
 position = Vector2(2304, -3584)
 rotation = 1.5707964
 
-[node name="SpikeHazard90" parent="Spikes" unique_id=1469677204 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard90" parent="Spikes" unique_id=1469677204 instance=ExtResource("4_6481s")]
 position = Vector2(2303, -3712)
 rotation = 1.5707964
 
-[node name="SpikeHazard67" parent="Spikes" unique_id=697246986 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard67" parent="Spikes" unique_id=697246986 instance=ExtResource("4_6481s")]
 position = Vector2(2881, -2433)
 rotation = 1.5707964
 
-[node name="SpikeHazard9" parent="Spikes" unique_id=1341879488 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard9" parent="Spikes" unique_id=1341879488 instance=ExtResource("4_6481s")]
 position = Vector2(22, -2287)
 rotation = 3.1415927
 
-[node name="SpikeHazard10" parent="Spikes" unique_id=1666153675 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard10" parent="Spikes" unique_id=1666153675 instance=ExtResource("4_6481s")]
 position = Vector2(119, -2291)
 rotation = 3.1415927
 
-[node name="SpikeHazard11" parent="Spikes" unique_id=697956414 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard11" parent="Spikes" unique_id=697956414 instance=ExtResource("4_6481s")]
 position = Vector2(219, -2291)
 rotation = 3.1415927
 
-[node name="SpikeHazard12" parent="Spikes" unique_id=434922820 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard12" parent="Spikes" unique_id=434922820 instance=ExtResource("4_6481s")]
 position = Vector2(315, -2292)
 rotation = 3.1415927
 
-[node name="SpikeHazard13" parent="Spikes" unique_id=1563496356 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard13" parent="Spikes" unique_id=1563496356 instance=ExtResource("4_6481s")]
 position = Vector2(411, -2292)
 rotation = 3.1415927
 
-[node name="SpikeHazard14" parent="Spikes" unique_id=2136714881 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard14" parent="Spikes" unique_id=2136714881 instance=ExtResource("4_6481s")]
 position = Vector2(505, -2291)
 rotation = 3.1415927
 
-[node name="SpikeHazard15" parent="Spikes" unique_id=1957601246 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard15" parent="Spikes" unique_id=1957601246 instance=ExtResource("4_6481s")]
 position = Vector2(599, -2292)
 rotation = 3.1415927
 
-[node name="SpikeHazard16" parent="Spikes" unique_id=710693593 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard16" parent="Spikes" unique_id=710693593 instance=ExtResource("4_6481s")]
 position = Vector2(696, -2292)
 rotation = 3.1415927
 
-[node name="SpikeHazard17" parent="Spikes" unique_id=206049671 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard17" parent="Spikes" unique_id=206049671 instance=ExtResource("4_6481s")]
 position = Vector2(794, -2292)
 rotation = 3.1415927
 
-[node name="SpikeHazard36" parent="Spikes" unique_id=1783790375 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard36" parent="Spikes" unique_id=1783790375 instance=ExtResource("4_6481s")]
 position = Vector2(717, -2988)
 rotation = 3.1415927
 
-[node name="SpikeHazard44" parent="Spikes" unique_id=1610659167 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard44" parent="Spikes" unique_id=1610659167 instance=ExtResource("4_6481s")]
 position = Vector2(708, -3116)
 
-[node name="SpikeHazard53" parent="Spikes" unique_id=1072377099 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard53" parent="Spikes" unique_id=1072377099 instance=ExtResource("4_6481s")]
 position = Vector2(1683, -1708)
 
-[node name="SpikeHazard54" parent="Spikes" unique_id=962418551 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard54" parent="Spikes" unique_id=962418551 instance=ExtResource("4_6481s")]
 position = Vector2(1783, -1708)
 
-[node name="SpikeHazard55" parent="Spikes" unique_id=1914545039 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard55" parent="Spikes" unique_id=1914545039 instance=ExtResource("4_6481s")]
 position = Vector2(1888, -1707)
 
-[node name="SpikeHazard56" parent="Spikes" unique_id=122009965 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard56" parent="Spikes" unique_id=122009965 instance=ExtResource("4_6481s")]
 position = Vector2(1985, -1707)
 
-[node name="SpikeHazard57" parent="Spikes" unique_id=1246406050 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard57" parent="Spikes" unique_id=1246406050 instance=ExtResource("4_6481s")]
 position = Vector2(2092, -1710)
 
-[node name="SpikeHazard58" parent="Spikes" unique_id=12493679 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard58" parent="Spikes" unique_id=12493679 instance=ExtResource("4_6481s")]
 position = Vector2(2197, -1710)
 
-[node name="SpikeHazard59" parent="Spikes" unique_id=2024339203 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard59" parent="Spikes" unique_id=2024339203 instance=ExtResource("4_6481s")]
 position = Vector2(2304, -1711)
 
-[node name="SpikeHazard60" parent="Spikes" unique_id=925598876 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard60" parent="Spikes" unique_id=925598876 instance=ExtResource("4_6481s")]
 position = Vector2(2404, -1707)
 
-[node name="SpikeHazard61" parent="Spikes" unique_id=1513963433 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard61" parent="Spikes" unique_id=1513963433 instance=ExtResource("4_6481s")]
 position = Vector2(2514, -1707)
 
-[node name="SpikeHazard62" parent="Spikes" unique_id=180354784 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard62" parent="Spikes" unique_id=180354784 instance=ExtResource("4_6481s")]
 position = Vector2(2613, -1711)
 
-[node name="SpikeHazard63" parent="Spikes" unique_id=1772682085 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard63" parent="Spikes" unique_id=1772682085 instance=ExtResource("4_6481s")]
 position = Vector2(2716, -1711)
 
-[node name="SpikeHazard64" parent="Spikes" unique_id=973944720 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard64" parent="Spikes" unique_id=973944720 instance=ExtResource("4_6481s")]
 position = Vector2(2806, -1711)
 
-[node name="SpikeHazard65" parent="Spikes" unique_id=1602420169 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard65" parent="Spikes" unique_id=1602420169 instance=ExtResource("4_6481s")]
 position = Vector2(2900, -1711)
 
-[node name="SpikeHazard91" parent="Spikes" unique_id=1033361871 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard91" parent="Spikes" unique_id=1033361871 instance=ExtResource("4_6481s")]
 position = Vector2(3278, -3366)
 
-[node name="SpikeHazard92" parent="Spikes" unique_id=400691529 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard92" parent="Spikes" unique_id=400691529 instance=ExtResource("4_6481s")]
 position = Vector2(3369, -3370)
 
-[node name="SpikeHazard93" parent="Spikes" unique_id=518536929 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard93" parent="Spikes" unique_id=518536929 instance=ExtResource("4_6481s")]
 position = Vector2(3467, -3369)
 
-[node name="SpikeHazard94" parent="Spikes" unique_id=617726561 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard94" parent="Spikes" unique_id=617726561 instance=ExtResource("4_6481s")]
 position = Vector2(3467, -3369)
 
-[node name="SpikeHazard95" parent="Spikes" unique_id=1229170953 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard95" parent="Spikes" unique_id=1229170953 instance=ExtResource("4_6481s")]
 position = Vector2(3572, -3368)
 
-[node name="SpikeHazard96" parent="Spikes" unique_id=957764842 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard96" parent="Spikes" unique_id=957764842 instance=ExtResource("4_6481s")]
 position = Vector2(3673, -3377)
 
-[node name="SpikeHazard45" parent="Spikes" unique_id=863883046 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard45" parent="Spikes" unique_id=863883046 instance=ExtResource("4_6481s")]
 position = Vector2(816, -3119)
 
-[node name="SpikeHazard46" parent="Spikes" unique_id=463406766 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard46" parent="Spikes" unique_id=463406766 instance=ExtResource("4_6481s")]
 position = Vector2(929, -3121)
 
-[node name="SpikeHazard47" parent="Spikes" unique_id=2070648148 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard47" parent="Spikes" unique_id=2070648148 instance=ExtResource("4_6481s")]
 position = Vector2(1032, -3121)
 
-[node name="SpikeHazard48" parent="Spikes" unique_id=501130727 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard48" parent="Spikes" unique_id=501130727 instance=ExtResource("4_6481s")]
 position = Vector2(1142, -3123)
 
-[node name="SpikeHazard49" parent="Spikes" unique_id=327780045 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard49" parent="Spikes" unique_id=327780045 instance=ExtResource("4_6481s")]
 position = Vector2(1245, -3122)
 
-[node name="SpikeHazard50" parent="Spikes" unique_id=1995654524 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard50" parent="Spikes" unique_id=1995654524 instance=ExtResource("4_6481s")]
 position = Vector2(1347, -3123)
 
-[node name="SpikeHazard51" parent="Spikes" unique_id=259007556 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard51" parent="Spikes" unique_id=259007556 instance=ExtResource("4_6481s")]
 position = Vector2(1444, -3119)
 
-[node name="SpikeHazard52" parent="Spikes" unique_id=247550579 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard52" parent="Spikes" unique_id=247550579 instance=ExtResource("4_6481s")]
 position = Vector2(1549, -3124)
 
-[node name="SpikeHazard37" parent="Spikes" unique_id=2130613131 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard37" parent="Spikes" unique_id=2130613131 instance=ExtResource("4_6481s")]
 position = Vector2(817, -2991)
 rotation = 3.1415927
 
-[node name="SpikeHazard38" parent="Spikes" unique_id=1912823848 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard38" parent="Spikes" unique_id=1912823848 instance=ExtResource("4_6481s")]
 position = Vector2(931, -2991)
 rotation = 3.1415927
 
-[node name="SpikeHazard39" parent="Spikes" unique_id=1184608923 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard39" parent="Spikes" unique_id=1184608923 instance=ExtResource("4_6481s")]
 position = Vector2(1036, -2992)
 rotation = 3.1415927
 
-[node name="SpikeHazard40" parent="Spikes" unique_id=1360547595 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard40" parent="Spikes" unique_id=1360547595 instance=ExtResource("4_6481s")]
 position = Vector2(1138, -2992)
 rotation = 3.1415927
 
-[node name="SpikeHazard41" parent="Spikes" unique_id=307157202 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard41" parent="Spikes" unique_id=307157202 instance=ExtResource("4_6481s")]
 position = Vector2(1244, -2993)
 rotation = 3.1415927
 
-[node name="SpikeHazard42" parent="Spikes" unique_id=1261759716 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard42" parent="Spikes" unique_id=1261759716 instance=ExtResource("4_6481s")]
 position = Vector2(1348, -2993)
 rotation = 3.1415927
 
-[node name="SpikeHazard43" parent="Spikes" unique_id=293994240 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard43" parent="Spikes" unique_id=293994240 instance=ExtResource("4_6481s")]
 position = Vector2(1436, -2996)
 rotation = 3.1415927
 
-[node name="SpikeHazard18" parent="Spikes" unique_id=293886398 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard18" parent="Spikes" unique_id=293886398 instance=ExtResource("4_6481s")]
 position = Vector2(1528, -1221)
 rotation = 4.712389
 
-[node name="SpikeHazard19" parent="Spikes" unique_id=412380862 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard19" parent="Spikes" unique_id=412380862 instance=ExtResource("4_6481s")]
 position = Vector2(1530, -1318)
 rotation = 4.712389
 
-[node name="SpikeHazard20" parent="Spikes" unique_id=940753323 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard20" parent="Spikes" unique_id=940753323 instance=ExtResource("4_6481s")]
 position = Vector2(1528, -1412)
 rotation = 4.712389
 
-[node name="SpikeHazard21" parent="Spikes" unique_id=672183200 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard21" parent="Spikes" unique_id=672183200 instance=ExtResource("4_6481s")]
 position = Vector2(1529, -1512)
 rotation = 4.712389
 
-[node name="SpikeHazard22" parent="Spikes" unique_id=988412361 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard22" parent="Spikes" unique_id=988412361 instance=ExtResource("4_6481s")]
 position = Vector2(1529, -1608)
 rotation = 4.712389
 
-[node name="SpikeHazard23" parent="Spikes" unique_id=1019062531 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard23" parent="Spikes" unique_id=1019062531 instance=ExtResource("4_6481s")]
 position = Vector2(1526, -1712)
 rotation = 4.712389
 
-[node name="SpikeHazard24" parent="Spikes" unique_id=706096002 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard24" parent="Spikes" unique_id=706096002 instance=ExtResource("4_6481s")]
 position = Vector2(1526, -1806)
 rotation = 4.712389
 
-[node name="SpikeHazard25" parent="Spikes" unique_id=1156385181 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard25" parent="Spikes" unique_id=1156385181 instance=ExtResource("4_6481s")]
 position = Vector2(1527, -1906)
 rotation = 4.712389
 
-[node name="SpikeHazard26" parent="Spikes" unique_id=805036866 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard26" parent="Spikes" unique_id=805036866 instance=ExtResource("4_6481s")]
 position = Vector2(1525, -2010)
 rotation = 4.712389
 
-[node name="SpikeHazard27" parent="Spikes" unique_id=1376259641 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard27" parent="Spikes" unique_id=1376259641 instance=ExtResource("4_6481s")]
 position = Vector2(1521, -2124)
 rotation = 4.712389
 
-[node name="SpikeHazard28" parent="Spikes" unique_id=503759009 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard28" parent="Spikes" unique_id=503759009 instance=ExtResource("4_6481s")]
 position = Vector2(1524, -2229)
 rotation = 4.712389
 
-[node name="SpikeHazard29" parent="Spikes" unique_id=403110824 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard29" parent="Spikes" unique_id=403110824 instance=ExtResource("4_6481s")]
 position = Vector2(1521, -2329)
 rotation = 4.712389
 
-[node name="SpikeHazard30" parent="Spikes" unique_id=1266617069 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard30" parent="Spikes" unique_id=1266617069 instance=ExtResource("4_6481s")]
 position = Vector2(1525, -2433)
 rotation = 4.712389
 
-[node name="SpikeHazard31" parent="Spikes" unique_id=1290724726 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard31" parent="Spikes" unique_id=1290724726 instance=ExtResource("4_6481s")]
 position = Vector2(1524, -2542)
 rotation = 4.712389
 
-[node name="SpikeHazard32" parent="Spikes" unique_id=2075129229 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard32" parent="Spikes" unique_id=2075129229 instance=ExtResource("4_6481s")]
 position = Vector2(1521, -2652)
 rotation = 4.712389
 
-[node name="SpikeHazard33" parent="Spikes" unique_id=133013343 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard33" parent="Spikes" unique_id=133013343 instance=ExtResource("4_6481s")]
 position = Vector2(1524, -2764)
 rotation = 4.712389
 
-[node name="SpikeHazard34" parent="Spikes" unique_id=514396172 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard34" parent="Spikes" unique_id=514396172 instance=ExtResource("4_6481s")]
 position = Vector2(1520, -2866)
 rotation = 4.712389
 
-[node name="SpikeHazard35" parent="Spikes" unique_id=748407730 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard35" parent="Spikes" unique_id=748407730 instance=ExtResource("4_6481s")]
 position = Vector2(1528, -2957)
 rotation = 4.712389
 
-[node name="SpikeHazard68" parent="Spikes" unique_id=1991411104 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard68" parent="Spikes" unique_id=1991411104 instance=ExtResource("4_6481s")]
 position = Vector2(3592, -3093)
 rotation = 4.712389
 
-[node name="SpikeHazard69" parent="Spikes" unique_id=961410766 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard69" parent="Spikes" unique_id=961410766 instance=ExtResource("4_6481s")]
 position = Vector2(3588, -2992)
 rotation = 4.712389
 
-[node name="SpikeHazard70" parent="Spikes" unique_id=1762216858 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard70" parent="Spikes" unique_id=1762216858 instance=ExtResource("4_6481s")]
 position = Vector2(3595, -2882)
 rotation = 4.712389
 
-[node name="SpikeHazard71" parent="Spikes" unique_id=481193467 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard71" parent="Spikes" unique_id=481193467 instance=ExtResource("4_6481s")]
 position = Vector2(3591, -2772)
 rotation = 4.712389
 
-[node name="SpikeHazard72" parent="Spikes" unique_id=771497889 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard72" parent="Spikes" unique_id=771497889 instance=ExtResource("4_6481s")]
 position = Vector2(3591, -2667)
 rotation = 4.712389
 
-[node name="SpikeHazard73" parent="Spikes" unique_id=1552497383 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard73" parent="Spikes" unique_id=1552497383 instance=ExtResource("4_6481s")]
 position = Vector2(3596, -2562)
 rotation = 4.712389
 
-[node name="SpikeHazard74" parent="Spikes" unique_id=1400555958 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard74" parent="Spikes" unique_id=1400555958 instance=ExtResource("4_6481s")]
 position = Vector2(3591, -2445)
 rotation = 4.712389
 
-[node name="SpikeHazard75" parent="Spikes" unique_id=1585942030 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard75" parent="Spikes" unique_id=1585942030 instance=ExtResource("4_6481s")]
 position = Vector2(3591, -2445)
 rotation = 4.712389
 
-[node name="SpikeHazard76" parent="Spikes" unique_id=951561494 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard76" parent="Spikes" unique_id=951561494 instance=ExtResource("4_6481s")]
 position = Vector2(3589, -2340)
 rotation = 4.712389
 
-[node name="SpikeHazard77" parent="Spikes" unique_id=1762303625 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard77" parent="Spikes" unique_id=1762303625 instance=ExtResource("4_6481s")]
 position = Vector2(3598, -2230)
 rotation = 4.712389
 
-[node name="SpikeHazard78" parent="Spikes" unique_id=1063207184 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard78" parent="Spikes" unique_id=1063207184 instance=ExtResource("4_6481s")]
 position = Vector2(3598, -2122)
 rotation = 4.712389
 
-[node name="SpikeHazard79" parent="Spikes" unique_id=1470350940 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard79" parent="Spikes" unique_id=1470350940 instance=ExtResource("4_6481s")]
 position = Vector2(3598, -2039)
 rotation = 4.712389
 
-[node name="SpikeHazard2" parent="Spikes" unique_id=1687896042 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard2" parent="Spikes" unique_id=1687896042 instance=ExtResource("4_6481s")]
 position = Vector2(564, -1063)
 rotation = 1.5707964
 
-[node name="SpikeHazard3" parent="Spikes" unique_id=829415868 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard3" parent="Spikes" unique_id=829415868 instance=ExtResource("4_6481s")]
 position = Vector2(563, -1158)
 rotation = 1.5707964
 
-[node name="SpikeHazard4" parent="Spikes" unique_id=317256832 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard4" parent="Spikes" unique_id=317256832 instance=ExtResource("4_6481s")]
 position = Vector2(563, -1255)
 rotation = 1.5707964
 
-[node name="SpikeHazard5" parent="Spikes" unique_id=1036523791 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard5" parent="Spikes" unique_id=1036523791 instance=ExtResource("4_6481s")]
 position = Vector2(562, -1346)
 rotation = 1.5707964
 
-[node name="SpikeHazard6" parent="Spikes" unique_id=1712740338 instance=ExtResource("4_qrmce")]
+[node name="SpikeHazard6" parent="Spikes" unique_id=1712740338 instance=ExtResource("4_6481s")]
 position = Vector2(561, -1441)
 rotation = 1.5707964
 
@@ -1043,11 +1043,11 @@ shape = SubResource("RectangleShape2D_fxmm5")
 position = Vector2(1217.875, -509.75)
 shape = SubResource("RectangleShape2D_mmcru")
 
-[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_8q3i6")]
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("5_v4fra")]
 position = Vector2(137, -105)
 
 [node name="Camera2D" type="Camera2D" parent="bubble" unique_id=939403791]
 zoom = Vector2(0.5, 0.5)
 
-[node name="mouseblower" parent="bubble" unique_id=124156406 instance=ExtResource("3_kdijb")]
+[node name="mouseblower" parent="bubble" unique_id=124156406 instance=ExtResource("6_hp85b")]
 position = Vector2(158, -77)

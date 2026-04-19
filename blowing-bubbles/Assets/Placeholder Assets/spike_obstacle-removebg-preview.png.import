@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi2g3q1dqthcr"
-path="res://.godot/imported/mazewalldemo.webp-546e9eabfd560bb36970108ea0d02850.ctex"
+uid="uid://cmv1xn3erotou"
+path="res://.godot/imported/spike_obstacle-removebg-preview.png-8d26e0c0e04ed104271c087ddf9b368e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mazewalldemo.webp"
-dest_files=["res://.godot/imported/mazewalldemo.webp-546e9eabfd560bb36970108ea0d02850.ctex"]
+source_file="res://Assets/Placeholder Assets/spike_obstacle-removebg-preview.png"
+dest_files=["res://.godot/imported/spike_obstacle-removebg-preview.png-8d26e0c0e04ed104271c087ddf9b368e.ctex"]
 
 [params]
 

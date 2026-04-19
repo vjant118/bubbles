@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dqxm7yhreu6yd"]
 
-[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/mouseblower.tscn" id="1_dbmdv"]
-[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/bubble.tscn" id="2_r45yr"]
-[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/spikeHazard.tscn" id="3_cuf53"]
-[ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/sceneResetter.tscn" id="4_lgwfo"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="1_dbmdv"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="2_r45yr"]
+[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="3_cuf53"]
+[ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="4_lgwfo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r45yr"]
 size = Vector2(37.5, 487.5)
