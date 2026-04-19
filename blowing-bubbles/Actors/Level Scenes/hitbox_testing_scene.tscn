@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="2_fluo7"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="3_gs58w"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="4_phc84"]
-[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/RotatingWall.tscn" id="5_8wjo5"]
+[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="5_8wjo5"]
+[ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://Actors/Game Object Scenes/projectile.tscn" id="6_fluo7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r45yr"]
 size = Vector2(37.5, 487.5)
@@ -12,7 +13,7 @@ size = Vector2(37.5, 487.5)
 [node name="HitboxTestingScene" type="Node2D" unique_id=103971390]
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_e6tbe")]
-position = Vector2(786, 170)
+position = Vector2(528.99994, 53)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=658879253]
 
@@ -39,4 +40,7 @@ position = Vector2(266, 310)
 position = Vector2(468, 105)
 
 [node name="RotatingWall" parent="." unique_id=1028060275 instance=ExtResource("5_8wjo5")]
-position = Vector2(587, 452)
+position = Vector2(707, 605)
+
+[node name="Projectile" parent="." unique_id=1234948915 instance=ExtResource("6_fluo7")]
+position = Vector2(533, 55)

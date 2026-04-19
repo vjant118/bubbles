@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b8rvqqyyfg2j4"]
+
+[ext_resource type="Script" uid="uid://bhpxiwr7k6g7a" path="res://Actors/Game Object Scenes/Object Scripts/projectile.gd" id="1_dmi2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hg0ci"]
+size = Vector2(40, 40)
+
+[node name="Projectile" type="RigidBody2D" unique_id=1234948915 groups=["hazards"]]
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_dmi2m")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1149397178]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=270419713]
+shape = SubResource("RectangleShape2D_hg0ci")
