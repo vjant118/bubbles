@@ -1,16 +1,17 @@
 [gd_scene format=3 uid="uid://dqxm7yhreu6yd"]
 
-[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="1_dbmdv"]
-[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="2_r45yr"]
-[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="3_cuf53"]
-[ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="4_lgwfo"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="1_e6tbe"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="2_fluo7"]
+[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="3_gs58w"]
+[ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="4_phc84"]
+[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/RotatingWall.tscn" id="5_8wjo5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r45yr"]
 size = Vector2(37.5, 487.5)
 
 [node name="HitboxTestingScene" type="Node2D" unique_id=103971390]
 
-[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_dbmdv")]
+[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_e6tbe")]
 position = Vector2(786, 170)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=658879253]
@@ -25,14 +26,17 @@ offset_top = 65.0
 offset_right = 104.0
 offset_bottom = 555.0
 
-[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_r45yr")]
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_fluo7")]
 position = Vector2(452, 285)
 
 [node name="Camera2D" type="Camera2D" parent="bubble" unique_id=401160065]
 position = Vector2(-2, 2)
 
-[node name="SpikeHazard" parent="." unique_id=1634614160 instance=ExtResource("3_cuf53")]
+[node name="SpikeHazard" parent="." unique_id=1634614160 instance=ExtResource("3_gs58w")]
 position = Vector2(266, 310)
 
-[node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("4_lgwfo")]
+[node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("4_phc84")]
 position = Vector2(468, 105)
+
+[node name="RotatingWall" parent="." unique_id=1028060275 instance=ExtResource("5_8wjo5")]
+position = Vector2(587, 452)
