@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2e5m22xjlcaq"
-path="res://.godot/imported/wall color placeholder.webp-097f25d4caebceb92398551358e959fa.ctex"
+uid="uid://pn23deivvsaq"
+path="res://.godot/imported/electricballprojectile-removebg-preview.png-cc00fae5802e17ef26508f2945ce0013.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Placeholder Assets/wall color placeholder.webp"
-dest_files=["res://.godot/imported/wall color placeholder.webp-097f25d4caebceb92398551358e959fa.ctex"]
+source_file="res://Assets/Placeholder Assets/electricballprojectile-removebg-preview.png"
+dest_files=["res://.godot/imported/electricballprojectile-removebg-preview.png-cc00fae5802e17ef26508f2945ce0013.ctex"]
 
 [params]
 
