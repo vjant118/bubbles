@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="5_v4fra"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="6_hp85b"]
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="7_y0gpl"]
+[ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_of5rc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
 texture = ExtResource("2_y0gpl")
@@ -564,6 +565,12 @@ size = Vector2(764.1773, 1.2111721)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_of5rc"]
 size = Vector2(2.8726654, 34.973885)
+
+[sub_resource type="Curve2D" id="Curve2D_6481s"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2208, -1791, 0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2213, -2339)
+}
+point_count = 4
 
 [node name="Level01" type="Node2D" unique_id=1931007585]
 position = Vector2(61, 981)
@@ -1233,3 +1240,13 @@ position = Vector2(915, -2603)
 
 [node name="bubble11" parent="." unique_id=998581611 instance=ExtResource("5_v4fra")]
 position = Vector2(1105, -2686)
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1959532913]
+curve = SubResource("Curve2D_6481s")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1583663435]
+position = Vector2(2213, -2339)
+rotation = 1.5799202
+script = ExtResource("8_of5rc")
+
+[node name="SpikeHazard" parent="Path2D/PathFollow2D" unique_id=2025014073 instance=ExtResource("4_6481s")]

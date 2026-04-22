@@ -7,9 +7,16 @@
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="5_u8dky"]
 [ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://Actors/Game Object Scenes/projectile.tscn" id="6_vlli8"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://Actors/Game Object Scenes/projectileShooter.tscn" id="7_20gyl"]
+[ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_4ytrw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r45yr"]
 size = Vector2(37.5, 487.5)
+
+[sub_resource type="Curve2D" id="Curve2D_psw1n"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 68, -61, 0, 0, 0, 0, 98, -71, 0, 0, 0, 0, 136, -66, 0, 0, 0, 0, 175, -49, 0, 0, 0, 0, 193, -21, 0, 0, 0, 0, 204, 31, 0, 0, 0, 0, 172, 83, 0, 0, 0, 0, 143, 105, 0, 0, 0, 0, 101, 110, 0, 0, 0, 0, 53, 107, 0, 0, 0, 0, 21, 86, 0, 0, 0, 0, 2, 50, 0, 0, 0, 0, 5, 3, 0, 0, 0, 0, 19, -32, 0, 0, 0, 0, 38, -46, 0, 0, 0, 0, 68, -61)
+}
+point_count = 16
 
 [node name="HitboxTestingScene" type="Node2D" unique_id=103971390]
 
@@ -49,3 +56,16 @@ position = Vector2(533, 55)
 
 [node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("7_20gyl")]
 position = Vector2(842, 52)
+
+[node name="Path2D" type="Path2D" parent="." unique_id=354179845]
+position = Vector2(919, 194)
+curve = SubResource("Curve2D_psw1n")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1608384324]
+position = Vector2(68, -61)
+rotation = -0.32175055
+script = ExtResource("8_4ytrw")
+
+[node name="SpikeHazard" parent="Path2D/PathFollow2D" unique_id=324206565 instance=ExtResource("3_psw1n")]
+position = Vector2(-63.308044, 65.85662)
+rotation = -0.07393904
