@@ -987,13 +987,97 @@ rotation = -0.0056934357
 position = Vector2(2171, 73)
 rotation = -0.0056934357
 
+[node name="SpikeHazard107" parent="Spikes" unique_id=178879506 instance=ExtResource("4_6481s")]
+position = Vector2(2267.0002, 76)
+rotation = -0.0056934357
+
+[node name="SpikeHazard108" parent="Spikes" unique_id=390063734 instance=ExtResource("4_6481s")]
+position = Vector2(2361.9998, 79)
+rotation = -0.0056934357
+
+[node name="SpikeHazard109" parent="Spikes" unique_id=562316321 instance=ExtResource("4_6481s")]
+position = Vector2(2462, 82)
+rotation = -0.0056934357
+
+[node name="SpikeHazard110" parent="Spikes" unique_id=194240562 instance=ExtResource("4_6481s")]
+position = Vector2(2562.0002, 77)
+rotation = -0.0056934357
+
+[node name="SpikeHazard111" parent="Spikes" unique_id=311472587 instance=ExtResource("4_6481s")]
+position = Vector2(2660, 77)
+rotation = -0.0056934357
+
+[node name="SpikeHazard112" parent="Spikes" unique_id=445464795 instance=ExtResource("4_6481s")]
+position = Vector2(2755.9998, 78)
+rotation = -0.0056934357
+
+[node name="SpikeHazard113" parent="Spikes" unique_id=1492864144 instance=ExtResource("4_6481s")]
+position = Vector2(2854, 74)
+rotation = -0.0056934357
+
+[node name="SpikeHazard114" parent="Spikes" unique_id=1448068604 instance=ExtResource("4_6481s")]
+position = Vector2(2950, 71)
+rotation = -0.0056934357
+
+[node name="SpikeHazard115" parent="Spikes" unique_id=1829143997 instance=ExtResource("4_6481s")]
+position = Vector2(2950, 71)
+rotation = -0.0056934357
+
+[node name="SpikeHazard124" parent="Spikes" unique_id=855552450 instance=ExtResource("4_6481s")]
+position = Vector2(3602.9998, -1583.9999)
+rotation = -0.0056934357
+
+[node name="SpikeHazard126" parent="Spikes" unique_id=220456165 instance=ExtResource("4_6481s")]
+position = Vector2(3512, -1583)
+rotation = -0.0056934357
+
+[node name="SpikeHazard127" parent="Spikes" unique_id=546400125 instance=ExtResource("4_6481s")]
+position = Vector2(3414, -1583)
+rotation = -0.0056934357
+
+[node name="SpikeHazard125" parent="Spikes" unique_id=236665682 instance=ExtResource("4_6481s")]
+position = Vector2(3692.9998, -1577.9999)
+rotation = -0.0056934357
+
+[node name="SpikeHazard116" parent="Spikes" unique_id=1699592075 instance=ExtResource("4_6481s")]
+position = Vector2(3044.9998, 75)
+rotation = -0.0056934357
+
+[node name="SpikeHazard117" parent="Spikes" unique_id=1968456344 instance=ExtResource("4_6481s")]
+position = Vector2(3142, 74)
+rotation = -0.0056934357
+
+[node name="SpikeHazard118" parent="Spikes" unique_id=1334028964 instance=ExtResource("4_6481s")]
+position = Vector2(3234.9998, 74)
+rotation = -0.0056934357
+
+[node name="SpikeHazard119" parent="Spikes" unique_id=769827005 instance=ExtResource("4_6481s")]
+position = Vector2(3329.9998, 73)
+rotation = -0.0056934357
+
+[node name="SpikeHazard120" parent="Spikes" unique_id=2147396672 instance=ExtResource("4_6481s")]
+position = Vector2(3428, 77)
+rotation = -0.0056934357
+
+[node name="SpikeHazard121" parent="Spikes" unique_id=1971524236 instance=ExtResource("4_6481s")]
+position = Vector2(3525.9998, 76)
+rotation = -0.0056934357
+
+[node name="SpikeHazard122" parent="Spikes" unique_id=1276411459 instance=ExtResource("4_6481s")]
+position = Vector2(3709.0002, -745)
+rotation = -0.0056934357
+
 [node name="SpikeHazard105" parent="Spikes" unique_id=1690874116 instance=ExtResource("4_6481s")]
-position = Vector2(3513, 168)
+position = Vector2(3658, 80.99988)
 rotation = -0.9612194
 
 [node name="SpikeHazard106" parent="Spikes" unique_id=692498516 instance=ExtResource("4_6481s")]
 position = Vector2(3402, -1014)
 rotation = 2.361871
+
+[node name="SpikeHazard123" parent="Spikes" unique_id=340531334 instance=ExtResource("4_6481s")]
+position = Vector2(4094, -1007.99976)
+rotation = -2.5254915
 
 [node name="Wall Collision" type="Node" parent="." unique_id=2061311489]
 
@@ -1001,7 +1085,7 @@ rotation = 2.361871
 position = Vector2(716, 1152)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D" unique_id=405126463]
-position = Vector2(1181.5, 7)
+position = Vector2(1183, 7)
 shape = SubResource("RectangleShape2D_kdijb")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall Collision/StaticBody2D" unique_id=1105906942]
@@ -1019,7 +1103,7 @@ shape = SubResource("RectangleShape2D_qrmce")
 position = Vector2(61, 981)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Collision/StaticBody2D3" unique_id=1435663415]
-position = Vector2(1880, -557)
+position = Vector2(1886, -481)
 shape = SubResource("RectangleShape2D_8q3i6")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Wall Collision" unique_id=1119543549]
