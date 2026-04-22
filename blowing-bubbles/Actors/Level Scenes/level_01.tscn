@@ -5,11 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="4_6481s"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="5_v4fra"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="6_hp85b"]
-[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="7_y0gpl"]
+[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/RotatingWall.tscn" id="7_y0gpl"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://Actors/Game Object Scenes/playerBubble.tscn" id="8_6481s"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_of5rc"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="8_v4fra"]
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/Game Object Scenes/timer.tscn" id="10_v4fra"]
+[ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="11_hp85b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
 texture = ExtResource("2_y0gpl")
@@ -1250,3 +1251,6 @@ position = Vector2(191, -149)
 
 [node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("10_v4fra")]
 unique_name_in_owner = true
+
+[node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("11_hp85b")]
+position = Vector2(212, -799)
