@@ -1192,13 +1192,13 @@ position = Vector2(1498.8335, 2450.8706)
 scale = Vector2(21.466667, 24.825924)
 shape = SubResource("RectangleShape2D_of5rc")
 
-[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("5_v4fra")]
+[node name="Playerbubble" parent="." unique_id=406493826 instance=ExtResource("5_v4fra")]
 position = Vector2(137, -105)
 
-[node name="Camera2D" type="Camera2D" parent="bubble" unique_id=939403791]
+[node name="Camera2D" type="Camera2D" parent="Playerbubble" unique_id=939403791]
 zoom = Vector2(0.5, 0.5)
 
-[node name="mouseblower" parent="bubble" unique_id=124156406 instance=ExtResource("6_hp85b")]
+[node name="mouseblower" parent="Playerbubble" unique_id=124156406 instance=ExtResource("6_hp85b")]
 position = Vector2(158, -77)
 
 [node name="RotatingWall" parent="." unique_id=1028060275 instance=ExtResource("7_y0gpl")]
