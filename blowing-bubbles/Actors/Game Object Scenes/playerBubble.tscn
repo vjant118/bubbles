@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cj2o3jlaln6hp"]
+
+[ext_resource type="Script" uid="uid://4hrologxgmyq" path="res://Actors/Game Object Scenes/Object Scripts/player_bubble.gd" id="1_pwu4n"]
+[ext_resource type="Texture2D" uid="uid://dfogsk2bilc14" path="res://Assets/Placeholder Assets/Soap-Bubbles-PNG-Transparent-Picture-3034348104.png" id="2_x8y4j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d2ri8"]
+radius = 64.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wi1qk"]
+radius = 64.00781
+
+[node name="bubble" type="RigidBody2D" unique_id=406493826 groups=["player"]]
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 2
+script = ExtResource("1_pwu4n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=80668382]
+shape = SubResource("CircleShape2D_d2ri8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=707405218]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_x8y4j")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2104763173]
+zoom = Vector2(0.6, 0.6)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1892006334]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=891736625]
+shape = SubResource("CircleShape2D_wi1qk")

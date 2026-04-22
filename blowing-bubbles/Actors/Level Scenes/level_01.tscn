@@ -2,12 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://Assets/Placeholder Assets/finalfirstlevelbackground.webp" id="1_sfs6u"]
 [ext_resource type="Texture2D" uid="uid://ci6q2n6nfnt1x" path="res://Assets/Placeholder Assets/final demolevelwall.webp" id="2_y0gpl"]
-[ext_resource type="Texture2D" uid="uid://benaqerdl6ndl" path="res://Assets/Placeholder Assets/portalfinishline-removebg-preview.png" id="3_of5rc"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="4_6481s"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="5_v4fra"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="6_hp85b"]
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="7_y0gpl"]
+[ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://Actors/Game Object Scenes/playerBubble.tscn" id="8_6481s"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_of5rc"]
+[ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="8_v4fra"]
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/Game Object Scenes/timer.tscn" id="10_v4fra"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
 texture = ExtResource("2_y0gpl")
@@ -594,16 +596,9 @@ scale = Vector2(1.5797962, 1.2702535)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="finishline" unique_id=1301244779]
 
-[node name="Sprite2D" type="Sprite2D" parent="finishline" unique_id=1120712767]
-scale = Vector2(1, 0.98698056)
-texture = ExtResource("3_of5rc")
-
 [node name="startlook" type="Area2D" parent="." unique_id=1201781947]
 position = Vector2(-202, -104)
 scale = Vector2(-1.3775746, 1.175251)
-
-[node name="Sprite2D" type="Sprite2D" parent="startlook" unique_id=1625975823]
-texture = ExtResource("3_of5rc")
 
 [node name="Spikes" type="Node2D" parent="." unique_id=1110238835]
 
@@ -1199,15 +1194,6 @@ position = Vector2(1498.8335, 2450.8706)
 scale = Vector2(21.466667, 24.825924)
 shape = SubResource("RectangleShape2D_of5rc")
 
-[node name="Playerbubble" parent="." unique_id=406493826 instance=ExtResource("5_v4fra")]
-position = Vector2(137, -105)
-
-[node name="Camera2D" type="Camera2D" parent="Playerbubble" unique_id=939403791]
-zoom = Vector2(0.5, 0.5)
-
-[node name="mouseblower" parent="Playerbubble" unique_id=124156406 instance=ExtResource("6_hp85b")]
-position = Vector2(158, -77)
-
 [node name="RotatingWall" parent="." unique_id=1028060275 instance=ExtResource("7_y0gpl")]
 position = Vector2(2841, -177)
 
@@ -1250,3 +1236,17 @@ rotation = 1.5799202
 script = ExtResource("8_of5rc")
 
 [node name="SpikeHazard" parent="Path2D/PathFollow2D" unique_id=2025014073 instance=ExtResource("4_6481s")]
+
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("8_6481s")]
+position = Vector2(-56, -140)
+
+[node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("8_v4fra")]
+position = Vector2(3938, -37)
+
+[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("6_hp85b")]
+position = Vector2(191, -149)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1021073510]
+
+[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("10_v4fra")]
+unique_name_in_owner = true

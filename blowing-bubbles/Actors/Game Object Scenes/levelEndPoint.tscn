@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ds71uo8f8a440"]
+
+[ext_resource type="Texture2D" uid="uid://benaqerdl6ndl" path="res://Assets/Placeholder Assets/portalfinishline-removebg-preview.png" id="2_s8xik"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cxo23"]
+radius = 115.00435
+
+[node name="LevelEndPoint" type="Area2D" unique_id=94973403 groups=["levelEndPoint"]]
+
+[node name="PortalfinishlineRemovebgPreview" type="Sprite2D" parent="." unique_id=135635338]
+texture = ExtResource("2_s8xik")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1436235431]
+shape = SubResource("CircleShape2D_cxo23")

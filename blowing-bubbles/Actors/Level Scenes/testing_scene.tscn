@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://dqxm7yhreu6yd"]
 
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="1_do0w1"]
-[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="2_4ytrw"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="3_psw1n"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="4_fyrrw"]
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="5_u8dky"]
 [ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://Actors/Game Object Scenes/projectile.tscn" id="6_vlli8"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://Actors/Game Object Scenes/projectileShooter.tscn" id="7_20gyl"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_4ytrw"]
+[ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://Actors/Game Object Scenes/playerBubble.tscn" id="8_psw1n"]
+[ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="9_psw1n"]
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/Game Object Scenes/timer.tscn" id="10_fyrrw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r45yr"]
 size = Vector2(37.5, 487.5)
@@ -20,9 +22,6 @@ point_count = 16
 
 [node name="HitboxTestingScene" type="Node2D" unique_id=103971390]
 
-[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_do0w1")]
-position = Vector2(528.99994, 53)
-
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=658879253]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=723698913]
@@ -34,12 +33,6 @@ offset_left = 63.0
 offset_top = 65.0
 offset_right = 104.0
 offset_bottom = 555.0
-
-[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_4ytrw")]
-position = Vector2(452, 285)
-
-[node name="Camera2D" type="Camera2D" parent="bubble" unique_id=401160065]
-position = Vector2(-2, 2)
 
 [node name="SpikeHazard" parent="." unique_id=1634614160 instance=ExtResource("3_psw1n")]
 position = Vector2(266, 310)
@@ -69,3 +62,19 @@ script = ExtResource("8_4ytrw")
 [node name="SpikeHazard" parent="Path2D/PathFollow2D" unique_id=324206565 instance=ExtResource("3_psw1n")]
 position = Vector2(-63.308044, 65.85662)
 rotation = -0.07393904
+
+[node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("9_psw1n")]
+position = Vector2(311, 605)
+
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("8_psw1n")]
+position = Vector2(569, 334)
+
+[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_do0w1")]
+position = Vector2(528.99994, 53)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=634523558]
+
+[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("10_fyrrw")]
+unique_name_in_owner = true
+offset_right = 1.0
+offset_bottom = 55.0

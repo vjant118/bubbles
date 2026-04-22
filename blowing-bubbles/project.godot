@@ -22,6 +22,8 @@ project/assembly_name="Blowing Bubbles"
 [global_group]
 
 hazards=""
+player=""
+levelEndPoint=""
 
 [input]
 

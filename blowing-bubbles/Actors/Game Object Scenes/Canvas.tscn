@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bq6j1m4a0us61"]
+
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/Game Object Scenes/timer.tscn" id="1_qsaa1"]
+
+[node name="Canvas" type="CanvasLayer" unique_id=583902194]
+
+[node name="Timer" parent="." unique_id=1376593584 instance=ExtResource("1_qsaa1")]
+unique_name_in_owner = true
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 53.0
+offset_bottom = 42.0
