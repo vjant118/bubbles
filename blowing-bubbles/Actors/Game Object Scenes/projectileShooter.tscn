@@ -2,11 +2,20 @@
 
 [ext_resource type="Script" uid="uid://coyivndedohvv" path="res://Actors/Game Object Scenes/Object Scripts/projectile_shooter.gd" id="1_8cmru"]
 [ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://Actors/Game Object Scenes/projectile.tscn" id="2_au1px"]
+[ext_resource type="Texture2D" uid="uid://cot0jnj46txhk" path="res://Assets/Placeholder Assets/icon.svg" id="3_au1px"]
 
 [node name="ProjectileShooter" type="Node2D" unique_id=1630183063]
 script = ExtResource("1_8cmru")
 projectile = ExtResource("2_au1px")
+shootSpeed = 2
+fireRate = 3.0
 
 [node name="Timer" type="Timer" parent="." unique_id=2041592940]
 wait_time = 3.0
-autostart = true
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1240482976]
+position = Vector2(-14.000002, 0)
+scale = Vector2(0.35546875, 0.0546875)
+texture = ExtResource("3_au1px")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

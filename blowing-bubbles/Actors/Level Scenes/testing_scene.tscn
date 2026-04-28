@@ -45,10 +45,12 @@ position = Vector2(707, 605)
 oppositeRotation = true
 
 [node name="Projectile" parent="." unique_id=1234948915 instance=ExtResource("6_vlli8")]
-position = Vector2(533, 55)
+position = Vector2(50, 32)
 
 [node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("7_20gyl")]
-position = Vector2(842, 52)
+position = Vector2(803, 36)
+shootSpeed = 4
+fireRate = 1.0
 
 [node name="Path2D" type="Path2D" parent="." unique_id=354179845]
 position = Vector2(919, 194)
@@ -70,7 +72,7 @@ position = Vector2(311, 605)
 position = Vector2(569, 334)
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_do0w1")]
-position = Vector2(528.99994, 53)
+position = Vector2(439, 197)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=634523558]
 
