@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cwruy2vrtx80a"]
+
+[ext_resource type="Texture2D" uid="uid://dni7w6soke1on" path="res://Assets/Placeholder Assets/purplegateway-removebg-preview.png" id="1_qev57"]
+[ext_resource type="Script" uid="uid://cwyd252l4d6ae" path="res://Actors/Game Object Scenes/Object Scripts/portal.gd" id="1_tboby"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kgiq6"]
+radius = 107.042046
+
+[node name="Portal" type="Area2D" unique_id=475271727]
+script = ExtResource("1_tboby")
+
+[node name="PurplegatewayRemovebgPreview" type="Sprite2D" parent="." unique_id=1438489629]
+texture = ExtResource("1_qev57")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1174728891]
+shape = SubResource("CircleShape2D_kgiq6")
+
+[node name="ExitPoint" type="Marker2D" parent="." unique_id=495163007]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

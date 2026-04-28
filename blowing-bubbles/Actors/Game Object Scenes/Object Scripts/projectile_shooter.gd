@@ -9,7 +9,6 @@ func _ready():
 	$Timer.start()
 
 func _on_timer_timeout():
-	print("Timeout")
 	shoot()
 	
 func shoot():
@@ -18,4 +17,3 @@ func shoot():
 	bullet.global_position = global_position
 	var direction = Vector2.RIGHT.rotated(global_rotation)
 	bullet.apply_central_impulse(direction * shootSpeed * -100)
-	print("Projectile shot")
