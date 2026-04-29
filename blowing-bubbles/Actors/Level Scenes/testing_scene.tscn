@@ -28,7 +28,7 @@ position = Vector2(531, 668)
 linkedPortal = NodePath("../Portal2")
 
 [node name="Portal2" parent="." unique_id=2127766339 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("11_u8dky")]
-position = Vector2(1156, 1081)
+position = Vector2(940, 1097)
 linkedPortal = NodePath("../Portal")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=658879253]
@@ -57,7 +57,7 @@ oppositeRotation = true
 position = Vector2(50, 32)
 
 [node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("7_20gyl")]
-position = Vector2(1112, -1)
+position = Vector2(1283, 835)
 shootSpeed = 4
 fireRate = 1.0
 

@@ -1,13 +1,55 @@
 [gd_scene format=3 uid="uid://cj2o3jlaln6hp"]
 
 [ext_resource type="Script" uid="uid://4hrologxgmyq" path="res://Actors/Game Object Scenes/Object Scripts/player_bubble.gd" id="1_pwu4n"]
-[ext_resource type="Texture2D" uid="uid://dfogsk2bilc14" path="res://Assets/Placeholder Assets/Soap-Bubbles-PNG-Transparent-Picture-3034348104.png" id="2_x8y4j"]
+[ext_resource type="Texture2D" uid="uid://cby64c4b663fl" path="res://Assets/Official Assets/mcIdle.png" id="2_wi1qk"]
+[ext_resource type="Texture2D" uid="uid://bgx1drfki7uid" path="res://Assets/Official Assets/bubble.png" id="3_7n6df"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ik5mq"]
+atlas = ExtResource("3_7n6df")
+region = Rect2(5, 0, 457, 520)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4t5x"]
+atlas = ExtResource("3_7n6df")
+region = Rect2(462, 0, 457, 520)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2e8x"]
+atlas = ExtResource("3_7n6df")
+region = Rect2(919, 0, 457, 520)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0bhs"]
+atlas = ExtResource("3_7n6df")
+region = Rect2(1376, 0, 457, 520)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4ifb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ik5mq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4t5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2e8x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0bhs")
+}],
+"loop": true,
+"name": &"Bubble Anim",
+"speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d2ri8"]
-radius = 64.0
+radius = 57.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wi1qk"]
-radius = 64.00781
+radius = 57.0
 
 [node name="bubble" type="RigidBody2D" unique_id=406493826 groups=["player"]]
 gravity_scale = 0.0
@@ -15,12 +57,20 @@ contact_monitor = true
 max_contacts_reported = 2
 script = ExtResource("1_pwu4n")
 
+[node name="McIdle" type="Sprite2D" parent="." unique_id=1301994771]
+position = Vector2(-6, -10)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_wi1qk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1535335548]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_f4ifb")
+animation = &"Bubble Anim"
+autoplay = "Bubble Anim"
+frame_progress = 0.9789359
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=80668382]
 shape = SubResource("CircleShape2D_d2ri8")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=707405218]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_x8y4j")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2104763173]
 zoom = Vector2(0.6, 0.6)

@@ -1,16 +1,24 @@
 [gd_scene format=3 uid="uid://choly2o56l4ao"]
 
-[ext_resource type="Texture2D" uid="uid://vwwtdgfn3aj1" path="res://Assets/Placeholder Assets/finalfirstleveldemospikeobstacle-removebg-preview.png" id="1_twru3"]
+[ext_resource type="Texture2D" uid="uid://24p5pqk50y2t" path="res://Assets/Official Assets/spikes.png" id="1_ammq2"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_twru3"]
-radius = 41.19466
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nx3dv"]
+size = Vector2(99, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yi7u1"]
+size = Vector2(56, 17)
 
 [node name="SpikeHazard" type="StaticBody2D" unique_id=324206565 groups=["hazards"]]
 
-[node name="FinalfirstleveldemospikeobstacleRemovebgPreview" type="Sprite2D" parent="." unique_id=228302134]
-scale = Vector2(0.2611111, 0.25)
-texture = ExtResource("1_twru3")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=682923324]
-position = Vector2(0, 2)
-shape = SubResource("CircleShape2D_twru3")
+position = Vector2(-0.5, -12.5)
+shape = SubResource("RectangleShape2D_nx3dv")
+
+[node name="Spikes" type="Sprite2D" parent="." unique_id=1407600940]
+position = Vector2(-2.2737368e-13, -24)
+scale = Vector2(0.26153848, 0.3602564)
+texture = ExtResource("1_ammq2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1178525466]
+position = Vector2(1, -31.5)
+shape = SubResource("RectangleShape2D_yi7u1")
