@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://b22f84ndc7ybu"]
+
+[ext_resource type="Script" uid="uid://ctlavshxuiqxh" path="res://UI/UI Scripts/level_select.gd" id="1_r4dbv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qgm14"]
+font_size = 37
+
+[node name="Node2D" type="Node2D" unique_id=1773346489]
+script = ExtResource("1_r4dbv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1186887708]
+offset_right = 1152.0
+offset_bottom = 640.0
+color = Color(0.5529412, 1, 1, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1688002170]
+offset_left = 482.0
+offset_top = 3.0
+offset_right = 691.0
+offset_bottom = 54.0
+text = "Level Select"
+label_settings = SubResource("LabelSettings_qgm14")
+horizontal_alignment = 1
+
+[node name="level_select_button1" type="Button" parent="." unique_id=123624616]
+offset_left = 28.0
+offset_top = 110.0
+offset_right = 535.0
+offset_bottom = 283.0
+text = "Level 1"
+
+[node name="level_select_button2" type="Button" parent="." unique_id=776546430]
+offset_left = 600.0
+offset_top = 110.0
+offset_right = 1107.0
+offset_bottom = 283.0
+text = "Level 2"
+
+[node name="level_select_button3" type="Button" parent="." unique_id=524202138]
+offset_left = 28.0
+offset_top = 417.0
+offset_right = 535.0
+offset_bottom = 590.0
+text = "Level 3"
+
+[node name="level_select_button4" type="Button" parent="." unique_id=107735844]
+offset_left = 609.0
+offset_top = 417.0
+offset_right = 1116.0
+offset_bottom = 590.0
+text = "Level 4"
+
+[connection signal="pressed" from="level_select_button1" to="." method="_on_level_select_button_1_pressed"]
+[connection signal="pressed" from="level_select_button2" to="." method="_on_level_select_button_2_pressed"]
+[connection signal="pressed" from="level_select_button3" to="." method="_on_level_select_button_3_pressed"]
+[connection signal="pressed" from="level_select_button4" to="." method="_on_level_select_button_4_pressed"]
