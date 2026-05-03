@@ -15,6 +15,11 @@ run/main_scene="uid://dllv1p28a0ynd"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Assets/Placeholder Assets/icon.svg"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [dotnet]
 
 project/assembly_name="Blowing Bubbles"
@@ -36,7 +41,7 @@ levelEndPoint=""
 [physics]
 
 3d/physics_engine="Jolt Physics"
-2d/default_gravity_vector=Vector2(0, 0)
+2d/default_gravity_vector=Vector2(0, 0.004)
 
 [rendering]
 

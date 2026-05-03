@@ -1,13 +1,11 @@
 [gd_scene format=3 uid="uid://dneqcan6dck75"]
 
-[ext_resource type="Script" uid="uid://dy5soxp6qnav4" path="res://Actors/Game Object Scenes/Object Scripts/moving_spike_hazard.gd" id="1_78yb2"]
 [ext_resource type="Texture2D" uid="uid://d1m4gx53cym2l" path="res://Assets/Official Assets/movingSpike.png" id="1_debpr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_twru3"]
 radius = 83.0
 
 [node name="BallSpike" type="StaticBody2D" unique_id=324206565 groups=["hazards"]]
-script = ExtResource("1_78yb2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=682923324]
 position = Vector2(0, 2)

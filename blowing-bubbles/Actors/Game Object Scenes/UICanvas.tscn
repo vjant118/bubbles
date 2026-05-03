@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ckjrrunyod75h"]
+
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/Game Object Scenes/timer.tscn" id="1_q5i2f"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1921048667]
+
+[node name="Timer" parent="." unique_id=1376593584 instance=ExtResource("1_q5i2f")]
+unique_name_in_owner = true
+metadata/_edit_use_anchors_ = true

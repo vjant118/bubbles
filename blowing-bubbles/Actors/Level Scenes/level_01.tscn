@@ -1076,7 +1076,7 @@ tile_set = SubResource("TileSet_rlskx")
 use_kinematic_bodies = true
 
 [node name="player" parent="." unique_id=406493826 instance=ExtResource("8_6481s")]
-position = Vector2(-56, -140)
+position = Vector2(-65, -177)
 
 [node name="finishline" type="Area2D" parent="." unique_id=652315223]
 position = Vector2(3944.9998, -43.00049)
@@ -1239,9 +1239,11 @@ curve = SubResource("Curve2D_6481s")
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1583663435]
 position = Vector2(2213, -2339)
 rotation = 1.5799202
+rotates = false
 script = ExtResource("8_of5rc")
 
 [node name="SpikeHazard2" parent="Path2D/PathFollow2D" unique_id=999751756 instance=ExtResource("7_i57dl")]
+rotation = 4.712389
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("8_v4fra")]
 position = Vector2(3938, -37)
@@ -1249,10 +1251,13 @@ position = Vector2(3938, -37)
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("6_hp85b")]
 position = Vector2(191, -149)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1021073510]
-
-[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("10_v4fra")]
-unique_name_in_owner = true
-
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("11_hp85b")]
 position = Vector2(212, -799)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=231263434]
+
+[node name="Timer" parent="CanvasLayer2" unique_id=1376593584 instance=ExtResource("10_v4fra")]
+unique_name_in_owner = true
+offset_right = 1.0
+offset_bottom = 55.0
+metadata/_edit_use_anchors_ = true
