@@ -54,9 +54,6 @@ texture = ExtResource("3_2jl44")
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("14_qw5du")]
 position = Vector2(3953, 5253)
 
-[node name="LevelEndPoint2" parent="." unique_id=756466241 instance=ExtResource("14_qw5du")]
-position = Vector2(3465, 5906)
-
 [node name="Hazards" type="Node" parent="." unique_id=1922248690]
 
 [node name="Path2D" type="Path2D" parent="Hazards" unique_id=1047917994]

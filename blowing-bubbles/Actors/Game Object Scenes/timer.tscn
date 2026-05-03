@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c5okmb1fq2id2" path="res://Actors/Game Object Scenes/Object Scripts/timer.gd" id="1_5su5k"]
 
 [node name="Timer" type="Label" unique_id=1376593584]
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 80
 script = ExtResource("1_5su5k")
 
 [node name="Timer" type="Timer" parent="." unique_id=1371716596]
