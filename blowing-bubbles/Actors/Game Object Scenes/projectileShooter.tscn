@@ -7,8 +7,6 @@
 [node name="ProjectileShooter" type="Node2D" unique_id=1630183063]
 script = ExtResource("1_8cmru")
 projectile = ExtResource("2_au1px")
-shootSpeed = 2
-fireRate = 3.0
 
 [node name="Timer" type="Timer" parent="." unique_id=2041592940]
 wait_time = 3.0

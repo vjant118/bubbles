@@ -1,10 +1,13 @@
 extends Node2D
 
 @export var projectile: PackedScene
-@export var shootSpeed: int
-@export var fireRate: float
+@export var shootSpeed: int = 2
+@export var fireRate: float = 3.0
+@export var startDelay: float = 0.0
 
 func _ready():
+	if startDelay > 0:
+		await get_tree().create_timer(startDelay).timeout
 	$Timer.wait_time = fireRate
 	$Timer.start()
 

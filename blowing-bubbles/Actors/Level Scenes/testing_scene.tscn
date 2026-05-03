@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="1_do0w1"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://Actors/Game Object Scenes/spikeHazard.tscn" id="3_psw1n"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="4_fyrrw"]
-[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="5_u8dky"]
+[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/RotateAxis.tscn" id="5_u8dky"]
 [ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://Actors/Game Object Scenes/projectile.tscn" id="6_vlli8"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://Actors/Game Object Scenes/projectileShooter.tscn" id="7_20gyl"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_4ytrw"]
@@ -43,23 +43,18 @@ offset_top = 65.0
 offset_right = 104.0
 offset_bottom = 555.0
 
-[node name="SpikeHazard" parent="." unique_id=1634614160 instance=ExtResource("3_psw1n")]
-position = Vector2(266, 310)
-
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("4_fyrrw")]
 position = Vector2(468, 105)
 
 [node name="RotatingWall" parent="." unique_id=1028060275 instance=ExtResource("5_u8dky")]
-position = Vector2(-243, 283)
+position = Vector2(983, 493)
 oppositeRotation = true
+
+[node name="SpikeHazard" parent="RotatingWall" unique_id=1634614160 instance=ExtResource("3_psw1n")]
+position = Vector2(-756, -195)
 
 [node name="Projectile" parent="." unique_id=1234948915 instance=ExtResource("6_vlli8")]
 position = Vector2(50, 32)
-
-[node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("7_20gyl")]
-position = Vector2(1283, 835)
-shootSpeed = 4
-fireRate = 1.0
 
 [node name="Path2D" type="Path2D" parent="." unique_id=354179845]
 position = Vector2(919, 194)
@@ -89,3 +84,12 @@ position = Vector2(439, 197)
 unique_name_in_owner = true
 offset_right = 1.0
 offset_bottom = 55.0
+
+[node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("7_20gyl")]
+position = Vector2(1334, 488)
+shootSpeed = 4
+
+[node name="ProjectileShooter2" parent="." unique_id=212515423 instance=ExtResource("7_20gyl")]
+position = Vector2(1330, 387)
+shootSpeed = 4
+startDelay = 1.0

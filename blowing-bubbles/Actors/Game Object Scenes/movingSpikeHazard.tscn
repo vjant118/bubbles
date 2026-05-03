@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_twru3"]
 radius = 83.0
 
-[node name="SpikeHazard" type="StaticBody2D" unique_id=324206565 groups=["hazards"]]
+[node name="BallSpike" type="StaticBody2D" unique_id=324206565 groups=["hazards"]]
 script = ExtResource("1_78yb2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=682923324]

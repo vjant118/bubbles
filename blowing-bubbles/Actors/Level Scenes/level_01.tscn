@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="5_v4fra"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="6_hp85b"]
 [ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://Actors/Game Object Scenes/movingSpikeHazard.tscn" id="7_i57dl"]
-[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/rotatingWall.tscn" id="7_y0gpl"]
+[ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://Actors/Game Object Scenes/RotateAxis.tscn" id="7_y0gpl"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://Actors/Game Object Scenes/playerBubble.tscn" id="8_6481s"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://Actors/Game Object Scenes/Object Scripts/pathFollow2D.gd" id="8_of5rc"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="8_v4fra"]

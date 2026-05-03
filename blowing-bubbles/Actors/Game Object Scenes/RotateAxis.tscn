@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://h7cutrbg4ins"]
+
+[ext_resource type="Script" uid="uid://dvuprgkxipr8o" path="res://Actors/Game Object Scenes/Object Scripts/rotating_wall.gd" id="1_20vky"]
+
+[node name="Rotational Axis" type="Node2D" unique_id=904937421]
+editor_description = "Increase length with by scaling x
+Adjust rotation speed in inspector, base speed is 5
+Can attach additional objects to it using tree"
+script = ExtResource("1_20vky")
