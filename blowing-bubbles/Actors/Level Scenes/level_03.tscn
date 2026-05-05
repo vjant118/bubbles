@@ -1,3 +1,296 @@
 [gd_scene format=3 uid="uid://b6ulfsc8kmi0f"]
 
+[ext_resource type="PackedScene" uid="uid://bibia0eeio2q4" path="res://Actors/Game Object Scenes/Placeholder Wall.tscn" id="1_724y1"]
+[ext_resource type="PackedScene" uid="uid://cwruy2vrtx80a" path="res://Actors/Game Object Scenes/Portal.tscn" id="2_rx3d3"]
+[ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="3_mr4wi"]
+
 [node name="level_03" type="Node2D" unique_id=862426343]
+position = Vector2(-6, 0)
+
+[node name="Wall Collison" type="Node" parent="." unique_id=371612764]
+
+[node name="PlaceholderWall39" parent="Wall Collison" unique_id=2081876318 instance=ExtResource("1_724y1")]
+position = Vector2(-804, -1054)
+scale = Vector2(1, 34.32)
+
+[node name="PlaceholderWall40" parent="Wall Collison" unique_id=1802657825 instance=ExtResource("1_724y1")]
+position = Vector2(-459, -1207)
+scale = Vector2(1, 25)
+
+[node name="PlaceholderWall" parent="Wall Collison" unique_id=274103180 instance=ExtResource("1_724y1")]
+position = Vector2(545, -545)
+scale = Vector2(1, 7.913454)
+
+[node name="PlaceholderWall15" parent="Wall Collison" unique_id=1798578831 instance=ExtResource("1_724y1")]
+position = Vector2(406, -386.99997)
+rotation = 1.5717922
+scale = Vector2(1, 7.913454)
+
+[node name="PlaceholderWall4" parent="Wall Collison" unique_id=1030776195 instance=ExtResource("1_724y1")]
+position = Vector2(-869, 618.00006)
+scale = Vector2(1, 26.4429)
+
+[node name="PlaceholderWall13" parent="Wall Collison" unique_id=164773360 instance=ExtResource("1_724y1")]
+position = Vector2(1081, 1446)
+scale = Vector2(1, 42)
+
+[node name="PlaceholderWall14" parent="Wall Collison" unique_id=1809560862 instance=ExtResource("1_724y1")]
+position = Vector2(-121, 2511.0002)
+scale = Vector2(1, 12.680002)
+
+[node name="PlaceholderWall19" parent="Wall Collison" unique_id=216196247 instance=ExtResource("1_724y1")]
+position = Vector2(380, 1468)
+scale = Vector2(1, 16.88)
+
+[node name="PlaceholderWall20" parent="Wall Collison" unique_id=1787157248 instance=ExtResource("1_724y1")]
+position = Vector2(2685, 2296)
+scale = Vector2(1, 7.9017324)
+
+[node name="PlaceholderWall11" parent="Wall Collison" unique_id=222476768 instance=ExtResource("1_724y1")]
+position = Vector2(3756, -104)
+scale = Vector2(1, 29.279997)
+
+[node name="PlaceholderWall8" parent="Wall Collison" unique_id=1516963366 instance=ExtResource("1_724y1")]
+position = Vector2(-196, -156)
+scale = Vector2(1, 12)
+
+[node name="PlaceholderWall44" parent="Wall Collison" unique_id=1516230113 instance=ExtResource("1_724y1")]
+position = Vector2(-442, 473)
+scale = Vector2(1, 8.72)
+
+[node name="PlaceholderWall42" parent="Wall Collison" unique_id=1690131185 instance=ExtResource("1_724y1")]
+position = Vector2(262, -54)
+scale = Vector2(1, 17.56)
+
+[node name="PlaceholderWall23" parent="Wall Collison" unique_id=742962038 instance=ExtResource("1_724y1")]
+position = Vector2(2298, 2608)
+scale = Vector2(1, 8.01992)
+
+[node name="PlaceholderWall30" parent="Wall Collison" unique_id=1323900964 instance=ExtResource("1_724y1")]
+position = Vector2(1115, 2977)
+scale = Vector2(1, 12)
+
+[node name="PlaceholderWall35" parent="Wall Collison" unique_id=1323571837 instance=ExtResource("1_724y1")]
+position = Vector2(152, 3431.0002)
+scale = Vector2(1, 12)
+
+[node name="PlaceholderWall46" parent="Wall Collison" unique_id=293116392 instance=ExtResource("1_724y1")]
+position = Vector2(684, 3441.0002)
+scale = Vector2(1, 11.360004)
+
+[node name="PlaceholderWall31" parent="Wall Collison" unique_id=1021931739 instance=ExtResource("1_724y1")]
+position = Vector2(2477, 2753)
+rotation = -1.5722704
+scale = Vector2(1, 10)
+
+[node name="PlaceholderWall27" parent="Wall Collison" unique_id=620085362 instance=ExtResource("1_724y1")]
+position = Vector2(2367, 1255)
+scale = Vector2(1, 16.199997)
+
+[node name="PlaceholderWall32" parent="Wall Collison" unique_id=1347538417 instance=ExtResource("1_724y1")]
+position = Vector2(3789, 1714.0001)
+scale = Vector2(1, 21.8)
+
+[node name="PlaceholderWall37" parent="Wall Collison" unique_id=567366589 instance=ExtResource("1_724y1")]
+position = Vector2(3062, 2884)
+scale = Vector2(1, 37.28795)
+
+[node name="PlaceholderWall36" parent="Wall Collison" unique_id=1071525621 instance=ExtResource("1_724y1")]
+position = Vector2(-885, 2493)
+scale = Vector2(1, 36.08)
+
+[node name="PlaceholderWall28" parent="Wall Collison" unique_id=481549851 instance=ExtResource("1_724y1")]
+position = Vector2(3305, 1744)
+scale = Vector2(1, 9.479999)
+
+[node name="PlaceholderWall48" parent="Wall Collison" unique_id=812725366 instance=ExtResource("1_724y1")]
+position = Vector2(2850, 1130.9999)
+scale = Vector2(1, 9.479999)
+
+[node name="PlaceholderWall53" parent="Wall Collison" unique_id=195800992 instance=ExtResource("1_724y1")]
+position = Vector2(2717, 579)
+scale = Vector2(1, 6.119998)
+
+[node name="PlaceholderWall33" parent="Wall Collison" unique_id=677269229 instance=ExtResource("1_724y1")]
+position = Vector2(2655, 3188)
+scale = Vector2(1, 22.8)
+
+[node name="PlaceholderWall16" parent="Wall Collison" unique_id=1666085950 instance=ExtResource("1_724y1")]
+position = Vector2(3119, 713.00006)
+scale = Vector2(1, 12.839998)
+
+[node name="PlaceholderWall58" parent="Wall Collison" unique_id=1751609605 instance=ExtResource("1_724y1")]
+position = Vector2(3278, -123)
+scale = Vector2(1, 12.839998)
+
+[node name="PlaceholderWall65" parent="Wall Collison" unique_id=2037686550 instance=ExtResource("1_724y1")]
+position = Vector2(3769, -1389)
+scale = Vector2(1, 22.64)
+
+[node name="PlaceholderWall67" parent="Wall Collison" unique_id=2025434661 instance=ExtResource("1_724y1")]
+position = Vector2(3434, -1600)
+scale = Vector2(1, 13.528349)
+
+[node name="PlaceholderWall55" parent="Wall Collison" unique_id=57821617 instance=ExtResource("1_724y1")]
+position = Vector2(2444, 289)
+scale = Vector2(1, 8.239998)
+
+[node name="PlaceholderWall61" parent="Wall Collison" unique_id=1474476705 instance=ExtResource("1_724y1")]
+position = Vector2(2907, -1002.99994)
+scale = Vector2(1, 17.719994)
+
+[node name="PlaceholderWall62" parent="Wall Collison" unique_id=1295852458 instance=ExtResource("1_724y1")]
+position = Vector2(3318, -805)
+scale = Vector2(1, 8.239998)
+
+[node name="PlaceholderWall59" parent="Wall Collison" unique_id=1614536497 instance=ExtResource("1_724y1")]
+position = Vector2(2370, -507)
+scale = Vector2(1, 8.239998)
+
+[node name="PlaceholderWall5" parent="Wall Collison" unique_id=665149920 instance=ExtResource("1_724y1")]
+position = Vector2(2405, 2036)
+scale = Vector2(1, 5.48)
+
+[node name="PlaceholderWall50" parent="Wall Collison" unique_id=1275891849 instance=ExtResource("1_724y1")]
+position = Vector2(2082, 847)
+scale = Vector2(1, 5.48)
+
+[node name="PlaceholderWall2" parent="Wall Collison" unique_id=1587733258 instance=ExtResource("1_724y1")]
+position = Vector2(2821, -364)
+scale = Vector2(23.680002, 1)
+
+[node name="PlaceholderWall7" parent="Wall Collison" unique_id=955908753 instance=ExtResource("1_724y1")]
+position = Vector2(-246, 1145)
+scale = Vector2(32.040005, 1)
+
+[node name="PlaceholderWall10" parent="Wall Collison" unique_id=4899753 instance=ExtResource("1_724y1")]
+position = Vector2(-362, 3210)
+scale = Vector2(26.840004, 1)
+
+[node name="PlaceholderWall17" parent="Wall Collison" unique_id=449391333 instance=ExtResource("1_724y1")]
+position = Vector2(3317, 1297)
+scale = Vector2(24.439999, 1)
+
+[node name="PlaceholderWall57" parent="Wall Collison" unique_id=1303368478 instance=ExtResource("1_724y1")]
+position = Vector2(3440, 448)
+scale = Vector2(16.999994, 1)
+
+[node name="PlaceholderWall63" parent="Wall Collison" unique_id=823563043 instance=ExtResource("1_724y1")]
+position = Vector2(3516, -655)
+scale = Vector2(11.151622, 1)
+
+[node name="PlaceholderWall68" parent="Wall Collison" unique_id=644766748 instance=ExtResource("1_724y1")]
+position = Vector2(3601.9998, -1860)
+scale = Vector2(9.431622, 1)
+
+[node name="PlaceholderWall64" parent="Wall Collison" unique_id=806905359 instance=ExtResource("1_724y1")]
+position = Vector2(3525, -958)
+scale = Vector2(11.151622, 1)
+
+[node name="PlaceholderWall66" parent="Wall Collison" unique_id=152729128 instance=ExtResource("1_724y1")]
+position = Vector2(3150.0002, -1351)
+scale = Vector2(13.351622, 1)
+
+[node name="PlaceholderWall18" parent="Wall Collison" unique_id=1804225906 instance=ExtResource("1_724y1")]
+position = Vector2(2835, 1557)
+scale = Vector2(24.560001, 1)
+
+[node name="PlaceholderWall9" parent="Wall Collison" unique_id=1303600481 instance=ExtResource("1_724y1")]
+position = Vector2(-627, -1730)
+scale = Vector2(9.385951, 1)
+
+[node name="PlaceholderWall12" parent="Wall Collison" unique_id=32638231 instance=ExtResource("1_724y1")]
+position = Vector2(503, 2743)
+scale = Vector2(32.000004, 1)
+
+[node name="PlaceholderWall26" parent="Wall Collison" unique_id=652964648 instance=ExtResource("1_724y1")]
+position = Vector2(2492, 2428)
+scale = Vector2(10.64, 1)
+
+[node name="PlaceholderWall45" parent="Wall Collison" unique_id=1737052902 instance=ExtResource("1_724y1")]
+position = Vector2(900.00006, 3214)
+scale = Vector2(11.839998, 1)
+
+[node name="PlaceholderWall47" parent="Wall Collison" unique_id=188816294 instance=ExtResource("1_724y1")]
+position = Vector2(421, 3653)
+scale = Vector2(13.599999, 1)
+
+[node name="PlaceholderWall38" parent="Wall Collison" unique_id=795489770 instance=ExtResource("1_724y1")]
+position = Vector2(2859.0002, 3623)
+scale = Vector2(11.120005, 1)
+
+[node name="PlaceholderWall24" parent="Wall Collison" unique_id=2057441623 instance=ExtResource("1_724y1")]
+position = Vector2(475, 2270)
+scale = Vector2(30.6, 1)
+
+[node name="PlaceholderWall25" parent="Wall Collison" unique_id=386947521 instance=ExtResource("1_724y1")]
+position = Vector2(-252, 1790)
+scale = Vector2(32.72, 1)
+
+[node name="PlaceholderWall34" parent="Wall Collison" unique_id=181646351 instance=ExtResource("1_724y1")]
+position = Vector2(3424, 2157)
+scale = Vector2(19.120003, 1)
+
+[node name="PlaceholderWall29" parent="Wall Collison" unique_id=408102501 instance=ExtResource("1_724y1")]
+position = Vector2(2855, 1943)
+scale = Vector2(23.72, 1)
+
+[node name="PlaceholderWall21" parent="Wall Collison" unique_id=365894022 instance=ExtResource("1_724y1")]
+position = Vector2(38.000004, -723)
+scale = Vector2(26.039997, 1)
+
+[node name="PlaceholderWall22" parent="Wall Collison" unique_id=1312674422 instance=ExtResource("1_724y1")]
+position = Vector2(-532, 69)
+scale = Vector2(17.8, 1)
+
+[node name="PlaceholderWall43" parent="Wall Collison" unique_id=1438981393 instance=ExtResource("1_724y1")]
+position = Vector2(-91.99999, 320)
+scale = Vector2(18.6, 1)
+
+[node name="PlaceholderWall41" parent="Wall Collison" unique_id=834756433 instance=ExtResource("1_724y1")]
+position = Vector2(-498.99997, -381)
+scale = Vector2(16.609657, 1)
+
+[node name="PlaceholderWall3" parent="Wall Collison" unique_id=782611059 instance=ExtResource("1_724y1")]
+position = Vector2(299, 631)
+scale = Vector2(38.0211, 0.9090533)
+
+[node name="PlaceholderWall6" parent="Wall Collison" unique_id=841641813 instance=ExtResource("1_724y1")]
+position = Vector2(2546, 2158)
+scale = Vector2(7.9999995, 1)
+
+[node name="PlaceholderWall51" parent="Wall Collison" unique_id=1271737587 instance=ExtResource("1_724y1")]
+position = Vector2(2404.0002, 721)
+scale = Vector2(16.680002, 1)
+
+[node name="PlaceholderWall49" parent="Wall Collison" unique_id=448337597 instance=ExtResource("1_724y1")]
+position = Vector2(2227, 953)
+scale = Vector2(7.9999995, 1)
+
+[node name="PlaceholderWall52" parent="Wall Collison" unique_id=114644051 instance=ExtResource("1_724y1")]
+position = Vector2(2984, 956)
+scale = Vector2(7.9999995, 1)
+
+[node name="PlaceholderWall56" parent="Wall Collison" unique_id=2018124974 instance=ExtResource("1_724y1")]
+position = Vector2(2840, 114)
+scale = Vector2(20.840002, 1)
+
+[node name="PlaceholderWall60" parent="Wall Collison" unique_id=273920808 instance=ExtResource("1_724y1")]
+position = Vector2(2644, -658)
+scale = Vector2(14.2, 1)
+
+[node name="PlaceholderWall54" parent="Wall Collison" unique_id=120973921 instance=ExtResource("1_724y1")]
+position = Vector2(2580, 441)
+scale = Vector2(7.9999995, 1)
+
+[node name="Portal" parent="." unique_id=475271727 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_rx3d3")]
+position = Vector2(428, 3461)
+linkedPortal = NodePath("")
+
+[node name="Portal2" parent="." unique_id=395445683 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_rx3d3")]
+position = Vector2(2880, 3451)
+linkedPortal = NodePath("")
+cooldownTime = 5.0
+
+[node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("3_mr4wi")]
+position = Vector2(3610, -1648)
