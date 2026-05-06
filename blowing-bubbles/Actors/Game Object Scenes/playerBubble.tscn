@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://4hrologxgmyq" path="res://Actors/Game Object Scenes/Object Scripts/player_bubble.gd" id="1_pwu4n"]
 [ext_resource type="Texture2D" uid="uid://cby64c4b663fl" path="res://Assets/Official Assets/mcIdle.png" id="2_wi1qk"]
 [ext_resource type="Texture2D" uid="uid://bgx1drfki7uid" path="res://Assets/Official Assets/bubble.png" id="3_7n6df"]
+[ext_resource type="PackedScene" uid="uid://dupyt07w2sucr" path="res://UI/diedUI.tscn" id="4_wi1qk"]
+[ext_resource type="PackedScene" uid="uid://c1me5mqd7d1ux" path="res://UI/clearedUI.tscn" id="5_7n6df"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ik5mq"]
 atlas = ExtResource("3_7n6df")
@@ -79,3 +81,13 @@ zoom = Vector2(0.6, 0.6)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=891736625]
 shape = SubResource("CircleShape2D_wi1qk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2134697220]
+
+[node name="DiedUi" parent="CanvasLayer" unique_id=337245170 instance=ExtResource("4_wi1qk")]
+physics_interpolation_mode = 2
+visible = false
+position = Vector2(0, 40)
+
+[node name="Control" parent="CanvasLayer" unique_id=1435994257 instance=ExtResource("5_7n6df")]
+visible = false

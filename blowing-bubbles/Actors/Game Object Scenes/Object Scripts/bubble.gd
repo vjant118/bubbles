@@ -3,7 +3,7 @@ extends RigidBody2D
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
+func _physics_process(_delta):
 	check_bodies()
  
 func check_bodies(): 

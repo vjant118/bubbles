@@ -242,10 +242,11 @@ horizontal_alignment = 1
 
 [node name="play_button" type="Button" parent="VBoxContainer/Title" unique_id=161540750]
 layout_mode = 0
-offset_left = 380.0
-offset_top = 251.0
-offset_right = 757.4193
-offset_bottom = 381.0
-text = "Play Game"
+offset_left = 568.0
+offset_top = 416.0
+offset_right = 1355.0
+offset_bottom = 744.0
+theme_override_font_sizes/font_size = 79
+text = "Press Start to Play!"
 
 [connection signal="pressed" from="VBoxContainer/Title/play_button" to="." method="_on_play_button_pressed"]
