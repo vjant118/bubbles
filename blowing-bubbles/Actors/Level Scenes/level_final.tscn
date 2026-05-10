@@ -1,3 +1,327 @@
 [gd_scene format=3 uid="uid://oml6ajnsxprn"]
 
+[ext_resource type="PackedScene" uid="uid://bibia0eeio2q4" path="res://Actors/Game Object Scenes/Placeholder Wall.tscn" id="1_te43d"]
+[ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://Actors/Game Object Scenes/playerBubble.tscn" id="2_gl4wf"]
+[ext_resource type="PackedScene" uid="uid://cwruy2vrtx80a" path="res://Actors/Game Object Scenes/Portal.tscn" id="3_7ui8b"]
+[ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="4_xngw8"]
+
 [node name="level_final" type="Node2D" unique_id=1935546418]
+position = Vector2(-8478, -6436)
+
+[node name="PlaceholderWall9" parent="." unique_id=2081876318 instance=ExtResource("1_te43d")]
+position = Vector2(373.00003, -1419)
+scale = Vector2(31.30595, 1)
+
+[node name="PlaceholderWall10" parent="." unique_id=1065614753 instance=ExtResource("1_te43d")]
+position = Vector2(243, -1184)
+scale = Vector2(24.54595, 1)
+
+[node name="PlaceholderWall14" parent="." unique_id=391554393 instance=ExtResource("1_te43d")]
+position = Vector2(1289, -866)
+scale = Vector2(29.585955, 1)
+
+[node name="PlaceholderWall18" parent="." unique_id=1544270080 instance=ExtResource("1_te43d")]
+position = Vector2(2550, -1445)
+scale = Vector2(35.225956, 1)
+
+[node name="PlaceholderWall44" parent="." unique_id=482345010 instance=ExtResource("1_te43d")]
+position = Vector2(2792, -263)
+scale = Vector2(54.465954, 1)
+
+[node name="PlaceholderWall57" parent="." unique_id=1034323122 instance=ExtResource("1_te43d")]
+position = Vector2(868, 2243)
+scale = Vector2(54.465954, 1)
+
+[node name="PlaceholderWall45" parent="." unique_id=791452976 instance=ExtResource("1_te43d")]
+position = Vector2(3018, 1439)
+scale = Vector2(44.82596, 1)
+
+[node name="PlaceholderWall24" parent="." unique_id=166650544 instance=ExtResource("1_te43d")]
+position = Vector2(2819, -2641)
+scale = Vector2(61.785954, 1)
+
+[node name="PlaceholderWall15" parent="." unique_id=1871581382 instance=ExtResource("1_te43d")]
+position = Vector2(1281.0001, -1136)
+scale = Vector2(16.305952, 1)
+
+[node name="PlaceholderWall20" parent="." unique_id=554436126 instance=ExtResource("1_te43d")]
+position = Vector2(3490.0002, -2015)
+scale = Vector2(13.18596, 1)
+
+[node name="PlaceholderWall22" parent="." unique_id=1144710773 instance=ExtResource("1_te43d")]
+position = Vector2(4160, -1442)
+scale = Vector2(21.945957, 1)
+
+[node name="PlaceholderWall30" parent="." unique_id=1725932289 instance=ExtResource("1_te43d")]
+position = Vector2(5211.0005, -2089)
+scale = Vector2(30.905956, 1)
+
+[node name="PlaceholderWall28" parent="." unique_id=1929917559 instance=ExtResource("1_te43d")]
+position = Vector2(5038.0005, -1017)
+scale = Vector2(21.945957, 1)
+
+[node name="PlaceholderWall38" parent="." unique_id=1471498325 instance=ExtResource("1_te43d")]
+position = Vector2(4226, 169)
+scale = Vector2(16.745956, 1)
+
+[node name="PlaceholderWall39" parent="." unique_id=906675537 instance=ExtResource("1_te43d")]
+position = Vector2(4419, 632)
+scale = Vector2(25.225956, 1)
+
+[node name="PlaceholderWall33" parent="." unique_id=1260303431 instance=ExtResource("1_te43d")]
+position = Vector2(5014, -407)
+scale = Vector2(21.945957, 1)
+
+[node name="PlaceholderWall37" parent="." unique_id=1874061200 instance=ExtResource("1_te43d")]
+position = Vector2(5355, 201)
+scale = Vector2(21.945957, 1)
+
+[node name="PlaceholderWall64" parent="." unique_id=392806840 instance=ExtResource("1_te43d")]
+position = Vector2(9030, 2311)
+scale = Vector2(21.945957, 1)
+
+[node name="PlaceholderWall65" parent="." unique_id=1201909431 instance=ExtResource("1_te43d")]
+position = Vector2(8729, 2899)
+scale = Vector2(37.985954, 1)
+
+[node name="PlaceholderWall66" parent="." unique_id=353102418 instance=ExtResource("1_te43d")]
+position = Vector2(9470.999, 4167)
+rotation = 1.5763682
+scale = Vector2(63.4611, 1)
+
+[node name="PlaceholderWall69" parent="." unique_id=1167300809 instance=ExtResource("1_te43d")]
+position = Vector2(9463.001, 1024)
+rotation = 1.5763682
+scale = Vector2(64.95133, 1)
+
+[node name="PlaceholderWall70" parent="." unique_id=1635172750 instance=ExtResource("1_te43d")]
+position = Vector2(15478.001, 1017)
+rotation = 1.5763682
+scale = Vector2(64.95133, 1)
+
+[node name="PlaceholderWall72" parent="." unique_id=776106521 instance=ExtResource("1_te43d")]
+position = Vector2(16390.002, 2881)
+rotation = 3.1402857
+scale = Vector2(46.399498, 1)
+
+[node name="PlaceholderWall73" parent="." unique_id=1261573333 instance=ExtResource("1_te43d")]
+position = Vector2(16378.999, 2303)
+rotation = 3.1402857
+scale = Vector2(46.399498, 1)
+
+[node name="PlaceholderWall71" parent="." unique_id=367473667 instance=ExtResource("1_te43d")]
+position = Vector2(15473.001, 4163)
+rotation = 1.5763682
+scale = Vector2(64.95133, 1)
+
+[node name="PlaceholderWall67" parent="." unique_id=1489196644 instance=ExtResource("1_te43d")]
+position = Vector2(12471, 5417)
+scale = Vector2(150.94597, 1)
+
+[node name="PlaceholderWall68" parent="." unique_id=1128444914 instance=ExtResource("1_te43d")]
+position = Vector2(12503, -262)
+scale = Vector2(150.42596, 1)
+
+[node name="PlaceholderWall23" parent="." unique_id=1174228703 instance=ExtResource("1_te43d")]
+position = Vector2(4291.0005, -1700)
+scale = Vector2(13.18596, 1)
+
+[node name="PlaceholderWall11" parent="." unique_id=554737088 instance=ExtResource("1_te43d")]
+position = Vector2(-272.00003, -1301.9999)
+rotation = 1.5677661
+scale = Vector2(6.945961, 1)
+
+[node name="PlaceholderWall12" parent="." unique_id=447000508 instance=ExtResource("1_te43d")]
+position = Vector2(716.9999, -1026)
+rotation = 1.5677661
+scale = Vector2(8.864862, 1)
+
+[node name="PlaceholderWall16" parent="." unique_id=1553643156 instance=ExtResource("1_te43d")]
+position = Vector2(1601.0001, -1887)
+rotation = 1.5677661
+scale = Vector2(38.12437, 1)
+
+[node name="PlaceholderWall17" parent="." unique_id=1307988747 instance=ExtResource("1_te43d")]
+position = Vector2(1864, -1160)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall19" parent="." unique_id=1444531582 instance=ExtResource("1_te43d")]
+position = Vector2(3236, -1730)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall21" parent="." unique_id=1657848887 instance=ExtResource("1_te43d")]
+position = Vector2(3735, -1727.0001)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall41" parent="." unique_id=439915470 instance=ExtResource("1_te43d")]
+position = Vector2(3901.9995, 1033.9999)
+rotation = 1.5677661
+scale = Vector2(21.186136, 1)
+
+[node name="PlaceholderWall42" parent="." unique_id=161855745 instance=ExtResource("1_te43d")]
+position = Vector2(1376.9998, 492.99982)
+rotation = 1.5677661
+scale = Vector2(21.468435, 1)
+
+[node name="PlaceholderWall56" parent="." unique_id=1870531163 instance=ExtResource("1_te43d")]
+position = Vector2(-213, 1467.9999)
+rotation = 1.5677661
+scale = Vector2(38.350536, 1)
+
+[node name="PlaceholderWall29" parent="." unique_id=1425811637 instance=ExtResource("1_te43d")]
+position = Vector2(5459, -692.00024)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall62" parent="." unique_id=1932946044 instance=ExtResource("1_te43d")]
+position = Vector2(7959, 2319)
+rotation = 1.5677661
+scale = Vector2(30.103676, 1)
+
+[node name="PlaceholderWall63" parent="." unique_id=2015863362 instance=ExtResource("1_te43d")]
+position = Vector2(8601.001, 2024)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall32" parent="." unique_id=1954622234 instance=ExtResource("1_te43d")]
+position = Vector2(5813.0005, -69.000305)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall35" parent="." unique_id=566729583 instance=ExtResource("1_te43d")]
+position = Vector2(4556, -120.99982)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
+[node name="PlaceholderWall36" parent="." unique_id=1545612220 instance=ExtResource("1_te43d")]
+position = Vector2(4938.0005, 417.00012)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
+[node name="PlaceholderWall40" parent="." unique_id=989067453 instance=ExtResource("1_te43d")]
+position = Vector2(3893.0005, -42.999847)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
+[node name="PlaceholderWall43" parent="." unique_id=448888543 instance=ExtResource("1_te43d")]
+position = Vector2(2113, 1225)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
+[node name="PlaceholderWall53" parent="." unique_id=22798144 instance=ExtResource("1_te43d")]
+position = Vector2(1109.0002, 1629)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
+[node name="PlaceholderWall58" parent="." unique_id=117447929 instance=ExtResource("1_te43d")]
+position = Vector2(1950.0002, 2467)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
+[node name="PlaceholderWall59" parent="." unique_id=2090548983 instance=ExtResource("1_te43d")]
+position = Vector2(2291.0002, 2067.0002)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
+[node name="PlaceholderWall46" parent="." unique_id=1225664188 instance=ExtResource("1_te43d")]
+position = Vector2(1705.0002, -78.99988)
+rotation = 1.5677661
+scale = Vector2(9.230912, 1)
+
+[node name="PlaceholderWall49" parent="." unique_id=574478430 instance=ExtResource("1_te43d")]
+position = Vector2(1920.0002, 1211)
+rotation = 1.5677661
+scale = Vector2(11.311266, 1)
+
+[node name="PlaceholderWall47" parent="." unique_id=1488489482 instance=ExtResource("1_te43d")]
+position = Vector2(1538, 92.00012)
+rotation = 3.1408353
+scale = Vector2(9.230911, 1)
+
+[node name="PlaceholderWall50" parent="." unique_id=292613454 instance=ExtResource("1_te43d")]
+position = Vector2(1494, 1419.0001)
+rotation = 3.1408353
+scale = Vector2(20.78994, 1)
+
+[node name="PlaceholderWall60" parent="." unique_id=477177760 instance=ExtResource("1_te43d")]
+position = Vector2(2526.9998, 2683)
+rotation = 3.1408353
+scale = Vector2(28.920397, 0.9129367)
+
+[node name="PlaceholderWall61" parent="." unique_id=2126075693 instance=ExtResource("1_te43d")]
+position = Vector2(2691, 2286)
+rotation = 3.1408353
+scale = Vector2(20.78994, 1)
+
+[node name="PlaceholderWall54" parent="." unique_id=441036033 instance=ExtResource("1_te43d")]
+position = Vector2(1698, 1849.0001)
+rotation = 3.1408353
+scale = Vector2(30.549725, 1)
+
+[node name="PlaceholderWall55" parent="." unique_id=330803725 instance=ExtResource("1_te43d")]
+position = Vector2(419, 704.0001)
+rotation = 3.1408353
+scale = Vector2(32.46956, 1)
+
+[node name="PlaceholderWall51" parent="." unique_id=1263703305 instance=ExtResource("1_te43d")]
+position = Vector2(1219, 945.0001)
+rotation = 3.1408353
+scale = Vector2(9.230911, 1)
+
+[node name="PlaceholderWall48" parent="." unique_id=1533993255 instance=ExtResource("1_te43d")]
+position = Vector2(2020, 1007.0001)
+rotation = 3.1408353
+scale = Vector2(5.671153, 1)
+
+[node name="PlaceholderWall26" parent="." unique_id=497116281 instance=ExtResource("1_te43d")]
+position = Vector2(4577, -1895.0001)
+rotation = 1.5677661
+scale = Vector2(11.069949, 1)
+
+[node name="PlaceholderWall27" parent="." unique_id=1938920278 instance=ExtResource("1_te43d")]
+position = Vector2(4584, -1229.0002)
+rotation = 1.5677661
+scale = Vector2(11.589216, 1)
+
+[node name="PlaceholderWall25" parent="." unique_id=1911957730 instance=ExtResource("1_te43d")]
+position = Vector2(4031.9998, -2144.9998)
+rotation = 1.5677661
+scale = Vector2(23.546007, 1)
+
+[node name="PlaceholderWall31" parent="." unique_id=1001627142 instance=ExtResource("1_te43d")]
+position = Vector2(5809.9995, -1217.9996)
+rotation = 1.5677661
+scale = Vector2(42.34798, 1)
+
+[node name="PlaceholderWall34" parent="." unique_id=208432660 instance=ExtResource("1_te43d")]
+position = Vector2(5809.9995, -1217.9996)
+rotation = 1.5677661
+scale = Vector2(42.34798, 1)
+
+[node name="PlaceholderWall13" parent="." unique_id=1568731547 instance=ExtResource("1_te43d")]
+position = Vector2(981, -1260)
+rotation = 1.5677661
+scale = Vector2(6.945961, 1)
+
+[node name="PlaceholderWall52" parent="." unique_id=1980436515 instance=ExtResource("1_te43d")]
+position = Vector2(1055, 816)
+rotation = 1.5677661
+scale = Vector2(6.945961, 1)
+
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_gl4wf")]
+position = Vector2(-159, -1284)
+
+[node name="Portal" parent="." unique_id=475271727 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_7ui8b")]
+position = Vector2(3713, 2583)
+linkedPortal = NodePath("")
+
+[node name="Portal2" parent="." unique_id=961144728 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_7ui8b")]
+position = Vector2(8175, -1652)
+linkedPortal = NodePath("")
+cooldownTime = 5.0
+
+[node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("4_xngw8")]
+position = Vector2(18485, 2660)
