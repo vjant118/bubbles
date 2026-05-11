@@ -80,6 +80,10 @@ scale = Vector2(21.945957, 1)
 position = Vector2(9030, 2311)
 scale = Vector2(21.945957, 1)
 
+[node name="PlaceholderWall75" parent="." unique_id=1237435571 instance=ExtResource("1_te43d")]
+position = Vector2(8280, 1689)
+scale = Vector2(18.425957, 1)
+
 [node name="PlaceholderWall65" parent="." unique_id=1201909431 instance=ExtResource("1_te43d")]
 position = Vector2(8729, 2899)
 scale = Vector2(37.985954, 1)
@@ -226,6 +230,11 @@ position = Vector2(2291.0002, 2067.0002)
 rotation = 1.5677661
 scale = Vector2(11.788118, 1)
 
+[node name="PlaceholderWall74" parent="." unique_id=2072602348 instance=ExtResource("1_te43d")]
+position = Vector2(2916.0002, 4409)
+rotation = 1.5677661
+scale = Vector2(11.788118, 1)
+
 [node name="PlaceholderWall46" parent="." unique_id=1225664188 instance=ExtResource("1_te43d")]
 position = Vector2(1705.0002, -78.99988)
 rotation = 1.5677661
@@ -314,14 +323,12 @@ scale = Vector2(6.945961, 1)
 [node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_gl4wf")]
 position = Vector2(-159, -1284)
 
-[node name="Portal" parent="." unique_id=475271727 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_7ui8b")]
-position = Vector2(3713, 2583)
-linkedPortal = NodePath("")
+[node name="Portal" parent="." unique_id=475271727 instance=ExtResource("3_7ui8b")]
+position = Vector2(2981, 2493)
 
-[node name="Portal2" parent="." unique_id=961144728 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_7ui8b")]
-position = Vector2(8175, -1652)
-linkedPortal = NodePath("")
+[node name="Portal2" parent="." unique_id=961144728 instance=ExtResource("3_7ui8b")]
+position = Vector2(8284, 1875)
 cooldownTime = 5.0
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("4_xngw8")]
-position = Vector2(18485, 2660)
+position = Vector2(18119, 2655)
