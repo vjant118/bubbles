@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dupyt07w2sucr"]
+
+[ext_resource type="Script" uid="uid://b8oqdx16cbjgo" path="res://UI/UI Scripts/diedUI.gd" id="1_pyyo5"]
+[ext_resource type="Texture2D" uid="uid://ciscb5qrwee3d" path="res://UI/UI Assets/go_bg.svg" id="2_20qum"]
+[ext_resource type="Texture2D" uid="uid://dw4cd30lygodc" path="res://UI/UI Assets/go_menu_button.svg" id="3_0ka7n"]
+[ext_resource type="Texture2D" uid="uid://c2joy6qop5laf" path="res://UI/UI Assets/go_retry_button.svg" id="4_gud43"]
+
+[node name="DiedUi" type="Control" unique_id=798410131]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pyyo5")
+
+[node name="again" type="Button" parent="." unique_id=1135662305]
+layout_mode = 0
+offset_left = 287.00003
+offset_top = 457.0
+offset_right = 532.0
+offset_bottom = 573.0
+scale = Vector2(2.5, 2.5)
+size_flags_horizontal = 3
+icon = ExtResource("4_gud43")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="level" type="Button" parent="." unique_id=385914742]
+layout_mode = 0
+offset_left = 1039.0
+offset_top = 461.00003
+offset_right = 1263.8148
+offset_bottom = 566.5556
+scale = Vector2(2.5, 2.5)
+icon = ExtResource("3_0ka7n")
+metadata/_edit_use_anchors_ = true
+
+[node name="MainUi" type="Sprite2D" parent="." unique_id=1697361644]
+position = Vector2(949.00006, 526)
+scale = Vector2(2.6743417, 2.1980813)
+texture = ExtResource("2_20qum")
+
+[connection signal="pressed" from="again" to="." method="_on_again_pressed"]
+[connection signal="pressed" from="level" to="." method="_on_level_pressed"]

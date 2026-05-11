@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dllv1p28a0ynd"]
+
+[ext_resource type="Script" uid="uid://5cjgysmjxob1" path="res://UI/UI Scripts/main_menu.gd" id="1_p8ccj"]
+[ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://Assets/Placeholder Assets/finalfirstlevelbackground.webp" id="2_j2s36"]
+[ext_resource type="Texture2D" uid="uid://fc774yhhvhh3" path="res://UI/UI Assets/logo.svg" id="3_m1pym"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/Game Object Scenes/bubble.tscn" id="4_81h7a"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://Actors/Game Object Scenes/mouseblower.tscn" id="5_81h7a"]
+[ext_resource type="AudioStream" uid="uid://c4niwfindkbax" path="res://Audio/menu.mp3" id="6_7sjsy"]
+
+[node name="LevelSelect" type="PanelContainer" unique_id=1584094061]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p8ccj")
+
+[node name="Finalfirstlevelbackground" type="Sprite2D" parent="." unique_id=306058861]
+position = Vector2(960, 543)
+scale = Vector2(5.311111, 4.014815)
+texture = ExtResource("2_j2s36")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=309228273]
+layout_mode = 2
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=700920274]
+position = Vector2(982, 237)
+scale = Vector2(3, 3)
+texture = ExtResource("3_m1pym")
+
+[node name="play_button" type="Button" parent="Logo" unique_id=161540750]
+offset_left = -184.33334
+offset_top = 136.66666
+offset_right = 535.6666
+offset_bottom = 253.66666
+scale = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 79
+text = "Press Start to Play!"
+
+[node name="Bubbles" type="Node2D" parent="." unique_id=465106238]
+position = Vector2(1824, 300)
+scale = Vector2(0.25, 0.25)
+
+[node name="bubble" parent="Bubbles" unique_id=406493826 instance=ExtResource("4_81h7a")]
+position = Vector2(-6196, 924)
+scale = Vector2(4, 4)
+
+[node name="bubble2" parent="Bubbles" unique_id=886366199 instance=ExtResource("4_81h7a")]
+position = Vector2(-5368, 2500)
+scale = Vector2(4, 4)
+
+[node name="bubble3" parent="Bubbles" unique_id=1280637191 instance=ExtResource("4_81h7a")]
+position = Vector2(-4668, 400)
+scale = Vector2(4, 4)
+
+[node name="bubble4" parent="Bubbles" unique_id=1114093144 instance=ExtResource("4_81h7a")]
+position = Vector2(-1668, 692)
+scale = Vector2(4, 4)
+
+[node name="bubble5" parent="Bubbles" unique_id=603243890 instance=ExtResource("4_81h7a")]
+position = Vector2(-5600, -288)
+scale = Vector2(4, 4)
+
+[node name="bubble6" parent="Bubbles" unique_id=1842081929 instance=ExtResource("4_81h7a")]
+position = Vector2(-536, 1704)
+scale = Vector2(4, 4)
+
+[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("5_81h7a")]
+position = Vector2(920, 520)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=178049849]
+stream = ExtResource("6_7sjsy")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="Logo/play_button" to="." method="_on_play_button_pressed"]

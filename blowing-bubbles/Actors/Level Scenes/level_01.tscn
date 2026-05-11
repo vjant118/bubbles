@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://Actors/Game Object Scenes/levelEndPoint.tscn" id="8_v4fra"]
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/Game Object Scenes/timer.tscn" id="10_v4fra"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/Game Object Scenes/sceneResetter.tscn" id="11_hp85b"]
+[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://Audio/bgm.mp3" id="14_8o25t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
 texture = ExtResource("2_y0gpl")
@@ -1692,3 +1693,9 @@ position = Vector2(976, -1622)
 
 [node name="bubble11" parent="Bubbles" unique_id=998581611 instance=ExtResource("5_v4fra")]
 position = Vector2(1166, -1705)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1477272234]
+stream = ExtResource("14_8o25t")
+volume_db = -24.143
+autoplay = true
+parameters/looping = true
