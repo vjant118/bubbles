@@ -8,10 +8,12 @@ func _process(_delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		$CollisionShape2D.set_deferred("disabled", false)
 		$Sprite2D.set_deferred("visible", true)
+		$AudioStreamPlayer.play()
 		blow()
 	else:
 		$CollisionShape2D.set_deferred("disabled", true)
 		$Sprite2D.set_deferred("visible", false)
+		$AudioStreamPlayer.stop()
 		
 func blow():
 	var bodies = get_overlapping_bodies()

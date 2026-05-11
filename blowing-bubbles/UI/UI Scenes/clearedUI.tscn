@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://c1me5mqd7d1ux"]
+
+[ext_resource type="Script" uid="uid://wubg47nudihx" path="res://UI/UI Scripts/clearedUI.gd" id="1_m3idd"]
+[ext_resource type="Texture2D" uid="uid://047501gwvib8" path="res://UI/UI Assets/Cleared.svg" id="2_ftmm3"]
+
+[sub_resource type="FontFile" id="FontFile_dpeyw"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[node name="Control" type="Control" unique_id=1435994257]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m3idd")
+
+[node name="Cleared" type="Sprite2D" parent="." unique_id=910310366]
+position = Vector2(853.50006, 534.25)
+scale = Vector2(2.5345397, 2.2020316)
+texture = ExtResource("2_ftmm3")
+
+[node name="Label2" type="Label" parent="Cleared" unique_id=1431221981]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -483.01648
+offset_top = -269.75092
+offset_right = -122.56674
+offset_bottom = -153.66374
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_dpeyw")
+theme_override_font_sizes/font_size = 30
+text = "Time:"
+
+[node name="button" type="Button" parent="Cleared" unique_id=1571765891]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -426.73935
+offset_top = -359.1002
+offset_right = -184.36797
+offset_bottom = -242.3898
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 60
+
+[connection signal="pressed" from="Cleared/button" to="." method="_on_button_pressed"]

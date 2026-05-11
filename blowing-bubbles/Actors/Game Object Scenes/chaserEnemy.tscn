@@ -9,9 +9,9 @@ radius = 79.0
 [node name="ChaserEnemy" type="StaticBody2D" unique_id=687154552 groups=["hazards"]]
 script = ExtResource("1_122v7")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=720598]
+shape = SubResource("CircleShape2D_r5qi6")
+
 [node name="MovingSpike" type="Sprite2D" parent="." unique_id=535791880]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_1m5l0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=720598]
-shape = SubResource("CircleShape2D_r5qi6")

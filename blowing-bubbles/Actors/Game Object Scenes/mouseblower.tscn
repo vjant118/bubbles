@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://et7jfeaqodgu" path="res://Assets/Placeholder Assets/circle.png" id="1_anm83"]
 [ext_resource type="Script" uid="uid://4oj88k60nl2y" path="res://Actors/Game Object Scenes/Object Scripts/mouseblower.gd" id="1_ggk7m"]
+[ext_resource type="AudioStream" uid="uid://fmvq68uuy0st" path="res://Audio/wind.mp3" id="3_seexs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ggk7m"]
 radius = 0.79999995
@@ -18,3 +19,6 @@ texture = ExtResource("1_anm83")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1409871104]
 shape = SubResource("CircleShape2D_ggk7m")
 disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1990339793]
+stream = ExtResource("3_seexs")
