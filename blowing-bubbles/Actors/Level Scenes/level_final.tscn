@@ -190,6 +190,11 @@ position = Vector2(8601.001, 2024)
 rotation = 1.5677661
 scale = Vector2(15.345438, 1)
 
+[node name="PlaceholderWall76" parent="." unique_id=816810440 instance=ExtResource("1_te43d")]
+position = Vector2(17327.002, 2592.0002)
+rotation = 1.5677661
+scale = Vector2(15.345438, 1)
+
 [node name="PlaceholderWall32" parent="." unique_id=1954622234 instance=ExtResource("1_te43d")]
 position = Vector2(5813.0005, -69.000305)
 rotation = 1.5677661
@@ -331,4 +336,4 @@ position = Vector2(8284, 1875)
 cooldownTime = 5.0
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("4_xngw8")]
-position = Vector2(18119, 2655)
+position = Vector2(17174, 2603)
