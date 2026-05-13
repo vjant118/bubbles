@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dr4jjp8vh35ts"]
+
+[ext_resource type="Script" uid="uid://c5okmb1fq2id2" path="res://src/objects/timer.gd" id="1_a73k2"]
+
+[node name="Timer" type="Label" unique_id=1376593584]
+theme_override_font_sizes/font_size = 80
+script = ExtResource("1_a73k2")
+
+[node name="Timer" type="Timer" parent="." unique_id=1371716596]
+autostart = true

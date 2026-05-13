@@ -1,0 +1,411 @@
+[gd_scene format=3 uid="uid://b6ulfsc8kmi0f"]
+
+[ext_resource type="PackedScene" uid="uid://bibia0eeio2q4" path="res://actors/placeholderWall.tscn" id="1_724y1"]
+[ext_resource type="PackedScene" uid="uid://cwruy2vrtx80a" path="res://actors/portal.tscn" id="2_rx3d3"]
+[ext_resource type="PackedScene" uid="uid://dm1kiesl6s554" path="res://actors/chaserEnemy.tscn" id="2_y6x3y"]
+[ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="3_mr4wi"]
+[ext_resource type="PackedScene" uid="uid://chglvhlcd26ke" path="res://actors/chaserActivator.tscn" id="3_r4g0b"]
+[ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="4_pfdh1"]
+[ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="4_rx3d3"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="5_mr4wi"]
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="9_77c3y"]
+
+[node name="level_03" type="Node2D" unique_id=862426343]
+
+[node name="Wall Collison" type="Node" parent="." unique_id=371612764]
+
+[node name="PlaceholderWall39" parent="Wall Collison" unique_id=2081876318 instance=ExtResource("1_724y1")]
+position = Vector2(-172, 460)
+scale = Vector2(1, 34.32)
+
+[node name="PlaceholderWall40" parent="Wall Collison" unique_id=1802657825 instance=ExtResource("1_724y1")]
+position = Vector2(173, 307)
+scale = Vector2(1, 25)
+
+[node name="PlaceholderWall" parent="Wall Collison" unique_id=274103180 instance=ExtResource("1_724y1")]
+position = Vector2(1177, 968.9999)
+scale = Vector2(1, 7.913454)
+
+[node name="PlaceholderWall15" parent="Wall Collison" unique_id=1798578831 instance=ExtResource("1_724y1")]
+position = Vector2(1038, 1127)
+rotation = 1.5717922
+scale = Vector2(1, 7.913454)
+
+[node name="PlaceholderWall4" parent="Wall Collison" unique_id=1030776195 instance=ExtResource("1_724y1")]
+position = Vector2(-237, 2132)
+scale = Vector2(1, 26.4429)
+
+[node name="PlaceholderWall13" parent="Wall Collison" unique_id=164773360 instance=ExtResource("1_724y1")]
+position = Vector2(1713, 2960)
+scale = Vector2(1, 42)
+
+[node name="PlaceholderWall14" parent="Wall Collison" unique_id=1809560862 instance=ExtResource("1_724y1")]
+position = Vector2(510.99994, 4025)
+scale = Vector2(1, 12.680002)
+
+[node name="PlaceholderWall19" parent="Wall Collison" unique_id=216196247 instance=ExtResource("1_724y1")]
+position = Vector2(1012, 2982)
+scale = Vector2(1, 16.88)
+
+[node name="PlaceholderWall20" parent="Wall Collison" unique_id=1787157248 instance=ExtResource("1_724y1")]
+position = Vector2(3317, 3810)
+scale = Vector2(1, 7.9017324)
+
+[node name="PlaceholderWall11" parent="Wall Collison" unique_id=222476768 instance=ExtResource("1_724y1")]
+position = Vector2(4388, 1410)
+scale = Vector2(1, 29.279997)
+
+[node name="PlaceholderWall8" parent="Wall Collison" unique_id=1516963366 instance=ExtResource("1_724y1")]
+position = Vector2(436, 1358)
+scale = Vector2(1, 12)
+
+[node name="PlaceholderWall44" parent="Wall Collison" unique_id=1516230113 instance=ExtResource("1_724y1")]
+position = Vector2(190, 1987)
+scale = Vector2(1, 8.72)
+
+[node name="PlaceholderWall42" parent="Wall Collison" unique_id=1690131185 instance=ExtResource("1_724y1")]
+position = Vector2(894, 1460)
+scale = Vector2(1, 17.56)
+
+[node name="PlaceholderWall23" parent="Wall Collison" unique_id=742962038 instance=ExtResource("1_724y1")]
+position = Vector2(2930, 4122)
+scale = Vector2(1, 8.01992)
+
+[node name="PlaceholderWall30" parent="Wall Collison" unique_id=1323900964 instance=ExtResource("1_724y1")]
+position = Vector2(1747, 4491)
+scale = Vector2(1, 12)
+
+[node name="PlaceholderWall35" parent="Wall Collison" unique_id=1323571837 instance=ExtResource("1_724y1")]
+position = Vector2(784, 4945)
+scale = Vector2(1, 12)
+
+[node name="PlaceholderWall46" parent="Wall Collison" unique_id=293116392 instance=ExtResource("1_724y1")]
+position = Vector2(1316, 4955)
+scale = Vector2(1, 11.360004)
+
+[node name="PlaceholderWall31" parent="Wall Collison" unique_id=1021931739 instance=ExtResource("1_724y1")]
+position = Vector2(3109, 4267)
+rotation = -1.5722704
+scale = Vector2(1, 10)
+
+[node name="PlaceholderWall27" parent="Wall Collison" unique_id=620085362 instance=ExtResource("1_724y1")]
+position = Vector2(2999, 2769)
+scale = Vector2(1, 16.199997)
+
+[node name="PlaceholderWall32" parent="Wall Collison" unique_id=1347538417 instance=ExtResource("1_724y1")]
+position = Vector2(4421, 3228)
+scale = Vector2(1, 21.8)
+
+[node name="PlaceholderWall37" parent="Wall Collison" unique_id=567366589 instance=ExtResource("1_724y1")]
+position = Vector2(3694, 4398)
+scale = Vector2(1, 37.28795)
+
+[node name="PlaceholderWall36" parent="Wall Collison" unique_id=1071525621 instance=ExtResource("1_724y1")]
+position = Vector2(-253, 4007)
+scale = Vector2(1, 36.08)
+
+[node name="PlaceholderWall28" parent="Wall Collison" unique_id=481549851 instance=ExtResource("1_724y1")]
+position = Vector2(3937, 3258)
+scale = Vector2(1, 9.479999)
+
+[node name="PlaceholderWall48" parent="Wall Collison" unique_id=812725366 instance=ExtResource("1_724y1")]
+position = Vector2(3482, 2645)
+scale = Vector2(1, 9.479999)
+
+[node name="PlaceholderWall53" parent="Wall Collison" unique_id=195800992 instance=ExtResource("1_724y1")]
+position = Vector2(3349, 2093)
+scale = Vector2(1, 6.119998)
+
+[node name="PlaceholderWall33" parent="Wall Collison" unique_id=677269229 instance=ExtResource("1_724y1")]
+position = Vector2(3287, 4702)
+scale = Vector2(1, 22.8)
+
+[node name="PlaceholderWall16" parent="Wall Collison" unique_id=1666085950 instance=ExtResource("1_724y1")]
+position = Vector2(3751, 2227)
+scale = Vector2(1, 12.839998)
+
+[node name="PlaceholderWall58" parent="Wall Collison" unique_id=1751609605 instance=ExtResource("1_724y1")]
+position = Vector2(3910, 1391)
+scale = Vector2(1, 12.839998)
+
+[node name="PlaceholderWall65" parent="Wall Collison" unique_id=2037686550 instance=ExtResource("1_724y1")]
+position = Vector2(4401, 125)
+scale = Vector2(1, 22.64)
+
+[node name="PlaceholderWall67" parent="Wall Collison" unique_id=2025434661 instance=ExtResource("1_724y1")]
+position = Vector2(4066, -86)
+scale = Vector2(1, 13.528349)
+
+[node name="PlaceholderWall55" parent="Wall Collison" unique_id=57821617 instance=ExtResource("1_724y1")]
+position = Vector2(3076, 1803)
+scale = Vector2(1, 8.239998)
+
+[node name="PlaceholderWall61" parent="Wall Collison" unique_id=1474476705 instance=ExtResource("1_724y1")]
+position = Vector2(3539, 511.00006)
+scale = Vector2(1, 17.719994)
+
+[node name="PlaceholderWall62" parent="Wall Collison" unique_id=1295852458 instance=ExtResource("1_724y1")]
+position = Vector2(3950, 709)
+scale = Vector2(1, 8.239998)
+
+[node name="PlaceholderWall59" parent="Wall Collison" unique_id=1614536497 instance=ExtResource("1_724y1")]
+position = Vector2(3002, 1007)
+scale = Vector2(1, 8.239998)
+
+[node name="PlaceholderWall5" parent="Wall Collison" unique_id=665149920 instance=ExtResource("1_724y1")]
+position = Vector2(3037, 3550)
+scale = Vector2(1, 5.48)
+
+[node name="PlaceholderWall50" parent="Wall Collison" unique_id=1275891849 instance=ExtResource("1_724y1")]
+position = Vector2(2714, 2361)
+scale = Vector2(1, 5.48)
+
+[node name="PlaceholderWall2" parent="Wall Collison" unique_id=1587733258 instance=ExtResource("1_724y1")]
+position = Vector2(3453, 1150)
+scale = Vector2(23.680002, 1)
+
+[node name="PlaceholderWall7" parent="Wall Collison" unique_id=955908753 instance=ExtResource("1_724y1")]
+position = Vector2(386, 2659)
+scale = Vector2(32.040005, 1)
+
+[node name="PlaceholderWall10" parent="Wall Collison" unique_id=4899753 instance=ExtResource("1_724y1")]
+position = Vector2(270, 4724)
+scale = Vector2(26.840004, 1)
+
+[node name="PlaceholderWall17" parent="Wall Collison" unique_id=449391333 instance=ExtResource("1_724y1")]
+position = Vector2(3949, 2811)
+scale = Vector2(24.439999, 1)
+
+[node name="PlaceholderWall57" parent="Wall Collison" unique_id=1303368478 instance=ExtResource("1_724y1")]
+position = Vector2(4072, 1962)
+scale = Vector2(16.999994, 1)
+
+[node name="PlaceholderWall63" parent="Wall Collison" unique_id=823563043 instance=ExtResource("1_724y1")]
+position = Vector2(4148, 859)
+scale = Vector2(11.151622, 1)
+
+[node name="PlaceholderWall68" parent="Wall Collison" unique_id=644766748 instance=ExtResource("1_724y1")]
+position = Vector2(4234, -346)
+scale = Vector2(9.431622, 1)
+
+[node name="PlaceholderWall64" parent="Wall Collison" unique_id=806905359 instance=ExtResource("1_724y1")]
+position = Vector2(4157, 556)
+scale = Vector2(11.151622, 1)
+
+[node name="PlaceholderWall66" parent="Wall Collison" unique_id=152729128 instance=ExtResource("1_724y1")]
+position = Vector2(3782.0002, 162.99988)
+scale = Vector2(13.351622, 1)
+
+[node name="PlaceholderWall18" parent="Wall Collison" unique_id=1804225906 instance=ExtResource("1_724y1")]
+position = Vector2(3467, 3071)
+scale = Vector2(24.560001, 1)
+
+[node name="PlaceholderWall9" parent="Wall Collison" unique_id=1303600481 instance=ExtResource("1_724y1")]
+position = Vector2(5, -216)
+scale = Vector2(9.385951, 1)
+
+[node name="PlaceholderWall12" parent="Wall Collison" unique_id=32638231 instance=ExtResource("1_724y1")]
+position = Vector2(1135, 4257)
+scale = Vector2(32.000004, 1)
+
+[node name="PlaceholderWall26" parent="Wall Collison" unique_id=652964648 instance=ExtResource("1_724y1")]
+position = Vector2(3124, 3942)
+scale = Vector2(10.64, 1)
+
+[node name="PlaceholderWall45" parent="Wall Collison" unique_id=1737052902 instance=ExtResource("1_724y1")]
+position = Vector2(1532, 4728)
+scale = Vector2(11.839998, 1)
+
+[node name="PlaceholderWall47" parent="Wall Collison" unique_id=188816294 instance=ExtResource("1_724y1")]
+position = Vector2(1053, 5167)
+scale = Vector2(13.599999, 1)
+
+[node name="PlaceholderWall38" parent="Wall Collison" unique_id=795489770 instance=ExtResource("1_724y1")]
+position = Vector2(3491.0002, 5137)
+scale = Vector2(11.120005, 1)
+
+[node name="PlaceholderWall24" parent="Wall Collison" unique_id=2057441623 instance=ExtResource("1_724y1")]
+position = Vector2(1107, 3784)
+scale = Vector2(30.6, 1)
+
+[node name="PlaceholderWall25" parent="Wall Collison" unique_id=386947521 instance=ExtResource("1_724y1")]
+position = Vector2(380, 3304)
+scale = Vector2(32.72, 1)
+
+[node name="PlaceholderWall34" parent="Wall Collison" unique_id=181646351 instance=ExtResource("1_724y1")]
+position = Vector2(4056, 3671)
+scale = Vector2(19.120003, 1)
+
+[node name="PlaceholderWall29" parent="Wall Collison" unique_id=408102501 instance=ExtResource("1_724y1")]
+position = Vector2(3487, 3457)
+scale = Vector2(23.72, 1)
+
+[node name="PlaceholderWall21" parent="Wall Collison" unique_id=365894022 instance=ExtResource("1_724y1")]
+position = Vector2(669.99994, 790.9999)
+scale = Vector2(26.039997, 1)
+
+[node name="PlaceholderWall22" parent="Wall Collison" unique_id=1312674422 instance=ExtResource("1_724y1")]
+position = Vector2(100, 1583)
+scale = Vector2(17.8, 1)
+
+[node name="PlaceholderWall43" parent="Wall Collison" unique_id=1438981393 instance=ExtResource("1_724y1")]
+position = Vector2(539.99994, 1833.9999)
+scale = Vector2(18.6, 1)
+
+[node name="PlaceholderWall41" parent="Wall Collison" unique_id=834756433 instance=ExtResource("1_724y1")]
+position = Vector2(133.00003, 1133)
+scale = Vector2(16.609657, 1)
+
+[node name="PlaceholderWall3" parent="Wall Collison" unique_id=782611059 instance=ExtResource("1_724y1")]
+position = Vector2(931, 2145)
+scale = Vector2(38.0211, 0.9090533)
+
+[node name="PlaceholderWall6" parent="Wall Collison" unique_id=841641813 instance=ExtResource("1_724y1")]
+position = Vector2(3178, 3672)
+scale = Vector2(7.9999995, 1)
+
+[node name="PlaceholderWall51" parent="Wall Collison" unique_id=1271737587 instance=ExtResource("1_724y1")]
+position = Vector2(3036.0002, 2235)
+scale = Vector2(16.680002, 1)
+
+[node name="PlaceholderWall49" parent="Wall Collison" unique_id=448337597 instance=ExtResource("1_724y1")]
+position = Vector2(2859, 2467)
+scale = Vector2(7.9999995, 1)
+
+[node name="PlaceholderWall52" parent="Wall Collison" unique_id=114644051 instance=ExtResource("1_724y1")]
+position = Vector2(3616, 2470)
+scale = Vector2(7.9999995, 1)
+
+[node name="PlaceholderWall56" parent="Wall Collison" unique_id=2018124974 instance=ExtResource("1_724y1")]
+position = Vector2(3472, 1628)
+scale = Vector2(20.840002, 1)
+
+[node name="PlaceholderWall60" parent="Wall Collison" unique_id=273920808 instance=ExtResource("1_724y1")]
+position = Vector2(3276, 856)
+scale = Vector2(14.2, 1)
+
+[node name="PlaceholderWall54" parent="Wall Collison" unique_id=120973921 instance=ExtResource("1_724y1")]
+position = Vector2(3212, 1955)
+scale = Vector2(7.9999995, 1)
+
+[node name="Chasers" type="Node" parent="." unique_id=1369626112]
+
+[node name="ChaserEnemy" parent="Chasers" unique_id=956407589 instance=ExtResource("2_y6x3y")]
+position = Vector2(1050, 952)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy2" parent="Chasers" unique_id=1975641396 instance=ExtResource("2_y6x3y")]
+position = Vector2(1612, 4388)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy3" parent="Chasers" unique_id=2011889751 instance=ExtResource("2_y6x3y")]
+position = Vector2(1556, 2295)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy4" parent="Chasers" unique_id=2077804969 instance=ExtResource("2_y6x3y")]
+position = Vector2(-90, 3452)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy5" parent="Chasers" unique_id=2087082289 instance=ExtResource("2_y6x3y")]
+position = Vector2(3106, 4101)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy6" parent="Chasers" unique_id=638583606 instance=ExtResource("2_y6x3y")]
+position = Vector2(3185, 3573)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy7" parent="Chasers" unique_id=2120827568 instance=ExtResource("2_y6x3y")]
+position = Vector2(2880, 2354)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy8" parent="Chasers" unique_id=1560429466 instance=ExtResource("2_y6x3y")]
+position = Vector2(3243, 1781)
+speed = 250.0
+activated = false
+
+[node name="ChaserEnemy9" parent="Chasers" unique_id=158737426 instance=ExtResource("2_y6x3y")]
+position = Vector2(3173, 1008)
+speed = 250.0
+activated = false
+
+[node name="ChaserActivator" parent="Chasers" unique_id=1988191175 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(672, 1152)
+scale = Vector2(6.3599977, 1)
+linkedEnemy = NodePath("../ChaserEnemy")
+
+[node name="ChaserActivator2" parent="Chasers" unique_id=511855597 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(1373, 2685)
+scale = Vector2(9.76, 1)
+linkedEnemy = NodePath("../ChaserEnemy3")
+
+[node name="ChaserActivator3" parent="Chasers" unique_id=1423322097 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(125, 3796)
+scale = Vector2(11.52, 1)
+linkedEnemy = NodePath("../ChaserEnemy4")
+
+[node name="ChaserActivator4" parent="Chasers" unique_id=5938442 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(1056.0001, 4763)
+scale = Vector2(7.4800024, 1)
+linkedEnemy = NodePath("../ChaserEnemy2")
+
+[node name="ChaserActivator5" parent="Chasers" unique_id=93462560 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(3515, 3942)
+scale = Vector2(5.04001, 1)
+linkedEnemy = NodePath("../ChaserEnemy5")
+
+[node name="ChaserActivator6" parent="Chasers" unique_id=891748163 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(3788, 3564)
+scale = Vector2(1, 2.1599998)
+linkedEnemy = NodePath("../ChaserEnemy6")
+
+[node name="ChaserActivator7" parent="Chasers" unique_id=1543719043 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(3410, 2357)
+scale = Vector2(3.5861046, -2.694309)
+linkedEnemy = NodePath("../ChaserEnemy7")
+
+[node name="ChaserActivator8" parent="Chasers" unique_id=431169897 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(3830, 1773)
+scale = Vector2(1, 3.6)
+linkedEnemy = NodePath("../ChaserEnemy8")
+
+[node name="ChaserActivator9" parent="Chasers" unique_id=175186381 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("3_r4g0b")]
+position = Vector2(3734, 845)
+scale = Vector2(5.1199903, 1)
+linkedEnemy = NodePath("../ChaserEnemy9")
+
+[node name="ProjectileShooter" parent="Chasers" unique_id=1630183063 instance=ExtResource("4_pfdh1")]
+position = Vector2(1636, 2540)
+
+[node name="ProjectileShooter2" parent="Chasers" unique_id=1538740330 instance=ExtResource("4_pfdh1")]
+position = Vector2(356, 4627)
+rotation = 1.5707964
+
+[node name="Portal" parent="." unique_id=475271727 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_rx3d3")]
+position = Vector2(1054, 4932)
+linkedPortal = NodePath("../Portal2")
+cooldownTime = 20.0
+
+[node name="Portal2" parent="." unique_id=395445683 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_rx3d3")]
+position = Vector2(3489, 4928)
+linkedPortal = NodePath("../Portal")
+cooldownTime = 20.0
+
+[node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("3_mr4wi")]
+position = Vector2(4230, -134)
+
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("4_rx3d3")]
+
+[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("5_mr4wi")]
+position = Vector2(331, 152)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2045332555]
+
+[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("9_77c3y")]
+unique_name_in_owner = true

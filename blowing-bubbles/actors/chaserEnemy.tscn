@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dm1kiesl6s554"]
+
+[ext_resource type="Script" uid="uid://c0mn78y5ck1x3" path="res://src/objects/chaserEnemy.gd" id="1_h4uaq"]
+[ext_resource type="Texture2D" uid="uid://d1m4gx53cym2l" path="res://assets/Official Assets/movingSpike.png" id="2_nmbmi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r5qi6"]
+radius = 65.06919
+
+[node name="ChaserEnemy" type="StaticBody2D" unique_id=687154552 groups=["hazards"]]
+script = ExtResource("1_h4uaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=720598]
+shape = SubResource("CircleShape2D_r5qi6")
+
+[node name="MovingSpike" type="Sprite2D" parent="." unique_id=535791880]
+position = Vector2(-4, 3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_nmbmi")

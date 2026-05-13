@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cj2o3jlaln6hp"]
+
+[ext_resource type="Script" uid="uid://4hrologxgmyq" path="res://src/objects/playerBubble.gd" id="1_wxy3h"]
+[ext_resource type="Texture2D" uid="uid://cby64c4b663fl" path="res://assets/Official Assets/mcIdle.png" id="2_rafrp"]
+[ext_resource type="Texture2D" uid="uid://bgx1drfki7uid" path="res://assets/Official Assets/bubble.png" id="3_8777a"]
+[ext_resource type="PackedScene" uid="uid://c1me5mqd7d1ux" path="res://UI/clearedUI.tscn" id="4_shtpb"]
+[ext_resource type="PackedScene" uid="uid://dupyt07w2sucr" path="res://UI/diedUI.tscn" id="5_cs7d7"]
+[ext_resource type="AudioStream" uid="uid://dguyb2nnc7mkc" path="res://audio/pop.mp3" id="6_mphrm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ik5mq"]
+atlas = ExtResource("3_8777a")
+region = Rect2(5, 0, 457, 520)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4t5x"]
+atlas = ExtResource("3_8777a")
+region = Rect2(462, 0, 457, 520)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2e8x"]
+atlas = ExtResource("3_8777a")
+region = Rect2(919, 0, 457, 520)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0bhs"]
+atlas = ExtResource("3_8777a")
+region = Rect2(1376, 0, 457, 520)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4ifb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ik5mq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4t5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2e8x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0bhs")
+}],
+"loop": true,
+"name": &"Bubble Anim",
+"speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d2ri8"]
+radius = 57.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wi1qk"]
+radius = 48.0
+
+[node name="bubble" type="RigidBody2D" unique_id=406493826 groups=["player"]]
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 2
+script = ExtResource("1_wxy3h")
+
+[node name="McIdle" type="Sprite2D" parent="." unique_id=1301994771]
+position = Vector2(-6, -8)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_rafrp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1535335548]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_f4ifb")
+animation = &"Bubble Anim"
+autoplay = "Bubble Anim"
+frame_progress = 0.9789359
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=80668382]
+shape = SubResource("CircleShape2D_d2ri8")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2104763173]
+zoom = Vector2(0.6, 0.6)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1892006334]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=891736625]
+shape = SubResource("CircleShape2D_wi1qk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2134697220]
+
+[node name="Control" parent="CanvasLayer" unique_id=1435994257 instance=ExtResource("4_shtpb")]
+visible = false
+offset_left = 94.0
+offset_top = -8.0
+offset_right = 54.0
+offset_bottom = -8.0
+
+[node name="DiedUi" parent="CanvasLayer" unique_id=798410131 instance=ExtResource("5_cs7d7")]
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=592475973]
+stream = ExtResource("6_mphrm")
+volume_db = 15.0
