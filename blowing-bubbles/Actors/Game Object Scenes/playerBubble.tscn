@@ -52,7 +52,7 @@ animations = [{
 radius = 57.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wi1qk"]
-radius = 57.0
+radius = 48.0
 
 [node name="bubble" type="RigidBody2D" unique_id=406493826 groups=["player"]]
 gravity_scale = 0.0
@@ -61,7 +61,7 @@ max_contacts_reported = 2
 script = ExtResource("1_pwu4n")
 
 [node name="McIdle" type="Sprite2D" parent="." unique_id=1301994771]
-position = Vector2(-6, -10)
+position = Vector2(-6, -8)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_wi1qk")
 
