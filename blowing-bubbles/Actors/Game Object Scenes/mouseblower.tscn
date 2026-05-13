@@ -10,6 +10,7 @@ radius = 0.79999995
 [node name="mouseblower" type="Area2D" unique_id=124156406]
 scale = Vector2(50, 50)
 script = ExtResource("1_ggk7m")
+wind_force = 3.5
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=319849725]
 visible = false
