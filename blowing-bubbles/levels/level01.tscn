@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="9_5hgwr"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="10_ha7ol"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://src/objects/pathFollow2D.gd" id="11_o18in"]
-[ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/movingSpikeHazard.tscn" id="12_5rxej"]
+[ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/SpikeBall.tscn" id="12_5rxej"]
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://actors/rotateAxis.tscn" id="13_fh86h"]
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="14_j1gtd"]
 [ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="15_a10hn"]
@@ -138,7 +138,7 @@ sources/2 = SubResource("TileSetAtlasSource_jgq57")
 [node name="player_bubble" parent="player" unique_id=406493826 instance=ExtResource("9_5hgwr")]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(-4, 804)
+position = Vector2(-64, 887)
 
 [node name="mouse_blower" parent="player" unique_id=124156406 instance=ExtResource("8_yjn78")]
 position = Vector2(252, 832)
@@ -200,6 +200,7 @@ position = Vector2(2902, 804)
 [node name="level" type="Node" parent="." unique_id=353011602]
 
 [node name="background" type="Sprite2D" parent="level" unique_id=475294704]
+visible = false
 position = Vector2(2163, -865.00006)
 scale = Vector2(21.466667, 24.825924)
 texture = ExtResource("1_6q0d3")

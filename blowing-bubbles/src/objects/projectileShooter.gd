@@ -16,7 +16,10 @@ func _on_timer_timeout():
 	
 func shoot():
 	var bullet = projectile.instantiate()
-	get_parent().add_child(bullet)
+	if owner:
+		owner.add_child(bullet)
+	else:
+		get_parent().add_child(bullet)
 	bullet.global_position = global_position
 	var direction = Vector2.RIGHT.rotated(global_rotation)
 	bullet.apply_central_impulse(direction * shootSpeed * -100)

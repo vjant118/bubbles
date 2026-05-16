@@ -11,7 +11,7 @@ func check_bodies():
 	
 	for body in bodies:
 		if body.is_in_group("hazards"):
-			%timer.stopTimer()
+			%Timer.stopTimer()
 			$AnimatedSprite2D.hide()
 			$McIdle.hide()
 			$AudioStreamPlayer.play
@@ -24,7 +24,7 @@ func checkWin():
 	
 	for body in bodies:
 		if body.is_in_group("levelEndPoint"):
-			%timer.stopTimer()
+			%Timer.stopTimer()
 			set_deferred("freeze", true)
 			$CanvasLayer/Control.show()
 			$CanvasLayer/Control/Cleared/Label2.text = "Time: " + str(%Timer.text)

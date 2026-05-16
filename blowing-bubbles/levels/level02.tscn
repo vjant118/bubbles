@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cwruy2vrtx80a" path="res://actors/portal.tscn" id="5_22jxo"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="6_wcn54"]
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="7_wcn54"]
-[ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/movingSpikeHazard.tscn" id="11_uic6o"]
+[ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/SpikeBall.tscn" id="11_uic6o"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="13_jcadl"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="14_iwl2t"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="14_qw5du"]
@@ -861,10 +861,10 @@ cooldownTime = 5.0
 [node name="playerbubble" parent="." unique_id=406493826 instance=ExtResource("4_rsb4p")]
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("3_rsb4p")]
-position = Vector2(-1, 0)
+position = Vector2(174, -94)
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("6_wcn54")]
-position = Vector2(0, 1)
+position = Vector2(306, -54)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=955068249]
 
