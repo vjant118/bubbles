@@ -12,6 +12,13 @@
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="5_hl87o"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="6_5sgy0"]
 [ext_resource type="Script" uid="uid://d3wo580qp48wb" path="res://src/objects/antiRotate.gd" id="6_eoywo"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="13_hljv7"]
+
+[sub_resource type="Curve2D" id="Curve2D_hljv7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3806, 190, 0, 0, 0, 0, 2230, 190, 0, 0, 0, 0, 3806, 190)
+}
+point_count = 3
 
 [sub_resource type="Curve2D" id="Curve2D_mwb2d"]
 _data = {
@@ -19,11 +26,178 @@ _data = {
 }
 point_count = 3
 
+[sub_resource type="Curve2D" id="Curve2D_x2tv3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -0.125, 0.125, 0, 0, 0, 0, -101.875, 0.125, 0, 0, 0, 0, -101.75, 132, 0, 0, 0, 0, -0.125, 132, 0, 0, 0, 0, -0.125, 0.125)
+}
+point_count = 5
+
 [node name="level_final" type="Node2D" unique_id=1935546418]
 
 [node name="Hazards" type="Node" parent="." unique_id=1666844830]
 
-[node name="SpikeHazard" parent="Hazards" unique_id=324206565 instance=ExtResource("1_t025a")]
+[node name="BallSpike2" parent="Hazards" unique_id=324206565 instance=ExtResource("5_eoywo")]
+position = Vector2(1986, 842)
+
+[node name="BallSpike3" parent="Hazards" unique_id=1189718686 instance=ExtResource("5_eoywo")]
+position = Vector2(2046, 654)
+
+[node name="BallSpike5" parent="Hazards" unique_id=1612018026 instance=ExtResource("5_eoywo")]
+position = Vector2(2118, 462)
+
+[node name="BallSpike6" parent="Hazards" unique_id=699479260 instance=ExtResource("5_eoywo")]
+position = Vector2(1913, 499)
+
+[node name="Path2D2" type="Path2D" parent="Hazards" unique_id=408429718]
+position = Vector2(0, -8)
+curve = SubResource("Curve2D_hljv7")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Hazards/Path2D2" unique_id=1706796758]
+position = Vector2(3806, 190)
+rotation = 3.1415927
+rotates = false
+script = ExtResource("2_wl7sf")
+speed = 0.15
+
+[node name="SpikeHazard146" parent="Hazards/Path2D2/PathFollow2D" unique_id=1319384579 instance=ExtResource("1_t025a")]
+position = Vector2(12, 333)
+rotation = 1.5707964
+
+[node name="SpikeHazard147" parent="Hazards/Path2D2/PathFollow2D" unique_id=1429201963 instance=ExtResource("1_t025a")]
+position = Vector2(12, 221)
+rotation = 1.5707964
+
+[node name="SpikeHazard148" parent="Hazards/Path2D2/PathFollow2D" unique_id=2146588689 instance=ExtResource("1_t025a")]
+position = Vector2(12, 109)
+rotation = 1.5707964
+
+[node name="SpikeHazard149" parent="Hazards/Path2D2/PathFollow2D" unique_id=74176344 instance=ExtResource("1_t025a")]
+position = Vector2(12, -3)
+rotation = 1.5707964
+
+[node name="SpikeHazard150" parent="Hazards/Path2D2/PathFollow2D" unique_id=246260021 instance=ExtResource("1_t025a")]
+position = Vector2(12, -115.00049)
+rotation = 1.5707964
+
+[node name="SpikeHazard151" parent="Hazards/Path2D2/PathFollow2D" unique_id=1455278103 instance=ExtResource("1_t025a")]
+position = Vector2(12, -227)
+rotation = 1.5707964
+
+[node name="SpikeHazard152" parent="Hazards/Path2D2/PathFollow2D" unique_id=154573605 instance=ExtResource("1_t025a")]
+position = Vector2(12, -339.00024)
+rotation = 1.5707964
+
+[node name="SpikeHazard153" parent="Hazards/Path2D2/PathFollow2D" unique_id=63291265 instance=ExtResource("1_t025a")]
+position = Vector2(-12, 333)
+rotation = 4.712389
+
+[node name="SpikeHazard154" parent="Hazards/Path2D2/PathFollow2D" unique_id=846231145 instance=ExtResource("1_t025a")]
+position = Vector2(-12, 221)
+rotation = 4.712389
+
+[node name="SpikeHazard155" parent="Hazards/Path2D2/PathFollow2D" unique_id=535126645 instance=ExtResource("1_t025a")]
+position = Vector2(-12, 109)
+rotation = 4.712389
+
+[node name="SpikeHazard156" parent="Hazards/Path2D2/PathFollow2D" unique_id=1513880836 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -3)
+rotation = 4.712389
+
+[node name="SpikeHazard157" parent="Hazards/Path2D2/PathFollow2D" unique_id=439774836 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -115.00049)
+rotation = 4.712389
+
+[node name="SpikeHazard158" parent="Hazards/Path2D2/PathFollow2D" unique_id=1659207206 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -227)
+rotation = 4.712389
+
+[node name="SpikeHazard159" parent="Hazards/Path2D2/PathFollow2D" unique_id=1055160427 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -339.00024)
+rotation = 4.712389
+
+[node name="PlaceholderWall" parent="Hazards/Path2D2/PathFollow2D" unique_id=2081876318 instance=ExtResource("1_te43d")]
+scale = Vector2(1, 20)
+
+[node name="Path2D3" type="Path2D" parent="Hazards" unique_id=1411374019]
+position = Vector2(0, 816)
+curve = SubResource("Curve2D_hljv7")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Hazards/Path2D3" unique_id=752090649]
+position = Vector2(2254.0588, 190)
+rotation = 3.1415927
+progress = 1600.0
+rotates = false
+script = ExtResource("2_wl7sf")
+speed = 0.15
+
+[node name="SpikeHazard146" parent="Hazards/Path2D3/PathFollow2D" unique_id=921586470 instance=ExtResource("1_t025a")]
+position = Vector2(12, 333)
+rotation = 1.5707964
+
+[node name="SpikeHazard147" parent="Hazards/Path2D3/PathFollow2D" unique_id=1067649038 instance=ExtResource("1_t025a")]
+position = Vector2(12, 221)
+rotation = 1.5707964
+
+[node name="SpikeHazard148" parent="Hazards/Path2D3/PathFollow2D" unique_id=807305680 instance=ExtResource("1_t025a")]
+position = Vector2(12, 109)
+rotation = 1.5707964
+
+[node name="SpikeHazard149" parent="Hazards/Path2D3/PathFollow2D" unique_id=74186330 instance=ExtResource("1_t025a")]
+position = Vector2(12, -3)
+rotation = 1.5707964
+
+[node name="SpikeHazard150" parent="Hazards/Path2D3/PathFollow2D" unique_id=312188795 instance=ExtResource("1_t025a")]
+position = Vector2(12, -115.00049)
+rotation = 1.5707964
+
+[node name="SpikeHazard151" parent="Hazards/Path2D3/PathFollow2D" unique_id=954480563 instance=ExtResource("1_t025a")]
+position = Vector2(12, -227)
+rotation = 1.5707964
+
+[node name="SpikeHazard152" parent="Hazards/Path2D3/PathFollow2D" unique_id=808124891 instance=ExtResource("1_t025a")]
+position = Vector2(12, -339.00024)
+rotation = 1.5707964
+
+[node name="SpikeHazard160" parent="Hazards/Path2D3/PathFollow2D" unique_id=1156925460 instance=ExtResource("1_t025a")]
+position = Vector2(12, -227)
+rotation = 1.5707964
+
+[node name="SpikeHazard161" parent="Hazards/Path2D3/PathFollow2D" unique_id=148433211 instance=ExtResource("1_t025a")]
+position = Vector2(12, -339.00024)
+rotation = 1.5707964
+
+[node name="SpikeHazard153" parent="Hazards/Path2D3/PathFollow2D" unique_id=983065403 instance=ExtResource("1_t025a")]
+position = Vector2(-12, 333)
+rotation = 4.712389
+
+[node name="SpikeHazard154" parent="Hazards/Path2D3/PathFollow2D" unique_id=971105631 instance=ExtResource("1_t025a")]
+position = Vector2(-12, 221)
+rotation = 4.712389
+
+[node name="SpikeHazard155" parent="Hazards/Path2D3/PathFollow2D" unique_id=1496156913 instance=ExtResource("1_t025a")]
+position = Vector2(-12, 109)
+rotation = 4.712389
+
+[node name="SpikeHazard156" parent="Hazards/Path2D3/PathFollow2D" unique_id=680541716 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -3)
+rotation = 4.712389
+
+[node name="SpikeHazard157" parent="Hazards/Path2D3/PathFollow2D" unique_id=116734827 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -115.00049)
+rotation = 4.712389
+
+[node name="SpikeHazard158" parent="Hazards/Path2D3/PathFollow2D" unique_id=1796159320 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -227)
+rotation = 4.712389
+
+[node name="SpikeHazard159" parent="Hazards/Path2D3/PathFollow2D" unique_id=396873682 instance=ExtResource("1_t025a")]
+position = Vector2(-12, -339.00024)
+rotation = 4.712389
+
+[node name="PlaceholderWall" parent="Hazards/Path2D3/PathFollow2D" unique_id=792429955 instance=ExtResource("1_te43d")]
+scale = Vector2(1, 20)
+
+[node name="SpikeHazard" parent="Hazards" unique_id=286312219 instance=ExtResource("1_t025a")]
 position = Vector2(966, -1288)
 rotation = -1.5707964
 scale = Vector2(2, 1)
@@ -151,6 +325,26 @@ rotation = 1.5707964
 position = Vector2(4602, -1080)
 rotation = 1.5707964
 
+[node name="SpikeHazard121" parent="Hazards" unique_id=706063631 instance=ExtResource("1_t025a")]
+position = Vector2(4568, -184)
+rotation = 1.5707964
+
+[node name="SpikeHazard125" parent="Hazards" unique_id=1290422498 instance=ExtResource("1_t025a")]
+position = Vector2(4568, -288)
+rotation = 1.5707964
+
+[node name="SpikeHazard122" parent="Hazards" unique_id=186016784 instance=ExtResource("1_t025a")]
+position = Vector2(4568, -80)
+rotation = 1.5707964
+
+[node name="SpikeHazard123" parent="Hazards" unique_id=177361449 instance=ExtResource("1_t025a")]
+position = Vector2(4568, 24)
+rotation = 1.5707964
+
+[node name="SpikeHazard124" parent="Hazards" unique_id=1857655582 instance=ExtResource("1_t025a")]
+position = Vector2(4568, 128)
+rotation = 1.5707964
+
 [node name="SpikeHazard91" parent="Hazards" unique_id=734620637 instance=ExtResource("1_t025a")]
 position = Vector2(4599, -2043)
 rotation = 1.5707964
@@ -181,6 +375,162 @@ position = Vector2(5311, -1035)
 
 [node name="SpikeHazard84" parent="Hazards" unique_id=643566602 instance=ExtResource("1_t025a")]
 position = Vector2(5415, -1035)
+
+[node name="SpikeHazard104" parent="Hazards" unique_id=270829381 instance=ExtResource("1_t025a")]
+position = Vector2(4983, 181)
+
+[node name="SpikeHazard105" parent="Hazards" unique_id=531199297 instance=ExtResource("1_t025a")]
+position = Vector2(5087, 181)
+
+[node name="SpikeHazard106" parent="Hazards" unique_id=1181487906 instance=ExtResource("1_t025a")]
+position = Vector2(5191, 181)
+
+[node name="SpikeHazard107" parent="Hazards" unique_id=535757549 instance=ExtResource("1_t025a")]
+position = Vector2(5295, 181)
+
+[node name="SpikeHazard108" parent="Hazards" unique_id=612838791 instance=ExtResource("1_t025a")]
+position = Vector2(5399, 181)
+
+[node name="SpikeHazard109" parent="Hazards" unique_id=1722064287 instance=ExtResource("1_t025a")]
+position = Vector2(5503, 181)
+
+[node name="SpikeHazard110" parent="Hazards" unique_id=2140846945 instance=ExtResource("1_t025a")]
+position = Vector2(5607, 181)
+
+[node name="SpikeHazard111" parent="Hazards" unique_id=1919423901 instance=ExtResource("1_t025a")]
+position = Vector2(5711, 181)
+
+[node name="SpikeHazard126" parent="Hazards" unique_id=1672857600 instance=ExtResource("1_t025a")]
+position = Vector2(4127, 620)
+
+[node name="SpikeHazard134" parent="Hazards" unique_id=1218435401 instance=ExtResource("1_t025a")]
+position = Vector2(4015, 620)
+
+[node name="SpikeHazard127" parent="Hazards" unique_id=2146590000 instance=ExtResource("1_t025a")]
+position = Vector2(4231, 620)
+
+[node name="SpikeHazard128" parent="Hazards" unique_id=1335464030 instance=ExtResource("1_t025a")]
+position = Vector2(4335, 620)
+
+[node name="SpikeHazard129" parent="Hazards" unique_id=1212790853 instance=ExtResource("1_t025a")]
+position = Vector2(4439, 620)
+
+[node name="SpikeHazard130" parent="Hazards" unique_id=1400398323 instance=ExtResource("1_t025a")]
+position = Vector2(4543, 620)
+
+[node name="SpikeHazard131" parent="Hazards" unique_id=1833690810 instance=ExtResource("1_t025a")]
+position = Vector2(4647, 620)
+
+[node name="SpikeHazard132" parent="Hazards" unique_id=962622030 instance=ExtResource("1_t025a")]
+position = Vector2(4751, 620)
+
+[node name="SpikeHazard133" parent="Hazards" unique_id=237720743 instance=ExtResource("1_t025a")]
+position = Vector2(4855, 620)
+
+[node name="SpikeHazard145" parent="Hazards" unique_id=1964749507 instance=ExtResource("1_t025a")]
+position = Vector2(3095, 1426)
+
+[node name="SpikeHazard146" parent="Hazards" unique_id=1838043337 instance=ExtResource("1_t025a")]
+position = Vector2(2983, 1426)
+
+[node name="SpikeHazard147" parent="Hazards" unique_id=1141749106 instance=ExtResource("1_t025a")]
+position = Vector2(3199, 1426)
+
+[node name="SpikeHazard148" parent="Hazards" unique_id=1613331014 instance=ExtResource("1_t025a")]
+position = Vector2(3303, 1426)
+
+[node name="SpikeHazard149" parent="Hazards" unique_id=28676260 instance=ExtResource("1_t025a")]
+position = Vector2(3407, 1426)
+
+[node name="SpikeHazard150" parent="Hazards" unique_id=2047657770 instance=ExtResource("1_t025a")]
+position = Vector2(3511, 1426)
+
+[node name="SpikeHazard151" parent="Hazards" unique_id=2102267301 instance=ExtResource("1_t025a")]
+position = Vector2(3615, 1426)
+
+[node name="SpikeHazard152" parent="Hazards" unique_id=1193059425 instance=ExtResource("1_t025a")]
+position = Vector2(3719, 1426)
+
+[node name="SpikeHazard153" parent="Hazards" unique_id=2113592288 instance=ExtResource("1_t025a")]
+position = Vector2(3823, 1426)
+
+[node name="SpikeHazard180" parent="Hazards" unique_id=629516382 instance=ExtResource("1_t025a")]
+position = Vector2(1178, 2231)
+
+[node name="SpikeHazard181" parent="Hazards" unique_id=2112816664 instance=ExtResource("1_t025a")]
+position = Vector2(1282, 2231)
+
+[node name="SpikeHazard182" parent="Hazards" unique_id=619704558 instance=ExtResource("1_t025a")]
+position = Vector2(1386, 2231)
+
+[node name="SpikeHazard183" parent="Hazards" unique_id=606553706 instance=ExtResource("1_t025a")]
+position = Vector2(1490, 2231)
+
+[node name="SpikeHazard186" parent="Hazards" unique_id=359612896 instance=ExtResource("1_t025a")]
+position = Vector2(1594, 2231)
+
+[node name="SpikeHazard187" parent="Hazards" unique_id=1269378033 instance=ExtResource("1_t025a")]
+position = Vector2(1698, 2231)
+
+[node name="SpikeHazard188" parent="Hazards" unique_id=1537602416 instance=ExtResource("1_t025a")]
+position = Vector2(1802, 2231)
+
+[node name="SpikeHazard189" parent="Hazards" unique_id=634725405 instance=ExtResource("1_t025a")]
+position = Vector2(1906, 2231)
+
+[node name="SpikeHazard190" parent="Hazards" unique_id=1571788157 instance=ExtResource("1_t025a")]
+position = Vector2(2032, 2674)
+
+[node name="SpikeHazard191" parent="Hazards" unique_id=1074071017 instance=ExtResource("1_t025a")]
+position = Vector2(2136, 2674)
+
+[node name="SpikeHazard192" parent="Hazards" unique_id=1267004797 instance=ExtResource("1_t025a")]
+position = Vector2(2240, 2674)
+
+[node name="SpikeHazard193" parent="Hazards" unique_id=949147994 instance=ExtResource("1_t025a")]
+position = Vector2(2344, 2674)
+
+[node name="SpikeHazard194" parent="Hazards" unique_id=269695310 instance=ExtResource("1_t025a")]
+position = Vector2(2448, 2674)
+
+[node name="SpikeHazard195" parent="Hazards" unique_id=1124201616 instance=ExtResource("1_t025a")]
+position = Vector2(2552, 2674)
+
+[node name="SpikeHazard196" parent="Hazards" unique_id=1386165247 instance=ExtResource("1_t025a")]
+position = Vector2(2656, 2674)
+
+[node name="SpikeHazard197" parent="Hazards" unique_id=1952183990 instance=ExtResource("1_t025a")]
+position = Vector2(2760, 2674)
+
+[node name="SpikeHazard198" parent="Hazards" unique_id=1502895739 instance=ExtResource("1_t025a")]
+position = Vector2(2864, 2674)
+
+[node name="SpikeHazard199" parent="Hazards" unique_id=768487674 instance=ExtResource("1_t025a")]
+position = Vector2(2968, 2674)
+
+[node name="SpikeHazard154" parent="Hazards" unique_id=1254985540 instance=ExtResource("1_t025a")]
+position = Vector2(2151, 1426)
+
+[node name="SpikeHazard156" parent="Hazards" unique_id=1330541960 instance=ExtResource("1_t025a")]
+position = Vector2(2255, 1426)
+
+[node name="SpikeHazard157" parent="Hazards" unique_id=1149643145 instance=ExtResource("1_t025a")]
+position = Vector2(2359, 1426)
+
+[node name="SpikeHazard158" parent="Hazards" unique_id=634943076 instance=ExtResource("1_t025a")]
+position = Vector2(2463, 1426)
+
+[node name="SpikeHazard159" parent="Hazards" unique_id=2068457214 instance=ExtResource("1_t025a")]
+position = Vector2(2567, 1426)
+
+[node name="SpikeHazard160" parent="Hazards" unique_id=1376419195 instance=ExtResource("1_t025a")]
+position = Vector2(2671, 1426)
+
+[node name="SpikeHazard161" parent="Hazards" unique_id=763256336 instance=ExtResource("1_t025a")]
+position = Vector2(2775, 1426)
+
+[node name="SpikeHazard162" parent="Hazards" unique_id=1208695669 instance=ExtResource("1_t025a")]
+position = Vector2(2879, 1426)
 
 [node name="SpikeHazard33" parent="Hazards" unique_id=1226316652 instance=ExtResource("1_t025a")]
 position = Vector2(1672, -2623)
@@ -314,6 +664,186 @@ rotation = 3.1415927
 position = Vector2(5742, -2071)
 rotation = 3.1415927
 
+[node name="SpikeHazard112" parent="Hazards" unique_id=1809783406 instance=ExtResource("1_t025a")]
+position = Vector2(4593, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard113" parent="Hazards" unique_id=1231732539 instance=ExtResource("1_t025a")]
+position = Vector2(4697, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard114" parent="Hazards" unique_id=191648854 instance=ExtResource("1_t025a")]
+position = Vector2(4801, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard115" parent="Hazards" unique_id=175767736 instance=ExtResource("1_t025a")]
+position = Vector2(4905, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard116" parent="Hazards" unique_id=659665794 instance=ExtResource("1_t025a")]
+position = Vector2(5009, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard117" parent="Hazards" unique_id=1060655625 instance=ExtResource("1_t025a")]
+position = Vector2(5113, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard118" parent="Hazards" unique_id=1597742756 instance=ExtResource("1_t025a")]
+position = Vector2(5217, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard119" parent="Hazards" unique_id=804312779 instance=ExtResource("1_t025a")]
+position = Vector2(5321, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard120" parent="Hazards" unique_id=1034488340 instance=ExtResource("1_t025a")]
+position = Vector2(5425, -390)
+rotation = 3.1415927
+
+[node name="SpikeHazard135" parent="Hazards" unique_id=2143353853 instance=ExtResource("1_t025a")]
+position = Vector2(3976, 181)
+rotation = 3.1415927
+
+[node name="SpikeHazard136" parent="Hazards" unique_id=1677976556 instance=ExtResource("1_t025a")]
+position = Vector2(4080, 181)
+rotation = 3.1415927
+
+[node name="SpikeHazard137" parent="Hazards" unique_id=1610321013 instance=ExtResource("1_t025a")]
+position = Vector2(4184, 181)
+rotation = 3.1415927
+
+[node name="SpikeHazard138" parent="Hazards" unique_id=1769868091 instance=ExtResource("1_t025a")]
+position = Vector2(4288, 181)
+rotation = 3.1415927
+
+[node name="SpikeHazard139" parent="Hazards" unique_id=301763156 instance=ExtResource("1_t025a")]
+position = Vector2(4392, 181)
+rotation = 3.1415927
+
+[node name="SpikeHazard140" parent="Hazards" unique_id=806538902 instance=ExtResource("1_t025a")]
+position = Vector2(4496, 181)
+rotation = 3.1415927
+
+[node name="SpikeHazard155" parent="Hazards" unique_id=281526666 instance=ExtResource("1_t025a")]
+position = Vector2(3285, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard163" parent="Hazards" unique_id=2125064185 instance=ExtResource("1_t025a")]
+position = Vector2(3389, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard164" parent="Hazards" unique_id=1359063443 instance=ExtResource("1_t025a")]
+position = Vector2(3493, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard165" parent="Hazards" unique_id=1109364343 instance=ExtResource("1_t025a")]
+position = Vector2(3597, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard166" parent="Hazards" unique_id=1906238559 instance=ExtResource("1_t025a")]
+position = Vector2(3701, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard167" parent="Hazards" unique_id=1339790290 instance=ExtResource("1_t025a")]
+position = Vector2(3805, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard168" parent="Hazards" unique_id=241077565 instance=ExtResource("1_t025a")]
+position = Vector2(2653, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard169" parent="Hazards" unique_id=1423248514 instance=ExtResource("1_t025a")]
+position = Vector2(2757, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard170" parent="Hazards" unique_id=1206039260 instance=ExtResource("1_t025a")]
+position = Vector2(2861, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard171" parent="Hazards" unique_id=24523379 instance=ExtResource("1_t025a")]
+position = Vector2(2965, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard172" parent="Hazards" unique_id=983449662 instance=ExtResource("1_t025a")]
+position = Vector2(3069, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard173" parent="Hazards" unique_id=1127589863 instance=ExtResource("1_t025a")]
+position = Vector2(3173, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard200" parent="Hazards" unique_id=1805348916 instance=ExtResource("1_t025a")]
+position = Vector2(1799, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard201" parent="Hazards" unique_id=1964023852 instance=ExtResource("1_t025a")]
+position = Vector2(1903, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard202" parent="Hazards" unique_id=1604051702 instance=ExtResource("1_t025a")]
+position = Vector2(2007, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard203" parent="Hazards" unique_id=782509145 instance=ExtResource("1_t025a")]
+position = Vector2(2111, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard204" parent="Hazards" unique_id=834263174 instance=ExtResource("1_t025a")]
+position = Vector2(2215, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard205" parent="Hazards" unique_id=2139014375 instance=ExtResource("1_t025a")]
+position = Vector2(1479, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard208" parent="Hazards" unique_id=1324038343 instance=ExtResource("1_t025a")]
+position = Vector2(1367, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard209" parent="Hazards" unique_id=1373538558 instance=ExtResource("1_t025a")]
+position = Vector2(1255, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard206" parent="Hazards" unique_id=1005743284 instance=ExtResource("1_t025a")]
+position = Vector2(1583, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard207" parent="Hazards" unique_id=1608340901 instance=ExtResource("1_t025a")]
+position = Vector2(1687, 1867)
+rotation = 3.1415927
+
+[node name="SpikeHazard174" parent="Hazards" unique_id=803733941 instance=ExtResource("1_t025a")]
+position = Vector2(2021, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard175" parent="Hazards" unique_id=2089343413 instance=ExtResource("1_t025a")]
+position = Vector2(2125, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard176" parent="Hazards" unique_id=162714289 instance=ExtResource("1_t025a")]
+position = Vector2(2229, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard177" parent="Hazards" unique_id=1185324236 instance=ExtResource("1_t025a")]
+position = Vector2(2333, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard178" parent="Hazards" unique_id=524776295 instance=ExtResource("1_t025a")]
+position = Vector2(2437, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard179" parent="Hazards" unique_id=1357643319 instance=ExtResource("1_t025a")]
+position = Vector2(2541, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard184" parent="Hazards" unique_id=646544406 instance=ExtResource("1_t025a")]
+position = Vector2(1805, -244)
+rotation = 3.1415927
+
+[node name="SpikeHazard185" parent="Hazards" unique_id=2062116245 instance=ExtResource("1_t025a")]
+position = Vector2(1909, -244)
+rotation = 3.1415927
+
 [node name="SpikeHazard55" parent="Hazards" unique_id=1027486053 instance=ExtResource("1_t025a")]
 position = Vector2(3968, -2623)
 rotation = 3.1415927
@@ -415,6 +945,25 @@ rotation = 4.712389
 position = Vector2(4014, -1736)
 rotation = 4.712389
 
+[node name="SpikeHazard141" parent="Hazards" unique_id=1721812508 instance=ExtResource("1_t025a")]
+position = Vector2(4924, 245)
+rotation = 4.712389
+
+[node name="SpikeHazard142" parent="Hazards" unique_id=652561135 instance=ExtResource("1_t025a")]
+position = Vector2(4924, 357)
+rotation = 4.712389
+
+[node name="SpikeHazard143" parent="Hazards" unique_id=915968938 instance=ExtResource("1_t025a")]
+position = Vector2(4924, 469)
+rotation = 4.712389
+
+[node name="SpikeHazard144" parent="Hazards" unique_id=885704414 instance=ExtResource("1_t025a")]
+position = Vector2(4924, 581)
+rotation = 4.712389
+
+[node name="BallSpike" parent="Hazards" unique_id=1410139132 instance=ExtResource("5_eoywo")]
+position = Vector2(5215, -1571)
+
 [node name="Rotational Axis" parent="Hazards" unique_id=904937421 instance=ExtResource("4_mwb2d")]
 position = Vector2(5214, -1564)
 
@@ -437,6 +986,525 @@ script = ExtResource("6_eoywo")
 [node name="BallSpike2" parent="Hazards/Rotational Axis2" unique_id=1075505754 instance=ExtResource("5_eoywo")]
 position = Vector2(6, 244)
 script = ExtResource("6_eoywo")
+
+[node name="Path2D4" type="Path2D" parent="Hazards" unique_id=1153122021]
+position = Vector2(814, 939)
+scale = Vector2(8, 8)
+curve = SubResource("Curve2D_x2tv3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Hazards/Path2D4" unique_id=506151230]
+position = Vector2(-0.125, 0.125)
+rotation = 3.1415927
+rotates = false
+script = ExtResource("2_wl7sf")
+speed = 0.07
+
+[node name="SpikeHazard162" parent="Hazards/Path2D4/PathFollow2D" unique_id=473290569 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard168" parent="Hazards/Path2D4/PathFollow2D" unique_id=824088308 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard169" parent="Hazards/Path2D4/PathFollow2D" unique_id=1023148136 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard170" parent="Hazards/Path2D4/PathFollow2D" unique_id=1801519449 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard171" parent="Hazards/Path2D4/PathFollow2D" unique_id=518184258 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard172" parent="Hazards/Path2D4/PathFollow2D" unique_id=1093700387 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard173" parent="Hazards/Path2D4/PathFollow2D" unique_id=262115147 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375061, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard163" parent="Hazards/Path2D4/PathFollow2D" unique_id=1152990727 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 0)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard164" parent="Hazards/Path2D4/PathFollow2D" unique_id=1089959994 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, -13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard165" parent="Hazards/Path2D4/PathFollow2D" unique_id=1880067929 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard166" parent="Hazards/Path2D4/PathFollow2D" unique_id=2092669325 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 0)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard167" parent="Hazards/Path2D4/PathFollow2D" unique_id=2003431642 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, -13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="PlaceholderWall" parent="Hazards/Path2D4/PathFollow2D" unique_id=1843313592 instance=ExtResource("1_te43d")]
+
+[node name="Path2D5" type="Path2D" parent="Hazards" unique_id=1421757281]
+position = Vector2(814, 939)
+scale = Vector2(8, 8)
+curve = SubResource("Curve2D_x2tv3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Hazards/Path2D5" unique_id=1528981255]
+position = Vector2(-100.34047, 0.018390551)
+rotation = 3.1415927
+progress = 100.0
+rotates = false
+script = ExtResource("2_wl7sf")
+speed = 0.07
+
+[node name="SpikeHazard162" parent="Hazards/Path2D5/PathFollow2D" unique_id=84386454 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard168" parent="Hazards/Path2D5/PathFollow2D" unique_id=1834878049 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard169" parent="Hazards/Path2D5/PathFollow2D" unique_id=2040889531 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard170" parent="Hazards/Path2D5/PathFollow2D" unique_id=1376419511 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard171" parent="Hazards/Path2D5/PathFollow2D" unique_id=1621637187 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard172" parent="Hazards/Path2D5/PathFollow2D" unique_id=441450702 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard173" parent="Hazards/Path2D5/PathFollow2D" unique_id=534899670 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375061, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard163" parent="Hazards/Path2D5/PathFollow2D" unique_id=1059936865 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 0)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard164" parent="Hazards/Path2D5/PathFollow2D" unique_id=1858015841 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, -13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard165" parent="Hazards/Path2D5/PathFollow2D" unique_id=1987175602 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard166" parent="Hazards/Path2D5/PathFollow2D" unique_id=882072521 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 0)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard167" parent="Hazards/Path2D5/PathFollow2D" unique_id=70571041 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, -13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="PlaceholderWall" parent="Hazards/Path2D5/PathFollow2D" unique_id=1242786520 instance=ExtResource("1_te43d")]
+
+[node name="Path2D6" type="Path2D" parent="Hazards" unique_id=1220940298]
+position = Vector2(814, 939)
+scale = Vector2(8, 8)
+curve = SubResource("Curve2D_x2tv3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Hazards/Path2D6" unique_id=2028392858]
+position = Vector2(-101.00554, 132.10081)
+rotation = 3.1415927
+progress = 234.62494
+rotates = false
+script = ExtResource("2_wl7sf")
+speed = 0.07
+
+[node name="SpikeHazard162" parent="Hazards/Path2D6/PathFollow2D" unique_id=855794684 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard168" parent="Hazards/Path2D6/PathFollow2D" unique_id=701822620 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard169" parent="Hazards/Path2D6/PathFollow2D" unique_id=522151367 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard170" parent="Hazards/Path2D6/PathFollow2D" unique_id=488518025 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard171" parent="Hazards/Path2D6/PathFollow2D" unique_id=2070328566 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard172" parent="Hazards/Path2D6/PathFollow2D" unique_id=820876470 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard173" parent="Hazards/Path2D6/PathFollow2D" unique_id=1388552316 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375061, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard163" parent="Hazards/Path2D6/PathFollow2D" unique_id=1507879786 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 0)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard164" parent="Hazards/Path2D6/PathFollow2D" unique_id=977014920 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, -13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard165" parent="Hazards/Path2D6/PathFollow2D" unique_id=480379500 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard166" parent="Hazards/Path2D6/PathFollow2D" unique_id=1188517382 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 0)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard167" parent="Hazards/Path2D6/PathFollow2D" unique_id=2088417717 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, -13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="PlaceholderWall" parent="Hazards/Path2D6/PathFollow2D" unique_id=1146748202 instance=ExtResource("1_te43d")]
+
+[node name="Path2D7" type="Path2D" parent="Hazards" unique_id=1807271792]
+position = Vector2(814, 939)
+scale = Vector2(8, 8)
+curve = SubResource("Curve2D_x2tv3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Hazards/Path2D7" unique_id=1012842919]
+position = Vector2(-5.5070267, 132)
+rotation = 3.1415927
+progress = 330.0
+rotates = false
+script = ExtResource("2_wl7sf")
+speed = 0.07
+
+[node name="SpikeHazard162" parent="Hazards/Path2D7/PathFollow2D" unique_id=1989058367 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard168" parent="Hazards/Path2D7/PathFollow2D" unique_id=1154691081 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard169" parent="Hazards/Path2D7/PathFollow2D" unique_id=277646486 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard170" parent="Hazards/Path2D7/PathFollow2D" unique_id=851556390 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375, 18.875)
+rotation = 3.1415927
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard171" parent="Hazards/Path2D7/PathFollow2D" unique_id=192885777 instance=ExtResource("1_t025a")]
+position = Vector2(12.625, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard172" parent="Hazards/Path2D7/PathFollow2D" unique_id=1523057685 instance=ExtResource("1_t025a")]
+position = Vector2(-0.375, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard173" parent="Hazards/Path2D7/PathFollow2D" unique_id=1583096181 instance=ExtResource("1_t025a")]
+position = Vector2(-13.375061, -19.125)
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard163" parent="Hazards/Path2D7/PathFollow2D" unique_id=311785269 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, 0)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard164" parent="Hazards/Path2D7/PathFollow2D" unique_id=1361073322 instance=ExtResource("1_t025a")]
+position = Vector2(18.5, -13)
+rotation = 1.5707964
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard165" parent="Hazards/Path2D7/PathFollow2D" unique_id=1604360489 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard166" parent="Hazards/Path2D7/PathFollow2D" unique_id=553393694 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, 0)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="SpikeHazard167" parent="Hazards/Path2D7/PathFollow2D" unique_id=1841694224 instance=ExtResource("1_t025a")]
+position = Vector2(-18.5, -13)
+rotation = 4.712389
+scale = Vector2(0.125, 0.125)
+
+[node name="PlaceholderWall" parent="Hazards/Path2D7/PathFollow2D" unique_id=500931215 instance=ExtResource("1_te43d")]
+
+[node name="Hazards Part 2" type="Node" parent="." unique_id=1668171718]
+
+[node name="BallSpike" parent="Hazards Part 2" unique_id=231248971 instance=ExtResource("5_eoywo")]
+position = Vector2(3198, 2774)
+
+[node name="BallSpike2" parent="Hazards Part 2" unique_id=2112839695 instance=ExtResource("5_eoywo")]
+position = Vector2(3195, 2194)
+
+[node name="BallSpike3" parent="Hazards Part 2" unique_id=716024057 instance=ExtResource("5_eoywo")]
+position = Vector2(8699, 1601)
+
+[node name="BallSpike4" parent="Hazards Part 2" unique_id=1092006141 instance=ExtResource("5_eoywo")]
+position = Vector2(8742, 1405)
+
+[node name="BallSpike5" parent="Hazards Part 2" unique_id=807017938 instance=ExtResource("5_eoywo")]
+position = Vector2(8744, 1189)
+
+[node name="BallSpike6" parent="Hazards Part 2" unique_id=652175429 instance=ExtResource("5_eoywo")]
+position = Vector2(8588, 1042)
+
+[node name="BallSpike7" parent="Hazards Part 2" unique_id=21356113 instance=ExtResource("5_eoywo")]
+position = Vector2(8385, 989)
+
+[node name="BallSpike8" parent="Hazards Part 2" unique_id=1564384811 instance=ExtResource("5_eoywo")]
+position = Vector2(8148, 979)
+
+[node name="BallSpike9" parent="Hazards Part 2" unique_id=916983723 instance=ExtResource("5_eoywo")]
+position = Vector2(7929, 976)
+
+[node name="BallSpike10" parent="Hazards Part 2" unique_id=1028041632 instance=ExtResource("5_eoywo")]
+position = Vector2(7725, 963)
+
+[node name="BallSpike11" parent="Hazards Part 2" unique_id=1437657947 instance=ExtResource("5_eoywo")]
+position = Vector2(7527, 994)
+
+[node name="BallSpike12" parent="Hazards Part 2" unique_id=518521939 instance=ExtResource("5_eoywo")]
+position = Vector2(7295, 956)
+
+[node name="BallSpike13" parent="Hazards Part 2" unique_id=707541006 instance=ExtResource("5_eoywo")]
+position = Vector2(7119, 1060)
+
+[node name="BallSpike14" parent="Hazards Part 2" unique_id=80482227 instance=ExtResource("5_eoywo")]
+position = Vector2(6902, 1076)
+
+[node name="BallSpike15" parent="Hazards Part 2" unique_id=950895516 instance=ExtResource("5_eoywo")]
+position = Vector2(6722, 1145)
+
+[node name="BallSpike16" parent="Hazards Part 2" unique_id=1025562887 instance=ExtResource("5_eoywo")]
+position = Vector2(6522, 1097)
+
+[node name="BallSpike17" parent="Hazards Part 2" unique_id=25211386 instance=ExtResource("5_eoywo")]
+position = Vector2(6318, 1194)
+
+[node name="BallSpike18" parent="Hazards Part 2" unique_id=1529762582 instance=ExtResource("5_eoywo")]
+position = Vector2(6111, 1304)
+
+[node name="BallSpike19" parent="Hazards Part 2" unique_id=979500115 instance=ExtResource("5_eoywo")]
+position = Vector2(5894, 1252)
+
+[node name="BallSpike20" parent="Hazards Part 2" unique_id=834056201 instance=ExtResource("5_eoywo")]
+position = Vector2(5708, 1356)
+
+[node name="BallSpike21" parent="Hazards Part 2" unique_id=714096506 instance=ExtResource("5_eoywo")]
+position = Vector2(5508, 1332)
+
+[node name="BallSpike22" parent="Hazards Part 2" unique_id=308108538 instance=ExtResource("5_eoywo")]
+position = Vector2(5349, 1498)
+
+[node name="BallSpike23" parent="Hazards Part 2" unique_id=1266985153 instance=ExtResource("5_eoywo")]
+position = Vector2(5142, 1477)
+
+[node name="BallSpike24" parent="Hazards Part 2" unique_id=330317754 instance=ExtResource("5_eoywo")]
+position = Vector2(4966, 1570)
+
+[node name="BallSpike25" parent="Hazards Part 2" unique_id=665394578 instance=ExtResource("5_eoywo")]
+position = Vector2(4869, 1743)
+
+[node name="BallSpike26" parent="Hazards Part 2" unique_id=1387021762 instance=ExtResource("5_eoywo")]
+position = Vector2(4745, 1891)
+
+[node name="BallSpike27" parent="Hazards Part 2" unique_id=1741273188 instance=ExtResource("5_eoywo")]
+position = Vector2(4555, 1832)
+
+[node name="BallSpike28" parent="Hazards Part 2" unique_id=1149074154 instance=ExtResource("5_eoywo")]
+position = Vector2(4399, 1978)
+
+[node name="BallSpike29" parent="Hazards Part 2" unique_id=1287387474 instance=ExtResource("5_eoywo")]
+position = Vector2(4215, 1893)
+
+[node name="BallSpike30" parent="Hazards Part 2" unique_id=1422338298 instance=ExtResource("5_eoywo")]
+position = Vector2(4076, 2058)
+
+[node name="BallSpike31" parent="Hazards Part 2" unique_id=1759648700 instance=ExtResource("5_eoywo")]
+position = Vector2(4076, 2058)
+
+[node name="BallSpike32" parent="Hazards Part 2" unique_id=119298299 instance=ExtResource("5_eoywo")]
+position = Vector2(3871, 2058)
+
+[node name="BallSpike33" parent="Hazards Part 2" unique_id=617734189 instance=ExtResource("5_eoywo")]
+position = Vector2(3689, 2150)
+
+[node name="BallSpike34" parent="Hazards Part 2" unique_id=98912326 instance=ExtResource("5_eoywo")]
+position = Vector2(3437, 2124)
+
+[node name="BallSpike35" parent="Hazards Part 2" unique_id=1735817186 instance=ExtResource("5_eoywo")]
+position = Vector2(7804, 1794)
+
+[node name="BallSpike36" parent="Hazards Part 2" unique_id=898729772 instance=ExtResource("5_eoywo")]
+position = Vector2(7659, 1949)
+
+[node name="BallSpike37" parent="Hazards Part 2" unique_id=5801333 instance=ExtResource("5_eoywo")]
+position = Vector2(7507, 2091)
+
+[node name="BallSpike38" parent="Hazards Part 2" unique_id=455368497 instance=ExtResource("5_eoywo")]
+position = Vector2(7321, 2257)
+
+[node name="BallSpike39" parent="Hazards Part 2" unique_id=1487511707 instance=ExtResource("5_eoywo")]
+position = Vector2(7140, 2344)
+
+[node name="BallSpike40" parent="Hazards Part 2" unique_id=1719868590 instance=ExtResource("5_eoywo")]
+position = Vector2(6943, 2301)
+
+[node name="BallSpike41" parent="Hazards Part 2" unique_id=204071590 instance=ExtResource("5_eoywo")]
+position = Vector2(6827, 2462)
+
+[node name="BallSpike42" parent="Hazards Part 2" unique_id=909370390 instance=ExtResource("5_eoywo")]
+position = Vector2(6649, 2543)
+
+[node name="BallSpike43" parent="Hazards Part 2" unique_id=1210297089 instance=ExtResource("5_eoywo")]
+position = Vector2(6439, 2588)
+
+[node name="BallSpike44" parent="Hazards Part 2" unique_id=678128001 instance=ExtResource("5_eoywo")]
+position = Vector2(6216, 2541)
+
+[node name="BallSpike45" parent="Hazards Part 2" unique_id=1503496147 instance=ExtResource("5_eoywo")]
+position = Vector2(6059, 2685)
+
+[node name="BallSpike46" parent="Hazards Part 2" unique_id=1401855984 instance=ExtResource("5_eoywo")]
+position = Vector2(5870, 2691)
+
+[node name="BallSpike47" parent="Hazards Part 2" unique_id=338372247 instance=ExtResource("5_eoywo")]
+position = Vector2(5870, 2691)
+
+[node name="BallSpike48" parent="Hazards Part 2" unique_id=1792181632 instance=ExtResource("5_eoywo")]
+position = Vector2(5701, 2794)
+
+[node name="BallSpike49" parent="Hazards Part 2" unique_id=1359383871 instance=ExtResource("5_eoywo")]
+position = Vector2(5515, 2764)
+
+[node name="BallSpike50" parent="Hazards Part 2" unique_id=1953791681 instance=ExtResource("5_eoywo")]
+position = Vector2(5352, 2895)
+
+[node name="BallSpike51" parent="Hazards Part 2" unique_id=1620452968 instance=ExtResource("5_eoywo")]
+position = Vector2(5187, 2809)
+
+[node name="BallSpike52" parent="Hazards Part 2" unique_id=1237836524 instance=ExtResource("5_eoywo")]
+position = Vector2(4998, 2783)
+
+[node name="BallSpike53" parent="Hazards Part 2" unique_id=714573294 instance=ExtResource("5_eoywo")]
+position = Vector2(4786, 2822)
+
+[node name="BallSpike54" parent="Hazards Part 2" unique_id=143187051 instance=ExtResource("5_eoywo")]
+position = Vector2(4595, 2743)
+
+[node name="BallSpike55" parent="Hazards Part 2" unique_id=1421224473 instance=ExtResource("5_eoywo")]
+position = Vector2(4394, 2782)
+
+[node name="BallSpike56" parent="Hazards Part 2" unique_id=473916819 instance=ExtResource("5_eoywo")]
+position = Vector2(4182, 2713)
+
+[node name="BallSpike57" parent="Hazards Part 2" unique_id=1812509729 instance=ExtResource("5_eoywo")]
+position = Vector2(3991, 2741)
+
+[node name="BallSpike58" parent="Hazards Part 2" unique_id=1477679123 instance=ExtResource("5_eoywo")]
+position = Vector2(3826, 2653)
+
+[node name="BallSpike59" parent="Hazards Part 2" unique_id=970640060 instance=ExtResource("5_eoywo")]
+position = Vector2(3642, 2623)
+
+[node name="BallSpike60" parent="Hazards Part 2" unique_id=1992875432 instance=ExtResource("5_eoywo")]
+position = Vector2(3415, 2679)
+
+[node name="ProjectileShooter" parent="Hazards Part 2" unique_id=2124945501 instance=ExtResource("3_ough2")]
+position = Vector2(4248, 2037)
+rotation = 4.712389
+
+[node name="ProjectileShooter2" parent="Hazards Part 2" unique_id=1406517880 instance=ExtResource("3_ough2")]
+position = Vector2(4589, 1996)
+rotation = 4.712389
+startDelay = 2.0
+
+[node name="ProjectileShooter3" parent="Hazards Part 2" unique_id=420520583 instance=ExtResource("3_ough2")]
+position = Vector2(6268, 1352)
+rotation = 4.712389
+startDelay = 1.0
+
+[node name="ProjectileShooter4" parent="Hazards Part 2" unique_id=1433040141 instance=ExtResource("3_ough2")]
+position = Vector2(5175, 1641)
+rotation = 4.712389
+
+[node name="ProjectileShooter5" parent="Hazards Part 2" unique_id=844193266 instance=ExtResource("3_ough2")]
+position = Vector2(5576, 1470)
+rotation = 4.712389
+startDelay = 1.0
+
+[node name="ProjectileShooter8" parent="Hazards Part 2" unique_id=1340588814 instance=ExtResource("3_ough2")]
+position = Vector2(5970, 2518)
+rotation = 1.5707964
+
+[node name="ProjectileShooter10" parent="Hazards Part 2" unique_id=1832303239 instance=ExtResource("3_ough2")]
+position = Vector2(3999, 2602)
+rotation = 1.5707964
+startDelay = 1.0
+
+[node name="ProjectileShooter11" parent="Hazards Part 2" unique_id=2062383556 instance=ExtResource("3_ough2")]
+position = Vector2(5032, 2610)
+rotation = 1.5707964
+
+[node name="ProjectileShooter9" parent="Hazards Part 2" unique_id=473821371 instance=ExtResource("3_ough2")]
+position = Vector2(7170, 2176)
+rotation = 1.5707964
+
+[node name="ProjectileShooter6" parent="Hazards Part 2" unique_id=857120284 instance=ExtResource("3_ough2")]
+position = Vector2(6590, 1255)
+rotation = 4.712389
+startDelay = 3.0
+
+[node name="ProjectileShooter7" parent="Hazards Part 2" unique_id=880618532 instance=ExtResource("3_ough2")]
+position = Vector2(7366, 1095)
+rotation = 4.712389
+startDelay = 1.0
 
 [node name="Walls" type="Node" parent="." unique_id=1893858437]
 
@@ -744,17 +1812,62 @@ scale = Vector2(61.785957, 1)
 position = Vector2(1281.0001, -1136)
 scale = Vector2(16.305952, 1)
 
-[node name="PlaceholderWall9" parent="Walls" unique_id=2081876318 instance=ExtResource("1_te43d")]
+[node name="PlaceholderWall9" parent="Walls" unique_id=1347127816 instance=ExtResource("1_te43d")]
 position = Vector2(373.00003, -1419)
 scale = Vector2(31.30595, 1)
+
+[node name="bubles" type="Node" parent="." unique_id=334931298]
+
+[node name="bubble2" parent="bubles" unique_id=465219229 instance=ExtResource("13_hljv7")]
+position = Vector2(4885, 48)
+
+[node name="bubble3" parent="bubles" unique_id=1387533008 instance=ExtResource("13_hljv7")]
+position = Vector2(5302, -97)
+
+[node name="bubble4" parent="bubles" unique_id=448426199 instance=ExtResource("13_hljv7")]
+position = Vector2(5411, -206)
+
+[node name="bubble6" parent="bubles" unique_id=874893097 instance=ExtResource("13_hljv7")]
+position = Vector2(5038, -74)
+
+[node name="bubble7" parent="bubles" unique_id=1581723833 instance=ExtResource("13_hljv7")]
+position = Vector2(5440, 16)
+
+[node name="bubble9" parent="bubles" unique_id=366945650 instance=ExtResource("13_hljv7")]
+position = Vector2(4746, -15)
+
+[node name="bubble11" parent="bubles" unique_id=1767739221 instance=ExtResource("13_hljv7")]
+position = Vector2(4170, 457)
+
+[node name="bubble13" parent="bubles" unique_id=406493826 instance=ExtResource("13_hljv7")]
+position = Vector2(1968, 101)
+
+[node name="bubble15" parent="bubles" unique_id=141416361 instance=ExtResource("13_hljv7")]
+position = Vector2(1974, 315)
+
+[node name="bubble16" parent="bubles" unique_id=2041625250 instance=ExtResource("13_hljv7")]
+position = Vector2(2096, 210)
+
+[node name="bubble17" parent="bubles" unique_id=285334692 instance=ExtResource("13_hljv7")]
+position = Vector2(2011, -127)
+
+[node name="bubble18" parent="bubles" unique_id=545349801 instance=ExtResource("13_hljv7")]
+position = Vector2(2095, 12)
+
+[node name="bubble12" parent="bubles" unique_id=2085702584 instance=ExtResource("13_hljv7")]
+position = Vector2(4277, 319)
+
+[node name="bubble14" parent="bubles" unique_id=336390136 instance=ExtResource("13_hljv7")]
+position = Vector2(4748, 170)
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("4_xngw8")]
 position = Vector2(17174, 2603)
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("4_6642d")]
+position = Vector2(253, 100)
 
-[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("2_gl4wf")]
-position = Vector2(4511, -1592)
+[node name="bubble" parent="." unique_id=1455146349 instance=ExtResource("2_gl4wf")]
+position = Vector2(-121, -1313)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=908821064]
 
@@ -762,6 +1875,4 @@ position = Vector2(4511, -1592)
 unique_name_in_owner = true
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("6_5sgy0")]
-
-[node name="BallSpike" parent="." unique_id=1410139132 instance=ExtResource("5_eoywo")]
-position = Vector2(5215, -1571)
+position = Vector2(249, 101)
