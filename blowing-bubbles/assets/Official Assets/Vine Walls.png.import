@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3eehanlfnqmt"
-path="res://.godot/imported/Vine Walls.png-a1c5bc68d528ccc54729dd7678c7d317.ctex"
+path="res://.godot/imported/Vine Walls.png-ec2b4b0b5d98099c59380098552d5aed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Official Assets/Vine Walls.png"
-dest_files=["res://.godot/imported/Vine Walls.png-a1c5bc68d528ccc54729dd7678c7d317.ctex"]
+source_file="res://Assets/Official Assets/Vine Walls.png"
+dest_files=["res://.godot/imported/Vine Walls.png-ec2b4b0b5d98099c59380098552d5aed.ctex"]
 
 [params]
 

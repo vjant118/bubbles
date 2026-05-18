@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw4cd30lygodc"
-path="res://.godot/imported/diedMenuButton.svg-2467f6403e5cc463112f174fa4e5a8a5.ctex"
+path="res://.godot/imported/diedMenuButton.svg-c88134c9c74da9c366030724eef48d54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI Assets/diedMenuButton.svg"
-dest_files=["res://.godot/imported/diedMenuButton.svg-2467f6403e5cc463112f174fa4e5a8a5.ctex"]
+source_file="res://Assets/UI Assets/diedMenuButton.svg"
+dest_files=["res://.godot/imported/diedMenuButton.svg-c88134c9c74da9c366030724eef48d54.ctex"]
 
 [params]
 

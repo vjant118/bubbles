@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqjbmp2tfykyq"
-path="res://.godot/imported/vineWalls.png-49a0992899abc972cd1000eecfb9cdf8.ctex"
+path="res://.godot/imported/vineWalls.png-09dceb089f2d02abcb76428d92ee4e8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Official Assets/vineWalls.png"
-dest_files=["res://.godot/imported/vineWalls.png-49a0992899abc972cd1000eecfb9cdf8.ctex"]
+source_file="res://Assets/Official Assets/vineWalls.png"
+dest_files=["res://.godot/imported/vineWalls.png-09dceb089f2d02abcb76428d92ee4e8d.ctex"]
 
 [params]
 
