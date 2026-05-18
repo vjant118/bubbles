@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://Actors/timer.tscn" id="5_hl87o"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://Actors/sceneResetter.tscn" id="6_5sgy0"]
 [ext_resource type="Script" uid="uid://d3wo580qp48wb" path="res://src/objects/antiRotate.gd" id="6_eoywo"]
-[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="13_hljv7"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://Actors/bubble.tscn" id="13_hljv7"]
 
 [sub_resource type="Curve2D" id="Curve2D_hljv7"]
 _data = {
@@ -1861,7 +1861,7 @@ position = Vector2(4277, 319)
 position = Vector2(4748, 170)
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("4_xngw8")]
-position = Vector2(17174, 2603)
+position = Vector2(8251, 1548)
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("4_6642d")]
 position = Vector2(253, 100)
