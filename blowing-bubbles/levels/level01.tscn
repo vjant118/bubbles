@@ -11,7 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="14_j1gtd"]
 [ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="15_a10hn"]
 
-<<<<<<< Updated upstream
+[sub_resource type="Curve2D" id="Curve2D_6481s"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2208, -1791, 0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2213, -2339)
+}
+point_count = 4
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
 texture = ExtResource("2_7i3qh")
 texture_region_size = Vector2i(64, 64)
@@ -73,15 +78,6 @@ texture_region_size = Vector2i(64, 64)
 6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jgq57"]
-=======
-[sub_resource type="Curve2D" id="Curve2D_6481s"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2208, -1791, 0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2213, -2339)
-}
-point_count = 4
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_py2r8"]
->>>>>>> Stashed changes
 texture = ExtResource("4_ta2wi")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -206,9 +202,7 @@ position = Vector2(2902, 804)
 [node name="level" type="Node" parent="." unique_id=353011602]
 
 [node name="background" type="Sprite2D" parent="level" unique_id=475294704]
-z_index = -1
-position = Vector2(2025, -469)
->>>>>>> Stashed changes
+position = Vector2(2163, -865.00006)
 scale = Vector2(21.466667, 24.825924)
 texture = ExtResource("1_6q0d3")
 
