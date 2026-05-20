@@ -32,47 +32,53 @@ horizontal_alignment = 1
 
 [node name="level_select_button1" type="Button" parent="." unique_id=123624616]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 110.0
-offset_right = 535.0
-offset_bottom = 283.0
+offset_left = 70.54262
+offset_top = 299.22473
+offset_right = 577.5426
+offset_bottom = 472.2248
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 54
 text = "Level 1"
-metadata/_edit_use_anchors_ = true
 
 [node name="level_select_button2" type="Button" parent="." unique_id=776546430]
 layout_mode = 0
-offset_left = 802.32544
-offset_top = 107.75194
-offset_right = 1309.3254
-offset_bottom = 280.75195
+offset_left = 772.09314
+offset_top = 299.22473
+offset_right = 1279.0928
+offset_bottom = 472.2248
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 52
 text = "Level 2"
-metadata/_edit_use_anchors_ = true
 
 [node name="level_select_button3" type="Button" parent="." unique_id=524202138]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 417.0
-offset_right = 535.0
-offset_bottom = 590.0
+offset_left = 74.41858
+offset_top = 551.16284
+offset_right = 581.4186
+offset_bottom = 724.1628
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 52
 text = "Level 3"
-metadata/_edit_use_anchors_ = true
 
 [node name="level_select_button4" type="Button" parent="." unique_id=107735844]
 layout_mode = 0
-offset_left = 806.20154
-offset_top = 415.50385
-offset_right = 1313.2015
-offset_bottom = 588.50385
+offset_left = 775.1937
+offset_top = 552.71313
+offset_right = 1282.1936
+offset_bottom = 725.71313
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 52
 text = "Level 4"
-metadata/_edit_use_anchors_ = true
+
+[node name="level_select_tutorial" type="Button" parent="." unique_id=1841023563]
+layout_mode = 0
+offset_left = 508.52707
+offset_top = 81.39535
+offset_right = 897.964
+offset_bottom = 215.7312
+scale = Vector2(1.29, 1.29)
+theme_override_font_sizes/font_size = 54
+text = "Tutorial"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2098879426]
 stream = ExtResource("3_bdap3")
@@ -83,3 +89,4 @@ parameters/looping = true
 [connection signal="pressed" from="level_select_button2" to="." method="_on_level_select_button_2_pressed"]
 [connection signal="pressed" from="level_select_button3" to="." method="_on_level_select_button_3_pressed"]
 [connection signal="pressed" from="level_select_button4" to="." method="_on_level_select_button_4_pressed"]
+[connection signal="pressed" from="level_select_tutorial" to="." method="_on_level_select_tutorial_pressed"]

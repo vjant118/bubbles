@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2joy6qop5laf"
-path="res://.godot/imported/diedRetryButton.svg-ff974b0e4a84f51a76827849815766eb.ctex"
+uid="uid://caob0hvawgn18"
+path="res://.godot/imported/portalGreen.png-5031dfea92a991c2b9097fadf89cb291.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI Assets/diedRetryButton.svg"
-dest_files=["res://.godot/imported/diedRetryButton.svg-ff974b0e4a84f51a76827849815766eb.ctex"]
+source_file="res://assets/Official Assets/portalGreen.png"
+dest_files=["res://.godot/imported/portalGreen.png-5031dfea92a991c2b9097fadf89cb291.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

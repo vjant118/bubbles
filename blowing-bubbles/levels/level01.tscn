@@ -1,7 +1,6 @@
 [gd_scene format=4 uid="uid://x36m1wpbfsuh"]
 
 [ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://assets/Placeholder Assets/finalfirstlevelbackground.webp" id="1_6q0d3"]
-[ext_resource type="Texture2D" uid="uid://ci6q2n6nfnt1x" path="res://assets/Placeholder Assets/final demolevelwall.webp" id="2_7i3qh"]
 [ext_resource type="Texture2D" uid="uid://bqjbmp2tfykyq" path="res://assets/Official Assets/vineWalls.png" id="4_ta2wi"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="5_1yxjm"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="6_exmlb"]
@@ -12,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="14_j1gtd"]
 [ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="15_a10hn"]
 
+<<<<<<< Updated upstream
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl2qr"]
 texture = ExtResource("2_7i3qh")
 texture_region_size = Vector2i(64, 64)
@@ -73,6 +73,15 @@ texture_region_size = Vector2i(64, 64)
 6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jgq57"]
+=======
+[sub_resource type="Curve2D" id="Curve2D_6481s"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2208, -1791, 0, 0, 0, 0, 2213, -2339, 0, 0, 0, 0, 2213, -2339)
+}
+point_count = 4
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_py2r8"]
+>>>>>>> Stashed changes
 texture = ExtResource("4_ta2wi")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -119,8 +128,7 @@ texture_region_size = Vector2i(64, 64)
 [sub_resource type="TileSet" id="TileSet_rlskx"]
 tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_pl2qr")
-sources/2 = SubResource("TileSetAtlasSource_jgq57")
+sources/2 = SubResource("TileSetAtlasSource_py2r8")
 
 [node name="level01" type="Node2D" unique_id=1931007585]
 
@@ -132,6 +140,7 @@ y_sort_enabled = true
 position = Vector2(-64, 887)
 
 [node name="mouse_blower" parent="player" unique_id=124156406 instance=ExtResource("8_yjn78")]
+z_index = 5
 position = Vector2(252, 832)
 
 [node name="player_spawn" type="Marker2D" parent="player" unique_id=342040863]
@@ -171,11 +180,35 @@ position = Vector2(976, -1622)
 [node name="bubble11" parent="obstacles/bubbles" unique_id=998581611 instance=ExtResource("10_ha7ol")]
 position = Vector2(1166, -1705)
 
+<<<<<<< Updated upstream
 [node name="level" type="Node" parent="." unique_id=353011602]
 
 [node name="background" type="Sprite2D" parent="level" unique_id=475294704]
 visible = false
 position = Vector2(2163, -865.00006)
+=======
+[node name="spiked_enemy" type="Path2D" parent="obstacles" unique_id=1959532913]
+position = Vector2(61, 981)
+curve = SubResource("Curve2D_6481s")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="obstacles/spiked_enemy" unique_id=1583663435]
+position = Vector2(2213, -2339)
+rotation = 1.5799202
+rotates = false
+script = ExtResource("11_o18in")
+
+[node name="SpikeHazard2" parent="obstacles/spiked_enemy/PathFollow2D" unique_id=999751756 instance=ExtResource("12_5rxej")]
+rotation = 4.712389
+
+[node name="RotatingWall" parent="obstacles" unique_id=1028060275 instance=ExtResource("13_fh86h")]
+position = Vector2(2902, 804)
+
+[node name="level" type="Node" parent="." unique_id=353011602]
+
+[node name="background" type="Sprite2D" parent="level" unique_id=475294704]
+z_index = -1
+position = Vector2(2025, -469)
+>>>>>>> Stashed changes
 scale = Vector2(21.466667, 24.825924)
 texture = ExtResource("1_6q0d3")
 

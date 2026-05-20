@@ -1,5 +1,6 @@
 extends Node
 
+const TUT = preload("res://levels/levelTut.tscn")
 const LEVEL1 = preload("res://levels/level01.tscn")
 const LEVEL2 = preload("res://levels/level02.tscn")
 const LEVEL3 = preload("res://levels/level03.tscn")
@@ -16,3 +17,7 @@ func _on_level_select_button_3_pressed() -> void:
 
 #func _on_level_select_button_4_pressed() -> void:
 	#get_tree().change_scene_to_packed(LEVEL4)
+
+
+func _on_level_select_tutorial_pressed() -> void:
+	get_tree().change_scene_to_packed(TUT)

@@ -27,4 +27,4 @@ func checkWin():
 			%Timer.stopTimer()
 			set_deferred("freeze", true)
 			$CanvasLayer/Control.show()
-			$CanvasLayer/Control/Cleared/Label2.text = "Time: " + str(%Timer.text)
+			$CanvasLayer/Control/Cleared/Label2.text = "Time: " + str(%timer.text)

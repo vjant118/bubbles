@@ -1,14 +1,39 @@
 [gd_scene format=3 uid="uid://ds71uo8f8a440"]
 
-[ext_resource type="Texture2D" uid="uid://benaqerdl6ndl" path="res://assets/Placeholder Assets/portalfinishline-removebg-preview.png" id="2_s8xik"]
+[ext_resource type="Texture2D" uid="uid://caob0hvawgn18" path="res://assets/Official Assets/portalGreen.png" id="1_gsl2x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsl2x"]
+atlas = ExtResource("1_gsl2x")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygqbv"]
+atlas = ExtResource("1_gsl2x")
+region = Rect2(400, 0, 400, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ygqbv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsl2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ygqbv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cxo23"]
 radius = 115.00435
 
 [node name="LevelEndPoint" type="Area2D" unique_id=94973403 groups=["levelEndPoint"]]
 
-[node name="PortalfinishlineRemovebgPreview" type="Sprite2D" parent="." unique_id=135635338]
-texture = ExtResource("2_s8xik")
+[node name="PurplegatewayRemovebgPreview" type="AnimatedSprite2D" parent="." unique_id=1441571833]
+position = Vector2(0, 1)
+scale = Vector2(1, 0.995)
+sprite_frames = SubResource("SpriteFrames_ygqbv")
+frame_progress = 0.41233924
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1436235431]
 shape = SubResource("CircleShape2D_cxo23")

@@ -7,12 +7,11 @@ func _process(_delta):
 	
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		$CollisionShape2D.set_deferred("disabled", false)
-		$Sprite2D.set_deferred("visible", true)
+		$Sprite2D.rotate(3.14/3)
 		$AudioStreamPlayer.play()
 		blow()
 	else:
 		$CollisionShape2D.set_deferred("disabled", true)
-		$Sprite2D.set_deferred("visible", false)
 		$AudioStreamPlayer.stop()
 		
 func blow():

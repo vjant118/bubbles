@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bw26fn0vm8sks"]
 
 [ext_resource type="Script" uid="uid://4oj88k60nl2y" path="res://src/objects/mouseBlower.gd" id="1_jswin"]
-[ext_resource type="Texture2D" uid="uid://et7jfeaqodgu" path="res://assets/Placeholder Assets/circle.png" id="2_qw4b3"]
+[ext_resource type="Texture2D" uid="uid://b6dnehdpj1al6" path="res://assets/Official Assets/fan.png" id="2_jswin"]
 [ext_resource type="AudioStream" uid="uid://fmvq68uuy0st" path="res://audio/wind.mp3" id="3_n16ue"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ggk7m"]
@@ -13,8 +13,10 @@ script = ExtResource("1_jswin")
 wind_force = 3.5
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=319849725]
-scale = Vector2(0.004, 0.004)
-texture = ExtResource("2_qw4b3")
+position = Vector2(2.9802322e-08, 0)
+scale = Vector2(0.005971292, 0.0059712925)
+texture = ExtResource("2_jswin")
+hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1409871104]
 shape = SubResource("CircleShape2D_ggk7m")
