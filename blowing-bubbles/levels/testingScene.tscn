@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://src/objects/pathFollow2D.gd" id="8_4ytrw"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="8_psw1n"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="9_psw1n"]
-[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="10_fyrrw"]
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/Timer.tscn" id="10_fyrrw"]
 [ext_resource type="PackedScene" uid="uid://cwruy2vrtx80a" path="res://actors/portal.tscn" id="11_u8dky"]
 [ext_resource type="PackedScene" uid="uid://dm1kiesl6s554" path="res://actors/chaserEnemy.tscn" id="12_vlli8"]
 [ext_resource type="PackedScene" uid="uid://chglvhlcd26ke" path="res://actors/chaserActivator.tscn" id="13_20gyl"]
