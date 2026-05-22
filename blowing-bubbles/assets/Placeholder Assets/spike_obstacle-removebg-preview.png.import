@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmv1xn3erotou"
-path="res://.godot/imported/spike_obstacle-removebg-preview.png-763ac1ce0ce3a65c1c62e22395dc0230.ctex"
+path="res://.godot/imported/spike_obstacle-removebg-preview.png-8d26e0c0e04ed104271c087ddf9b368e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Placeholder Assets/spike_obstacle-removebg-preview.png"
-dest_files=["res://.godot/imported/spike_obstacle-removebg-preview.png-763ac1ce0ce3a65c1c62e22395dc0230.ctex"]
+source_file="res://Assets/Placeholder Assets/spike_obstacle-removebg-preview.png"
+dest_files=["res://.godot/imported/spike_obstacle-removebg-preview.png-8d26e0c0e04ed104271c087ddf9b368e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc746qcx7t1vd"
-path="res://.godot/imported/thunderboltspike.png-e3c357a344a279517a38488f39dedb2f.ctex"
+path="res://.godot/imported/thunderboltspike.png-ba94795c8813432aed5feecc93bc1fe9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Placeholder Assets/thunderboltspike.png"
-dest_files=["res://.godot/imported/thunderboltspike.png-e3c357a344a279517a38488f39dedb2f.ctex"]
+source_file="res://Assets/Placeholder Assets/thunderboltspike.png"
+dest_files=["res://.godot/imported/thunderboltspike.png-ba94795c8813432aed5feecc93bc1fe9.ctex"]
 
 [params]
 
