@@ -4,11 +4,11 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gsl2x"]
 atlas = ExtResource("1_gsl2x")
-region = Rect2(0, 0, 400, 400)
+region = Rect2(0, 0, 385, 400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ygqbv"]
 atlas = ExtResource("1_gsl2x")
-region = Rect2(400, 0, 400, 400)
+region = Rect2(415, 0, 385, 400)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ygqbv"]
 animations = [{
@@ -21,7 +21,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 6.0
+"speed": 2.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cxo23"]
@@ -30,10 +30,10 @@ radius = 115.00435
 [node name="LevelEndPoint" type="Area2D" unique_id=94973403 groups=["levelEndPoint"]]
 
 [node name="PurplegatewayRemovebgPreview" type="AnimatedSprite2D" parent="." unique_id=1441571833]
-position = Vector2(0, 1)
-scale = Vector2(1, 0.995)
+scale = Vector2(0.66883117, 0.64500004)
 sprite_frames = SubResource("SpriteFrames_ygqbv")
-frame_progress = 0.41233924
+autoplay = "default"
+frame_progress = 0.045833148
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1436235431]
 shape = SubResource("CircleShape2D_cxo23")

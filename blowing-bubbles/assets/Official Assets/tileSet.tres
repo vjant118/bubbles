@@ -2,6 +2,18 @@
 
 [ext_resource type="Texture2D" uid="uid://bqjbmp2tfykyq" path="res://assets/Official Assets/vineWalls.png" id="1_2ljrw"]
 
+[sub_resource type="TileMapPattern" id="TileMapPattern_2ljrw"]
+tile_data = PackedInt32Array(0, 2, 1, 65536, 2, 2, 131072, 2, 3, 196608, 2, 4)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_ai6ax"]
+tile_data = PackedInt32Array(0, 65538, 0, 1, 131074, 0, 2, 196610, 0, 3, 262146, 0)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_nryr4"]
+tile_data = PackedInt32Array(0, 65538, 5, 1, 131074, 5, 2, 196610, 5, 3, 262146, 5)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_425gg"]
+tile_data = PackedInt32Array(0, 327682, 1, 65536, 327682, 2, 131072, 327682, 3, 196608, 327682, 4)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jgq57"]
 texture = ExtResource("1_2ljrw")
 texture_region_size = Vector2i(64, 64)
@@ -50,3 +62,7 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_jgq57")
+pattern_0 = SubResource("TileMapPattern_2ljrw")
+pattern_1 = SubResource("TileMapPattern_ai6ax")
+pattern_2 = SubResource("TileMapPattern_nryr4")
+pattern_3 = SubResource("TileMapPattern_425gg")

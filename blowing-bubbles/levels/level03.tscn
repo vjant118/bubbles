@@ -381,7 +381,7 @@ scale = Vector2(5.1199903, 1)
 linkedEnemies = [NodePath("../ChaserEnemy9")]
 
 [node name="ProjectileShooter" parent="Chasers" unique_id=1630183063 instance=ExtResource("4_pfdh1")]
-position = Vector2(1636, 2540)
+position = Vector2(1618, 2529)
 
 [node name="ProjectileShooter2" parent="Chasers" unique_id=1538740330 instance=ExtResource("4_pfdh1")]
 position = Vector2(356, 4627)

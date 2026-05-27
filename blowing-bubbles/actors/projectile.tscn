@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://b8rvqqyyfg2j4"]
 
 [ext_resource type="Script" uid="uid://bhpxiwr7k6g7a" path="res://src/objects/projectile.gd" id="1_dmi2m"]
+[ext_resource type="Texture2D" uid="uid://2wwfstsayngj" path="res://assets/Official Assets/Thorn_Projectile.png" id="2_v4ymg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg0ci"]
-size = Vector2(40, 40)
+size = Vector2(53, 49)
 
 [node name="Projectile" type="RigidBody2D" unique_id=1234948915 groups=["hazards"]]
 gravity_scale = 0.0
@@ -13,11 +14,29 @@ linear_damp_mode = 1
 angular_damp_mode = 1
 script = ExtResource("1_dmi2m")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1149397178]
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+[node name="ThornProjectile" type="Sprite2D" parent="." unique_id=1352538572]
+position = Vector2(0, -15)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_v4ymg")
+
+[node name="ThornProjectile2" type="Sprite2D" parent="." unique_id=1053656995]
+position = Vector2(16, -1.9999998)
+rotation = 1.5707964
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_v4ymg")
+
+[node name="ThornProjectile3" type="Sprite2D" parent="." unique_id=1620337063]
+position = Vector2(0.99999994, 12.000005)
+rotation = 3.1415927
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_v4ymg")
+
+[node name="ThornProjectile4" type="Sprite2D" parent="." unique_id=209742676]
+position = Vector2(-15.000007, -0.99999994)
+rotation = 4.712389
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_v4ymg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=270419713]
+position = Vector2(0.5, -1.5)
 shape = SubResource("RectangleShape2D_hg0ci")

@@ -391,13 +391,13 @@ position = Vector2(4526, -2015)
 rotation = 9.417683
 
 [node name="finish_line" type="Area2D" parent="level" unique_id=1236653137]
-position = Vector2(3953, -879.9998)
+position = Vector2(3959, -851)
 scale = Vector2(1.5797962, 1.2702535)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="level/finish_line" unique_id=918058712]
 
 [node name="level_end_point" parent="level" unique_id=94973403 instance=ExtResource("7_5lf4g")]
-position = Vector2(3960, -885)
+position = Vector2(3960, -852)
 
 [node name="scene_resetter" parent="level" unique_id=396899554 instance=ExtResource("8_1kqb1")]
 position = Vector2(273, 182)

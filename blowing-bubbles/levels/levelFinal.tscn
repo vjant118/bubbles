@@ -893,6 +893,11 @@ rotation = 4.712389
 shootSpeed = 3
 fireRate = 0.5
 
+[node name="PlaceholderWall11" parent="Hazards/Path2D/PathFollow2D/ProjectileShooter" unique_id=696650116 instance=ExtResource("1_te43d")]
+position = Vector2(96, 0)
+rotation = 1.5707964
+scale = Vector2(3, 1)
+
 [node name="SpikeHazard56" parent="Hazards" unique_id=1783284612 instance=ExtResource("1_t025a")]
 position = Vector2(3218, -1972)
 rotation = 4.712389
@@ -1349,25 +1354,25 @@ position = Vector2(5142, 1477)
 position = Vector2(4966, 1570)
 
 [node name="BallSpike25" parent="Hazards Part 2" unique_id=665394578 instance=ExtResource("5_eoywo")]
-position = Vector2(4869, 1743)
+position = Vector2(4846, 1443)
 
 [node name="BallSpike26" parent="Hazards Part 2" unique_id=1387021762 instance=ExtResource("5_eoywo")]
-position = Vector2(4745, 1891)
+position = Vector2(4719, 1594)
 
 [node name="BallSpike27" parent="Hazards Part 2" unique_id=1741273188 instance=ExtResource("5_eoywo")]
-position = Vector2(4555, 1832)
+position = Vector2(4548, 1710)
 
 [node name="BallSpike28" parent="Hazards Part 2" unique_id=1149074154 instance=ExtResource("5_eoywo")]
-position = Vector2(4399, 1978)
+position = Vector2(4365, 1786)
 
 [node name="BallSpike29" parent="Hazards Part 2" unique_id=1287387474 instance=ExtResource("5_eoywo")]
-position = Vector2(4215, 1893)
+position = Vector2(4190, 1818)
 
 [node name="BallSpike30" parent="Hazards Part 2" unique_id=1422338298 instance=ExtResource("5_eoywo")]
-position = Vector2(4076, 2058)
+position = Vector2(3588, 1964)
 
 [node name="BallSpike31" parent="Hazards Part 2" unique_id=1759648700 instance=ExtResource("5_eoywo")]
-position = Vector2(4076, 2058)
+position = Vector2(3990, 1881)
 
 [node name="BallSpike32" parent="Hazards Part 2" unique_id=119298299 instance=ExtResource("5_eoywo")]
 position = Vector2(3871, 2058)
@@ -1380,6 +1385,12 @@ position = Vector2(3437, 2124)
 
 [node name="BallSpike35" parent="Hazards Part 2" unique_id=1735817186 instance=ExtResource("5_eoywo")]
 position = Vector2(7804, 1794)
+
+[node name="BallSpike61" parent="Hazards Part 2" unique_id=598575869 instance=ExtResource("5_eoywo")]
+position = Vector2(7972, 1663)
+
+[node name="BallSpike62" parent="Hazards Part 2" unique_id=2119336077 instance=ExtResource("5_eoywo")]
+position = Vector2(8500, 1599)
 
 [node name="BallSpike36" parent="Hazards Part 2" unique_id=898729772 instance=ExtResource("5_eoywo")]
 position = Vector2(7659, 1949)
@@ -1430,7 +1441,7 @@ position = Vector2(5352, 2895)
 position = Vector2(5187, 2809)
 
 [node name="BallSpike52" parent="Hazards Part 2" unique_id=1237836524 instance=ExtResource("5_eoywo")]
-position = Vector2(4998, 2783)
+position = Vector2(4986, 2891)
 
 [node name="BallSpike53" parent="Hazards Part 2" unique_id=714573294 instance=ExtResource("5_eoywo")]
 position = Vector2(4786, 2822)
@@ -1442,13 +1453,13 @@ position = Vector2(4595, 2743)
 position = Vector2(4394, 2782)
 
 [node name="BallSpike56" parent="Hazards Part 2" unique_id=473916819 instance=ExtResource("5_eoywo")]
-position = Vector2(4182, 2713)
+position = Vector2(4207, 2849)
 
 [node name="BallSpike57" parent="Hazards Part 2" unique_id=1812509729 instance=ExtResource("5_eoywo")]
-position = Vector2(3991, 2741)
+position = Vector2(3979, 2842)
 
 [node name="BallSpike58" parent="Hazards Part 2" unique_id=1477679123 instance=ExtResource("5_eoywo")]
-position = Vector2(3826, 2653)
+position = Vector2(3792, 2713)
 
 [node name="BallSpike59" parent="Hazards Part 2" unique_id=970640060 instance=ExtResource("5_eoywo")]
 position = Vector2(3642, 2623)
@@ -1461,26 +1472,26 @@ position = Vector2(4248, 2037)
 rotation = 4.712389
 
 [node name="ProjectileShooter2" parent="Hazards Part 2" unique_id=1406517880 instance=ExtResource("3_ough2")]
-position = Vector2(4589, 1996)
+position = Vector2(4588, 1945)
 rotation = 4.712389
 startDelay = 2.0
 
 [node name="ProjectileShooter3" parent="Hazards Part 2" unique_id=420520583 instance=ExtResource("3_ough2")]
-position = Vector2(6268, 1352)
+position = Vector2(6267, 1459)
 rotation = 4.712389
 startDelay = 1.0
 
 [node name="ProjectileShooter4" parent="Hazards Part 2" unique_id=1433040141 instance=ExtResource("3_ough2")]
-position = Vector2(5175, 1641)
+position = Vector2(5169, 1726)
 rotation = 4.712389
 
 [node name="ProjectileShooter5" parent="Hazards Part 2" unique_id=844193266 instance=ExtResource("3_ough2")]
-position = Vector2(5576, 1470)
+position = Vector2(5576, 1575)
 rotation = 4.712389
 startDelay = 1.0
 
 [node name="ProjectileShooter8" parent="Hazards Part 2" unique_id=1340588814 instance=ExtResource("3_ough2")]
-position = Vector2(5970, 2518)
+position = Vector2(5979, 2441)
 rotation = 1.5707964
 
 [node name="ProjectileShooter10" parent="Hazards Part 2" unique_id=1832303239 instance=ExtResource("3_ough2")]
@@ -1489,22 +1500,66 @@ rotation = 1.5707964
 startDelay = 1.0
 
 [node name="ProjectileShooter11" parent="Hazards Part 2" unique_id=2062383556 instance=ExtResource("3_ough2")]
-position = Vector2(5032, 2610)
+position = Vector2(4981, 2670)
 rotation = 1.5707964
 
 [node name="ProjectileShooter9" parent="Hazards Part 2" unique_id=473821371 instance=ExtResource("3_ough2")]
-position = Vector2(7170, 2176)
+position = Vector2(7125, 2073)
 rotation = 1.5707964
 
 [node name="ProjectileShooter6" parent="Hazards Part 2" unique_id=857120284 instance=ExtResource("3_ough2")]
-position = Vector2(6590, 1255)
+position = Vector2(6589, 1366)
 rotation = 4.712389
 startDelay = 3.0
 
 [node name="ProjectileShooter7" parent="Hazards Part 2" unique_id=880618532 instance=ExtResource("3_ough2")]
-position = Vector2(7366, 1095)
+position = Vector2(7376, 1202)
 rotation = 4.712389
 startDelay = 1.0
+
+[node name="PlaceholderWall" parent="Hazards Part 2" unique_id=695042204 instance=ExtResource("1_te43d")]
+position = Vector2(3999.0002, 2702)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall2" parent="Hazards Part 2" unique_id=923475712 instance=ExtResource("1_te43d")]
+position = Vector2(4247, 1936)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall3" parent="Hazards Part 2" unique_id=383418323 instance=ExtResource("1_te43d")]
+position = Vector2(4591, 1846)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall4" parent="Hazards Part 2" unique_id=1407385766 instance=ExtResource("1_te43d")]
+position = Vector2(4978, 2767)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall5" parent="Hazards Part 2" unique_id=2029669893 instance=ExtResource("1_te43d")]
+position = Vector2(5171, 1626)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall6" parent="Hazards Part 2" unique_id=49830349 instance=ExtResource("1_te43d")]
+position = Vector2(5574, 1477)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall7" parent="Hazards Part 2" unique_id=1727968341 instance=ExtResource("1_te43d")]
+position = Vector2(6268, 1361)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall8" parent="Hazards Part 2" unique_id=870271982 instance=ExtResource("1_te43d")]
+position = Vector2(6587.0005, 1270)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall9" parent="Hazards Part 2" unique_id=1591409966 instance=ExtResource("1_te43d")]
+position = Vector2(7120.0005, 2167)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall10" parent="Hazards Part 2" unique_id=1086771557 instance=ExtResource("1_te43d")]
+position = Vector2(5981, 2539)
+scale = Vector2(3, 1)
+
+[node name="PlaceholderWall11" parent="Hazards Part 2" unique_id=407304432 instance=ExtResource("1_te43d")]
+position = Vector2(7373, 1104)
+scale = Vector2(3, 1)
 
 [node name="Walls" type="Node" parent="." unique_id=1893858437]
 
@@ -1539,52 +1594,6 @@ scale = Vector2(21.945957, 1)
 [node name="PlaceholderWall37" parent="Walls" unique_id=1874061200 instance=ExtResource("1_te43d")]
 position = Vector2(5355, 201)
 scale = Vector2(21.945957, 1)
-
-[node name="PlaceholderWall64" parent="Walls" unique_id=392806840 instance=ExtResource("1_te43d")]
-position = Vector2(9030, 2311)
-scale = Vector2(21.945957, 1)
-
-[node name="PlaceholderWall65" parent="Walls" unique_id=1201909431 instance=ExtResource("1_te43d")]
-position = Vector2(8729, 2899)
-scale = Vector2(37.985954, 1)
-
-[node name="PlaceholderWall66" parent="Walls" unique_id=353102418 instance=ExtResource("1_te43d")]
-position = Vector2(9470.999, 4167)
-rotation = 1.5763682
-scale = Vector2(63.4611, 1)
-
-[node name="PlaceholderWall69" parent="Walls" unique_id=1167300809 instance=ExtResource("1_te43d")]
-position = Vector2(9463.001, 1024)
-rotation = 1.5763682
-scale = Vector2(64.95133, 1)
-
-[node name="PlaceholderWall70" parent="Walls" unique_id=1635172750 instance=ExtResource("1_te43d")]
-position = Vector2(15478.001, 1017)
-rotation = 1.5763682
-scale = Vector2(64.95133, 1)
-
-[node name="PlaceholderWall72" parent="Walls" unique_id=776106521 instance=ExtResource("1_te43d")]
-position = Vector2(16390.002, 2881)
-rotation = 3.1402857
-scale = Vector2(46.399498, 1)
-
-[node name="PlaceholderWall73" parent="Walls" unique_id=1261573333 instance=ExtResource("1_te43d")]
-position = Vector2(16378.999, 2303)
-rotation = 3.1402857
-scale = Vector2(46.399498, 1)
-
-[node name="PlaceholderWall71" parent="Walls" unique_id=367473667 instance=ExtResource("1_te43d")]
-position = Vector2(15473.001, 4163)
-rotation = 1.5763682
-scale = Vector2(64.95133, 1)
-
-[node name="PlaceholderWall67" parent="Walls" unique_id=1489196644 instance=ExtResource("1_te43d")]
-position = Vector2(12471, 5417)
-scale = Vector2(150.94597, 1)
-
-[node name="PlaceholderWall68" parent="Walls" unique_id=1128444914 instance=ExtResource("1_te43d")]
-position = Vector2(12503, -262)
-scale = Vector2(150.42596, 1)
 
 [node name="PlaceholderWall23" parent="Walls" unique_id=1174228703 instance=ExtResource("1_te43d")]
 position = Vector2(4291.0005, -1700)
@@ -1637,21 +1646,6 @@ scale = Vector2(38.350536, 1)
 
 [node name="PlaceholderWall29" parent="Walls" unique_id=1425811637 instance=ExtResource("1_te43d")]
 position = Vector2(5459, -692.00024)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall62" parent="Walls" unique_id=1932946044 instance=ExtResource("1_te43d")]
-position = Vector2(7959, 2319)
-rotation = 1.5677661
-scale = Vector2(30.103676, 1)
-
-[node name="PlaceholderWall63" parent="Walls" unique_id=2015863362 instance=ExtResource("1_te43d")]
-position = Vector2(8601.001, 2024)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall76" parent="Walls" unique_id=816810440 instance=ExtResource("1_te43d")]
-position = Vector2(17327.002, 2592.0002)
 rotation = 1.5677661
 scale = Vector2(15.345438, 1)
 
@@ -1861,13 +1855,13 @@ position = Vector2(4277, 319)
 position = Vector2(4748, 170)
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("4_xngw8")]
-position = Vector2(8251, 1548)
+position = Vector2(8252, 1710)
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("4_6642d")]
 position = Vector2(253, 100)
 
 [node name="bubble" parent="." unique_id=1455146349 instance=ExtResource("2_gl4wf")]
-position = Vector2(-121, -1313)
+position = Vector2(-129, -1293)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=908821064]
 

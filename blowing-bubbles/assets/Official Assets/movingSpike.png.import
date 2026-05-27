@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1m4gx53cym2l"
-path="res://.godot/imported/movingSpike.png-363e73330f49fec44019dc600320ff82.ctex"
+path="res://.godot/imported/movingSpike.png-53ec1a727920c3ca5379908b2bc82a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Official Assets/movingSpike.png"
-dest_files=["res://.godot/imported/movingSpike.png-363e73330f49fec44019dc600320ff82.ctex"]
+source_file="res://assets/Official Assets/movingSpike.png"
+dest_files=["res://.godot/imported/movingSpike.png-53ec1a727920c3ca5379908b2bc82a88.ctex"]
 
 [params]
 

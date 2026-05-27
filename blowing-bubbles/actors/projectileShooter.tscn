@@ -2,7 +2,50 @@
 
 [ext_resource type="Script" uid="uid://coyivndedohvv" path="res://src/objects/projectileShooter.gd" id="1_8cmru"]
 [ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://actors/projectile.tscn" id="2_au1px"]
-[ext_resource type="Texture2D" uid="uid://cot0jnj46txhk" path="res://assets/Placeholder Assets/icon.svg" id="3_au1px"]
+[ext_resource type="Texture2D" uid="uid://cbm0epokhfd7w" path="res://assets/Official Assets/Cactus_Shooter_Spritesheet.png" id="3_ms2uq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dijv4"]
+atlas = ExtResource("3_ms2uq")
+region = Rect2(0, 0, 634, 636)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wc65"]
+atlas = ExtResource("3_ms2uq")
+region = Rect2(634, 0, 634, 636)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8yjjg"]
+atlas = ExtResource("3_ms2uq")
+region = Rect2(1268, 0, 634, 636)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylj8m"]
+atlas = ExtResource("3_ms2uq")
+region = Rect2(1902, 0, 634, 636)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kfw3"]
+atlas = ExtResource("3_ms2uq")
+region = Rect2(2536, 0, 634, 636)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3w1f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dijv4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wc65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8yjjg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylj8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1kfw3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="ProjectileShooter" type="Node2D" unique_id=1630183063]
 script = ExtResource("1_8cmru")
@@ -11,9 +54,12 @@ projectile = ExtResource("2_au1px")
 [node name="Timer" type="Timer" parent="." unique_id=2041592940]
 wait_time = 3.0
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1240482976]
-position = Vector2(-14.000002, 0)
-scale = Vector2(0.35546875, 0.0546875)
-texture = ExtResource("3_au1px")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1747380050]
+position = Vector2(15.999999, 1.9999998)
+rotation = 4.712389
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_p3w1f")
+autoplay = "default"
+frame_progress = 0.047085565
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -815,31 +815,31 @@ scale = Vector2(40, 1)
 [node name="Projectile Shooters" type="Node" parent="." unique_id=1398909227]
 
 [node name="ProjectileShooter2" parent="Projectile Shooters" unique_id=1692698129 instance=ExtResource("14_iwl2t")]
-position = Vector2(1948, -619)
+position = Vector2(1948, -599)
 rotation = -1.5707964
 shootSpeed = 5
 fireRate = 2.5
 
 [node name="ProjectileShooter" parent="Projectile Shooters" unique_id=1630183063 instance=ExtResource("14_iwl2t")]
-position = Vector2(3367, -344)
+position = Vector2(3344, -345)
 shootSpeed = 5
 fireRate = 2.5
 
 [node name="ProjectileShooter3" parent="Projectile Shooters" unique_id=565224864 instance=ExtResource("14_iwl2t")]
-position = Vector2(-312, 791)
+position = Vector2(-297, 788)
 rotation = -3.1415925
 shootSpeed = 3
 fireRate = 6.0
 
 [node name="ProjectileShooter4" parent="Projectile Shooters" unique_id=751162813 instance=ExtResource("14_iwl2t")]
-position = Vector2(-312, 959)
+position = Vector2(-296, 959)
 rotation = -3.1415925
 shootSpeed = 3
 fireRate = 6.0
 startDelay = 2.0
 
 [node name="ProjectileShooter5" parent="Projectile Shooters" unique_id=634643378 instance=ExtResource("14_iwl2t")]
-position = Vector2(-312, 1119)
+position = Vector2(-297, 1119)
 rotation = -3.1415925
 shootSpeed = 3
 fireRate = 6.0

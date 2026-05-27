@@ -7,7 +7,7 @@ func _process(_delta):
 	
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		$CollisionShape2D.set_deferred("disabled", false)
-		$Sprite2D.rotate(3.14/3)
+		$Sprite2D.rotate(3.14/15)
 		$AudioStreamPlayer.play()
 		blow()
 	else:
