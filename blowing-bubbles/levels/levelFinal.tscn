@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://oml6ajnsxprn"]
+[gd_scene format=4 uid="uid://oml6ajnsxprn"]
 
 [ext_resource type="Texture2D" uid="uid://dr6flnjvm1sdx" path="res://assets/Official Assets/Dusk.png" id="1_1lv7r"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="1_t025a"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="6_5sgy0"]
 [ext_resource type="Script" uid="uid://d3wo580qp48wb" path="res://src/objects/antiRotate.gd" id="6_eoywo"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="13_hljv7"]
+[ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="15_x2tv3"]
 
 [sub_resource type="Curve2D" id="Curve2D_hljv7"]
 _data = {
@@ -1324,13 +1325,13 @@ position = Vector2(7119, 1060)
 position = Vector2(6902, 1076)
 
 [node name="BallSpike15" parent="Hazards Part 2" unique_id=950895516 instance=ExtResource("5_eoywo")]
-position = Vector2(6722, 1145)
+position = Vector2(6723, 1127)
 
 [node name="BallSpike16" parent="Hazards Part 2" unique_id=1025562887 instance=ExtResource("5_eoywo")]
 position = Vector2(6522, 1097)
 
 [node name="BallSpike17" parent="Hazards Part 2" unique_id=25211386 instance=ExtResource("5_eoywo")]
-position = Vector2(6318, 1194)
+position = Vector2(6370, 1185)
 
 [node name="BallSpike18" parent="Hazards Part 2" unique_id=1529762582 instance=ExtResource("5_eoywo")]
 position = Vector2(6111, 1304)
@@ -1342,7 +1343,7 @@ position = Vector2(5894, 1252)
 position = Vector2(5708, 1356)
 
 [node name="BallSpike21" parent="Hazards Part 2" unique_id=714096506 instance=ExtResource("5_eoywo")]
-position = Vector2(5508, 1332)
+position = Vector2(5455, 1331)
 
 [node name="BallSpike22" parent="Hazards Part 2" unique_id=308108538 instance=ExtResource("5_eoywo")]
 position = Vector2(5349, 1498)
@@ -1468,347 +1469,54 @@ position = Vector2(3642, 2623)
 position = Vector2(3415, 2679)
 
 [node name="ProjectileShooter" parent="Hazards Part 2" unique_id=2124945501 instance=ExtResource("3_ough2")]
-position = Vector2(4248, 2037)
+position = Vector2(4219, 2057)
 rotation = 4.712389
 
 [node name="ProjectileShooter2" parent="Hazards Part 2" unique_id=1406517880 instance=ExtResource("3_ough2")]
-position = Vector2(4588, 1945)
+position = Vector2(4538, 1931)
 rotation = 4.712389
 startDelay = 2.0
 
 [node name="ProjectileShooter3" parent="Hazards Part 2" unique_id=420520583 instance=ExtResource("3_ough2")]
-position = Vector2(6267, 1459)
+position = Vector2(6274, 1417)
 rotation = 4.712389
 startDelay = 1.0
 
 [node name="ProjectileShooter4" parent="Hazards Part 2" unique_id=1433040141 instance=ExtResource("3_ough2")]
-position = Vector2(5169, 1726)
+position = Vector2(5181, 1737)
 rotation = 4.712389
 
 [node name="ProjectileShooter5" parent="Hazards Part 2" unique_id=844193266 instance=ExtResource("3_ough2")]
-position = Vector2(5576, 1575)
+position = Vector2(5566, 1548)
 rotation = 4.712389
 startDelay = 1.0
 
 [node name="ProjectileShooter8" parent="Hazards Part 2" unique_id=1340588814 instance=ExtResource("3_ough2")]
-position = Vector2(5979, 2441)
+position = Vector2(5956, 2422)
 rotation = 1.5707964
 
 [node name="ProjectileShooter10" parent="Hazards Part 2" unique_id=1832303239 instance=ExtResource("3_ough2")]
-position = Vector2(3999, 2602)
+position = Vector2(3970, 2615)
 rotation = 1.5707964
 startDelay = 1.0
 
 [node name="ProjectileShooter11" parent="Hazards Part 2" unique_id=2062383556 instance=ExtResource("3_ough2")]
-position = Vector2(4981, 2670)
+position = Vector2(4993, 2678)
 rotation = 1.5707964
 
 [node name="ProjectileShooter9" parent="Hazards Part 2" unique_id=473821371 instance=ExtResource("3_ough2")]
-position = Vector2(7125, 2073)
+position = Vector2(7109, 2037)
 rotation = 1.5707964
 
 [node name="ProjectileShooter6" parent="Hazards Part 2" unique_id=857120284 instance=ExtResource("3_ough2")]
-position = Vector2(6589, 1366)
+position = Vector2(6588, 1353)
 rotation = 4.712389
 startDelay = 3.0
 
 [node name="ProjectileShooter7" parent="Hazards Part 2" unique_id=880618532 instance=ExtResource("3_ough2")]
-position = Vector2(7376, 1202)
+position = Vector2(7353, 1223)
 rotation = 4.712389
 startDelay = 1.0
-
-[node name="PlaceholderWall" parent="Hazards Part 2" unique_id=695042204 instance=ExtResource("1_te43d")]
-position = Vector2(3999.0002, 2702)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall2" parent="Hazards Part 2" unique_id=923475712 instance=ExtResource("1_te43d")]
-position = Vector2(4247, 1936)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall3" parent="Hazards Part 2" unique_id=383418323 instance=ExtResource("1_te43d")]
-position = Vector2(4591, 1846)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall4" parent="Hazards Part 2" unique_id=1407385766 instance=ExtResource("1_te43d")]
-position = Vector2(4978, 2767)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall5" parent="Hazards Part 2" unique_id=2029669893 instance=ExtResource("1_te43d")]
-position = Vector2(5171, 1626)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall6" parent="Hazards Part 2" unique_id=49830349 instance=ExtResource("1_te43d")]
-position = Vector2(5574, 1477)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall7" parent="Hazards Part 2" unique_id=1727968341 instance=ExtResource("1_te43d")]
-position = Vector2(6268, 1361)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall8" parent="Hazards Part 2" unique_id=870271982 instance=ExtResource("1_te43d")]
-position = Vector2(6587.0005, 1270)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall9" parent="Hazards Part 2" unique_id=1591409966 instance=ExtResource("1_te43d")]
-position = Vector2(7120.0005, 2167)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall10" parent="Hazards Part 2" unique_id=1086771557 instance=ExtResource("1_te43d")]
-position = Vector2(5981, 2539)
-scale = Vector2(3, 1)
-
-[node name="PlaceholderWall11" parent="Hazards Part 2" unique_id=407304432 instance=ExtResource("1_te43d")]
-position = Vector2(7373, 1104)
-scale = Vector2(3, 1)
-
-[node name="Walls" type="Node" parent="." unique_id=1893858437]
-
-[node name="PlaceholderWall20" parent="Walls" unique_id=554436126 instance=ExtResource("1_te43d")]
-position = Vector2(3490.0002, -2015)
-scale = Vector2(13.18596, 1)
-
-[node name="PlaceholderWall22" parent="Walls" unique_id=1144710773 instance=ExtResource("1_te43d")]
-position = Vector2(4160, -1442)
-scale = Vector2(21.945957, 1)
-
-[node name="PlaceholderWall30" parent="Walls" unique_id=1725932289 instance=ExtResource("1_te43d")]
-position = Vector2(5211.0005, -2089)
-scale = Vector2(30.905956, 1)
-
-[node name="PlaceholderWall28" parent="Walls" unique_id=1929917559 instance=ExtResource("1_te43d")]
-position = Vector2(5038.0005, -1017)
-scale = Vector2(21.945957, 1)
-
-[node name="PlaceholderWall38" parent="Walls" unique_id=1471498325 instance=ExtResource("1_te43d")]
-position = Vector2(4226, 169)
-scale = Vector2(16.745956, 1)
-
-[node name="PlaceholderWall39" parent="Walls" unique_id=906675537 instance=ExtResource("1_te43d")]
-position = Vector2(4419, 632)
-scale = Vector2(25.225956, 1)
-
-[node name="PlaceholderWall33" parent="Walls" unique_id=1260303431 instance=ExtResource("1_te43d")]
-position = Vector2(5014, -407)
-scale = Vector2(21.945957, 1)
-
-[node name="PlaceholderWall37" parent="Walls" unique_id=1874061200 instance=ExtResource("1_te43d")]
-position = Vector2(5355, 201)
-scale = Vector2(21.945957, 1)
-
-[node name="PlaceholderWall23" parent="Walls" unique_id=1174228703 instance=ExtResource("1_te43d")]
-position = Vector2(4291.0005, -1700)
-scale = Vector2(13.18596, 1)
-
-[node name="PlaceholderWall11" parent="Walls" unique_id=554737088 instance=ExtResource("1_te43d")]
-position = Vector2(-272.00003, -1301.9999)
-rotation = 1.5677661
-scale = Vector2(6.945961, 1)
-
-[node name="PlaceholderWall12" parent="Walls" unique_id=447000508 instance=ExtResource("1_te43d")]
-position = Vector2(716.9999, -1026)
-rotation = 1.5677661
-scale = Vector2(8.864862, 1)
-
-[node name="PlaceholderWall16" parent="Walls" unique_id=1553643156 instance=ExtResource("1_te43d")]
-position = Vector2(1601.0001, -1887)
-rotation = 1.5677661
-scale = Vector2(38.12437, 1)
-
-[node name="PlaceholderWall17" parent="Walls" unique_id=1307988747 instance=ExtResource("1_te43d")]
-position = Vector2(1864, -1160)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall19" parent="Walls" unique_id=1444531582 instance=ExtResource("1_te43d")]
-position = Vector2(3236, -1730)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall21" parent="Walls" unique_id=1657848887 instance=ExtResource("1_te43d")]
-position = Vector2(3735, -1727.0001)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall41" parent="Walls" unique_id=439915470 instance=ExtResource("1_te43d")]
-position = Vector2(3901.9995, 1033.9999)
-rotation = 1.5677661
-scale = Vector2(21.186136, 1)
-
-[node name="PlaceholderWall42" parent="Walls" unique_id=161855745 instance=ExtResource("1_te43d")]
-position = Vector2(1376.9998, 492.99982)
-rotation = 1.5677661
-scale = Vector2(21.468435, 1)
-
-[node name="PlaceholderWall56" parent="Walls" unique_id=1870531163 instance=ExtResource("1_te43d")]
-position = Vector2(-213, 1467.9999)
-rotation = 1.5677661
-scale = Vector2(38.350536, 1)
-
-[node name="PlaceholderWall29" parent="Walls" unique_id=1425811637 instance=ExtResource("1_te43d")]
-position = Vector2(5459, -692.00024)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall32" parent="Walls" unique_id=1954622234 instance=ExtResource("1_te43d")]
-position = Vector2(5813.0005, -69.000305)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall35" parent="Walls" unique_id=566729583 instance=ExtResource("1_te43d")]
-position = Vector2(4556, -120.99982)
-rotation = 1.5677661
-scale = Vector2(15.345438, 1)
-
-[node name="PlaceholderWall36" parent="Walls" unique_id=1545612220 instance=ExtResource("1_te43d")]
-position = Vector2(4938.0005, 417.00012)
-rotation = 1.5677661
-scale = Vector2(11.788118, 1)
-
-[node name="PlaceholderWall40" parent="Walls" unique_id=989067453 instance=ExtResource("1_te43d")]
-position = Vector2(3893.0005, -42.999847)
-rotation = 1.5677661
-scale = Vector2(11.788118, 1)
-
-[node name="PlaceholderWall43" parent="Walls" unique_id=448888543 instance=ExtResource("1_te43d")]
-position = Vector2(2113, 1225)
-rotation = 1.5677661
-scale = Vector2(11.788118, 1)
-
-[node name="PlaceholderWall53" parent="Walls" unique_id=22798144 instance=ExtResource("1_te43d")]
-position = Vector2(1109.0002, 1629)
-rotation = 1.5677661
-scale = Vector2(11.788118, 1)
-
-[node name="PlaceholderWall58" parent="Walls" unique_id=117447929 instance=ExtResource("1_te43d")]
-position = Vector2(1950.0002, 2467)
-rotation = 1.5677661
-scale = Vector2(11.788118, 1)
-
-[node name="PlaceholderWall59" parent="Walls" unique_id=2090548983 instance=ExtResource("1_te43d")]
-position = Vector2(2291.0002, 2067.0002)
-rotation = 1.5677661
-scale = Vector2(11.788118, 1)
-
-[node name="PlaceholderWall46" parent="Walls" unique_id=1225664188 instance=ExtResource("1_te43d")]
-position = Vector2(1705.0002, -78.99988)
-rotation = 1.5677661
-scale = Vector2(9.230913, 1)
-
-[node name="PlaceholderWall49" parent="Walls" unique_id=574478430 instance=ExtResource("1_te43d")]
-position = Vector2(1920.0002, 1211)
-rotation = 1.5677661
-scale = Vector2(11.311266, 1)
-
-[node name="PlaceholderWall47" parent="Walls" unique_id=1488489482 instance=ExtResource("1_te43d")]
-position = Vector2(1538, 92.00012)
-rotation = 3.1408353
-scale = Vector2(9.230911, 1)
-
-[node name="PlaceholderWall50" parent="Walls" unique_id=292613454 instance=ExtResource("1_te43d")]
-position = Vector2(1494, 1419.0001)
-rotation = 3.1408353
-scale = Vector2(20.78994, 1)
-
-[node name="PlaceholderWall60" parent="Walls" unique_id=477177760 instance=ExtResource("1_te43d")]
-position = Vector2(2526.9998, 2683)
-rotation = 3.1408353
-scale = Vector2(28.920395, 0.9129367)
-
-[node name="PlaceholderWall61" parent="Walls" unique_id=2126075693 instance=ExtResource("1_te43d")]
-position = Vector2(2691, 2286)
-rotation = 3.1408353
-scale = Vector2(20.78994, 1)
-
-[node name="PlaceholderWall54" parent="Walls" unique_id=441036033 instance=ExtResource("1_te43d")]
-position = Vector2(1698, 1849.0001)
-rotation = 3.1408353
-scale = Vector2(30.549725, 1)
-
-[node name="PlaceholderWall55" parent="Walls" unique_id=330803725 instance=ExtResource("1_te43d")]
-position = Vector2(419, 704.0001)
-rotation = 3.1408353
-scale = Vector2(32.469555, 1)
-
-[node name="PlaceholderWall51" parent="Walls" unique_id=1263703305 instance=ExtResource("1_te43d")]
-position = Vector2(1219, 945.0001)
-rotation = 3.1408353
-scale = Vector2(9.230911, 1)
-
-[node name="PlaceholderWall48" parent="Walls" unique_id=1533993255 instance=ExtResource("1_te43d")]
-position = Vector2(2020, 1007.0001)
-rotation = 3.1408353
-scale = Vector2(5.671153, 1)
-
-[node name="PlaceholderWall26" parent="Walls" unique_id=497116281 instance=ExtResource("1_te43d")]
-position = Vector2(4577, -1895.0001)
-rotation = 1.5677661
-scale = Vector2(11.069949, 1)
-
-[node name="PlaceholderWall27" parent="Walls" unique_id=1938920278 instance=ExtResource("1_te43d")]
-position = Vector2(4584, -1229.0002)
-rotation = 1.5677661
-scale = Vector2(11.589216, 1)
-
-[node name="PlaceholderWall25" parent="Walls" unique_id=1911957730 instance=ExtResource("1_te43d")]
-position = Vector2(4031.9998, -2144.9998)
-rotation = 1.5677661
-scale = Vector2(23.546007, 1)
-
-[node name="PlaceholderWall31" parent="Walls" unique_id=1001627142 instance=ExtResource("1_te43d")]
-position = Vector2(5809.9995, -1217.9996)
-rotation = 1.5677661
-scale = Vector2(42.34798, 1)
-
-[node name="PlaceholderWall34" parent="Walls" unique_id=208432660 instance=ExtResource("1_te43d")]
-position = Vector2(5809.9995, -1217.9996)
-rotation = 1.5677661
-scale = Vector2(42.34798, 1)
-
-[node name="PlaceholderWall13" parent="Walls" unique_id=1568731547 instance=ExtResource("1_te43d")]
-position = Vector2(981, -1260)
-rotation = 1.5677661
-scale = Vector2(6.945961, 1)
-
-[node name="PlaceholderWall52" parent="Walls" unique_id=1980436515 instance=ExtResource("1_te43d")]
-position = Vector2(1055, 816)
-rotation = 1.5677661
-scale = Vector2(6.945961, 1)
-
-[node name="PlaceholderWall10" parent="Walls" unique_id=1065614753 instance=ExtResource("1_te43d")]
-position = Vector2(243, -1184)
-scale = Vector2(24.54595, 1)
-
-[node name="PlaceholderWall14" parent="Walls" unique_id=391554393 instance=ExtResource("1_te43d")]
-position = Vector2(1289, -866)
-scale = Vector2(29.585955, 1)
-
-[node name="PlaceholderWall18" parent="Walls" unique_id=1544270080 instance=ExtResource("1_te43d")]
-position = Vector2(2550.0002, -1445)
-scale = Vector2(35.225956, 1)
-
-[node name="PlaceholderWall44" parent="Walls" unique_id=482345010 instance=ExtResource("1_te43d")]
-position = Vector2(2792, -263)
-scale = Vector2(54.465958, 1)
-
-[node name="PlaceholderWall57" parent="Walls" unique_id=1034323122 instance=ExtResource("1_te43d")]
-position = Vector2(868.00006, 2243)
-scale = Vector2(54.465958, 1)
-
-[node name="PlaceholderWall45" parent="Walls" unique_id=791452976 instance=ExtResource("1_te43d")]
-position = Vector2(3018.0002, 1439)
-scale = Vector2(44.825962, 1)
-
-[node name="PlaceholderWall24" parent="Walls" unique_id=166650544 instance=ExtResource("1_te43d")]
-position = Vector2(2819, -2641)
-scale = Vector2(61.785957, 1)
-
-[node name="PlaceholderWall15" parent="Walls" unique_id=1871581382 instance=ExtResource("1_te43d")]
-position = Vector2(1296, -1141)
-scale = Vector2(16.305952, 1)
-
-[node name="PlaceholderWall9" parent="Walls" unique_id=1347127816 instance=ExtResource("1_te43d")]
-position = Vector2(373.00003, -1419)
-scale = Vector2(31.30595, 1)
 
 [node name="bubles" type="Node" parent="." unique_id=334931298]
 
@@ -1861,7 +1569,7 @@ position = Vector2(8252, 1710)
 position = Vector2(253, 100)
 
 [node name="bubble" parent="." unique_id=1455146349 instance=ExtResource("2_gl4wf")]
-position = Vector2(4018, 387)
+position = Vector2(2888, 2466)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=908821064]
 
@@ -1870,3 +1578,8 @@ unique_name_in_owner = true
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("6_5sgy0")]
 position = Vector2(249, 101)
+
+[node name="walls" type="TileMapLayer" parent="." unique_id=687745315]
+z_index = 1
+tile_map_data = PackedByteArray("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AABCAOX/AgADAAAAAABDAOX/AgAEAAAAAABEAOX/AgABAAAAAABFAOX/AgACAAAAAABGAOX/AgADAAAAAABHAOX/AgAFAAUAAABHAOH/AgAFAAIAAABHAOL/AgAFAAMAAABHAOP/AgAFAAQAAABHAOT/AgAFAAQAAABHAOD/AgAFAAEAAABHAN7/AgAAAAAAAABHAN//AgAAAAEAAABIAN7/AgABAAAAAABJAN7/AgACAAAAAABKAN7/AgADAAAAAABLAN7/AgAEAAAAAABMAN7/AgABAAAAAABNAN7/AgACAAAAAABOAN7/AgADAAAAAABPAN7/AgAEAAAAAABQAN7/AgABAAAAAABRAN7/AgACAAAAAABSAN7/AgADAAAAAABTAN7/AgAEAAAAAABUAN7/AgABAAAAAABVAN7/AgACAAAAAABWAN7/AgADAAAAAABXAN7/AgAEAAAAAABYAN7/AgABAAAAAABZAN7/AgACAAAAAABaAN7/AgAFAAAAAABHAOr/AgAAAAEAAABHAOv/AgAAAAIAAABHAOz/AgAAAAEAAABHAO3/AgAAAAIAAABHAO7/AgAAAAMAAABHAO//AgAAAAQAAABHAPD/AgAAAAUAAABIAPD/AgABAAUAAABJAPD/AgACAAUAAABKAPD/AgADAAUAAABLAPD/AgAEAAUAAABMAPD/AgABAAUAAABNAPD/AgACAAUAAABOAPD/AgADAAUAAABPAPD/AgAEAAUAAABQAPD/AgABAAUAAABRAPD/AgABAAUAAABSAPD/AgACAAUAAABTAPD/AgADAAUAAABUAPD/AgAEAAUAAABVAPD/AgAFAAAAAABaAN//AgAFAAEAAABaAOD/AgAFAAIAAABaAOH/AgAFAAMAAABaAOL/AgAFAAQAAABaAOP/AgAFAAEAAABaAOT/AgAFAAIAAABaAOX/AgAFAAMAAABaAOb/AgAFAAQAAABaAOf/AgAFAAEAAABaAOj/AgAFAAIAAABaAOn/AgAFAAMAAABaAOr/AgAFAAQAAABaAOv/AgAFAAEAAABaAOz/AgAFAAIAAABaAO3/AgAFAAMAAABaAO7/AgAFAAQAAABaAO//AgAFAAEAAABaAPD/AgAFAAIAAABaAPH/AgAFAAMAAABaAPL/AgAFAAQAAABaAPP/AgAFAAEAAABaAPT/AgAFAAIA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AAA9AA8AAgAFAAEAAAA9ABAAAgAFAAIAAAA9ABEAAgAFAAMAAAA9ABIAAgAFAAEAAAA9ABMAAgAFAAIAAAA9ABQAAgAFAAMAAAA9ABUAAgAFAAQAAAA9ABYAAgAFAAUAAAA5ABYAAgABAAUAAAA6ABYAAgACAAUAAAA7ABYAAgADAAUAAAA8ABYAAgAEAAUAAAA1ABYAAgABAAUAAAA2ABYAAgACAAUAAAA3ABYAAgADAAUAAAA4ABYAAgAEAAUAAAAxABYAAgABAAUAAAAyABYAAgACAAUAAAAzABYAAgADAAUAAAA0ABYAAgAEAAUAAAAtABYAAgABAAUAAAAuABYAAgACAAUAAAAvABYAAgADAAUAAAAwABYAAgAEAAUAAAApABYAAgABAAUAAAAqABYAAgACAAUAAAArABYAAgADAAUAAAAsABYAAgAEAAUAAAAlABYAAgABAAUAAAAmABYAAgACAAUAAAAnABYAAgADAAUAAAAoABYAAgAEAAUAAAAhABYAAgABAAUAAAAiABYAAgACAAUAAAAjABYAAgADAAUAAAAkABYAAgAEAAUAAAAgABYAAgAAAAUAAAAgABIAAgAAAAMAAAAgABMAAgAAAAQAAAAgABQAAgAAAAMAAAAgABUAAgAAAAQAAAAgABAAAgAAAAEAAAAgABEAAgAAAAIAAAAgAA8AAgAFAAAAAAAfAA8AAgADAAAAAAAeAA8AAgAAAAAAAAAeABAAAgAFAAEAAAAeABEAAgAFAAIAAAAeABIAAgAFAAEAAAAeABMAAgAFAAIAAAAeABQAAgAFAAMAAAAeABUAAgAFAAQAAAAeABYAAgAFAAUAAAAaABYAAgABAAUAAAAbABYAAgACAAUAAAAcABYAAgADAAUAAAAdABYAAgAEAAUAAAAWABYAAgABAAUAAAAXABYAAgACAAUAAAAYABYAAgADAAUAAAAZABYAAgAEAAUAAAASABYAAgABAAUAAAATABYAAgACAAUAAAAUABYAAgADAAUAAAAVABYAAgAEAAUAAAARABYAAgAAAAAAAAAVAAIAAgAAAAEAAAAVAAMAAgAAAAIAAAAVAAQAAgAAAAMAAAAVAAUAAgAAAAQAAAAVAAYAAgAAAAEAAAAVAAcAAgAAAAIAAAAVAAgAAgAAAAMAAAAVAAkAAgAAAAQAAAAVAAoAAgAAAAEAAAAVAAsAAgAAAAIAAAAVAAwAAgAAAAMAAAAVAA0AAgAAAAQAAAAVAA4AAgAFAAUAAAARAA4AAgABAAAAAAASAA4AAgACAAAAAAATAA4AAgADAAAAAAAUAA4AAgAEAAAAAAAQAA4AAgAAAAUAAAAQAAoAAgAFAAAAAAAQAAsAAgAFAAIAAAAQAAwAAgAFAAMAAAAQAA0AAgAFAAQAAAAMAAoAAgABAAAAAAANAAoAAgACAAAAAAAOAAoAAgADAAAAAAAPAAoAAgAEAAAAAAAIAAoAAgABAAAAAAAJAAoAAgACAAAAAAAKAAoAAgADAAAAAAALAAoAAgAEAAAAAAAEAAoAAgABAAAAAAAFAAoAAgACAAAAAAAGAAoAAgADAAAAAAAHAAoAAgAEAAAAAAAAAAoAAgABAAAAAAABAAoAAgACAAAAAAACAAoAAgADAAAAAAADAAoAAgAEAAAAAAD9/woAAgACAAAAAAD+/woAAgADAAAAAAD//woAAgAEAAAAAAD8/woAAgAAAAAAAAD8/wsAAgAAAAEAAAD8/wwAAgAAAAIAAAD8/w0AAgAAAAMAAAD8/w4AAgAAAAQAAAD8/w8AAgAAAAEAAAD8/xAAAgAAAAIAAAD8/xEAAgAAAAMAAAD8/xIAAgAAAAQAAAD8/xMAAgAAAAEAAAD8/xQAAgAAAAIAAAD8/xUAAgAAAAMAAAD8/xYAAgAAAAQAAAD8/xcAAgAAAAEAAAD8/xgAAgAAAAIAAAD8/xkAAgAAAAMAAAD8/xoAAgAAAAQAAAD8/xsAAgAAAAEAAAD8/xwAAgAAAAIAAAD8/x0AAgAAAAMAAAD8/x4AAgAAAAQAAAD8/x8AAgAAAAEAAAD8/yAAAgAAAAIAAAD8/yEAAgAAAAMAAAD8/yIAAgAAAAQAAAD8/yMAAgAAAAUAAAD9/yMAAgABAAUAAAD+/yMAAgACAAUAAAD//yMAAgADAAUAAAAAACMAAgAEAAUAAAABACMAAgABAAUAAAACACMAAgACAAUAAAADACMAAgADAAUAAAAEACMAAgAEAAUAAAAFACMAAgABAAUAAAAGACMAAgACAAUAAAAHACMAAgADAAUAAAAIACMAAgAEAAUAAAAJACMAAgABAAUAAAAKACMAAgACAAUAAAALACMAAgADAAUAAAAMACMAAgAEAAUAAAANACMAAgABAAUAAAAOACMAAgACAAUAAAAPACMAAgADAAUAAAAQACMAAgAEAAUAAAARACMAAgABAAUAAAASACMAAgACAAUAAAATACMAAgADAAUAAAAUACMAAgAEAAUAAAAVACMAAgABAAUAAAAWACMAAgACAAUAAAAXACMAAgADAAUAAAAYACMAAgAEAAUAAAAZACMAAgABAAUAAAAaACMAAgACAAUAAAAbACMAAgADAAUAAAAcACMAAgAEAAUAAAAdACMAAgABAAUAAAAeACMAAgAFAAAAAAAeACQAAgAAAAEAAAAeACUAAgAAAAEAAAAeACYAAgAAAAEAAAAeACcAAgAAAAIAAAAeACgAAgAAAAMAAAAeACkAAgAAAAQAAAAeACoAAgAAAAUAAAAfACoAAgABAAUAAAAgACoAAgACAAUAAAAhACoAAgADAAUAAAAiACoAAgAEAAUAAAAjACoAAgABAAUAAAAkACoAAgACAAUAAAAlACoAAgADAAUAAAAmACoAAgAEAAUAAAAnACoAAgABAAUAAAAoACoAAgACAAUAAAApACoAAgADAAUAAAAqACoAAgAEAAUAAAArACoAAgABAAUAAAAsACoAAgACAAUAAAAtACoAAgADAAUAAAAuACoAAgAEAAUAAAAvACoAAgABAAUAAAARABcAAgAFAAEAAAARABgAAgAFAAEAAAARABkAAgAFAAIAAAARABoAAgAFAAMAAAARABsAAgAFAAQAAAARABwAAgAAAAUAAAASABwAAgABAAAAAAATABwAAgACAAAAAAAUABwAAgADAAAAAAAVABwAAgAEAAAAAAAWABwAAgABAAAAAAAXABwAAgACAAAAAAAYABwAAgADAAAAAAAZABwAAgAEAAAAAAAaABwAAgABAAAAAAAbABwAAgACAAAAAAAcABwAAgADAAAAAAAdABwAAgAEAAAAAAAeABwAAgABAAAAAAAfABwAAgACAAAAAAAgABwAAgADAAAAAAAhABwAAgAEAAAAAAAiABwAAgABAAAAAAAjABwAAgAFAAAAAAAjAB0AAgAFAAEAAAAjAB4AAgAFAAIAAAAjAB8AAgAFAAMAAAAjACAAAgAFAAQAAAAjACEAAgAFAAEAAAAjACIAAgAFAAIAAAAjACMAAgAAAAUAAAAkACMAAgABAAAAAAAlACMAAgACAAAAAAAmACMAAgADAAAAAAAnACMAAgAEAAAAAAAoACMAAgABAAAAAAApACMAAgACAAAAAAAqACMAAgADAAAAAAArACMAAgAEAAAAAAAsACMAAgABAAAAAAAtACMAAgACAAAAAAAuACMAAgADAAAAAAAvACMAAgAEAAAAAABBAB4AAgABAAAAAABCAB4AAgACAAAAAABGABwAAgABAAUAAABHABwAAgACAAUAAAA9ACoAAgABAAAAAAA+ACoAAgACAAAAAABOACsAAgADAAAAAABNACsAAgACAAAAAABQABkAAgADAAUAAABRABkAAgAEAAUAAABXABYAAgAEAAUAAABWABYAAgADAAUAAABnABMAAgADAAUAAABmABMAAgAEAAUAAABiABQAAgAEAAUAAABhABQAAgADAAUAAAByABEAAgADAAUAAABzABEAAgABAAUAAABcACcAAgABAAAAAABdACcAAgACAAAAAABvACEAAgACAAAAAABuACEAAgABAAAAAAA=")
+tile_set = ExtResource("15_x2tv3")

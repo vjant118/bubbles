@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dkdxniy4tv4td"]
+[gd_scene format=4 uid="uid://dkdxniy4tv4td"]
 
 [ext_resource type="Texture2D" uid="uid://coeysmyp2gvlt" path="res://assets/Official Assets/Night.png" id="1_12q5m"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="3_rsb4p"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="13_jcadl"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="14_iwl2t"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="14_qw5du"]
+[ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="14_wucbw"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://src/objects/pathFollow2D.gd" id="15_qw5du"]
 
 [sub_resource type="Curve2D" id="Curve2D_1kwi6"]
@@ -35,8 +36,8 @@ point_count = 3
 [node name="level_02" type="Node2D" unique_id=1413154548]
 
 [node name="Night" type="Sprite2D" parent="." unique_id=688651928]
-position = Vector2(3684, 2447)
-scale = Vector2(4.5, 4.5)
+position = Vector2(3793, 2378.0002)
+scale = Vector2(5, 5)
 texture = ExtResource("1_12q5m")
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("14_qw5du")]
@@ -138,111 +139,111 @@ position = Vector2(2717, -40)
 position = Vector2(2498, -123)
 
 [node name="SpikeHazard3" parent="Hazards" unique_id=2067778543 instance=ExtResource("13_jcadl")]
-position = Vector2(540, 241)
+position = Vector2(540, 265)
 
 [node name="SpikeHazard4" parent="Hazards" unique_id=48331489 instance=ExtResource("13_jcadl")]
-position = Vector2(718, 241)
+position = Vector2(718, 265)
 
 [node name="SpikeHazard5" parent="Hazards" unique_id=1501190940 instance=ExtResource("13_jcadl")]
-position = Vector2(718, 241)
+position = Vector2(718, 265)
 
 [node name="SpikeHazard6" parent="Hazards" unique_id=1839182511 instance=ExtResource("13_jcadl")]
-position = Vector2(908, 241)
+position = Vector2(908, 265)
 
 [node name="SpikeHazard7" parent="Hazards" unique_id=1462827762 instance=ExtResource("13_jcadl")]
-position = Vector2(1086, 241)
+position = Vector2(1086, 265)
 
 [node name="SpikeHazard8" parent="Hazards" unique_id=1119414791 instance=ExtResource("13_jcadl")]
-position = Vector2(1086, 241)
+position = Vector2(1086, 265)
 
 [node name="SpikeHazard9" parent="Hazards" unique_id=13926079 instance=ExtResource("13_jcadl")]
-position = Vector2(1268, 241)
+position = Vector2(1268, 265)
 
 [node name="SpikeHazard10" parent="Hazards" unique_id=1719155765 instance=ExtResource("13_jcadl")]
-position = Vector2(1446, 241)
+position = Vector2(1446, 265)
 
 [node name="SpikeHazard11" parent="Hazards" unique_id=740848749 instance=ExtResource("13_jcadl")]
-position = Vector2(1446, 241)
+position = Vector2(1446, 265)
 
 [node name="SpikeHazard12" parent="Hazards" unique_id=274291237 instance=ExtResource("13_jcadl")]
-position = Vector2(1636, 241)
+position = Vector2(1636, 265)
 
 [node name="SpikeHazard13" parent="Hazards" unique_id=593561873 instance=ExtResource("13_jcadl")]
-position = Vector2(1814, 241)
+position = Vector2(1814, 265)
 
 [node name="SpikeHazard14" parent="Hazards" unique_id=1232514131 instance=ExtResource("13_jcadl")]
-position = Vector2(1814, 241)
+position = Vector2(1814, 265)
 
 [node name="SpikeHazard15" parent="Hazards" unique_id=993912099 instance=ExtResource("13_jcadl")]
-position = Vector2(1996, 241)
+position = Vector2(1996, 265)
 
 [node name="SpikeHazard16" parent="Hazards" unique_id=1770488719 instance=ExtResource("13_jcadl")]
-position = Vector2(2174, 241)
+position = Vector2(2174, 265)
 
 [node name="SpikeHazard17" parent="Hazards" unique_id=1327415310 instance=ExtResource("13_jcadl")]
-position = Vector2(2174, 241)
+position = Vector2(2174, 265)
 
 [node name="SpikeHazard18" parent="Hazards" unique_id=684419853 instance=ExtResource("13_jcadl")]
-position = Vector2(2364, 241)
+position = Vector2(2364, 265)
 
 [node name="SpikeHazard19" parent="Hazards" unique_id=1463650758 instance=ExtResource("13_jcadl")]
-position = Vector2(1819, -615)
+position = Vector2(1779, -639)
 rotation = 1.5707964
 
 [node name="SpikeHazard21" parent="Hazards" unique_id=532105863 instance=ExtResource("13_jcadl")]
-position = Vector2(1819, -463)
+position = Vector2(1779, -487)
 rotation = 1.5707964
 
 [node name="SpikeHazard22" parent="Hazards" unique_id=710994982 instance=ExtResource("13_jcadl")]
-position = Vector2(1819, -311)
+position = Vector2(1779, -335)
 rotation = 1.5707964
 
 [node name="SpikeHazard23" parent="Hazards" unique_id=1289976731 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, -575)
+position = Vector2(3467, -575)
 rotation = 4.712389
 
 [node name="SpikeHazard24" parent="Hazards" unique_id=303461357 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, -423)
+position = Vector2(3467, -423)
 rotation = 4.712389
 
 [node name="SpikeHazard25" parent="Hazards" unique_id=659256186 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, -271)
+position = Vector2(3467, -271)
 rotation = 4.712389
 
 [node name="SpikeHazard26" parent="Hazards" unique_id=265390734 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, -119)
+position = Vector2(3467, -119)
 rotation = 4.712389
 
 [node name="SpikeHazard27" parent="Hazards" unique_id=1089636568 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 33)
+position = Vector2(3467, 33)
 rotation = 4.712389
 
 [node name="SpikeHazard28" parent="Hazards" unique_id=1975821578 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 185)
+position = Vector2(3467, 185)
 rotation = 4.712389
 
 [node name="SpikeHazard29" parent="Hazards" unique_id=1120098916 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 337)
+position = Vector2(3467, 337)
 rotation = 4.712389
 
 [node name="SpikeHazard30" parent="Hazards" unique_id=703435072 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 489)
+position = Vector2(3467, 489)
 rotation = 4.712389
 
 [node name="SpikeHazard31" parent="Hazards" unique_id=1484344323 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 641)
+position = Vector2(3467, 641)
 rotation = 4.712389
 
 [node name="SpikeHazard32" parent="Hazards" unique_id=1107578989 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 793)
+position = Vector2(3467, 793)
 rotation = 4.712389
 
 [node name="SpikeHazard33" parent="Hazards" unique_id=554618696 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 945)
+position = Vector2(3467, 945)
 rotation = 4.712389
 
 [node name="SpikeHazard34" parent="Hazards" unique_id=181846915 instance=ExtResource("13_jcadl")]
-position = Vector2(3427, 1097)
+position = Vector2(3467, 1097)
 rotation = 4.712389
 
 [node name="SpikeHazard50" parent="Hazards" unique_id=676153901 instance=ExtResource("13_jcadl")]
@@ -290,152 +291,152 @@ position = Vector2(1287, 4639)
 rotation = 4.712389
 
 [node name="SpikeHazard66" parent="Hazards" unique_id=2123353963 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 3439)
+position = Vector2(4231, 3455)
 rotation = 4.712389
 
 [node name="SpikeHazard67" parent="Hazards" unique_id=803091723 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 3559)
+position = Vector2(4231, 3575)
 rotation = 4.712389
 
 [node name="SpikeHazard68" parent="Hazards" unique_id=1651000941 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 3679)
+position = Vector2(4231, 3695)
 rotation = 4.712389
 
 [node name="SpikeHazard69" parent="Hazards" unique_id=179631944 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 3799)
+position = Vector2(4231, 3815)
 rotation = 4.712389
 
 [node name="SpikeHazard70" parent="Hazards" unique_id=1975560044 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 3919)
+position = Vector2(4231, 3935)
 rotation = 4.712389
 
 [node name="SpikeHazard71" parent="Hazards" unique_id=1324097648 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4039)
+position = Vector2(4231, 4055)
 rotation = 4.712389
 
 [node name="SpikeHazard72" parent="Hazards" unique_id=651855386 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4159)
+position = Vector2(4231, 4175)
 rotation = 4.712389
 
 [node name="SpikeHazard73" parent="Hazards" unique_id=464476318 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4279)
+position = Vector2(4231, 4295)
 rotation = 4.712389
 
 [node name="SpikeHazard74" parent="Hazards" unique_id=1365936466 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4399)
+position = Vector2(4231, 4415)
 rotation = 4.712389
 
 [node name="SpikeHazard75" parent="Hazards" unique_id=100764856 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4519)
+position = Vector2(4231, 4535)
 rotation = 4.712389
 
 [node name="SpikeHazard76" parent="Hazards" unique_id=1286673333 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4639)
+position = Vector2(4231, 4655)
 rotation = 4.712389
 
 [node name="SpikeHazard77" parent="Hazards" unique_id=1448504425 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4759)
+position = Vector2(4231, 4775)
 rotation = 4.712389
 
 [node name="SpikeHazard78" parent="Hazards" unique_id=140610489 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4879)
+position = Vector2(4231, 4895)
 rotation = 4.712389
 
 [node name="SpikeHazard79" parent="Hazards" unique_id=286982190 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 4999)
+position = Vector2(4231, 5015)
 rotation = 4.712389
 
 [node name="SpikeHazard80" parent="Hazards" unique_id=224574924 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 5119)
+position = Vector2(4231, 5135)
 rotation = 4.712389
 
 [node name="SpikeHazard81" parent="Hazards" unique_id=1460831592 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 5239)
+position = Vector2(4231, 5255)
 rotation = 4.712389
 
 [node name="SpikeHazard82" parent="Hazards" unique_id=1091066165 instance=ExtResource("13_jcadl")]
-position = Vector2(4207, 5359)
+position = Vector2(4231, 5375)
 rotation = 4.712389
 
 [node name="SpikeHazard83" parent="Hazards" unique_id=1856199317 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 3919)
+position = Vector2(3636, 3935)
 rotation = 1.5707964
 
 [node name="SpikeHazard84" parent="Hazards" unique_id=1367577647 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4039)
+position = Vector2(3636, 4055)
 rotation = 1.5707964
 
 [node name="SpikeHazard85" parent="Hazards" unique_id=513338696 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4159)
+position = Vector2(3636, 4175)
 rotation = 1.5707964
 
 [node name="SpikeHazard86" parent="Hazards" unique_id=1118108710 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4279)
+position = Vector2(3636, 4295)
 rotation = 1.5707964
 
 [node name="SpikeHazard87" parent="Hazards" unique_id=1748359252 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4399)
+position = Vector2(3636, 4415)
 rotation = 1.5707964
 
 [node name="SpikeHazard88" parent="Hazards" unique_id=1446778614 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4519)
+position = Vector2(3636, 4535)
 rotation = 1.5707964
 
 [node name="SpikeHazard89" parent="Hazards" unique_id=674102911 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4639)
+position = Vector2(3636, 4655)
 rotation = 1.5707964
 
 [node name="SpikeHazard90" parent="Hazards" unique_id=1877454118 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4759)
+position = Vector2(3636, 4775)
 rotation = 1.5707964
 
 [node name="SpikeHazard91" parent="Hazards" unique_id=86279844 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4879)
+position = Vector2(3636, 4895)
 rotation = 1.5707964
 
 [node name="SpikeHazard92" parent="Hazards" unique_id=767916571 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 4999)
+position = Vector2(3636, 5015)
 rotation = 1.5707964
 
 [node name="SpikeHazard93" parent="Hazards" unique_id=1332137604 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 5119)
+position = Vector2(3636, 5135)
 rotation = 1.5707964
 
 [node name="SpikeHazard94" parent="Hazards" unique_id=1694064829 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 5239)
+position = Vector2(3636, 5255)
 rotation = 1.5707964
 
 [node name="SpikeHazard95" parent="Hazards" unique_id=788501638 instance=ExtResource("13_jcadl")]
-position = Vector2(3684, 5359)
+position = Vector2(3636, 5375)
 rotation = 1.5707964
 
 [node name="SpikeHazard39" parent="Hazards" unique_id=634222150 instance=ExtResource("13_jcadl")]
-position = Vector2(3597, 3202)
+position = Vector2(3597, 3210)
 
 [node name="SpikeHazard46" parent="Hazards" unique_id=1707471979 instance=ExtResource("13_jcadl")]
-position = Vector2(3482, 2764)
+position = Vector2(3458, 2804)
 rotation = 1.5707964
 
 [node name="SpikeHazard47" parent="Hazards" unique_id=1123845489 instance=ExtResource("13_jcadl")]
-position = Vector2(3482, 2876)
+position = Vector2(3458, 2916)
 rotation = 1.5707964
 
 [node name="SpikeHazard48" parent="Hazards" unique_id=1292334212 instance=ExtResource("13_jcadl")]
-position = Vector2(3482, 2988)
+position = Vector2(3458, 3028)
 rotation = 1.5707964
 
 [node name="SpikeHazard49" parent="Hazards" unique_id=2047334773 instance=ExtResource("13_jcadl")]
-position = Vector2(3482, 3100)
+position = Vector2(3458, 3140)
 rotation = 1.5707964
 
 [node name="SpikeHazard40" parent="Hazards" unique_id=1533030066 instance=ExtResource("13_jcadl")]
-position = Vector2(3717, 3202)
+position = Vector2(3717, 3210)
 
 [node name="SpikeHazard41" parent="Hazards" unique_id=1872735199 instance=ExtResource("13_jcadl")]
-position = Vector2(3837, 3202)
+position = Vector2(3837, 3210)
 
 [node name="SpikeHazard42" parent="Hazards" unique_id=224207426 instance=ExtResource("13_jcadl")]
-position = Vector2(3957, 3202)
+position = Vector2(3957, 3210)
 
 [node name="SpikeHazard61" parent="Hazards" unique_id=589773292 instance=ExtResource("13_jcadl")]
 position = Vector2(3109, 3855)
@@ -453,19 +454,19 @@ position = Vector2(3469, 3855)
 position = Vector2(3589, 3855)
 
 [node name="SpikeHazard43" parent="Hazards" unique_id=813761131 instance=ExtResource("13_jcadl")]
-position = Vector2(4077, 3202)
+position = Vector2(4077, 3210)
 
 [node name="SpikeHazard44" parent="Hazards" unique_id=2010717244 instance=ExtResource("13_jcadl")]
-position = Vector2(4197, 3202)
+position = Vector2(4197, 3210)
 
 [node name="SpikeHazard45" parent="Hazards" unique_id=210393812 instance=ExtResource("13_jcadl")]
-position = Vector2(4317, 3202)
+position = Vector2(4317, 3210)
 
 [node name="SpikeHazard20" parent="Hazards" unique_id=2033465827 instance=ExtResource("13_jcadl")]
-position = Vector2(2771, 242)
+position = Vector2(2731, 258)
 
 [node name="SpikeHazard35" parent="Hazards" unique_id=416027199 instance=ExtResource("13_jcadl")]
-position = Vector2(2824, 302)
+position = Vector2(2808, 358)
 rotation = 1.5707964
 
 [node name="BallSpike4" parent="Hazards" unique_id=1456694851 instance=ExtResource("11_uic6o")]
@@ -499,15 +500,11 @@ position = Vector2(1934, 4550)
 position = Vector2(2913, 4989)
 
 [node name="SpikeHazard36" parent="Hazards" unique_id=1974643904 instance=ExtResource("13_jcadl")]
-position = Vector2(2824, 422)
+position = Vector2(2808, 478)
 rotation = 1.5707964
 
 [node name="SpikeHazard37" parent="Hazards" unique_id=1461532977 instance=ExtResource("13_jcadl")]
-position = Vector2(2824, 541)
-rotation = 1.5707964
-
-[node name="SpikeHazard38" parent="Hazards" unique_id=1990348152 instance=ExtResource("13_jcadl")]
-position = Vector2(2824, 662)
+position = Vector2(2808, 597)
 rotation = 1.5707964
 
 [node name="Rotational Axis" parent="Hazards" unique_id=904937421 instance=ExtResource("5_6u0gc")]
@@ -647,184 +644,34 @@ rotation = 1.5707964
 [node name="PlaceholderWall" parent="Hazards/Path2D7/PathFollow2D/Rotational Axis3" unique_id=2081876318 instance=ExtResource("4_wcn54")]
 scale = Vector2(1, 13)
 
-[node name="Wall Collison" type="Node" parent="." unique_id=1061513780]
-
-[node name="PlaceholderWall39" parent="Wall Collison" unique_id=399881324 instance=ExtResource("4_wcn54")]
-position = Vector2(3927, 2219.9998)
-scale = Vector2(1, 25)
-
-[node name="PlaceholderWall" parent="Wall Collison" unique_id=2074778228 instance=ExtResource("4_wcn54")]
-position = Vector2(-197, 0)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall4" parent="Wall Collison" unique_id=1501926360 instance=ExtResource("4_wcn54")]
-position = Vector2(2803, 480)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall13" parent="Wall Collison" unique_id=838137908 instance=ExtResource("4_wcn54")]
-position = Vector2(303, 1480)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall19" parent="Wall Collison" unique_id=293644142 instance=ExtResource("4_wcn54")]
-position = Vector2(3463, 2960)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall20" parent="Wall Collison" unique_id=254184971 instance=ExtResource("4_wcn54")]
-position = Vector2(4503, 2960)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall11" parent="Wall Collison" unique_id=2070261368 instance=ExtResource("4_wcn54")]
-position = Vector2(3443, 259.99997)
-scale = Vector2(1, 49)
-
-[node name="PlaceholderWall8" parent="Wall Collison" unique_id=2117719991 instance=ExtResource("4_wcn54")]
-position = Vector2(-397, 960)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall23" parent="Wall Collison" unique_id=1094095288 instance=ExtResource("4_wcn54")]
-position = Vector2(-97, 3570)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall30" parent="Wall Collison" unique_id=384013825 instance=ExtResource("4_wcn54")]
-position = Vector2(-97, 3570)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall31" parent="Wall Collison" unique_id=885221091 instance=ExtResource("4_wcn54")]
-position = Vector2(1943, 4890)
-scale = Vector2(1, 10)
-
-[node name="PlaceholderWall27" parent="Wall Collison" unique_id=1993634905 instance=ExtResource("4_wcn54")]
-position = Vector2(663, 4648)
-scale = Vector2(1, 40)
-
-[node name="PlaceholderWall32" parent="Wall Collison" unique_id=2039127460 instance=ExtResource("4_wcn54")]
-position = Vector2(3023, 4648)
-scale = Vector2(1, 40)
-
-[node name="PlaceholderWall37" parent="Wall Collison" unique_id=1737179245 instance=ExtResource("4_wcn54")]
-position = Vector2(4223, 4390)
-scale = Vector2(1, 53)
-
-[node name="PlaceholderWall36" parent="Wall Collison" unique_id=926391891 instance=ExtResource("4_wcn54")]
-position = Vector2(3663, 4648)
-scale = Vector2(1, 40)
-
-[node name="PlaceholderWall28" parent="Wall Collison" unique_id=531614610 instance=ExtResource("4_wcn54")]
-position = Vector2(1303, 4030.0002)
-scale = Vector2(1, 35)
-
-[node name="PlaceholderWall33" parent="Wall Collison" unique_id=947973689 instance=ExtResource("4_wcn54")]
-position = Vector2(1783, 4030)
-scale = Vector2(1, 35)
-
-[node name="PlaceholderWall16" parent="Wall Collison" unique_id=156884381 instance=ExtResource("4_wcn54")]
-position = Vector2(-97, 2180)
-scale = Vector2(1, 49)
-
-[node name="PlaceholderWall5" parent="Wall Collison" unique_id=964402373 instance=ExtResource("4_wcn54")]
-position = Vector2(1803, -480)
-scale = Vector2(1, 12)
-
-[node name="PlaceholderWall2" parent="Wall Collison" unique_id=977993318 instance=ExtResource("4_wcn54")]
-position = Vector2(1283, 260)
-scale = Vector2(75, 1)
-
-[node name="PlaceholderWall7" parent="Wall Collison" unique_id=203041081 instance=ExtResource("4_wcn54")]
-position = Vector2(1183, 700)
-scale = Vector2(80, 1)
-
-[node name="PlaceholderWall10" parent="Wall Collison" unique_id=1584009782 instance=ExtResource("4_wcn54")]
-position = Vector2(1863, 1220)
-scale = Vector2(79, 1)
-
-[node name="PlaceholderWall17" parent="Wall Collison" unique_id=1777446063 instance=ExtResource("4_wcn54")]
-position = Vector2(2127.0002, 1700)
-scale = Vector2(91, 1)
-
-[node name="PlaceholderWall18" parent="Wall Collison" unique_id=1155838695 instance=ExtResource("4_wcn54")]
-position = Vector2(1883, 2700)
-scale = Vector2(80, 1)
-
-[node name="PlaceholderWall9" parent="Wall Collison" unique_id=1884897762 instance=ExtResource("4_wcn54")]
-position = Vector2(-267.00003, 1220)
-scale = Vector2(7.5, 1)
-
-[node name="PlaceholderWall12" parent="Wall Collison" unique_id=1329154983 instance=ExtResource("4_wcn54")]
-position = Vector2(85, 2700)
-scale = Vector2(10, 1)
-
-[node name="PlaceholderWall26" parent="Wall Collison" unique_id=1564755053 instance=ExtResource("4_wcn54")]
-position = Vector2(1623, 4710)
-scale = Vector2(15, 1)
-
-[node name="PlaceholderWall35" parent="Wall Collison" unique_id=1419548303 instance=ExtResource("4_wcn54")]
-position = Vector2(3343, 3868)
-scale = Vector2(15, 1)
-
-[node name="PlaceholderWall38" parent="Wall Collison" unique_id=1230401164 instance=ExtResource("4_wcn54")]
-position = Vector2(3943, 5466)
-scale = Vector2(15, 1)
-
-[node name="PlaceholderWall24" parent="Wall Collison" unique_id=1687237636 instance=ExtResource("4_wcn54")]
-position = Vector2(282.99997, 3828)
-scale = Vector2(20, 1)
-
-[node name="PlaceholderWall25" parent="Wall Collison" unique_id=245430035 instance=ExtResource("4_wcn54")]
-position = Vector2(583.00006, 3350)
-scale = Vector2(35, 1)
-
-[node name="PlaceholderWall34" parent="Wall Collison" unique_id=232393286 instance=ExtResource("4_wcn54")]
-position = Vector2(3003, 3350)
-scale = Vector2(60, 1)
-
-[node name="PlaceholderWall29" parent="Wall Collison" unique_id=1498269292 instance=ExtResource("4_wcn54")]
-position = Vector2(1843, 5428)
-scale = Vector2(60, 1)
-
-[node name="PlaceholderWall21" parent="Wall Collison" unique_id=784360068 instance=ExtResource("4_wcn54")]
-position = Vector2(3983.0015, 3220)
-scale = Vector2(27, 1)
-
-[node name="PlaceholderWall22" parent="Wall Collison" unique_id=16391877 instance=ExtResource("4_wcn54")]
-position = Vector2(4223.0005, 2700)
-scale = Vector2(15, 1)
-
-[node name="PlaceholderWall3" parent="Wall Collison" unique_id=1856280034 instance=ExtResource("4_wcn54")]
-position = Vector2(782.99994, -260)
-scale = Vector2(50, 1)
-
-[node name="PlaceholderWall6" parent="Wall Collison" unique_id=1069277220 instance=ExtResource("4_wcn54")]
-position = Vector2(2623.0002, -700)
-scale = Vector2(40, 1)
-
 [node name="Projectile Shooters" type="Node" parent="." unique_id=1398909227]
 
 [node name="ProjectileShooter2" parent="Projectile Shooters" unique_id=1692698129 instance=ExtResource("14_iwl2t")]
-position = Vector2(1948, -599)
+position = Vector2(1948, -631)
 rotation = -1.5707964
 shootSpeed = 5
 fireRate = 2.5
 
 [node name="ProjectileShooter" parent="Projectile Shooters" unique_id=1630183063 instance=ExtResource("14_iwl2t")]
-position = Vector2(3344, -345)
+position = Vector2(3384, -345)
 shootSpeed = 5
 fireRate = 2.5
 
 [node name="ProjectileShooter3" parent="Projectile Shooters" unique_id=565224864 instance=ExtResource("14_iwl2t")]
-position = Vector2(-297, 788)
+position = Vector2(-313, 788)
 rotation = -3.1415925
 shootSpeed = 3
 fireRate = 6.0
 
 [node name="ProjectileShooter4" parent="Projectile Shooters" unique_id=751162813 instance=ExtResource("14_iwl2t")]
-position = Vector2(-296, 959)
+position = Vector2(-312, 959)
 rotation = -3.1415925
 shootSpeed = 3
 fireRate = 6.0
 startDelay = 2.0
 
 [node name="ProjectileShooter5" parent="Projectile Shooters" unique_id=634643378 instance=ExtResource("14_iwl2t")]
-position = Vector2(-297, 1119)
+position = Vector2(-313, 1119)
 rotation = -3.1415925
 shootSpeed = 3
 fireRate = 6.0
@@ -858,3 +705,8 @@ unique_name_in_owner = true
 offset_right = 1.0
 offset_bottom = 55.0
 metadata/_edit_use_anchors_ = true
+
+[node name="walls" type="TileMapLayer" parent="." unique_id=166990527]
+z_index = 1
+tile_map_data = PackedByteArray("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AAA2AAsAAgAFAAMAAAA2AAwAAgAFAAQAAAA2AA0AAgAFAAEAAAA2AA4AAgAFAAIAAAA2AA8AAgAFAAMAAAA2ABAAAgAFAAQAAAA2ABEAAgAFAAEAAAA2ABIAAgAFAAEAAAA2ABMAAgAFAAUAAAAyABMAAgABAAUAAAAzABMAAgACAAUAAAA0ABMAAgADAAUAAAA1ABMAAgAEAAUAAAAuABMAAgABAAUAAAAvABMAAgACAAUAAAAwABMAAgADAAUAAAAxABMAAgAEAAUAAAAqABMAAgABAAUAAAArABMAAgACAAUAAAAsABMAAgADAAUAAAAtABMAAgAEAAUAAAAmABMAAgABAAUAAAAnABMAAgACAAUAAAAoABMAAgADAAUAAAApABMAAgAEAAUAAAAiABMAAgABAAUAAAAjABMAAgACAAUAAAAkABMAAgADAAUAAAAlABMAAgAEAAUAAAAeABMAAgABAAUAAAAfABMAAgACAAUAAAAgABMAAgADAAUAAAAhABMAAgAEAAUAAAAaABMAAgABAAUAAAAbABMAAgACAAUAAAAcABMAAgADAAUAAAAdABMAAgAEAAUAAAAWABMAAgABAAUAAAAXABMAAgACAAUAAAAYABMAAgADAAUAAAAZABMAAgAEAAUAAAASABMAAgABAAUAAAATABMAAgACAAUAAAAUABMAAgADAAUAAAAVABMAAgAEAAUAAAAOABMAAgABAAUAAAAPABMAAgACAAUAAAAQABMAAgADAAUAAAARABMAAgAEAAUAAAAKABMAAgABAAUAAAALABMAAgACAAUAAAAMABMAAgADAAUAAAANABMAAgAEAAUAAAAGABMAAgACAAUAAAAHABMAAgADAAUAAAAIABMAAgAEAAUAAAAJABMAAgAEAAUAAAAFABMAAgABAAUAAAAnAAoAAgABAAAAAAAoAAoAAgACAAAAAAApAAoAAgADAAAAAAAqAAoAAgAEAAAAAAAjAAoAAgABAAAAAAAkAAoAAgACAAAAAAAlAAoAAgADAAAAAAAmAAoAAgAEAAAAAAAfAAoAAgABAAAAAAAgAAoAAgACAAAAAAAhAAoAAgADAAAAAAAiAAoAAgAEAAAAAAAbAAoAAgABAAAAAAAcAAoAAgACAAAAAAAdAAoAAgADAAAAAAAeAAoAAgAEAAAAAAAXAAoAAgABAAAAAAAYAAoAAgACAAAAAAAZAAoAAgADAAAAAAAaAAoAAgAEAAAAAAATAAoAAgABAAAAAAAUAAoAAgACAAAAAAAVAAoAAgADAAAAAAAWAAoAAgAEAAAAAAAPAAoAAgABAAAAAAAQAAoAAgACAAAAAAARAAoAAgADAAAAAAASAAoAAgAEAAAAAAALAAoAAgABAAAAAAAMAAoAAgACAAAAAAANAAoAAgADAAAAAAAOAAoAAgAEAAAAAAAHAAoAAgABAAAAAAAIAAoAAgACAAAAAAAJAAoAAgADAAAAAAAKAAoAAgAEAAAAAAADAAoAAgABAAAAAAAEAAoAAgACAAAAAAAFAAoAAgADAAAAAAAGAAoAAgAEAAAAAAD//woAAgABAAAAAAAAAAoAAgACAAAAAAABAAoAAgADAAAAAAACAAoAAgAEAAAAAAD7/woAAgACAAAAAAD8/woAAgADAAAAAAD9/woAAgAEAAAAAAD+/woAAgAEAAAAAAD6/woAAgABAAAAAAD5/woAAgAAAAAAAAD5/wsAAgAAAAEAAAD5/wwAAgAAAAIAAAD5/w0AAgAAAAMAAAD5/w4AAgAAAAQAAAD5/w8AAgAAAAEAAAD5/xAAAgAAAAIAAAD5/xEAAgAAAAMAAAD5/xIAAgAAAAQAAAAEABMAAgAAAAAAAAD5/xMAAgAAAAUAAAD6/xMAAgABAAUAAAD7/xMAAgACAAUAAAD8/xMAAgADAAUAAAD9/xMAAgACAAUAAAD+/xMAAgAFAAAAAAAEABQAAgAAAAEAAAAEABUAAgAAAAIAAAAEABYAAgAAAAMAAAAEABcAAgAAAAQAAAAEABgAAgAAAAEAAAAEABkAAgAAAAIAAAAEABoAAgAAAAUAAAD+/xQAAgAFAAEAAAD+/xUAAgAFAAIAAAD+/xYAAgAFAAMAAAD+/xcAAgAFAAQAAAD+/xgAAgAFAAEAAAD+/xkAAgAFAAIAAAD+/xoAAgAFAAMAAAD+/xsAAgAFAAQAAAD+/xwAAgAFAAEAAAD+/x0AAgAFAAIAAAD+/x4AAgAFAAMAAAD+/x8AAgAFAAQAAAD+/yAAAgAFAAEAAAD+/yEAAgAFAAIAAAD+/yIAAgAFAAMAAAD+/yMAAgAFAAQAAAD+/yQAAgAFAAEAAAD+/yUAAgAFAAIAAAD+/yYAAgAFAAMAAAD+/ycAAgAFAAQAAAD+/ygAAgAFAAEAAAD+/ykAAgAFAAIAAAD+/yoAAgAAAAUAAAAFABoAAgABAAAAAAAGABoAAgACAAAAAAAHABoAAgADAAAAAAAIABoAAgAEAAAAAAAJABoAAgABAAAAAAAKABoAAgACAAAAAAALABoAAgADAAAAAAAMABoAAgAEAAAAAAANABoAAgABAAAAAAAOABoAAgACAAAAAAAPABoAAgADAAAAAAAQABoAAgAEAAAAAAARABoAAgABAAAAAAASABoAAgACAAAAAAATABoAAgADAAAAAAAUABoAAgAEAAAAAAAVABoAAgABAAAAAAAWABoAAgACAAAAAAAXABoAAgADAAAAAAAYABoAAgAEAAAAAAAZABoAAgABAAAAAAAaABoAAgACAAAAAAAbABoAAgADAAAAAAAcABoAAgAEAAAAAAAdABoAAgABAAAAAAAeABoAAgACAAAAAAAfABoAAgADAAAAAAAgABoAAgAEAAAAAAAhABoAAgABAAAAAAAiABoAAgACAAAAAAAjABoAAgADAAAAAAAkABoAAgAEAAAAAAAlABoAAgABAAAAAAAmABoAAgACAAAAAAAnABoAAgADAAAAAAAoABoAAgAEAAAAAAApABoAAgABAAAAAAAqABoAAgACAAAAAAArABoAAgADAAAAAAAsABoAAgAEAAAAAAAtABoAAgABAAAAAAAuABoAAgACAAAAAAAvABoAAgADAAAAAAAwABoAAgAEAAAAAAAxABoAAgABAAAAAAAyABoAAgACAAAAAAAzABoAAgADAAAAAAA0ABoAAgAEAAAAAAA1ABoAAgABAAAAAAA2ABoAAgACAAAAAAA3ABoAAgADAAAAAAA4ABoAAgAEAAAAAAA5ABoAAgABAAAAAAA6ABoAAgACAAAAAAA7ABoAAgADAAAAAAA8ABoAAgAEAAAAAAA9ABoAAgAFAAAAAAD//yoAAgABAAUAAAAAACoAAgACAAUAAAABACoAAgADAAUAAAACACoAAgAEAAUAAAADACoAAgABAAUAAAAEACoAAgACAAUAAAAFACoAAgADAAUAAAAGACoAAgAEAAUAAAAHACoAAgABAAUAAAAIACoAAgACAAUAAAAJACoAAgADAAUAAAAKACoAAgAEAAUAAAALACoAAgABAAUAAAAMACoAAgACAAUAAAANACoAAgADAAUAAAAOACoAAgAEAAUAAAAPACoAAgABAAUAAAAQACoAAgACAAUAAAARACoAAgADAAUAAAASACoAAgAEAAUAAAATACoAAgABAAUAAAAUACoAAgACAAUAAAAVACoAAgADAAUAAAAWACoAAgAEAAUAAAAXACoAAgABAAUAAAAYACoAAgACAAUAAAAZACoAAgADAAUAAAAaACoAAgAEAAUAAAAbACoAAgABAAUAAAAcACoAAgACAAUAAAAdACoAAgADAAUAAAAeACoAAgAEAAUAAAAfACoAAgABAAUAAAAgACoAAgACAAUAAAAhACoAAgADAAUAAAAiACoAAgAEAAUAAAAjACoAAgABAAUAAAAkACoAAgACAAUAAAAlACoAAgADAAUAAAAmACoAAgAEAAUAAAAnACoAAgABAAUAAAAoACoAAgACAAUAAAApACoAAgADAAUAAAAqACoAAgAEAAUAAAArACoAAgABAAUAAAAsACoAAgACAAUAAAAtACoAAgADAAUAAAAuACoAAgAEAAUAAAAvACoAAgABAAUAAAAwACoAAgACAAUAAAAxACoAAgADAAUAAAAyACoAAgAEAAUAAAAzACoAAgABAAUAAAA0ACoAAgACAAUAAAA1ACoAAgAFAAAAAAA1ACsAAgAAAAEAAAA1ACwAAgAAAAIAAAA1AC0AAgAAAAMAAAA1AC4AAgAAAAQAAAA1AC8AAgAAAAEAAAA1ADAAAgAAAAIAAAA1ADEAAgAAAAMAAAA1ADIAAgAAAAUAAAA2ADIAAgABAAUAAAA3ADIAAgACAAUAAAA4ADIAAgADAAUAAAA5ADIAAgAEAAUAAAA6ADIAAgABAAUAAAA7ADIAAgACAAUAAAA8ADIAAgADAAUAAAA9ADIAAgAEAAUAAAA+ADIAAgABAAUAAAA/ADIAAgACAAUAAABAADIAAgADAAUAAABBADIAAgAEAAUAAABCADIAAgABAAUAAABDADIAAgACAAUAAABEADIAAgADAAUAAABFADIAAgAEAAUAAAA9ABsAAgAFAAEAAAA9ABwAAgAFAAIAAAA9AB0AAgAFAAMAAAA9AB4AAgAFAAQAAAA9AB8AAgAFAAEAAAA9ACAAAgAFAAIAAAA9ACEAAgAFAAMAAAA9ACIAAgAFAAQAAAA9ACMAAgAFAAEAAAA9ACQAAgAFAAIAAAA9ACUAAgAFAAMA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AABCAD0AAgAFAAEAAABCAD4AAgAFAAIAAABCAD8AAgAFAAMAAABCAEAAAgAFAAQAAABCAEEAAgAFAAEAAABCAEIAAgAFAAIAAABCAEMAAgAFAAMAAABCAEQAAgAFAAQAAABCAEUAAgAFAAEAAABCAEYAAgAFAAIAAABCAEcAAgAFAAMAAABCAEgAAgAFAAQAAABCAEkAAgAFAAEAAABCAEoAAgAFAAIAAABCAEsAAgAFAAMAAABCAEwAAgAFAAQAAABCAE0AAgAFAAEAAABCAE4AAgAFAAIAAABCAE8AAgAFAAMAAABCAFAAAgAFAAQAAABCAFEAAgAFAAEAAABCAFIAAgAFAAIAAABCAFMAAgAFAAMAAABCAFQAAgAFAAQAAABCAFUAAgAFAAUAAAA+AFUAAgABAAUAAAA/AFUAAgACAAUAAABAAFUAAgADAAUAAABBAFUAAgAEAAUAAAA6AFUAAgABAAUAAAA7AFUAAgACAAUAAAA8AFUAAgADAAUAAAA9AFUAAgAEAAUAAAA5AFUAAgABAAUAAAA4AFUAAgAAAAUAAAA4AFEAAgAAAAEAAAA4AFIAAgAAAAIAAAA4AFMAAgAAAAMAAAA4AFQAAgAAAAQAAAA4AE0AAgAAAAEAAAA4AE4AAgAAAAIAAAA4AE8AAgAAAAMAAAA4AFAAAgAAAAQAAAA4AEkAAgAAAAEAAAA4AEoAAgAAAAIAAAA4AEsAAgAAAAMAAAA4AEwAAgAAAAQAAAA4AEUAAgAAAAEAAAA4AEYAAgAAAAIAAAA4AEcAAgAAAAMAAAA4AEgAAgAAAAQAAAA4AEEAAgAAAAEAAAA4AEIAAgAAAAIAAAA4AEMAAgAAAAMAAAA4AEQAAgAAAAQAAAA4AD0AAgAAAAEAAAA4AD4AAgAAAAIAAAA4AD8AAgAAAAMAAAA4AEAAAgAAAAQAAAA4ADwAAgAFAAAAAAA0ADwAAgABAAAAAAA1ADwAAgACAAAAAAA2ADwAAgADAAAAAAA3ADwAAgAEAAAAAAAwADwAAgABAAAAAAAxADwAAgACAAAAAAAyADwAAgADAAAAAAAzADwAAgAEAAAAAAAvADwAAgAAAAAAAAAvAD0AAgAFAAEAAAAvAD4AAgAFAAIAAAAvAD8AAgAFAAMAAAAvAEAAAgAFAAQAAAAvAEEAAgAFAAEAAAAvAEIAAgAFAAIAAAAvAEMAAgAFAAMAAAAvAEQAAgAFAAQAAAAvAEUAAgAFAAEAAAAvAEYAAgAFAAIAAAAvAEcAAgAFAAMAAAAvAEgAAgAFAAQAAAAvAEkAAgAFAAEAAAAvAEoAAgAFAAIAAAAvAEsAAgAFAAMAAAAvAEwAAgAFAAQAAAAvAE0AAgAFAAEAAAAvAE4AAgAFAAIAAAAvAE8AAgAFAAMAAAAvAFAAAgAFAAQAAAAvAFEAAgAFAAEAAAAvAFIAAgAFAAIAAAAvAFMAAgAFAAMAAAAvAFQAAgAFAAUAAAArAFQAAgABAAUAAAAsAFQAAgACAAUAAAAtAFQAAgADAAUAAAAuAFQAAgAEAAUAAAAnAFQAAgABAAUAAAAoAFQAAgACAAUAAAApAFQAAgADAAUAAAAqAFQAAgAEAAUAAAAjAFQAAgABAAUAAAAkAFQAAgACAAUAAAAlAFQAAgADAAUAAAAmAFQAAgAEAAUAAAAfAFQAAgABAAUAAAAgAFQAAgACAAUAAAAhAFQAAgADAAUAAAAiAFQAAgAEAAUAAAAbAFQAAgABAAUAAAAcAFQAAgACAAUAAAAdAFQAAgADAAUAAAAeAFQAAgAEAAUAAAAXAFQAAgABAAUAAAAYAFQAAgACAAUAAAAZAFQAAgADAAUAAAAaAFQAAgAEAAUAAAATAFQAAgABAAUAAAAUAFQAAgACAAUAAAAVAFQAAgADAAUAAAAWAFQAAgAEAAUAAAAPAFQAAgABAAUAAAAQAFQAAgACAAUAAAARAFQAAgADAAUAAAASAFQAAgAEAAUAAAALAFQAAgABAAUAAAAMAFQAAgACAAUAAAANAFQAAgADAAUAAAAOAFQAAgAEAAUAAAAKAFQAAgAAAAUAAAAKAFAAAgAAAAEAAAAKAFEAAgAAAAIAAAAKAFIAAgAAAAMAAAAKAFMAAgAAAAQAAAAKAEwAAgAAAAEAAAAKAE0AAgAAAAIAAAAKAE4AAgAAAAMAAAAKAE8AAgAAAAQAAAAKAEgAAgAAAAEAAAAKAEkAAgAAAAIAAAAKAEoAAgAAAAMAAAAKAEsAAgAAAAQAAAAKAEQAAgAAAAEAAAAKAEUAAgAAAAIAAAAKAEYAAgAAAAMAAAAKAEcAAgAAAAQAAAAKAEAAAgAAAAEAAAAKAEEAAgAAAAIAAAAKAEIAAgAAAAMAAAAKAEMAAgAAAAQAAAAKADwAAgAAAAEAAAAKAD0AAgAAAAIAAAAKAD4AAgAAAAMAAAAKAD8AAgAAAAQAAAAKADsAAgAFAAAAAAAGADsAAgABAAUAAAAHADsAAgACAAUAAAAIADsAAgADAAUAAAAJADsAAgAEAAUAAAACADsAAgABAAUAAAADADsAAgACAAUAAAAEADsAAgADAAUAAAAFADsAAgAEAAUAAAD+/zsAAgAAAAUAAAD//zsAAgACAAUAAAAAADsAAgADAAUAAAABADsAAgAEAAUAAAD+/zUAAgAAAAEAAAD+/zYAAgAAAAIAAAD+/zcAAgAAAAEAAAD+/zgAAgAAAAIAAAD+/zkAAgAAAAMAAAD+/zoAAgAAAAQAAAA=")
+tile_set = ExtResource("14_wucbw")
