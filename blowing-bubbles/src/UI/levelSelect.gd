@@ -10,10 +10,10 @@ func _on_level_select_button_1_pressed() -> void:
 	get_tree().change_scene_to_packed(LEVEL1)
 
 func _on_level_select_button_2_pressed() -> void:
-	get_tree().change_scene_to_packed(LEVEL2)
+	get_tree().change_scene_to_packed(LEVEL3)
 	
 func _on_level_select_button_3_pressed() -> void:
-	get_tree().change_scene_to_packed(LEVEL3) 
+	get_tree().change_scene_to_packed(LEVEL2) 
 
 func _on_level_select_button_4_pressed() -> void:
 	get_tree().change_scene_to_packed(LEVEL4)

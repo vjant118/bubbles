@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://dkdxniy4tv4td"]
 
-[ext_resource type="Texture2D" uid="uid://c7r5n741fjslt" path="res://assets/Placeholder Assets/mainlevel2background.png" id="1_6u0gc"]
-[ext_resource type="Texture2D" uid="uid://damvuy84h1a5p" path="res://assets/Placeholder Assets/higherlevel2.png" id="2_uic6o"]
-[ext_resource type="Texture2D" uid="uid://fhaumo54f3db" path="res://assets/Placeholder Assets/lowerlevel2.png" id="3_2jl44"]
+[ext_resource type="Texture2D" uid="uid://coeysmyp2gvlt" path="res://assets/Official Assets/Night.png" id="1_12q5m"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="3_rsb4p"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="4_rsb4p"]
 [ext_resource type="PackedScene" uid="uid://bibia0eeio2q4" path="res://actors/placeholderWall.tscn" id="4_wcn54"]
@@ -36,23 +34,10 @@ point_count = 3
 
 [node name="level_02" type="Node2D" unique_id=1413154548]
 
-[node name="mainbackground" type="Sprite2D" parent="." unique_id=989369303]
-visible = false
-position = Vector2(1436.0002, 2886)
-scale = Vector2(15, 15)
-texture = ExtResource("1_6u0gc")
-
-[node name="highbackground" type="Sprite2D" parent="." unique_id=281566845]
-visible = false
-position = Vector2(1686.0001, 152.00005)
-scale = Vector2(5, 5)
-texture = ExtResource("2_uic6o")
-
-[node name="lowbackground" type="Sprite2D" parent="." unique_id=765573992]
-visible = false
-position = Vector2(1690.0001, 6405.0005)
-scale = Vector2(5, 5)
-texture = ExtResource("3_2jl44")
+[node name="Night" type="Sprite2D" parent="." unique_id=688651928]
+position = Vector2(3684, 2447)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("1_12q5m")
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("14_qw5du")]
 position = Vector2(3953, 5253)

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://oml6ajnsxprn"]
 
+[ext_resource type="Texture2D" uid="uid://dr6flnjvm1sdx" path="res://assets/Official Assets/Dusk.png" id="1_1lv7r"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="1_t025a"]
 [ext_resource type="PackedScene" uid="uid://bibia0eeio2q4" path="res://actors/placeholderWall.tscn" id="1_te43d"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="2_gl4wf"]
@@ -34,13 +35,18 @@ point_count = 5
 
 [node name="level_final" type="Node2D" unique_id=1935546418]
 
+[node name="Dusk" type="Sprite2D" parent="." unique_id=860460898]
+position = Vector2(3881, 452.00003)
+scale = Vector2(5, 5)
+texture = ExtResource("1_1lv7r")
+
 [node name="Hazards" type="Node" parent="." unique_id=1666844830]
 
 [node name="BallSpike2" parent="Hazards" unique_id=324206565 instance=ExtResource("5_eoywo")]
-position = Vector2(1986, 842)
+position = Vector2(1909, 886)
 
 [node name="BallSpike3" parent="Hazards" unique_id=1189718686 instance=ExtResource("5_eoywo")]
-position = Vector2(2046, 654)
+position = Vector2(1851, 690)
 
 [node name="BallSpike5" parent="Hazards" unique_id=1612018026 instance=ExtResource("5_eoywo")]
 position = Vector2(2118, 462)
@@ -257,12 +263,6 @@ position = Vector2(2440, -1463)
 
 [node name="SpikeHazard21" parent="Hazards" unique_id=1421809541 instance=ExtResource("1_t025a")]
 position = Vector2(2544, -1463)
-
-[node name="SpikeHazard69" parent="Hazards" unique_id=848172359 instance=ExtResource("1_t025a")]
-position = Vector2(3824, -1455)
-
-[node name="SpikeHazard70" parent="Hazards" unique_id=214180709 instance=ExtResource("1_t025a")]
-position = Vector2(3928, -1455)
 
 [node name="SpikeHazard71" parent="Hazards" unique_id=1140707329 instance=ExtResource("1_t025a")]
 position = Vector2(4032, -1455)
@@ -1803,7 +1803,7 @@ position = Vector2(2819, -2641)
 scale = Vector2(61.785957, 1)
 
 [node name="PlaceholderWall15" parent="Walls" unique_id=1871581382 instance=ExtResource("1_te43d")]
-position = Vector2(1281.0001, -1136)
+position = Vector2(1296, -1141)
 scale = Vector2(16.305952, 1)
 
 [node name="PlaceholderWall9" parent="Walls" unique_id=1347127816 instance=ExtResource("1_te43d")]
@@ -1861,7 +1861,7 @@ position = Vector2(8252, 1710)
 position = Vector2(253, 100)
 
 [node name="bubble" parent="." unique_id=1455146349 instance=ExtResource("2_gl4wf")]
-position = Vector2(-129, -1293)
+position = Vector2(4018, 387)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=908821064]
 
