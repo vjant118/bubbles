@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="4_pfdh1"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="4_rx3d3"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="5_mr4wi"]
-[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="9_77c3y"]
+[ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/timer.tscn" id="9_77c3y"]
 [ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="10_dqrp8"]
 [ext_resource type="Texture2D" uid="uid://bx07u855eq3rj" path="res://assets/Official Assets/Sunset.png" id="10_gfovl"]
 [ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="10_i155e"]
@@ -138,7 +138,7 @@ position = Vector2(331, 152)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2045332555]
 
-[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("9_77c3y")]
+[node name="timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("9_77c3y")]
 unique_name_in_owner = true
 
 [node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1342761618]

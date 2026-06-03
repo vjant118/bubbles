@@ -10,7 +10,7 @@ func check_bodies():
 	
 	for body in bodies:
 		if body.is_in_group("hazards"):
-			%Timer.stopTimer()
+			%timer.stopTimer()
 			$AnimatedSprite2D.hide()
 			$McIdle.hide()
 			$AudioStreamPlayer.play
@@ -43,11 +43,11 @@ func saveScore():
 	unlockLevel(level)
 
 func getRank(level, time: float):
-	if time <= 60.00:
+	if time <= 80.00:
 		savedata.d[level]["rank"] = "S"
-	elif time <= 75.00:
-		savedata.d[level]["rank"] = "A"
 	elif time <= 90.00:
+		savedata.d[level]["rank"] = "A"
+	elif time <= 100.00:
 		savedata.d[level]["rank"] = "B"
 	else:
 		savedata.d[level]["rank"] = "C"

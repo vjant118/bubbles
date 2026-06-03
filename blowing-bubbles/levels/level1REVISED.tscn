@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="1_delwp"]
 [ext_resource type="Texture2D" uid="uid://o8jeu57ac5om" path="res://assets/Official Assets/Day.png" id="1_kisxu"]
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="2_f7xr1"]
-[ext_resource type="PackedScene" path="res://actors/Timer.tscn" id="3_d71sj"]
+[ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/Timer.tscn" id="3_d71sj"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="4_ihcu0"]
 [ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="5_f7xr1"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="7_gn2j6"]
