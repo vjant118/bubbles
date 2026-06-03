@@ -10,7 +10,7 @@ func check_bodies():
 	
 	for body in bodies:
 		if body.is_in_group("hazards"):
-			%timer.stopTimer()
+			%Timer.stopTimer()
 			$AnimatedSprite2D.hide()
 			$McIdle.hide()
 			$AudioStreamPlayer.play()

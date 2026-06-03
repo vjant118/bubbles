@@ -1080,7 +1080,7 @@ position = Vector2(2816, -91)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1634756840]
 
-[node name="timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("3_d71sj")]
+[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("3_d71sj")]
 unique_name_in_owner = true
 offset_right = 1.0
 offset_bottom = 117.0

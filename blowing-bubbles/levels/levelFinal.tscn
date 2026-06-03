@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://actors/rotateAxis.tscn" id="4_mwb2d"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="4_xngw8"]
 [ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/SpikeBall.tscn" id="5_eoywo"]
-[ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/Timer.tscn" id="5_hl87o"]
+[ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/timer.tscn" id="5_hl87o"]
 [ext_resource type="PackedScene" uid="uid://ddn7q4e4tcpru" path="res://actors/wallTEST2.tscn" id="5_og7cu"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="6_5sgy0"]
 [ext_resource type="Script" uid="uid://d3wo580qp48wb" path="res://src/objects/antiRotate.gd" id="6_eoywo"]
@@ -1584,7 +1584,7 @@ position = Vector2(-135, -1279)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=908821064]
 
-[node name="timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("5_hl87o")]
+[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("5_hl87o")]
 unique_name_in_owner = true
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("6_5sgy0")]
