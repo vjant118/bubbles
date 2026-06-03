@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dr4jjp8vh35ts"]
+[gd_scene format=3 uid="uid://c5ryt2k12kdlm"]
 
 [ext_resource type="Script" uid="uid://c5okmb1fq2id2" path="res://src/objects/timer.gd" id="1_a73k2"]
 [ext_resource type="FontFile" uid="uid://cypbu8bskw88v" path="res://MochiyPopOne-Regular.ttf" id="1_aiyg4"]
