@@ -1003,7 +1003,7 @@ tile_set = ExtResource("5_f7xr1")
 [node name="timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("3_d71sj")]
 unique_name_in_owner = true
 offset_right = 1.0
-offset_bottom = 110.0
+offset_bottom = 117.0
 
 [node name="bubble2" parent="." unique_id=1051886177 instance=ExtResource("7_gn2j6")]
 position = Vector2(598, -322)
