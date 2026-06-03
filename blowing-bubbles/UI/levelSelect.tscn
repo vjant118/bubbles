@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://b22f84ndc7ybu"]
 
 [ext_resource type="Script" uid="uid://ctlavshxuiqxh" path="res://src/UI/levelSelect.gd" id="1_r4dbv"]
-[ext_resource type="Texture2D" uid="uid://doo0trg815dhl" path="res://assets/Placeholder Assets/finalfirstlevelbackground.webp" id="2_t1bo4"]
+[ext_resource type="Texture2D" uid="uid://o8jeu57ac5om" path="res://assets/Official Assets/Day.png" id="2_a0oft"]
 [ext_resource type="AudioStream" uid="uid://c4niwfindkbax" path="res://audio/menu.mp3" id="3_bdap3"]
+[ext_resource type="FontFile" uid="uid://cypbu8bskw88v" path="res://MochiyPopOne-Regular.ttf" id="3_qewnd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qgm14"]
 font_size = 37
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_evalx"]
 
 [node name="Node2D" type="Control" unique_id=1867991388]
 layout_mode = 3
@@ -14,41 +17,96 @@ scale = Vector2(1.29, 1.29)
 script = ExtResource("1_r4dbv")
 
 [node name="Finalfirstlevelbackground" type="Sprite2D" parent="." unique_id=1553067788]
-position = Vector2(751.86053, 430.1744)
+position = Vector2(4062.0151, 347.2868)
 scale = Vector2(4.2510767, 3.2562444)
-texture = ExtResource("2_t1bo4")
+texture = ExtResource("2_a0oft")
 
 [node name="Label" type="Label" parent="." unique_id=1688002170]
 layout_mode = 0
-offset_left = 632.5581
-offset_right = 841.5581
-offset_bottom = 51.0
+offset_left = 582.9458
+offset_right = 859.9458
+offset_bottom = 54.0
 scale = Vector2(1.29, 1.29)
 size_flags_horizontal = 8
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_qewnd")
 text = "Level Select"
 label_settings = SubResource("LabelSettings_qgm14")
 horizontal_alignment = 1
 
 [node name="level_select_button1" type="Button" parent="." unique_id=123624616]
 layout_mode = 0
-offset_left = 70.54262
-offset_top = 299.22473
-offset_right = 577.5426
-offset_bottom = 472.2248
+offset_left = 74.41861
+offset_top = 303.87598
+offset_right = 581.4186
+offset_bottom = 476.87604
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 54
+
+[node name="levelLabel" type="Label" parent="level_select_button1" unique_id=19656238]
+layout_mode = 0
+offset_left = 149.02951
+offset_top = 4.807403
+offset_right = 363.02954
+offset_bottom = 77.8074
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 50
 text = "Level 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank" type="Sprite2D" parent="level_select_button1" unique_id=45789452]
+z_index = 4
+position = Vector2(139.4147, 115.37768)
+
+[node name="timeLabel" type="Label" parent="level_select_button1" unique_id=1621536799]
+layout_mode = 0
+offset_left = 180.87856
+offset_top = 91.34066
+offset_right = 370.17004
+offset_bottom = 139.4147
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_evalx")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="level_select_button2" type="Button" parent="." unique_id=776546430]
 layout_mode = 0
 offset_left = 772.09314
-offset_top = 299.22473
+offset_top = 303.8758
 offset_right = 1279.0928
-offset_bottom = 472.2248
+offset_bottom = 476.87585
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 52
-text = "Level 2"
+
+[node name="levelLabel" type="Label" parent="level_select_button2" unique_id=1450385034]
+layout_mode = 0
+offset_left = 149.02951
+offset_top = 4.807403
+offset_right = 363.02954
+offset_bottom = 77.8074
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 50
+text = "Locked"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank" type="Sprite2D" parent="level_select_button2" unique_id=1915650638]
+z_index = 4
+position = Vector2(139.4147, 115.37768)
+
+[node name="timeLabel" type="Label" parent="level_select_button2" unique_id=123700021]
+layout_mode = 0
+offset_left = 180.87856
+offset_top = 91.34066
+offset_right = 370.17004
+offset_bottom = 139.4147
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_evalx")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="level_select_button3" type="Button" parent="." unique_id=524202138]
 layout_mode = 0
@@ -58,7 +116,34 @@ offset_right = 581.4186
 offset_bottom = 724.1628
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 52
-text = "Level 3"
+
+[node name="levelLabel" type="Label" parent="level_select_button3" unique_id=380824942]
+layout_mode = 0
+offset_left = 149.02951
+offset_top = 4.807403
+offset_right = 363.02954
+offset_bottom = 77.8074
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 50
+text = "Locked"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank" type="Sprite2D" parent="level_select_button3" unique_id=2080273142]
+z_index = 4
+position = Vector2(139.4147, 115.37768)
+
+[node name="timeLabel" type="Label" parent="level_select_button3" unique_id=2105087031]
+layout_mode = 0
+offset_left = 180.87856
+offset_top = 91.34066
+offset_right = 370.17004
+offset_bottom = 139.4147
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_evalx")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="level_select_button4" type="Button" parent="." unique_id=107735844]
 layout_mode = 0
@@ -68,15 +153,44 @@ offset_right = 1282.1936
 offset_bottom = 725.71313
 scale = Vector2(1.29, 1.29)
 theme_override_font_sizes/font_size = 52
-text = "Level 4"
+
+[node name="levelLabel" type="Label" parent="level_select_button4" unique_id=1916046911]
+layout_mode = 0
+offset_left = 149.02951
+offset_top = 4.807403
+offset_right = 363.02954
+offset_bottom = 77.8074
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 50
+text = "Locked
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rank" type="Sprite2D" parent="level_select_button4" unique_id=1859620165]
+z_index = 4
+position = Vector2(139.4147, 115.37768)
+
+[node name="timeLabel" type="Label" parent="level_select_button4" unique_id=125671983]
+layout_mode = 0
+offset_left = 180.87856
+offset_top = 91.34066
+offset_right = 370.17004
+offset_bottom = 139.4147
+theme_override_fonts/font = ExtResource("3_qewnd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_evalx")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="level_select_tutorial" type="Button" parent="." unique_id=1841023563]
 layout_mode = 0
-offset_left = 508.52707
-offset_top = 81.39535
-offset_right = 897.964
-offset_bottom = 215.7312
+offset_left = 483.72095
+offset_top = 69.76744
+offset_right = 873.15784
+offset_bottom = 204.10329
 scale = Vector2(1.29, 1.29)
+theme_override_fonts/font = ExtResource("3_qewnd")
 theme_override_font_sizes/font_size = 54
 text = "Tutorial"
 

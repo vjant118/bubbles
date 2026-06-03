@@ -5,6 +5,27 @@
 [ext_resource type="Texture2D" uid="uid://dw4cd30lygodc" path="res://assets/UI Assets/diedMenuButton.svg" id="3_0ka7n"]
 [ext_resource type="Texture2D" uid="uid://c2joy6qop5laf" path="res://assets/UI Assets/diedRetryButton.svg" id="4_gud43"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vdgj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_156v2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yu8jc"]
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+corner_detail = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yu8jc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yrs02"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xur0x"]
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+
 [node name="DiedUi" type="Control" unique_id=798410131]
 layout_mode = 3
 anchors_preset = 0
@@ -18,6 +39,9 @@ offset_right = 532.0
 offset_bottom = 573.0
 scale = Vector2(2.5, 2.5)
 size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6vdgj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_156v2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yu8jc")
 icon = ExtResource("4_gud43")
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -29,6 +53,9 @@ offset_top = 461.00003
 offset_right = 1263.8148
 offset_bottom = 566.5556
 scale = Vector2(2.5, 2.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yu8jc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yrs02")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xur0x")
 icon = ExtResource("3_0ka7n")
 metadata/_edit_use_anchors_ = true
 

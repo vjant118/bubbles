@@ -10,10 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://actors/rotateAxis.tscn" id="4_mwb2d"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="4_xngw8"]
 [ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/SpikeBall.tscn" id="5_eoywo"]
-[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/Timer.tscn" id="5_hl87o"]
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="5_hl87o"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="6_5sgy0"]
 [ext_resource type="Script" uid="uid://d3wo580qp48wb" path="res://src/objects/antiRotate.gd" id="6_eoywo"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="13_hljv7"]
+[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="14_og7cu"]
 [ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="15_x2tv3"]
 
 [sub_resource type="Curve2D" id="Curve2D_hljv7"]
@@ -34,7 +35,7 @@ _data = {
 }
 point_count = 5
 
-[node name="level_final" type="Node2D" unique_id=1935546418]
+[node name="level4" type="Node2D" unique_id=1935546418]
 
 [node name="Dusk" type="Sprite2D" parent="." unique_id=860460898]
 position = Vector2(3881, 452.00003)
@@ -1575,6 +1576,12 @@ position = Vector2(2888, 2466)
 
 [node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("5_hl87o")]
 unique_name_in_owner = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=852656206]
+stream = ExtResource("14_og7cu")
+volume_db = -24.143
+autoplay = true
+parameters/looping = true
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("6_5sgy0")]
 position = Vector2(249, 101)

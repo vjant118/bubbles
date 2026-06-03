@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="7_5lf4g"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="8_1kqb1"]
 [ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="9_oy8sf"]
-[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/Timer.tscn" id="10_ij6yt"]
+[ext_resource type="PackedScene" uid="uid://dr4jjp8vh35ts" path="res://actors/timer.tscn" id="10_ij6yt"]
 [ext_resource type="Texture2D" uid="uid://o8jeu57ac5om" path="res://assets/Official Assets/Day.png" id="10_jrxhp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljw2d"]

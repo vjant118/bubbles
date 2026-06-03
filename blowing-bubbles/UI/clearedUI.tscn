@@ -27,6 +27,17 @@ cache/0/30/0/underline_position = 0.0
 cache/0/30/0/underline_thickness = 0.0
 cache/0/30/0/scale = 1.0
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2skgt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xdq6j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkok8"]
+bg_color = Color(0.6, 0.6, 0.9607843, 0.6392157)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+
 [node name="Control" type="Control" unique_id=1435994257]
 layout_mode = 3
 anchors_preset = 15
@@ -47,10 +58,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -483.01648
-offset_top = -269.75092
-offset_right = -122.56674
-offset_bottom = -153.66374
+offset_left = -478.58795
+offset_top = -267.48026
+offset_right = -224.80444
+offset_bottom = -225.48024
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -64,12 +75,18 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -426.73935
-offset_top = -359.1002
-offset_right = -184.36797
+offset_left = -423.35107
+offset_top = -352.74243
+offset_right = -184.36795
 offset_bottom = -242.3898
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2skgt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xdq6j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qkok8")
+
+[node name="rank" type="Sprite2D" parent="Cleared" unique_id=585032245]
+position = Vector2(143.8131, -21.45746)
 
 [connection signal="pressed" from="Cleared/button" to="." method="_on_button_pressed"]
