@@ -3,10 +3,10 @@ extends Node
 
 
 const TUT = preload("res://levels/levelTut.tscn")
-const LEVEL1 = preload("res://levels/level01.tscn")
-const LEVEL2 = preload("res://levels/level02.tscn")
-const LEVEL3 = preload("res://levels/level03.tscn")
-const LEVEL4 = preload("res://levels/levelFinal.tscn")
+const LEVEL1 = preload("res://levels/level1.tscn")
+const LEVEL2 = preload("res://levels/level2.tscn")
+const LEVEL3 = preload("res://levels/level3.tscn")
+const LEVEL4 = preload("res://levels/level4.tscn")
 
 func _ready() -> void:
 	var i = 1

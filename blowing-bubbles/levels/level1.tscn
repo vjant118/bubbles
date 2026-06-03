@@ -1,0 +1,1094 @@
+[gd_scene format=4 uid="uid://cm4ju5rs1kv4s"]
+
+[ext_resource type="Texture2D" uid="uid://o8jeu57ac5om" path="res://assets/Official Assets/Day.png" id="1_lf3p4"]
+[ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="2_yydhl"]
+[ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="3_bekh1"]
+[ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="4_8bcou"]
+[ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="5_f7u7y"]
+[ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="6_jq2cn"]
+[ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="7_a5s8o"]
+[ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/timer.tscn" id="8_ls4ot"]
+[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="9_tx362"]
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="10_l7nqg"]
+
+[node name="level1" type="Node2D" unique_id=1621521428]
+
+[node name="Day" type="Sprite2D" parent="." unique_id=877439712]
+position = Vector2(2150, -1426)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_lf3p4")
+
+[node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("2_yydhl")]
+position = Vector2(2119, -822)
+rotation = -1.5707964
+
+[node name="ProjectileShooter2" parent="." unique_id=1853691827 instance=ExtResource("2_yydhl")]
+position = Vector2(3239, -821)
+rotation = -1.5707964
+
+[node name="Spikes" type="Node" parent="." unique_id=2061739315]
+
+[node name="SpikeHazard" parent="Spikes" unique_id=324206565 instance=ExtResource("3_bekh1")]
+position = Vector2(1108, -946)
+
+[node name="SpikeHazard2" parent="Spikes" unique_id=1427520149 instance=ExtResource("3_bekh1")]
+position = Vector2(1004, -946)
+
+[node name="SpikeHazard3" parent="Spikes" unique_id=336283390 instance=ExtResource("3_bekh1")]
+position = Vector2(900, -946)
+
+[node name="SpikeHazard4" parent="Spikes" unique_id=1269270206 instance=ExtResource("3_bekh1")]
+position = Vector2(796, -946)
+
+[node name="SpikeHazard5" parent="Spikes" unique_id=469811081 instance=ExtResource("3_bekh1")]
+position = Vector2(692, -946)
+
+[node name="SpikeHazard229" parent="Spikes" unique_id=959356492 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -2327)
+rotation = 4.712389
+
+[node name="SpikeHazard230" parent="Spikes" unique_id=1309178077 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -2215)
+rotation = 4.712389
+
+[node name="SpikeHazard231" parent="Spikes" unique_id=1169646610 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -2103)
+rotation = 4.712389
+
+[node name="SpikeHazard232" parent="Spikes" unique_id=2074837029 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1991)
+rotation = 4.712389
+
+[node name="SpikeHazard233" parent="Spikes" unique_id=595072784 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1879)
+rotation = 4.712389
+
+[node name="SpikeHazard234" parent="Spikes" unique_id=183769860 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1767)
+rotation = 4.712389
+
+[node name="SpikeHazard235" parent="Spikes" unique_id=823364941 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1655)
+rotation = 4.712389
+
+[node name="SpikeHazard236" parent="Spikes" unique_id=2143137774 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1543)
+rotation = 4.712389
+
+[node name="SpikeHazard237" parent="Spikes" unique_id=1800025777 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1431)
+rotation = 4.712389
+
+[node name="SpikeHazard238" parent="Spikes" unique_id=1830993082 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1319)
+rotation = 4.712389
+
+[node name="SpikeHazard239" parent="Spikes" unique_id=994097662 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1207)
+rotation = 4.712389
+
+[node name="SpikeHazard240" parent="Spikes" unique_id=428121990 instance=ExtResource("3_bekh1")]
+position = Vector2(1162, -1095)
+rotation = 4.712389
+
+[node name="SpikeHazard257" parent="Spikes" unique_id=1771644479 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -3134)
+rotation = 4.712389
+
+[node name="SpikeHazard258" parent="Spikes" unique_id=1701963689 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -3022)
+rotation = 4.712389
+
+[node name="SpikeHazard259" parent="Spikes" unique_id=2103076339 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2910)
+rotation = 4.712389
+
+[node name="SpikeHazard260" parent="Spikes" unique_id=1772228521 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2798)
+rotation = 4.712389
+
+[node name="SpikeHazard261" parent="Spikes" unique_id=1389299599 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2686)
+rotation = 4.712389
+
+[node name="SpikeHazard262" parent="Spikes" unique_id=1232240719 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2574)
+rotation = 4.712389
+
+[node name="SpikeHazard263" parent="Spikes" unique_id=603628016 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2462)
+rotation = 4.712389
+
+[node name="SpikeHazard264" parent="Spikes" unique_id=538932953 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2350)
+rotation = 4.712389
+
+[node name="SpikeHazard265" parent="Spikes" unique_id=1905800699 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2238)
+rotation = 4.712389
+
+[node name="SpikeHazard266" parent="Spikes" unique_id=760044389 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2126)
+rotation = 4.712389
+
+[node name="SpikeHazard267" parent="Spikes" unique_id=1401810881 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -2014)
+rotation = 4.712389
+
+[node name="SpikeHazard268" parent="Spikes" unique_id=706135954 instance=ExtResource("3_bekh1")]
+position = Vector2(4682, -1902)
+rotation = 4.712389
+
+[node name="SpikeHazard269" parent="Spikes" unique_id=533168919 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1784)
+rotation = 4.712389
+
+[node name="SpikeHazard270" parent="Spikes" unique_id=557224711 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1672)
+rotation = 4.712389
+
+[node name="SpikeHazard271" parent="Spikes" unique_id=678050454 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1560)
+rotation = 4.712389
+
+[node name="SpikeHazard272" parent="Spikes" unique_id=1200846497 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1448)
+rotation = 4.712389
+
+[node name="SpikeHazard273" parent="Spikes" unique_id=1643666808 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1336)
+rotation = 4.712389
+
+[node name="SpikeHazard274" parent="Spikes" unique_id=1679166263 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1224)
+rotation = 4.712389
+
+[node name="SpikeHazard275" parent="Spikes" unique_id=1471954908 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1112)
+rotation = 4.712389
+
+[node name="SpikeHazard276" parent="Spikes" unique_id=390830024 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -1000)
+rotation = 4.712389
+
+[node name="SpikeHazard277" parent="Spikes" unique_id=47437222 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -888)
+rotation = 4.712389
+
+[node name="SpikeHazard278" parent="Spikes" unique_id=1123490304 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -776)
+rotation = 4.712389
+
+[node name="SpikeHazard279" parent="Spikes" unique_id=365081462 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -664)
+rotation = 4.712389
+
+[node name="SpikeHazard280" parent="Spikes" unique_id=1112920182 instance=ExtResource("3_bekh1")]
+position = Vector2(4679, -552)
+rotation = 4.712389
+
+[node name="SpikeHazard241" parent="Spikes" unique_id=1401809984 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -2614)
+rotation = 4.712389
+
+[node name="SpikeHazard242" parent="Spikes" unique_id=140495765 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -2502)
+rotation = 4.712389
+
+[node name="SpikeHazard243" parent="Spikes" unique_id=616942422 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -2390)
+rotation = 4.712389
+
+[node name="SpikeHazard244" parent="Spikes" unique_id=313975870 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -2278)
+rotation = 4.712389
+
+[node name="SpikeHazard245" parent="Spikes" unique_id=1895639850 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -2166)
+rotation = 4.712389
+
+[node name="SpikeHazard246" parent="Spikes" unique_id=1435369084 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -2054)
+rotation = 4.712389
+
+[node name="SpikeHazard247" parent="Spikes" unique_id=460600629 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1942)
+rotation = 4.712389
+
+[node name="SpikeHazard248" parent="Spikes" unique_id=1450874770 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1830)
+rotation = 4.712389
+
+[node name="SpikeHazard249" parent="Spikes" unique_id=1014522721 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1718)
+rotation = 4.712389
+
+[node name="SpikeHazard250" parent="Spikes" unique_id=1715046185 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1606)
+rotation = 4.712389
+
+[node name="SpikeHazard251" parent="Spikes" unique_id=1132004499 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1494)
+rotation = 4.712389
+
+[node name="SpikeHazard252" parent="Spikes" unique_id=347978951 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1382)
+rotation = 4.712389
+
+[node name="SpikeHazard253" parent="Spikes" unique_id=2113808594 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1270)
+rotation = 4.712389
+
+[node name="SpikeHazard254" parent="Spikes" unique_id=1177733915 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1158)
+rotation = 4.712389
+
+[node name="SpikeHazard255" parent="Spikes" unique_id=372559876 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -1046)
+rotation = 4.712389
+
+[node name="SpikeHazard256" parent="Spikes" unique_id=738509663 instance=ExtResource("3_bekh1")]
+position = Vector2(3976, -934)
+rotation = 4.712389
+
+[node name="SpikeHazard187" parent="Spikes" unique_id=770066295 instance=ExtResource("3_bekh1")]
+position = Vector2(-306, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard188" parent="Spikes" unique_id=1057357438 instance=ExtResource("3_bekh1")]
+position = Vector2(-194, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard189" parent="Spikes" unique_id=473461183 instance=ExtResource("3_bekh1")]
+position = Vector2(-82, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard190" parent="Spikes" unique_id=904757191 instance=ExtResource("3_bekh1")]
+position = Vector2(30, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard191" parent="Spikes" unique_id=1558318819 instance=ExtResource("3_bekh1")]
+position = Vector2(142, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard192" parent="Spikes" unique_id=310410481 instance=ExtResource("3_bekh1")]
+position = Vector2(254, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard193" parent="Spikes" unique_id=184766088 instance=ExtResource("3_bekh1")]
+position = Vector2(366, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard194" parent="Spikes" unique_id=1437106794 instance=ExtResource("3_bekh1")]
+position = Vector2(478, -1672)
+rotation = 3.1415927
+
+[node name="SpikeHazard195" parent="Spikes" unique_id=567078954 instance=ExtResource("3_bekh1")]
+position = Vector2(1965, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard196" parent="Spikes" unique_id=2011846178 instance=ExtResource("3_bekh1")]
+position = Vector2(2077, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard197" parent="Spikes" unique_id=846274433 instance=ExtResource("3_bekh1")]
+position = Vector2(2189, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard198" parent="Spikes" unique_id=241475342 instance=ExtResource("3_bekh1")]
+position = Vector2(2301, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard199" parent="Spikes" unique_id=1945191801 instance=ExtResource("3_bekh1")]
+position = Vector2(2413, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard200" parent="Spikes" unique_id=1484756262 instance=ExtResource("3_bekh1")]
+position = Vector2(2525, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard201" parent="Spikes" unique_id=676399559 instance=ExtResource("3_bekh1")]
+position = Vector2(2637, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard202" parent="Spikes" unique_id=384079158 instance=ExtResource("3_bekh1")]
+position = Vector2(2749, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard203" parent="Spikes" unique_id=824444670 instance=ExtResource("3_bekh1")]
+position = Vector2(2861, -1933)
+rotation = 3.1415927
+
+[node name="SpikeHazard204" parent="Spikes" unique_id=313661931 instance=ExtResource("3_bekh1")]
+position = Vector2(1283, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard205" parent="Spikes" unique_id=1957698475 instance=ExtResource("3_bekh1")]
+position = Vector2(1395, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard206" parent="Spikes" unique_id=1195461910 instance=ExtResource("3_bekh1")]
+position = Vector2(1507, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard207" parent="Spikes" unique_id=21082377 instance=ExtResource("3_bekh1")]
+position = Vector2(1619, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard208" parent="Spikes" unique_id=54430694 instance=ExtResource("3_bekh1")]
+position = Vector2(1731, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard209" parent="Spikes" unique_id=1370638164 instance=ExtResource("3_bekh1")]
+position = Vector2(1843, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard210" parent="Spikes" unique_id=359647435 instance=ExtResource("3_bekh1")]
+position = Vector2(1955, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard211" parent="Spikes" unique_id=2093440875 instance=ExtResource("3_bekh1")]
+position = Vector2(2067, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard212" parent="Spikes" unique_id=1483632743 instance=ExtResource("3_bekh1")]
+position = Vector2(2179, -900)
+rotation = 3.1415927
+
+[node name="SpikeHazard213" parent="Spikes" unique_id=1570547248 instance=ExtResource("3_bekh1")]
+position = Vector2(2291, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard214" parent="Spikes" unique_id=1799523772 instance=ExtResource("3_bekh1")]
+position = Vector2(2403, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard215" parent="Spikes" unique_id=1130555748 instance=ExtResource("3_bekh1")]
+position = Vector2(2515, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard216" parent="Spikes" unique_id=181894473 instance=ExtResource("3_bekh1")]
+position = Vector2(2627, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard217" parent="Spikes" unique_id=1776419978 instance=ExtResource("3_bekh1")]
+position = Vector2(2739, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard218" parent="Spikes" unique_id=1045984128 instance=ExtResource("3_bekh1")]
+position = Vector2(2851, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard219" parent="Spikes" unique_id=1435415637 instance=ExtResource("3_bekh1")]
+position = Vector2(2963, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard220" parent="Spikes" unique_id=1797656122 instance=ExtResource("3_bekh1")]
+position = Vector2(3075, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard221" parent="Spikes" unique_id=308511928 instance=ExtResource("3_bekh1")]
+position = Vector2(3187, -902)
+rotation = 3.1415927
+
+[node name="SpikeHazard222" parent="Spikes" unique_id=103853265 instance=ExtResource("3_bekh1")]
+position = Vector2(3297, -906)
+rotation = 3.1415927
+
+[node name="SpikeHazard223" parent="Spikes" unique_id=818940702 instance=ExtResource("3_bekh1")]
+position = Vector2(3409, -906)
+rotation = 3.1415927
+
+[node name="SpikeHazard224" parent="Spikes" unique_id=1888591848 instance=ExtResource("3_bekh1")]
+position = Vector2(3521, -906)
+rotation = 3.1415927
+
+[node name="SpikeHazard225" parent="Spikes" unique_id=1058151918 instance=ExtResource("3_bekh1")]
+position = Vector2(3633, -906)
+rotation = 3.1415927
+
+[node name="SpikeHazard226" parent="Spikes" unique_id=2075971025 instance=ExtResource("3_bekh1")]
+position = Vector2(3745, -906)
+rotation = 3.1415927
+
+[node name="SpikeHazard227" parent="Spikes" unique_id=971490208 instance=ExtResource("3_bekh1")]
+position = Vector2(3857, -906)
+rotation = 3.1415927
+
+[node name="SpikeHazard228" parent="Spikes" unique_id=945851159 instance=ExtResource("3_bekh1")]
+position = Vector2(3961, -914)
+rotation = 3.1415927
+
+[node name="SpikeHazard31" parent="Spikes" unique_id=229040644 instance=ExtResource("3_bekh1")]
+position = Vector2(855, -2488)
+
+[node name="SpikeHazard32" parent="Spikes" unique_id=1138221887 instance=ExtResource("3_bekh1")]
+position = Vector2(751, -2488)
+
+[node name="SpikeHazard33" parent="Spikes" unique_id=1608246604 instance=ExtResource("3_bekh1")]
+position = Vector2(647, -2488)
+
+[node name="SpikeHazard34" parent="Spikes" unique_id=495907455 instance=ExtResource("3_bekh1")]
+position = Vector2(543, -2488)
+
+[node name="SpikeHazard36" parent="Spikes" unique_id=473348613 instance=ExtResource("3_bekh1")]
+position = Vector2(439, -2488)
+
+[node name="SpikeHazard159" parent="Spikes" unique_id=1891345959 instance=ExtResource("3_bekh1")]
+position = Vector2(120, -1069)
+rotation = 1.5707964
+
+[node name="SpikeHazard160" parent="Spikes" unique_id=879019438 instance=ExtResource("3_bekh1")]
+position = Vector2(120, -957)
+rotation = 1.5707964
+
+[node name="SpikeHazard161" parent="Spikes" unique_id=657841781 instance=ExtResource("3_bekh1")]
+position = Vector2(120, -845)
+rotation = 1.5707964
+
+[node name="SpikeHazard162" parent="Spikes" unique_id=661395812 instance=ExtResource("3_bekh1")]
+position = Vector2(120, -733)
+rotation = 1.5707964
+
+[node name="SpikeHazard163" parent="Spikes" unique_id=1799459135 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -326)
+rotation = 1.5707964
+
+[node name="SpikeHazard164" parent="Spikes" unique_id=1885623162 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -214)
+rotation = 1.5707964
+
+[node name="SpikeHazard165" parent="Spikes" unique_id=1170928302 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -102)
+rotation = 1.5707964
+
+[node name="SpikeHazard166" parent="Spikes" unique_id=1595687952 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, 10)
+rotation = 1.5707964
+
+[node name="SpikeHazard167" parent="Spikes" unique_id=927645646 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -774)
+rotation = 1.5707964
+
+[node name="SpikeHazard168" parent="Spikes" unique_id=53084915 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -662)
+rotation = 1.5707964
+
+[node name="SpikeHazard169" parent="Spikes" unique_id=106011141 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -550)
+rotation = 1.5707964
+
+[node name="SpikeHazard170" parent="Spikes" unique_id=843839828 instance=ExtResource("3_bekh1")]
+position = Vector2(1210, -438)
+rotation = 1.5707964
+
+[node name="SpikeHazard171" parent="Spikes" unique_id=1640252928 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -2220)
+rotation = 1.5707964
+
+[node name="SpikeHazard172" parent="Spikes" unique_id=1691786521 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -2108)
+rotation = 1.5707964
+
+[node name="SpikeHazard173" parent="Spikes" unique_id=1839164303 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1996)
+rotation = 1.5707964
+
+[node name="SpikeHazard174" parent="Spikes" unique_id=1164110909 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1884)
+rotation = 1.5707964
+
+[node name="SpikeHazard175" parent="Spikes" unique_id=402674536 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -2668)
+rotation = 1.5707964
+
+[node name="SpikeHazard176" parent="Spikes" unique_id=1129782300 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -2556)
+rotation = 1.5707964
+
+[node name="SpikeHazard177" parent="Spikes" unique_id=984666314 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -2444)
+rotation = 1.5707964
+
+[node name="SpikeHazard178" parent="Spikes" unique_id=809208659 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -2332)
+rotation = 1.5707964
+
+[node name="SpikeHazard179" parent="Spikes" unique_id=637369289 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1324)
+rotation = 1.5707964
+
+[node name="SpikeHazard180" parent="Spikes" unique_id=1240756669 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1212)
+rotation = 1.5707964
+
+[node name="SpikeHazard181" parent="Spikes" unique_id=1890875897 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1100)
+rotation = 1.5707964
+
+[node name="SpikeHazard182" parent="Spikes" unique_id=593739554 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -988)
+rotation = 1.5707964
+
+[node name="SpikeHazard183" parent="Spikes" unique_id=829603943 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1772)
+rotation = 1.5707964
+
+[node name="SpikeHazard184" parent="Spikes" unique_id=193519319 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1660)
+rotation = 1.5707964
+
+[node name="SpikeHazard185" parent="Spikes" unique_id=1807289878 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1548)
+rotation = 1.5707964
+
+[node name="SpikeHazard186" parent="Spikes" unique_id=2006445659 instance=ExtResource("3_bekh1")]
+position = Vector2(4026, -1436)
+rotation = 1.5707964
+
+[node name="SpikeHazard39" parent="Spikes" unique_id=2082440459 instance=ExtResource("3_bekh1")]
+position = Vector2(1143, -2480)
+
+[node name="SpikeHazard40" parent="Spikes" unique_id=1083655990 instance=ExtResource("3_bekh1")]
+position = Vector2(1055, -2488)
+
+[node name="SpikeHazard41" parent="Spikes" unique_id=884494590 instance=ExtResource("3_bekh1")]
+position = Vector2(951, -2488)
+
+[node name="SpikeHazard6" parent="Spikes" unique_id=701835987 instance=ExtResource("3_bekh1")]
+position = Vector2(1692, -946)
+
+[node name="SpikeHazard7" parent="Spikes" unique_id=1407102528 instance=ExtResource("3_bekh1")]
+position = Vector2(1588, -946)
+
+[node name="SpikeHazard8" parent="Spikes" unique_id=1695802747 instance=ExtResource("3_bekh1")]
+position = Vector2(1484, -946)
+
+[node name="SpikeHazard9" parent="Spikes" unique_id=842652363 instance=ExtResource("3_bekh1")]
+position = Vector2(1380, -946)
+
+[node name="SpikeHazard10" parent="Spikes" unique_id=393268633 instance=ExtResource("3_bekh1")]
+position = Vector2(1276, -946)
+
+[node name="SpikeHazard11" parent="Spikes" unique_id=2099511006 instance=ExtResource("3_bekh1")]
+position = Vector2(2212, -946)
+
+[node name="SpikeHazard12" parent="Spikes" unique_id=609768239 instance=ExtResource("3_bekh1")]
+position = Vector2(2108, -946)
+
+[node name="SpikeHazard13" parent="Spikes" unique_id=5191282 instance=ExtResource("3_bekh1")]
+position = Vector2(2004, -946)
+
+[node name="SpikeHazard14" parent="Spikes" unique_id=1305753709 instance=ExtResource("3_bekh1")]
+position = Vector2(1900, -946)
+
+[node name="SpikeHazard15" parent="Spikes" unique_id=589627278 instance=ExtResource("3_bekh1")]
+position = Vector2(1796, -946)
+
+[node name="SpikeHazard16" parent="Spikes" unique_id=1098216780 instance=ExtResource("3_bekh1")]
+position = Vector2(2740, -946)
+
+[node name="SpikeHazard17" parent="Spikes" unique_id=710890229 instance=ExtResource("3_bekh1")]
+position = Vector2(2636, -946)
+
+[node name="SpikeHazard18" parent="Spikes" unique_id=1520712796 instance=ExtResource("3_bekh1")]
+position = Vector2(2532, -946)
+
+[node name="SpikeHazard19" parent="Spikes" unique_id=1545379004 instance=ExtResource("3_bekh1")]
+position = Vector2(2428, -946)
+
+[node name="SpikeHazard20" parent="Spikes" unique_id=679603573 instance=ExtResource("3_bekh1")]
+position = Vector2(2324, -946)
+
+[node name="SpikeHazard21" parent="Spikes" unique_id=995766089 instance=ExtResource("3_bekh1")]
+position = Vector2(3260, -946)
+
+[node name="SpikeHazard22" parent="Spikes" unique_id=2133616697 instance=ExtResource("3_bekh1")]
+position = Vector2(3156, -946)
+
+[node name="SpikeHazard23" parent="Spikes" unique_id=1458604860 instance=ExtResource("3_bekh1")]
+position = Vector2(3052, -946)
+
+[node name="SpikeHazard24" parent="Spikes" unique_id=1310622552 instance=ExtResource("3_bekh1")]
+position = Vector2(2948, -946)
+
+[node name="SpikeHazard25" parent="Spikes" unique_id=1690698410 instance=ExtResource("3_bekh1")]
+position = Vector2(2844, -946)
+
+[node name="SpikeHazard42" parent="Spikes" unique_id=1943443177 instance=ExtResource("3_bekh1")]
+position = Vector2(2265, -1972)
+
+[node name="SpikeHazard43" parent="Spikes" unique_id=890019825 instance=ExtResource("3_bekh1")]
+position = Vector2(2161, -1972)
+
+[node name="SpikeHazard44" parent="Spikes" unique_id=1757507741 instance=ExtResource("3_bekh1")]
+position = Vector2(2057, -1972)
+
+[node name="SpikeHazard45" parent="Spikes" unique_id=1244168769 instance=ExtResource("3_bekh1")]
+position = Vector2(1953, -1972)
+
+[node name="SpikeHazard46" parent="Spikes" unique_id=1901612938 instance=ExtResource("3_bekh1")]
+position = Vector2(2793, -1972)
+
+[node name="SpikeHazard47" parent="Spikes" unique_id=1904969344 instance=ExtResource("3_bekh1")]
+position = Vector2(2689, -1972)
+
+[node name="SpikeHazard48" parent="Spikes" unique_id=480996032 instance=ExtResource("3_bekh1")]
+position = Vector2(2585, -1972)
+
+[node name="SpikeHazard49" parent="Spikes" unique_id=785257196 instance=ExtResource("3_bekh1")]
+position = Vector2(2481, -1972)
+
+[node name="SpikeHazard50" parent="Spikes" unique_id=1724905859 instance=ExtResource("3_bekh1")]
+position = Vector2(2377, -1972)
+
+[node name="SpikeHazard52" parent="Spikes" unique_id=1293217246 instance=ExtResource("3_bekh1")]
+position = Vector2(2897, -1972)
+
+[node name="SpikeHazard51" parent="Spikes" unique_id=719026738 instance=ExtResource("3_bekh1")]
+position = Vector2(3112, -2745)
+
+[node name="SpikeHazard53" parent="Spikes" unique_id=826699797 instance=ExtResource("3_bekh1")]
+position = Vector2(3008, -2745)
+
+[node name="SpikeHazard54" parent="Spikes" unique_id=771642968 instance=ExtResource("3_bekh1")]
+position = Vector2(2904, -2745)
+
+[node name="SpikeHazard55" parent="Spikes" unique_id=283697548 instance=ExtResource("3_bekh1")]
+position = Vector2(2800, -2745)
+
+[node name="SpikeHazard56" parent="Spikes" unique_id=1998400699 instance=ExtResource("3_bekh1")]
+position = Vector2(3640, -2745)
+
+[node name="SpikeHazard57" parent="Spikes" unique_id=1101056582 instance=ExtResource("3_bekh1")]
+position = Vector2(3536, -2745)
+
+[node name="SpikeHazard58" parent="Spikes" unique_id=1042261658 instance=ExtResource("3_bekh1")]
+position = Vector2(3432, -2745)
+
+[node name="SpikeHazard59" parent="Spikes" unique_id=1494018306 instance=ExtResource("3_bekh1")]
+position = Vector2(3328, -2745)
+
+[node name="SpikeHazard60" parent="Spikes" unique_id=445762040 instance=ExtResource("3_bekh1")]
+position = Vector2(3224, -2745)
+
+[node name="SpikeHazard61" parent="Spikes" unique_id=729426670 instance=ExtResource("3_bekh1")]
+position = Vector2(3744, -2745)
+
+[node name="SpikeHazard62" parent="Spikes" unique_id=924399912 instance=ExtResource("3_bekh1")]
+position = Vector2(3640, -2745)
+
+[node name="SpikeHazard63" parent="Spikes" unique_id=415322854 instance=ExtResource("3_bekh1")]
+position = Vector2(3744, -2745)
+
+[node name="SpikeHazard64" parent="Spikes" unique_id=1408244379 instance=ExtResource("3_bekh1")]
+position = Vector2(3848, -2745)
+
+[node name="SpikeHazard65" parent="Spikes" unique_id=712455783 instance=ExtResource("3_bekh1")]
+position = Vector2(3952, -2745)
+
+[node name="SpikeHazard26" parent="Spikes" unique_id=1646956524 instance=ExtResource("3_bekh1")]
+position = Vector2(3788, -946)
+
+[node name="SpikeHazard27" parent="Spikes" unique_id=962709498 instance=ExtResource("3_bekh1")]
+position = Vector2(3684, -946)
+
+[node name="SpikeHazard28" parent="Spikes" unique_id=606755314 instance=ExtResource("3_bekh1")]
+position = Vector2(3580, -946)
+
+[node name="SpikeHazard29" parent="Spikes" unique_id=1398198876 instance=ExtResource("3_bekh1")]
+position = Vector2(3476, -946)
+
+[node name="SpikeHazard30" parent="Spikes" unique_id=186166755 instance=ExtResource("3_bekh1")]
+position = Vector2(3372, -946)
+
+[node name="SpikeHazard35" parent="Spikes" unique_id=1025909067 instance=ExtResource("3_bekh1")]
+position = Vector2(3892, -946)
+
+[node name="SpikeHazard66" parent="Spikes" unique_id=1967596193 instance=ExtResource("3_bekh1")]
+position = Vector2(1692, -946)
+
+[node name="SpikeHazard67" parent="Spikes" unique_id=2133162220 instance=ExtResource("3_bekh1")]
+position = Vector2(1588, -946)
+
+[node name="SpikeHazard68" parent="Spikes" unique_id=2062614056 instance=ExtResource("3_bekh1")]
+position = Vector2(1484, -946)
+
+[node name="SpikeHazard69" parent="Spikes" unique_id=1957970375 instance=ExtResource("3_bekh1")]
+position = Vector2(1380, -946)
+
+[node name="SpikeHazard70" parent="Spikes" unique_id=369298850 instance=ExtResource("3_bekh1")]
+position = Vector2(1276, -946)
+
+[node name="SpikeHazard71" parent="Spikes" unique_id=1174102256 instance=ExtResource("3_bekh1")]
+position = Vector2(2212, -946)
+
+[node name="SpikeHazard72" parent="Spikes" unique_id=1138832146 instance=ExtResource("3_bekh1")]
+position = Vector2(2108, -946)
+
+[node name="SpikeHazard73" parent="Spikes" unique_id=1046046173 instance=ExtResource("3_bekh1")]
+position = Vector2(2004, -946)
+
+[node name="SpikeHazard74" parent="Spikes" unique_id=1349897540 instance=ExtResource("3_bekh1")]
+position = Vector2(1900, -946)
+
+[node name="SpikeHazard75" parent="Spikes" unique_id=228682117 instance=ExtResource("3_bekh1")]
+position = Vector2(1796, -946)
+
+[node name="SpikeHazard76" parent="Spikes" unique_id=639101828 instance=ExtResource("3_bekh1")]
+position = Vector2(2740, -946)
+
+[node name="SpikeHazard77" parent="Spikes" unique_id=1731567923 instance=ExtResource("3_bekh1")]
+position = Vector2(2636, -946)
+
+[node name="SpikeHazard78" parent="Spikes" unique_id=213421153 instance=ExtResource("3_bekh1")]
+position = Vector2(2532, -946)
+
+[node name="SpikeHazard79" parent="Spikes" unique_id=1675623392 instance=ExtResource("3_bekh1")]
+position = Vector2(2428, -946)
+
+[node name="SpikeHazard80" parent="Spikes" unique_id=788077592 instance=ExtResource("3_bekh1")]
+position = Vector2(2324, -946)
+
+[node name="SpikeHazard81" parent="Spikes" unique_id=1001972503 instance=ExtResource("3_bekh1")]
+position = Vector2(3260, -946)
+
+[node name="SpikeHazard82" parent="Spikes" unique_id=1576590564 instance=ExtResource("3_bekh1")]
+position = Vector2(3156, -946)
+
+[node name="SpikeHazard83" parent="Spikes" unique_id=902522435 instance=ExtResource("3_bekh1")]
+position = Vector2(3052, -946)
+
+[node name="SpikeHazard84" parent="Spikes" unique_id=1280535956 instance=ExtResource("3_bekh1")]
+position = Vector2(2948, -946)
+
+[node name="SpikeHazard85" parent="Spikes" unique_id=2146419295 instance=ExtResource("3_bekh1")]
+position = Vector2(2844, -946)
+
+[node name="SpikeHazard86" parent="Spikes" unique_id=404106636 instance=ExtResource("3_bekh1")]
+position = Vector2(3788, -946)
+
+[node name="SpikeHazard87" parent="Spikes" unique_id=2128672886 instance=ExtResource("3_bekh1")]
+position = Vector2(3684, -946)
+
+[node name="SpikeHazard88" parent="Spikes" unique_id=1911616637 instance=ExtResource("3_bekh1")]
+position = Vector2(3580, -946)
+
+[node name="SpikeHazard89" parent="Spikes" unique_id=148156393 instance=ExtResource("3_bekh1")]
+position = Vector2(3476, -946)
+
+[node name="SpikeHazard90" parent="Spikes" unique_id=874516428 instance=ExtResource("3_bekh1")]
+position = Vector2(3372, -946)
+
+[node name="SpikeHazard91" parent="Spikes" unique_id=1237912480 instance=ExtResource("3_bekh1")]
+position = Vector2(3892, -946)
+
+[node name="SpikeHazard92" parent="Spikes" unique_id=2005256408 instance=ExtResource("3_bekh1")]
+position = Vector2(1683, 135)
+
+[node name="SpikeHazard93" parent="Spikes" unique_id=103542522 instance=ExtResource("3_bekh1")]
+position = Vector2(1579, 135)
+
+[node name="SpikeHazard94" parent="Spikes" unique_id=439280471 instance=ExtResource("3_bekh1")]
+position = Vector2(1475, 135)
+
+[node name="SpikeHazard95" parent="Spikes" unique_id=639050697 instance=ExtResource("3_bekh1")]
+position = Vector2(1371, 135)
+
+[node name="SpikeHazard96" parent="Spikes" unique_id=161997179 instance=ExtResource("3_bekh1")]
+position = Vector2(1267, 135)
+
+[node name="SpikeHazard97" parent="Spikes" unique_id=606283715 instance=ExtResource("3_bekh1")]
+position = Vector2(2203, 135)
+
+[node name="SpikeHazard98" parent="Spikes" unique_id=1858847 instance=ExtResource("3_bekh1")]
+position = Vector2(2099, 135)
+
+[node name="SpikeHazard99" parent="Spikes" unique_id=533992352 instance=ExtResource("3_bekh1")]
+position = Vector2(1995, 135)
+
+[node name="SpikeHazard100" parent="Spikes" unique_id=193715868 instance=ExtResource("3_bekh1")]
+position = Vector2(1891, 135)
+
+[node name="SpikeHazard101" parent="Spikes" unique_id=722034807 instance=ExtResource("3_bekh1")]
+position = Vector2(1787, 135)
+
+[node name="SpikeHazard102" parent="Spikes" unique_id=1196720432 instance=ExtResource("3_bekh1")]
+position = Vector2(2731, 135)
+
+[node name="SpikeHazard103" parent="Spikes" unique_id=87751172 instance=ExtResource("3_bekh1")]
+position = Vector2(2627, 135)
+
+[node name="SpikeHazard104" parent="Spikes" unique_id=60017826 instance=ExtResource("3_bekh1")]
+position = Vector2(2523, 135)
+
+[node name="SpikeHazard105" parent="Spikes" unique_id=757726887 instance=ExtResource("3_bekh1")]
+position = Vector2(2419, 135)
+
+[node name="SpikeHazard106" parent="Spikes" unique_id=1073613305 instance=ExtResource("3_bekh1")]
+position = Vector2(2315, 135)
+
+[node name="SpikeHazard107" parent="Spikes" unique_id=784367395 instance=ExtResource("3_bekh1")]
+position = Vector2(3251, 135)
+
+[node name="SpikeHazard108" parent="Spikes" unique_id=151718262 instance=ExtResource("3_bekh1")]
+position = Vector2(3147, 135)
+
+[node name="SpikeHazard109" parent="Spikes" unique_id=1029959132 instance=ExtResource("3_bekh1")]
+position = Vector2(3043, 135)
+
+[node name="SpikeHazard110" parent="Spikes" unique_id=1034768930 instance=ExtResource("3_bekh1")]
+position = Vector2(2939, 135)
+
+[node name="SpikeHazard111" parent="Spikes" unique_id=1933087237 instance=ExtResource("3_bekh1")]
+position = Vector2(2835, 135)
+
+[node name="SpikeHazard112" parent="Spikes" unique_id=1088876275 instance=ExtResource("3_bekh1")]
+position = Vector2(3779, 135)
+
+[node name="SpikeHazard113" parent="Spikes" unique_id=63165633 instance=ExtResource("3_bekh1")]
+position = Vector2(3675, 135)
+
+[node name="SpikeHazard114" parent="Spikes" unique_id=1180830937 instance=ExtResource("3_bekh1")]
+position = Vector2(3571, 135)
+
+[node name="SpikeHazard115" parent="Spikes" unique_id=383812553 instance=ExtResource("3_bekh1")]
+position = Vector2(3467, 135)
+
+[node name="SpikeHazard116" parent="Spikes" unique_id=1477399702 instance=ExtResource("3_bekh1")]
+position = Vector2(3363, 135)
+
+[node name="SpikeHazard117" parent="Spikes" unique_id=523084556 instance=ExtResource("3_bekh1")]
+position = Vector2(3883, 135)
+
+[node name="SpikeHazard118" parent="Spikes" unique_id=1046266492 instance=ExtResource("3_bekh1")]
+position = Vector2(1683, 135)
+
+[node name="SpikeHazard119" parent="Spikes" unique_id=776658775 instance=ExtResource("3_bekh1")]
+position = Vector2(1579, 135)
+
+[node name="SpikeHazard120" parent="Spikes" unique_id=1647594255 instance=ExtResource("3_bekh1")]
+position = Vector2(1475, 135)
+
+[node name="SpikeHazard121" parent="Spikes" unique_id=912740584 instance=ExtResource("3_bekh1")]
+position = Vector2(1371, 135)
+
+[node name="SpikeHazard122" parent="Spikes" unique_id=784157442 instance=ExtResource("3_bekh1")]
+position = Vector2(1267, 135)
+
+[node name="SpikeHazard123" parent="Spikes" unique_id=1045315793 instance=ExtResource("3_bekh1")]
+position = Vector2(2203, 135)
+
+[node name="SpikeHazard124" parent="Spikes" unique_id=1622487406 instance=ExtResource("3_bekh1")]
+position = Vector2(2099, 135)
+
+[node name="SpikeHazard125" parent="Spikes" unique_id=915859607 instance=ExtResource("3_bekh1")]
+position = Vector2(1995, 135)
+
+[node name="SpikeHazard126" parent="Spikes" unique_id=828855156 instance=ExtResource("3_bekh1")]
+position = Vector2(1891, 135)
+
+[node name="SpikeHazard127" parent="Spikes" unique_id=393347044 instance=ExtResource("3_bekh1")]
+position = Vector2(1787, 135)
+
+[node name="SpikeHazard128" parent="Spikes" unique_id=1406867964 instance=ExtResource("3_bekh1")]
+position = Vector2(2731, 135)
+
+[node name="SpikeHazard129" parent="Spikes" unique_id=981148634 instance=ExtResource("3_bekh1")]
+position = Vector2(2627, 135)
+
+[node name="SpikeHazard130" parent="Spikes" unique_id=1806483921 instance=ExtResource("3_bekh1")]
+position = Vector2(2523, 135)
+
+[node name="SpikeHazard131" parent="Spikes" unique_id=1945422550 instance=ExtResource("3_bekh1")]
+position = Vector2(2419, 135)
+
+[node name="SpikeHazard132" parent="Spikes" unique_id=355860401 instance=ExtResource("3_bekh1")]
+position = Vector2(2315, 135)
+
+[node name="SpikeHazard133" parent="Spikes" unique_id=173894429 instance=ExtResource("3_bekh1")]
+position = Vector2(3251, 135)
+
+[node name="SpikeHazard134" parent="Spikes" unique_id=2083579447 instance=ExtResource("3_bekh1")]
+position = Vector2(3147, 135)
+
+[node name="SpikeHazard135" parent="Spikes" unique_id=1468666355 instance=ExtResource("3_bekh1")]
+position = Vector2(3043, 135)
+
+[node name="SpikeHazard136" parent="Spikes" unique_id=276847343 instance=ExtResource("3_bekh1")]
+position = Vector2(2939, 135)
+
+[node name="SpikeHazard137" parent="Spikes" unique_id=151429225 instance=ExtResource("3_bekh1")]
+position = Vector2(2835, 135)
+
+[node name="SpikeHazard138" parent="Spikes" unique_id=657402461 instance=ExtResource("3_bekh1")]
+position = Vector2(3779, 135)
+
+[node name="SpikeHazard139" parent="Spikes" unique_id=1241250974 instance=ExtResource("3_bekh1")]
+position = Vector2(3675, 135)
+
+[node name="SpikeHazard140" parent="Spikes" unique_id=2136386902 instance=ExtResource("3_bekh1")]
+position = Vector2(3571, 135)
+
+[node name="SpikeHazard141" parent="Spikes" unique_id=950542691 instance=ExtResource("3_bekh1")]
+position = Vector2(3467, 135)
+
+[node name="SpikeHazard142" parent="Spikes" unique_id=526731286 instance=ExtResource("3_bekh1")]
+position = Vector2(3363, 135)
+
+[node name="SpikeHazard143" parent="Spikes" unique_id=1149397161 instance=ExtResource("3_bekh1")]
+position = Vector2(3883, 135)
+
+[node name="SpikeHazard144" parent="Spikes" unique_id=1155600835 instance=ExtResource("3_bekh1")]
+position = Vector2(4099, 135)
+
+[node name="SpikeHazard145" parent="Spikes" unique_id=692025912 instance=ExtResource("3_bekh1")]
+position = Vector2(3995, 135)
+
+[node name="SpikeHazard146" parent="Spikes" unique_id=611770663 instance=ExtResource("3_bekh1")]
+position = Vector2(4627, 135)
+
+[node name="SpikeHazard147" parent="Spikes" unique_id=1724794998 instance=ExtResource("3_bekh1")]
+position = Vector2(4523, 135)
+
+[node name="SpikeHazard148" parent="Spikes" unique_id=1998678532 instance=ExtResource("3_bekh1")]
+position = Vector2(4419, 135)
+
+[node name="SpikeHazard149" parent="Spikes" unique_id=1695325589 instance=ExtResource("3_bekh1")]
+position = Vector2(4315, 135)
+
+[node name="SpikeHazard150" parent="Spikes" unique_id=767506936 instance=ExtResource("3_bekh1")]
+position = Vector2(4211, 135)
+
+[node name="SpikeHazard152" parent="Spikes" unique_id=242750278 instance=ExtResource("3_bekh1")]
+position = Vector2(4099, 135)
+
+[node name="SpikeHazard153" parent="Spikes" unique_id=1084772896 instance=ExtResource("3_bekh1")]
+position = Vector2(3995, 135)
+
+[node name="SpikeHazard154" parent="Spikes" unique_id=2125803154 instance=ExtResource("3_bekh1")]
+position = Vector2(4627, 135)
+
+[node name="SpikeHazard155" parent="Spikes" unique_id=1252763896 instance=ExtResource("3_bekh1")]
+position = Vector2(4523, 135)
+
+[node name="SpikeHazard156" parent="Spikes" unique_id=687016600 instance=ExtResource("3_bekh1")]
+position = Vector2(4419, 135)
+
+[node name="SpikeHazard157" parent="Spikes" unique_id=990666133 instance=ExtResource("3_bekh1")]
+position = Vector2(4315, 135)
+
+[node name="SpikeHazard158" parent="Spikes" unique_id=2072786468 instance=ExtResource("3_bekh1")]
+position = Vector2(4211, 135)
+
+[node name="bubble" parent="." unique_id=406493826 instance=ExtResource("4_8bcou")]
+position = Vector2(-3, -2)
+
+[node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("5_f7u7y")]
+z_index = 2
+position = Vector2(-158, 407)
+
+[node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("6_jq2cn")]
+position = Vector2(1437, -394)
+
+[node name="LevelEndPoint2" parent="." unique_id=295102179 instance=ExtResource("6_jq2cn")]
+position = Vector2(1437, -394)
+
+[node name="walls" type="TileMapLayer" parent="." unique_id=1109155246]
+z_index = 1
+tile_map_data = PackedByteArray("AAD9//3/AgADAAAAAAD+//3/AgABAAAAAAD///3/AgACAAAAAAAAAP3/AgADAAAAAAABAP3/AgABAAAAAAACAP3/AgACAAAAAAADAP3/AgACAAAAAAAEAP3/AgADAAAAAAAFAP3/AgAEAAAAAAD9//7/AgAAAAEAAAD9////AgAAAAIAAAD9/wAAAgAAAAMAAAD9/wEAAgAAAAQAAAD9/wIAAgAAAAUAAAD+/wIAAgABAAUAAAAAAAIAAgADAAUAAAABAAIAAgAEAAUAAAD//wIAAgAEAAUAAAACAAIAAgAEAAUAAAAFAAIAAgAEAAUAAAAEAAIAAgADAAUAAAADAAIAAgABAAUAAAAGAP3/AgABAAAAAAAHAP3/AgACAAAAAAAIAP3/AgADAAAAAAAJAP3/AgAEAAAAAAAKAP3/AgABAAAAAAAGAAIAAgABAAUAAAAHAAIAAgADAAUAAAAKAAIAAgADAAUAAAAJAAIAAgABAAUAAAAIAAIAAgAEAAUAAAALAAIAAgADAAUAAAASAAIAAgACAAUAAAAMAAIAAgAEAAUAAAANAAIAAgADAAUAAAAOAAIAAgABAAUAAAAPAAIAAgADAAUAAAAQAAIAAgAEAAUAAAARAAIAAgABAAUAAAASAAEAAgAFAAQAAAASAAAAAgAFAAMAAAASAP//AgAFAAIAAAASAP7/AgAFAAEAAAASAP3/AgAFAAQAAAASAPz/AgAFAAMAAAASAPv/AgAFAAIAAAASAPr/AgAFAAEAAAASAPn/AgAFAAQAAAASAPj/AgAFAAMAAAASAPf/AgAFAAIAAAASAPb/AgAFAAEAAAASAPX/AgAFAAQAAAASAPT/AgAFAAMAAAASAPP/AgAFAAIAAAASAPL/AgAFAAEAAAASAPH/AgAAAAIAAAARAPH/AgAEAAUAAAAQAPH/AgADAAUAAAAPAPH/AgACAAUAAAAOAPH/AgABAAUAAAANAPH/AgAEAAUAAAAMAPH/AgADAAUAAAALAPH/AgACAAUAAAAKAPH/AgABAAUAAAABAO7/AgAAAAEAAAABAO//AgAAAAIAAAABAPD/AgAAAAMAAAABAPH/AgAAAAQAAAABAPL/AgAAAAEAAAABAPP/AgAAAAIAAAABAPT/AgAAAAMAAAABAPX/AgAAAAQAAAD5//3/AgACAAUAAAD6//3/AgACAAUAAAD7//3/AgADAAUAAAD8//3/AgAEAAUAAAD5//n/AgAFAAEAAAD5//r/AgAFAAIAAAD5//v/AgAFAAMAAAD5//z/AgAFAAQAAAD5//X/AgAFAAEAAAD5//b/AgAFAAIAAAD5//f/AgAFAAMAAAD5//j/AgAFAAQAAAD5//H/AgAFAAEAAAD5//L/AgAFAAIAAAD5//P/AgAFAAMAAAD5//T/AgAFAAQAAAD5/+3/AgAFAAEAAAD5/+7/AgAFAAIAAAD5/+//AgAFAAMAAAD5//D/AgAFAAQAAAD5/+n/AgAFAAEAAAD5/+r/AgAFAAIAAAD5/+v/AgAFAAMAAAD5/+z/AgAFAAQAAAD5/+X/AgAAAAIAAAD5/+b/AgAFAAIAAAD5/+f/AgAFAAMAAAD5/+j/AgAFAAQAAAD6/+X/AgABAAUAAAD7/+X/AgACAAUAAAD8/+X/AgADAAUAAAD9/+X/AgAEAAUAAAD+/+X/AgABAAUAAAD//+X/AgACAAUAAAAAAOX/AgADAAUAAAABAOX/AgAEAAUAAAACAOX/AgABAAUAAAADAOX/AgACAAUAAAAEAOX/AgADAAUAAAAFAOX/AgAEAAUAAAAGAOX/AgABAAUAAAAHAOX/AgACAAUAAAAIAOX/AgACAAUAAAASAO3/AgAFAAEAAAASAO7/AgAFAAIAAAASAO//AgAFAAMAAAASAPD/AgAFAAQAAAASAOn/AgAFAAEAAAASAOr/AgAFAAIAAAASAOv/AgAFAAMAAAASAOz/AgAFAAQAAAASAOX/AgAFAAEAAAASAOb/AgAFAAIAAAASAOf/AgAFAAMAAAASAOj/AgAFAAQAAAASAOH/AgAFAAEAAAASAOL/AgAFAAIAAAASAOP/AgAFAAMAAAASAOT/AgAFAAQAAAASAN3/AgAFAAEAAAASAN7/AgAFAAIAAAASAN//AgAFAAMAAAASAOD/AgAFAAQAAAASANn/AgAFAAAAAAASANr/AgAFAAIAAAASANv/AgAFAAMAAAASANz/AgAFAAQAAAAOANn/AgABAAAAAAAPANn/AgACAAAAAAAQANn/AgADAAAAAAARANn/AgAEAAAAAAAKANn/AgABAAAAAAALANn/AgACAAAAAAAMANn/AgADAAAAAAANANn/AgAEAAAAAAAGANn/AgABAAAAAAAHANn/AgACAAAA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AABBAM3/AgAEAAAAAABCAM3/AgABAAAAAABDAM3/AgACAAAAAABEAM3/AgADAAAAAABFAM3/AgAEAAAAAABGAM3/AgABAAAAAABHAM3/AgACAAAAAABIAM3/AgADAAAAAABJAM3/AgAFAAAAAABJAM7/AgAFAAEAAABJAM//AgAFAAIAAABJAND/AgAFAAMAAABJANH/AgAFAAQAAABJANL/AgAFAAEAAABJANP/AgAFAAIAAABJANT/AgAFAAMAAABJANX/AgAFAAQAAABJANb/AgAFAAEAAABJANf/AgAFAAIAAABJANj/AgAFAAMAAABJANn/AgAFAAQAAABJANr/AgAFAAEAAABJANv/AgAFAAIAAABJANz/AgAFAAMAAABJAN3/AgAFAAQAAABJAN7/AgAFAAEAAABJAN//AgAFAAIAAABJAOD/AgAFAAMAAABJAOH/AgAFAAQAAABJAOL/AgAFAAEAAABJAOP/AgAFAAIAAABJAOT/AgAFAAMAAABJAOX/AgAFAAQAAABJAOb/AgAFAAEAAABJAOf/AgAFAAIAAABJAOj/AgAFAAMAAABJAOn/AgAFAAQAAABJAOr/AgAFAAEAAABJAOv/AgAFAAIAAABJAOz/AgAFAAMAAABJAO3/AgAFAAQAAABJAO7/AgAFAAEAAABJAO//AgAFAAIAAABJAPD/AgAFAAMAAABJAPH/AgAFAAQAAABJAPL/AgAFAAEAAABJAPP/AgAFAAIAAABJAPT/AgAFAAMAAABJAPX/AgAFAAQAAABJAPb/AgAFAAEAAABJAPf/AgAFAAIAAABJAPj/AgAFAAMAAABJAPn/AgAFAAQAAABJAPr/AgAFAAEAAABJAPv/AgAFAAIAAABJAPz/AgAFAAMAAABJAP3/AgAFAAQAAABJAP7/AgAFAAEAAABJAP//AgAFAAIAAABJAAAAAgAFAAMAAABJAAEAAgAFAAQAAABGAAIAAgABAAUAAABHAAIAAgACAAUAAABIAAIAAgADAAUAAABJAAIAAgAFAAUAAABCAAIAAgABAAUAAABDAAIAAgACAAUAAABEAAIAAgADAAUAAABFAAIAAgAEAAUAAAA+AAIAAgABAAUAAAA/AAIAAgACAAUAAABAAAIAAgADAAUAAABBAAIAAgAEAAUAAAA6AAIAAgABAAUAAAA7AAIAAgACAAUAAAA8AAIAAgADAAUAAAA9AAIAAgAEAAUAAAA2AAIAAgABAAUAAAA3AAIAAgACAAUAAAA4AAIAAgADAAUAAAA5AAIAAgAEAAUAAAAyAAIAAgABAAUAAAAzAAIAAgACAAUAAAA0AAIAAgADAAUAAAA1AAIAAgAEAAUAAAAuAAIAAgABAAUAAAAvAAIAAgACAAUAAAAwAAIAAgADAAUAAAAxAAIAAgAEAAUAAAAqAAIAAgABAAUAAAArAAIAAgACAAUAAAAsAAIAAgADAAUAAAAtAAIAAgAEAAUAAAAmAAIAAgABAAUAAAAnAAIAAgACAAUAAAAoAAIAAgADAAUAAAApAAIAAgAEAAUAAAAiAAIAAgABAAUAAAAjAAIAAgACAAUAAAAkAAIAAgADAAUAAAAlAAIAAgAEAAUAAAAeAAIAAgABAAUAAAAfAAIAAgACAAUAAAAgAAIAAgADAAUAAAAhAAIAAgAEAAUAAAAaAAIAAgABAAUAAAAbAAIAAgACAAUAAAAcAAIAAgADAAUAAAAdAAIAAgAEAAUAAAAWAAIAAgABAAUAAAAXAAIAAgACAAUAAAAYAAIAAgADAAUAAAAZAAIAAgAEAAUAAAATAAIAAgACAAUAAAAUAAIAAgADAAUAAAAVAAIAAgAEAAUAAAA=")
+tile_set = ExtResource("7_a5s8o")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1240527140]
+
+[node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("8_ls4ot")]
+unique_name_in_owner = true
+offset_right = 1.0
+offset_bottom = 110.0
+
+[node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=2145444007]
+stream = ExtResource("9_tx362")
+volume_db = -24.143
+autoplay = true
+parameters/looping = true
+
+[node name="bubble2" parent="." unique_id=1051886177 instance=ExtResource("10_l7nqg")]
+position = Vector2(598, -322)
+
+[node name="bubble3" parent="." unique_id=1733690166 instance=ExtResource("10_l7nqg")]
+position = Vector2(642, -671)
+
+[node name="bubble4" parent="." unique_id=1142411718 instance=ExtResource("10_l7nqg")]
+position = Vector2(547, -814)
+
+[node name="bubble5" parent="." unique_id=44833078 instance=ExtResource("10_l7nqg")]
+position = Vector2(535, -501)
+
+[node name="bubble6" parent="." unique_id=653818251 instance=ExtResource("10_l7nqg")]
+position = Vector2(592, -2214)
+
+[node name="bubble7" parent="." unique_id=14489873 instance=ExtResource("10_l7nqg")]
+position = Vector2(529, -1826)
+
+[node name="bubble8" parent="." unique_id=1349864319 instance=ExtResource("10_l7nqg")]
+position = Vector2(423, -1995)
+
+[node name="bubble9" parent="." unique_id=975137679 instance=ExtResource("10_l7nqg")]
+position = Vector2(656, -1954)
+
+[node name="bubble10" parent="." unique_id=1340930491 instance=ExtResource("10_l7nqg")]
+position = Vector2(3040, -2070)
+
+[node name="bubble11" parent="." unique_id=596653224 instance=ExtResource("10_l7nqg")]
+position = Vector2(3180, -1864)
+
+[node name="bubble12" parent="." unique_id=380699122 instance=ExtResource("10_l7nqg")]
+position = Vector2(3072, -1719)
+
+[node name="bubble13" parent="." unique_id=1332465680 instance=ExtResource("10_l7nqg")]
+position = Vector2(3316, -1495)
+
+[node name="bubble14" parent="." unique_id=85288216 instance=ExtResource("10_l7nqg")]
+position = Vector2(3609, -2424)
+
+[node name="bubble15" parent="." unique_id=968689873 instance=ExtResource("10_l7nqg")]
+position = Vector2(3661, -2249)
+
+[node name="bubble16" parent="." unique_id=44975912 instance=ExtResource("10_l7nqg")]
+position = Vector2(3623, -1887)
+
+[node name="bubble17" parent="." unique_id=1787340130 instance=ExtResource("10_l7nqg")]
+position = Vector2(3726, -1738)
+
+[node name="bubble18" parent="." unique_id=74475062 instance=ExtResource("10_l7nqg")]
+position = Vector2(3395, -2348)
+
+[node name="bubble19" parent="." unique_id=251599124 instance=ExtResource("10_l7nqg")]
+position = Vector2(3382, -2056)
+
+[node name="bubble20" parent="." unique_id=599717830 instance=ExtResource("10_l7nqg")]
+position = Vector2(3208, -2217)
+
+[node name="bubble21" parent="." unique_id=1277713559 instance=ExtResource("10_l7nqg")]
+position = Vector2(3566, -1745)
+
+[node name="bubble22" parent="." unique_id=92797539 instance=ExtResource("10_l7nqg")]
+position = Vector2(2430, -210)
+
+[node name="bubble23" parent="." unique_id=1604271521 instance=ExtResource("10_l7nqg")]
+position = Vector2(2911, -595)
+
+[node name="bubble24" parent="." unique_id=147343272 instance=ExtResource("10_l7nqg")]
+position = Vector2(2873, -233)
+
+[node name="bubble25" parent="." unique_id=1806802787 instance=ExtResource("10_l7nqg")]
+position = Vector2(2645, -694)
+
+[node name="bubble26" parent="." unique_id=1752357675 instance=ExtResource("10_l7nqg")]
+position = Vector2(2632, -402)
+
+[node name="bubble27" parent="." unique_id=377207693 instance=ExtResource("10_l7nqg")]
+position = Vector2(2458, -563)
+
+[node name="bubble28" parent="." unique_id=2041244121 instance=ExtResource("10_l7nqg")]
+position = Vector2(2816, -91)
