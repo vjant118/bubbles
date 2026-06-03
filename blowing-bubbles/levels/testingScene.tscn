@@ -1,10 +1,11 @@
-[gd_scene format=3 uid="uid://dqxm7yhreu6yd"]
+[gd_scene format=4 uid="uid://dqxm7yhreu6yd"]
 
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="1_do0w1"]
+[ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="1_rpe2p"]
+[ext_resource type="Texture2D" uid="uid://coeysmyp2gvlt" path="res://assets/Official Assets/Night.png" id="2_rpe2p"]
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="3_psw1n"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="4_fyrrw"]
 [ext_resource type="PackedScene" uid="uid://h7cutrbg4ins" path="res://actors/rotateAxis.tscn" id="5_u8dky"]
-[ext_resource type="PackedScene" uid="uid://b8rvqqyyfg2j4" path="res://actors/projectile.tscn" id="6_vlli8"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="7_20gyl"]
 [ext_resource type="Script" uid="uid://cpn1ae4ew325j" path="res://src/objects/pathFollow2D.gd" id="8_4ytrw"]
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="8_psw1n"]
@@ -13,9 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://cwruy2vrtx80a" path="res://actors/portal.tscn" id="11_u8dky"]
 [ext_resource type="PackedScene" uid="uid://dm1kiesl6s554" path="res://actors/chaserEnemy.tscn" id="12_vlli8"]
 [ext_resource type="PackedScene" uid="uid://chglvhlcd26ke" path="res://actors/chaserActivator.tscn" id="13_20gyl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r45yr"]
-size = Vector2(37.5, 487.5)
+[ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="15_rpe2p"]
+[ext_resource type="PackedScene" uid="uid://dneqcan6dck75" path="res://actors/SpikeBall.tscn" id="16_xknuw"]
+[ext_resource type="PackedScene" uid="uid://cbj4ssdmkr1sm" path="res://actors/wallTEST.tscn" id="17_30yk8"]
 
 [sub_resource type="Curve2D" id="Curve2D_psw1n"]
 _data = {
@@ -25,45 +26,43 @@ point_count = 16
 
 [node name="HitboxTestingScene" type="Node2D" unique_id=103971390]
 
-[node name="ChaserActivator" parent="." unique_id=1988191175 node_paths=PackedStringArray("linkedEnemy") instance=ExtResource("13_20gyl")]
-position = Vector2(564, 538)
-linkedEnemy = NodePath("../ChaserEnemy")
+[node name="walls" type="TileMapLayer" parent="." unique_id=1207934662]
+z_index = 1
+position = Vector2(1505, 788)
+tile_map_data = PackedByteArray("AAD//+7/AgAAAAEAAAD//+//AgAAAAEAAAD///D/AgAAAAEAAAD///H/AgAAAAEAAAD///L/AgAAAAEAAAD///P/AgAAAAEAAADq//X/AgAAAAEAAADq//b/AgAAAAEAAADq//f/AgAAAAEAAADq//j/AgAAAAEAAADq//n/AgAAAAEAAADq//r/AgAAAAEAAAA=")
+tile_set = ExtResource("1_rpe2p")
+
+[node name="Night" type="Sprite2D" parent="." unique_id=728892511]
+position = Vector2(589.00006, 1246)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_rpe2p")
+
+[node name="ChaserActivator" parent="." unique_id=1988191175 instance=ExtResource("13_20gyl")]
+position = Vector2(1142, 702)
 
 [node name="Portal" parent="." unique_id=149727920 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("11_u8dky")]
-position = Vector2(468, 1120)
+position = Vector2(272, 1144)
 linkedPortal = NodePath("../Portal2")
 
 [node name="Portal2" parent="." unique_id=2127766339 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("11_u8dky")]
-position = Vector2(940, 1097)
+position = Vector2(1039, 1165)
 linkedPortal = NodePath("../Portal")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=658879253]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=723698913]
-position = Vector2(82.25, 310.25)
-shape = SubResource("RectangleShape2D_r45yr")
-
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1666599095]
-offset_left = 63.0
-offset_top = 65.0
-offset_right = 104.0
-offset_bottom = 555.0
+position = Vector2(-1188, 127)
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("4_fyrrw")]
-position = Vector2(468, 105)
+position = Vector2(-640, 980)
 
 [node name="RotatingWall" parent="." unique_id=1028060275 instance=ExtResource("5_u8dky")]
-position = Vector2(983, 493)
+position = Vector2(-1238, 605)
 oppositeRotation = true
 
 [node name="SpikeHazard" parent="RotatingWall" unique_id=1634614160 instance=ExtResource("3_psw1n")]
 position = Vector2(-756, -195)
 
-[node name="Projectile" parent="." unique_id=1234948915 instance=ExtResource("6_vlli8")]
-position = Vector2(50, 32)
-
 [node name="Path2D" type="Path2D" parent="." unique_id=354179845]
-position = Vector2(919, 194)
+position = Vector2(2081, 77)
 curve = SubResource("Curve2D_psw1n")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1608384324]
@@ -76,10 +75,10 @@ position = Vector2(-63.308044, 65.85662)
 rotation = -0.07393904
 
 [node name="LevelEndPoint" parent="." unique_id=94973403 instance=ExtResource("9_psw1n")]
-position = Vector2(129, 746)
+position = Vector2(-206, 390)
 
 [node name="bubble" parent="." unique_id=406493826 instance=ExtResource("8_psw1n")]
-position = Vector2(569, 334)
+position = Vector2(871, 673)
 
 [node name="mouseblower" parent="." unique_id=124156406 instance=ExtResource("1_do0w1")]
 position = Vector2(439, 197)
@@ -92,14 +91,58 @@ offset_right = 1.0
 offset_bottom = 55.0
 
 [node name="ProjectileShooter" parent="." unique_id=1630183063 instance=ExtResource("7_20gyl")]
-position = Vector2(1359, -58)
+position = Vector2(1365, -62)
 shootSpeed = 4
+fireRate = 0.5
 
 [node name="ProjectileShooter2" parent="." unique_id=212515423 instance=ExtResource("7_20gyl")]
-position = Vector2(1352, -178)
+position = Vector2(1368, -178)
 shootSpeed = 4
+fireRate = 1.0
+startDelay = 1.0
+
+[node name="ProjectileShooter3" parent="." unique_id=148281987 instance=ExtResource("7_20gyl")]
+position = Vector2(1368, -298)
+shootSpeed = 4
+fireRate = 1.5
 startDelay = 1.0
 
 [node name="ChaserEnemy" parent="." unique_id=956407589 instance=ExtResource("12_vlli8")]
-position = Vector2(1570, 769)
+position = Vector2(1070, 442)
 activated = false
+
+[node name="SpikeHazard" parent="." unique_id=96722525 instance=ExtResource("3_psw1n")]
+position = Vector2(152, 161)
+rotation = 1.5707964
+
+[node name="SpikeHazard2" parent="." unique_id=382967921 instance=ExtResource("3_psw1n")]
+position = Vector2(152, 273)
+rotation = 1.5707964
+
+[node name="SpikeHazard3" parent="." unique_id=1458718632 instance=ExtResource("3_psw1n")]
+position = Vector2(152, 385)
+rotation = 1.5707964
+
+[node name="bubble2" parent="." unique_id=117503301 instance=ExtResource("15_rpe2p")]
+position = Vector2(1115, 113)
+
+[node name="bubble3" parent="." unique_id=1497726179 instance=ExtResource("15_rpe2p")]
+position = Vector2(1272, 105)
+
+[node name="bubble4" parent="." unique_id=1961713975 instance=ExtResource("15_rpe2p")]
+position = Vector2(959, 118)
+
+[node name="bubble5" parent="." unique_id=1539736866 instance=ExtResource("15_rpe2p")]
+position = Vector2(800, 114)
+
+[node name="BallSpike" parent="." unique_id=732023224 instance=ExtResource("16_xknuw")]
+position = Vector2(671, 995)
+
+[node name="BallSpike2" parent="." unique_id=1511939007 instance=ExtResource("16_xknuw")]
+position = Vector2(676, 1186)
+
+[node name="BallSpike3" parent="." unique_id=161106119 instance=ExtResource("16_xknuw")]
+position = Vector2(674, 1401)
+
+[node name="WallTest" parent="." unique_id=155807191 instance=ExtResource("17_30yk8")]
+position = Vector2(-164, 886)

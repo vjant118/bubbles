@@ -1,0 +1,12 @@
+[gd_scene format=4 uid="uid://b1n8lxuanh1vj"]
+
+[ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="1_xuaxb"]
+
+[node name="WallTest" type="Node2D" unique_id=155807191]
+position = Vector2(31, 19)
+
+[node name="walls" type="TileMapLayer" parent="." unique_id=979172375]
+z_index = 1
+position = Vector2(1505, 788)
+tile_map_data = PackedByteArray("AADi//P/AgABAAAAAADh//P/AgAEAAAAAADg//P/AgADAAAAAADw//P/AgADAAAAAADv//P/AgACAAAAAADu//P/AgABAAAAAADt//P/AgAEAAAAAADs//P/AgADAAAAAADr//P/AgACAAAAAADq//P/AgABAAAAAADp//P/AgAEAAAAAADo//P/AgADAAAAAADn//P/AgACAAAAAADm//P/AgABAAAAAADl//P/AgAEAAAAAADk//P/AgADAAAAAADj//P/AgACAAAAAADx//P/AgAEAAAAAADf//P/AgACAAAAAAA=")
+tile_set = ExtResource("1_xuaxb")
