@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://choly2o56l4ao" path="res://actors/spikeHazard.tscn" id="6_iumuh"]
 [ext_resource type="PackedScene" uid="uid://ds71uo8f8a440" path="res://actors/levelEndPoint.tscn" id="7_5lf4g"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="8_1kqb1"]
-[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="9_oy8sf"]
 [ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/timer.tscn" id="10_ij6yt"]
 [ext_resource type="Texture2D" uid="uid://o8jeu57ac5om" path="res://assets/Official Assets/Day.png" id="10_jrxhp"]
 
@@ -400,12 +399,6 @@ position = Vector2(3960, -852)
 position = Vector2(273, 182)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=646968699]
-
-[node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1580677868]
-stream = ExtResource("9_oy8sf")
-volume_db = -24.143
-autoplay = true
-parameters/looping = true
 
 [node name="timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("10_ij6yt")]
 unique_name_in_owner = true

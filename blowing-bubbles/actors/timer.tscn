@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://c5okmb1fq2id2" path="res://src/objects/timer.gd" id="1_a73k2"]
 [ext_resource type="FontFile" uid="uid://cypbu8bskw88v" path="res://MochiyPopOne-Regular.ttf" id="1_aiyg4"]
 
-[node name="Timer" type="Label" unique_id=1376593584]
+[node name="timer" type="Label" unique_id=1376593584]
 theme_override_fonts/font = ExtResource("1_aiyg4")
 theme_override_font_sizes/font_size = 80
 script = ExtResource("1_a73k2")
 
-[node name="Timer" type="Timer" parent="." unique_id=1371716596]
+[node name="timer" type="Timer" parent="." unique_id=1371716596]
 autostart = true

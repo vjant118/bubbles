@@ -13,7 +13,7 @@ func check_bodies():
 			%timer.stopTimer()
 			$AnimatedSprite2D.hide()
 			$McIdle.hide()
-			$AudioStreamPlayer.play
+			$AudioStreamPlayer.play()
 			set_deferred("freeze", true)
 			$CanvasLayer/DiedUi.show()
 			
