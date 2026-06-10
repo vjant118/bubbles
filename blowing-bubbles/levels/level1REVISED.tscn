@@ -9,6 +9,7 @@
 [ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="5_f7xr1"]
 [ext_resource type="PackedScene" uid="uid://bqg43s3ikgk50" path="res://actors/bubble.tscn" id="7_gn2j6"]
 [ext_resource type="PackedScene" uid="uid://blc024328w31s" path="res://actors/projectileShooter.tscn" id="8_kisxu"]
+[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="10_w2hdw"]
 
 [node name="Level1revised" type="Node2D" unique_id=1621521428]
 
@@ -1084,3 +1085,9 @@ position = Vector2(2816, -91)
 unique_name_in_owner = true
 offset_right = 1.0
 offset_bottom = 117.0
+
+[node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1315346536]
+stream = ExtResource("10_w2hdw")
+volume_db = -24.143
+autoplay = true
+parameters/looping = true

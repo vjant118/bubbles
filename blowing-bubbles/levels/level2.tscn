@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bw26fn0vm8sks" path="res://actors/mouseBlower.tscn" id="13_vrpbn"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="14_qisw3"]
 [ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/timer.tscn" id="15_08mxr"]
+[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="16_jj0ry"]
 [ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="16_sxrw6"]
 
 [sub_resource type="Curve2D" id="Curve2D_1kwi6"]
@@ -711,6 +712,12 @@ unique_name_in_owner = true
 offset_right = 1.0
 offset_bottom = 55.0
 metadata/_edit_use_anchors_ = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=892247161]
+stream = ExtResource("16_jj0ry")
+volume_db = -24.143
+autoplay = true
+parameters/looping = true
 
 [node name="walls" type="TileMapLayer" parent="." unique_id=166990527]
 z_index = 1

@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cj2o3jlaln6hp" path="res://actors/playerBubble.tscn" id="14_yg108"]
 [ext_resource type="PackedScene" uid="uid://c5ryt2k12kdlm" path="res://actors/timer.tscn" id="15_ridg8"]
 [ext_resource type="PackedScene" uid="uid://db8oadtagw3ye" path="res://actors/sceneResetter.tscn" id="16_l5a6c"]
+[ext_resource type="AudioStream" uid="uid://ckju01eka3ley" path="res://audio/bgm.mp3" id="16_lrvx3"]
 [ext_resource type="TileSet" uid="uid://e5qvmc0itfcn" path="res://assets/Official Assets/tileSet.tres" id="17_q0ied"]
 
 [sub_resource type="Curve2D" id="Curve2D_hljv7"]
@@ -1586,6 +1587,12 @@ position = Vector2(-135, -1279)
 
 [node name="Timer" parent="CanvasLayer" unique_id=1376593584 instance=ExtResource("15_ridg8")]
 unique_name_in_owner = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=520691282]
+stream = ExtResource("16_lrvx3")
+volume_db = -24.143
+autoplay = true
+parameters/looping = true
 
 [node name="SceneResetter" parent="." unique_id=396899554 instance=ExtResource("16_l5a6c")]
 position = Vector2(249, 101)
